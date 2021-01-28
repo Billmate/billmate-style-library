@@ -1,6 +1,7 @@
 /**
  * 01 Color palette
  */
+@import url(../node_modules/@sorabhtomar/sofia-pro/stylesheet.css);
 @font-face {
   font-family: 'BuenosAires';
   src: url("../resources/fonts/BuenosAires.eot");
@@ -157,7 +158,17 @@
     min-height: 24px;
     min-width: 24px;
     width: 24px; }
-  .is-large.delete, button.delete, input.delete[type=button], input.delete[type=submit], a.delete, .delete.switch[type='checkbox'], .delete.input[type=text], .delete.input[type=password], .delete.input[type=email], .delete.select, .is-large.modal-close, button.modal-close, input.modal-close[type=button], input.modal-close[type=submit], a.modal-close, .modal-close.switch[type='checkbox'], .modal-close.input[type=text], .modal-close.input[type=password], .modal-close.input[type=email], .modal-close.select {
+  .is-large.delete, button.delete,
+  input.delete[type=button],
+  input.delete[type=submit],
+  a.delete, .delete.switch[type='checkbox'], .delete.input[type=text],
+  .delete.input[type=password],
+  .delete.input[type=email], .delete.select, .is-large.modal-close, button.modal-close,
+  input.modal-close[type=button],
+  input.modal-close[type=submit],
+  a.modal-close, .modal-close.switch[type='checkbox'], .modal-close.input[type=text],
+  .modal-close.input[type=password],
+  .modal-close.input[type=email], .modal-close.select {
     height: 32px;
     max-height: 32px;
     max-width: 32px;
@@ -297,7 +308,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Sofia Pro"; }
 
 code,
 pre {
@@ -417,7 +428,12 @@ a.box:active {
   white-space: nowrap; }
   .button strong {
     color: inherit; }
-  .button .icon, .button .icon.is-small, .button .icon.is-medium, .button .icon.is-large, .button button.icon, .button input.icon[type=button], .button input.icon[type=submit], .button a.icon, .button .icon.switch[type='checkbox'], .button .icon.input[type=text], .button .icon.input[type=password], .button .icon.input[type=email], .button .icon.select {
+  .button .icon, .button .icon.is-small, .button .icon.is-medium, .button .icon.is-large, .button button.icon,
+  .button input.icon[type=button],
+  .button input.icon[type=submit],
+  .button a.icon, .button .icon.switch[type='checkbox'], .button .icon.input[type=text],
+  .button .icon.input[type=password],
+  .button .icon.input[type=email], .button .icon.select {
     height: 1.5em;
     width: 1.5em; }
   .button .icon:first-child:not(:last-child) {
@@ -1218,7 +1234,12 @@ a.box:active {
     font-size: 1rem; }
   .button.is-medium {
     font-size: 1.25rem; }
-  .button.is-large, button.button, input.button[type=button], input.button[type=submit], a.button, .button.switch[type='checkbox'], .button.input[type=text], .button.input[type=password], .button.input[type=email], .button.select {
+  .button.is-large, button.button,
+  input.button[type=button],
+  input.button[type=submit],
+  a.button, .button.switch[type='checkbox'], .button.input[type=text],
+  .button.input[type=password],
+  .button.input[type=email], .button.select {
     font-size: 1.5rem; }
   .button[disabled],
   fieldset[disabled] .button {
@@ -1226,7 +1247,25 @@ a.box:active {
     border-color: #dbdbdb;
     box-shadow: none;
     opacity: 0.5; }
-  .button.is-fullwidth, button.button.rectanglePrimary, button.button.pillPrimary, input.button.rectanglePrimary[type=button], input.button.pillPrimary[type=button], input.button.rectanglePrimary[type=submit], input.button.pillPrimary[type=submit], a.button.rectanglePrimary, a.button.pillPrimary, button.button.rectangleSecondary, button.button.pillSecondary, input.button.rectangleSecondary[type=button], input.button.pillSecondary[type=button], input.button.rectangleSecondary[type=submit], input.button.pillSecondary[type=submit], a.button.rectangleSecondary, a.button.pillSecondary, button.button.rectangleTertiary, button.button.pillTertiary, input.button.rectangleTertiary[type=button], input.button.pillTertiary[type=button], input.button.rectangleTertiary[type=submit], input.button.pillTertiary[type=submit], a.button.rectangleTertiary, a.button.pillTertiary {
+  .button.is-fullwidth, button.button.rectanglePrimary, button.button.pillPrimary,
+  input.button.rectanglePrimary[type=button],
+  input.button.pillPrimary[type=button],
+  input.button.rectanglePrimary[type=submit],
+  input.button.pillPrimary[type=submit],
+  a.button.rectanglePrimary,
+  a.button.pillPrimary, button.button.rectangleSecondary, button.button.pillSecondary,
+  input.button.rectangleSecondary[type=button],
+  input.button.pillSecondary[type=button],
+  input.button.rectangleSecondary[type=submit],
+  input.button.pillSecondary[type=submit],
+  a.button.rectangleSecondary,
+  a.button.pillSecondary, button.button.rectangleTertiary, button.button.pillTertiary,
+  input.button.rectangleTertiary[type=button],
+  input.button.pillTertiary[type=button],
+  input.button.rectangleTertiary[type=submit],
+  input.button.pillTertiary[type=submit],
+  a.button.rectangleTertiary,
+  a.button.pillTertiary {
     display: flex;
     width: 100%; }
   .button.is-loading {
@@ -1466,7 +1505,12 @@ a.box:active {
 .content.is-medium {
   font-size: 1.25rem; }
 
-.content.is-large, button.content, input.content[type=button], input.content[type=submit], a.content, .content.switch[type='checkbox'], .content.input[type=text], .content.input[type=password], .content.input[type=email], .content.select {
+.content.is-large, button.content,
+input.content[type=button],
+input.content[type=submit],
+a.content, .content.switch[type='checkbox'], .content.input[type=text],
+.content.input[type=password],
+.content.input[type=email], .content.select {
   font-size: 1.5rem; }
 
 .icon {
@@ -1481,7 +1525,12 @@ a.box:active {
   .icon.is-medium {
     height: 2rem;
     width: 2rem; }
-  .icon.is-large, button.icon, input.icon[type=button], input.icon[type=submit], a.icon, .icon.switch[type='checkbox'], .icon.input[type=text], .icon.input[type=password], .icon.input[type=email], .icon.select {
+  .icon.is-large, button.icon,
+  input.icon[type=button],
+  input.icon[type=submit],
+  a.icon, .icon.switch[type='checkbox'], .icon.input[type=text],
+  .icon.input[type=password],
+  .icon.input[type=email], .icon.select {
     height: 3rem;
     width: 3rem; }
 
@@ -1512,7 +1561,25 @@ div.icon-text {
     width: 100%; }
     .image img.is-rounded, .image img.switch[type='checkbox'] {
       border-radius: 290486px; }
-  .image.is-fullwidth, button.image.rectanglePrimary, button.image.pillPrimary, input.image.rectanglePrimary[type=button], input.image.pillPrimary[type=button], input.image.rectanglePrimary[type=submit], input.image.pillPrimary[type=submit], a.image.rectanglePrimary, a.image.pillPrimary, button.image.rectangleSecondary, button.image.pillSecondary, input.image.rectangleSecondary[type=button], input.image.pillSecondary[type=button], input.image.rectangleSecondary[type=submit], input.image.pillSecondary[type=submit], a.image.rectangleSecondary, a.image.pillSecondary, button.image.rectangleTertiary, button.image.pillTertiary, input.image.rectangleTertiary[type=button], input.image.pillTertiary[type=button], input.image.rectangleTertiary[type=submit], input.image.pillTertiary[type=submit], a.image.rectangleTertiary, a.image.pillTertiary {
+  .image.is-fullwidth, button.image.rectanglePrimary, button.image.pillPrimary,
+  input.image.rectanglePrimary[type=button],
+  input.image.pillPrimary[type=button],
+  input.image.rectanglePrimary[type=submit],
+  input.image.pillPrimary[type=submit],
+  a.image.rectanglePrimary,
+  a.image.pillPrimary, button.image.rectangleSecondary, button.image.pillSecondary,
+  input.image.rectangleSecondary[type=button],
+  input.image.pillSecondary[type=button],
+  input.image.rectangleSecondary[type=submit],
+  input.image.pillSecondary[type=submit],
+  a.image.rectangleSecondary,
+  a.image.pillSecondary, button.image.rectangleTertiary, button.image.pillTertiary,
+  input.image.rectangleTertiary[type=button],
+  input.image.pillTertiary[type=button],
+  input.image.rectangleTertiary[type=submit],
+  input.image.pillTertiary[type=submit],
+  a.image.rectangleTertiary,
+  a.image.pillTertiary {
     width: 100%; }
   .image.is-square img,
   .image.is-square .has-ratio, .image.is-1by1 img,
@@ -1776,7 +1843,12 @@ div.icon-text {
     height: 0.75rem; }
   .progress.is-medium {
     height: 1.25rem; }
-  .progress.is-large, button.progress, input.progress[type=button], input.progress[type=submit], a.progress, .progress.switch[type='checkbox'], .progress.input[type=text], .progress.input[type=password], .progress.input[type=email], .progress.select {
+  .progress.is-large, button.progress,
+  input.progress[type=button],
+  input.progress[type=submit],
+  a.progress, .progress.switch[type='checkbox'], .progress.input[type=text],
+  .progress.input[type=password],
+  .progress.input[type=email], .progress.select {
     height: 1.5rem; }
 
 @keyframes moveIndeterminate {
@@ -1897,7 +1969,25 @@ div.icon-text {
   .table.is-bordered tr:last-child td,
   .table.is-bordered tr:last-child th {
     border-bottom-width: 1px; }
-  .table.is-fullwidth, button.table.rectanglePrimary, button.table.pillPrimary, input.table.rectanglePrimary[type=button], input.table.pillPrimary[type=button], input.table.rectanglePrimary[type=submit], input.table.pillPrimary[type=submit], a.table.rectanglePrimary, a.table.pillPrimary, button.table.rectangleSecondary, button.table.pillSecondary, input.table.rectangleSecondary[type=button], input.table.pillSecondary[type=button], input.table.rectangleSecondary[type=submit], input.table.pillSecondary[type=submit], a.table.rectangleSecondary, a.table.pillSecondary, button.table.rectangleTertiary, button.table.pillTertiary, input.table.rectangleTertiary[type=button], input.table.pillTertiary[type=button], input.table.rectangleTertiary[type=submit], input.table.pillTertiary[type=submit], a.table.rectangleTertiary, a.table.pillTertiary {
+  .table.is-fullwidth, button.table.rectanglePrimary, button.table.pillPrimary,
+  input.table.rectanglePrimary[type=button],
+  input.table.pillPrimary[type=button],
+  input.table.rectanglePrimary[type=submit],
+  input.table.pillPrimary[type=submit],
+  a.table.rectanglePrimary,
+  a.table.pillPrimary, button.table.rectangleSecondary, button.table.pillSecondary,
+  input.table.rectangleSecondary[type=button],
+  input.table.pillSecondary[type=button],
+  input.table.rectangleSecondary[type=submit],
+  input.table.pillSecondary[type=submit],
+  a.table.rectangleSecondary,
+  a.table.pillSecondary, button.table.rectangleTertiary, button.table.pillTertiary,
+  input.table.rectangleTertiary[type=button],
+  input.table.pillTertiary[type=button],
+  input.table.rectangleTertiary[type=submit],
+  input.table.pillTertiary[type=submit],
+  a.table.rectangleTertiary,
+  a.table.pillTertiary {
     width: 100%; }
   .table.is-hoverable tbody tr:not(.is-selected):hover {
     background-color: #fafafa; }
@@ -2023,7 +2113,12 @@ div.icon-text {
     font-size: 0.75rem; }
   .tag:not(body).is-medium {
     font-size: 1rem; }
-  .tag:not(body).is-large, button.tag:not(body), input.tag:not(body)[type=button], input.tag:not(body)[type=submit], a.tag:not(body), .tag.switch:not(body)[type='checkbox'], .tag.input:not(body)[type=text], .tag.input:not(body)[type=password], .tag.input:not(body)[type=email], .tag.select:not(body) {
+  .tag:not(body).is-large, button.tag:not(body),
+  input.tag:not(body)[type=button],
+  input.tag:not(body)[type=submit],
+  a.tag:not(body), .tag.switch:not(body)[type='checkbox'], .tag.input:not(body)[type=text],
+  .tag.input:not(body)[type=password],
+  .tag.input:not(body)[type=email], .tag.select:not(body) {
     font-size: 1.25rem; }
   .tag:not(body) .icon:first-child:not(:last-child) {
     margin-left: -0.375em;
@@ -2268,9 +2363,53 @@ a.tag:hover {
     font-size: 0.75rem; }
   .is-medium.input, .is-medium.textarea {
     font-size: 1.25rem; }
-  .is-large.input, button.input, input.input[type=button], input.input[type=submit], a.input, .input.switch[type='checkbox'], .input[type=text], .input[type=password], .input[type=email], .input.select, .is-large.textarea, button.textarea, input.textarea[type=button], input.textarea[type=submit], a.textarea, .textarea.switch[type='checkbox'], .textarea.select {
+  .is-large.input, button.input,
+  input.input[type=button],
+  input.input[type=submit],
+  a.input, .input.switch[type='checkbox'], .input[type=text],
+  .input[type=password],
+  .input[type=email], .input.select, .is-large.textarea, button.textarea,
+  input.textarea[type=button],
+  input.textarea[type=submit],
+  a.textarea, .textarea.switch[type='checkbox'], .textarea.select {
     font-size: 1.5rem; }
-  .is-fullwidth.input, button.input.rectanglePrimary, button.input.pillPrimary, input.input.rectanglePrimary[type=button], input.input.pillPrimary[type=button], input.input.rectanglePrimary[type=submit], input.input.pillPrimary[type=submit], a.input.rectanglePrimary, a.input.pillPrimary, button.input.rectangleSecondary, button.input.pillSecondary, input.input.rectangleSecondary[type=button], input.input.pillSecondary[type=button], input.input.rectangleSecondary[type=submit], input.input.pillSecondary[type=submit], a.input.rectangleSecondary, a.input.pillSecondary, button.input.rectangleTertiary, button.input.pillTertiary, input.input.rectangleTertiary[type=button], input.input.pillTertiary[type=button], input.input.rectangleTertiary[type=submit], input.input.pillTertiary[type=submit], a.input.rectangleTertiary, a.input.pillTertiary, .is-fullwidth.textarea, button.textarea.rectanglePrimary, button.textarea.pillPrimary, input.textarea.rectanglePrimary[type=button], input.textarea.pillPrimary[type=button], input.textarea.rectanglePrimary[type=submit], input.textarea.pillPrimary[type=submit], a.textarea.rectanglePrimary, a.textarea.pillPrimary, button.textarea.rectangleSecondary, button.textarea.pillSecondary, input.textarea.rectangleSecondary[type=button], input.textarea.pillSecondary[type=button], input.textarea.rectangleSecondary[type=submit], input.textarea.pillSecondary[type=submit], a.textarea.rectangleSecondary, a.textarea.pillSecondary, button.textarea.rectangleTertiary, button.textarea.pillTertiary, input.textarea.rectangleTertiary[type=button], input.textarea.pillTertiary[type=button], input.textarea.rectangleTertiary[type=submit], input.textarea.pillTertiary[type=submit], a.textarea.rectangleTertiary, a.textarea.pillTertiary {
+  .is-fullwidth.input, button.input.rectanglePrimary, button.input.pillPrimary,
+  input.input.rectanglePrimary[type=button],
+  input.input.pillPrimary[type=button],
+  input.input.rectanglePrimary[type=submit],
+  input.input.pillPrimary[type=submit],
+  a.input.rectanglePrimary,
+  a.input.pillPrimary, button.input.rectangleSecondary, button.input.pillSecondary,
+  input.input.rectangleSecondary[type=button],
+  input.input.pillSecondary[type=button],
+  input.input.rectangleSecondary[type=submit],
+  input.input.pillSecondary[type=submit],
+  a.input.rectangleSecondary,
+  a.input.pillSecondary, button.input.rectangleTertiary, button.input.pillTertiary,
+  input.input.rectangleTertiary[type=button],
+  input.input.pillTertiary[type=button],
+  input.input.rectangleTertiary[type=submit],
+  input.input.pillTertiary[type=submit],
+  a.input.rectangleTertiary,
+  a.input.pillTertiary, .is-fullwidth.textarea, button.textarea.rectanglePrimary, button.textarea.pillPrimary,
+  input.textarea.rectanglePrimary[type=button],
+  input.textarea.pillPrimary[type=button],
+  input.textarea.rectanglePrimary[type=submit],
+  input.textarea.pillPrimary[type=submit],
+  a.textarea.rectanglePrimary,
+  a.textarea.pillPrimary, button.textarea.rectangleSecondary, button.textarea.pillSecondary,
+  input.textarea.rectangleSecondary[type=button],
+  input.textarea.pillSecondary[type=button],
+  input.textarea.rectangleSecondary[type=submit],
+  input.textarea.pillSecondary[type=submit],
+  a.textarea.rectangleSecondary,
+  a.textarea.pillSecondary, button.textarea.rectangleTertiary, button.textarea.pillTertiary,
+  input.textarea.rectangleTertiary[type=button],
+  input.textarea.pillTertiary[type=button],
+  input.textarea.rectangleTertiary[type=submit],
+  input.textarea.pillTertiary[type=submit],
+  a.textarea.rectangleTertiary,
+  a.textarea.pillTertiary {
     display: block;
     width: 100%; }
   .is-inline.input, .is-inline.textarea {
@@ -2442,11 +2581,33 @@ a.tag:hover {
     font-size: 0.75rem; }
   .select.is-medium {
     font-size: 1.25rem; }
-  .select.is-large, input.select[type=button], input.select[type=submit], .select.switch[type='checkbox'], .select.input[type=text], .select.input[type=password], .select.input[type=email], .select {
+  .select.is-large,
+  input.select[type=button],
+  input.select[type=submit], .select.switch[type='checkbox'], .select.input[type=text],
+  .select.input[type=password],
+  .select.input[type=email], .select {
     font-size: 1.5rem; }
   .select.is-disabled::after {
     border-color: #7a7a7a; }
-  .select.is-fullwidth, button.select.rectanglePrimary, button.select.pillPrimary, input.select.rectanglePrimary[type=button], input.select.pillPrimary[type=button], input.select.rectanglePrimary[type=submit], input.select.pillPrimary[type=submit], a.select.rectanglePrimary, a.select.pillPrimary, button.select.rectangleSecondary, button.select.pillSecondary, input.select.rectangleSecondary[type=button], input.select.pillSecondary[type=button], input.select.rectangleSecondary[type=submit], input.select.pillSecondary[type=submit], a.select.rectangleSecondary, a.select.pillSecondary, button.select.rectangleTertiary, button.select.pillTertiary, input.select.rectangleTertiary[type=button], input.select.pillTertiary[type=button], input.select.rectangleTertiary[type=submit], input.select.pillTertiary[type=submit], a.select.rectangleTertiary, a.select.pillTertiary {
+  .select.is-fullwidth, button.select.rectanglePrimary, button.select.pillPrimary,
+  input.select.rectanglePrimary[type=button],
+  input.select.pillPrimary[type=button],
+  input.select.rectanglePrimary[type=submit],
+  input.select.pillPrimary[type=submit],
+  a.select.rectanglePrimary,
+  a.select.pillPrimary, button.select.rectangleSecondary, button.select.pillSecondary,
+  input.select.rectangleSecondary[type=button],
+  input.select.pillSecondary[type=button],
+  input.select.rectangleSecondary[type=submit],
+  input.select.pillSecondary[type=submit],
+  a.select.rectangleSecondary,
+  a.select.pillSecondary, button.select.rectangleTertiary, button.select.pillTertiary,
+  input.select.rectangleTertiary[type=button],
+  input.select.pillTertiary[type=button],
+  input.select.rectangleTertiary[type=submit],
+  input.select.pillTertiary[type=submit],
+  a.select.rectangleTertiary,
+  a.select.pillTertiary {
     width: 100%; }
     .select.is-fullwidth select, button.select.rectanglePrimary select, button.select.pillPrimary select, input.select.rectanglePrimary[type=button] select, input.select.pillPrimary[type=button] select, input.select.rectanglePrimary[type=submit] select, input.select.pillPrimary[type=submit] select, a.select.rectanglePrimary select, a.select.pillPrimary select, button.select.rectangleSecondary select, button.select.pillSecondary select, input.select.rectangleSecondary[type=button] select, input.select.pillSecondary[type=button] select, input.select.rectangleSecondary[type=submit] select, input.select.pillSecondary[type=submit] select, a.select.rectangleSecondary select, a.select.pillSecondary select, button.select.rectangleTertiary select, button.select.pillTertiary select, input.select.rectangleTertiary[type=button] select, input.select.pillTertiary[type=button] select, input.select.rectangleTertiary[type=submit] select, input.select.pillTertiary[type=submit] select, a.select.rectangleTertiary select, a.select.pillTertiary select {
       width: 100%; }
@@ -2634,7 +2795,12 @@ a.tag:hover {
     font-size: 1.25rem; }
     .file.is-medium .file-icon .fa {
       font-size: 21px; }
-  .file.is-large, button.file, input.file[type=button], input.file[type=submit], a.file, .file.switch[type='checkbox'], .file.input[type=text], .file.input[type=password], .file.input[type=email], .file.select {
+  .file.is-large, button.file,
+  input.file[type=button],
+  input.file[type=submit],
+  a.file, .file.switch[type='checkbox'], .file.input[type=text],
+  .file.input[type=password],
+  .file.input[type=email], .file.select {
     font-size: 1.5rem; }
     .file.is-large .file-icon .fa, button.file .file-icon .fa, input.file[type=button] .file-icon .fa, input.file[type=submit] .file-icon .fa, a.file .file-icon .fa, .file.switch[type='checkbox'] .file-icon .fa, .file.input[type=text] .file-icon .fa, .file.input[type=password] .file-icon .fa, .file.input[type=email] .file-icon .fa, .file.select .file-icon .fa {
       font-size: 28px; }
@@ -2759,7 +2925,12 @@ a.tag:hover {
     font-size: 0.75rem; }
   .label.is-medium {
     font-size: 1.25rem; }
-  .label.is-large, button.label, input.label[type=button], input.label[type=submit], a.label, .label.switch[type='checkbox'], .label.input[type=text], .label.input[type=password], .label.input[type=email], .label.select {
+  .label.is-large, button.label,
+  input.label[type=button],
+  input.label[type=submit],
+  a.label, .label.switch[type='checkbox'], .label.input[type=text],
+  .label.input[type=password],
+  .label.input[type=email], .label.select {
     font-size: 1.5rem; }
 
 .help {
@@ -2896,7 +3067,12 @@ a.tag:hover {
     .field-label.is-medium {
       font-size: 1.25rem;
       padding-top: 0.375em; }
-    .field-label.is-large, button.field-label, input.field-label[type=button], input.field-label[type=submit], a.field-label, .field-label.switch[type='checkbox'], .field-label.input[type=text], .field-label.input[type=password], .field-label.input[type=email], .field-label.select {
+    .field-label.is-large, button.field-label,
+    input.field-label[type=button],
+    input.field-label[type=submit],
+    a.field-label, .field-label.switch[type='checkbox'], .field-label.input[type=text],
+    .field-label.input[type=password],
+    .field-label.input[type=email], .field-label.select {
       font-size: 1.5rem;
       padding-top: 0.375em; } }
 
@@ -2985,7 +3161,12 @@ a.tag:hover {
     font-size: 0.75rem; }
   .control.is-loading.is-medium:after {
     font-size: 1.25rem; }
-  .control.is-loading.is-large:after, button.control.is-loading:after, input.control.is-loading[type=button]:after, input.control.is-loading[type=submit]:after, a.control.is-loading:after, .control.is-loading.switch[type='checkbox']:after, .control.is-loading.input[type=text]:after, .control.is-loading.input[type=password]:after, .control.is-loading.input[type=email]:after, .control.is-loading.select:after {
+  .control.is-loading.is-large:after, button.control.is-loading:after,
+  input.control.is-loading[type=button]:after,
+  input.control.is-loading[type=submit]:after,
+  a.control.is-loading:after, .control.is-loading.switch[type='checkbox']:after, .control.is-loading.input[type=text]:after,
+  .control.is-loading.input[type=password]:after,
+  .control.is-loading.input[type=email]:after, .control.is-loading.select:after {
     font-size: 1.5rem; }
 
 /* Bulma Components */
@@ -3032,7 +3213,12 @@ a.tag:hover {
     font-size: 0.75rem; }
   .breadcrumb.is-medium {
     font-size: 1.25rem; }
-  .breadcrumb.is-large, button.breadcrumb, input.breadcrumb[type=button], input.breadcrumb[type=submit], a.breadcrumb, .breadcrumb.switch[type='checkbox'], .breadcrumb.input[type=text], .breadcrumb.input[type=password], .breadcrumb.input[type=email], .breadcrumb.select {
+  .breadcrumb.is-large, button.breadcrumb,
+  input.breadcrumb[type=button],
+  input.breadcrumb[type=submit],
+  a.breadcrumb, .breadcrumb.switch[type='checkbox'], .breadcrumb.input[type=text],
+  .breadcrumb.input[type=password],
+  .breadcrumb.input[type=email], .breadcrumb.select {
     font-size: 1.5rem; }
   .breadcrumb.has-arrow-separator li + li::before {
     content: "\02192"; }
@@ -3300,7 +3486,12 @@ button.dropdown-item {
     font-size: 0.75rem; }
   .menu.is-medium {
     font-size: 1.25rem; }
-  .menu.is-large, button.menu, input.menu[type=button], input.menu[type=submit], a.menu, .menu.switch[type='checkbox'], .menu.input[type=text], .menu.input[type=password], .menu.input[type=email], .menu.select {
+  .menu.is-large, button.menu,
+  input.menu[type=button],
+  input.menu[type=submit],
+  a.menu, .menu.switch[type='checkbox'], .menu.input[type=text],
+  .menu.input[type=password],
+  .menu.input[type=email], .menu.select {
     font-size: 1.5rem; }
 
 .menu-list {
@@ -3344,7 +3535,12 @@ button.dropdown-item {
     font-size: 0.75rem; }
   .message.is-medium {
     font-size: 1.25rem; }
-  .message.is-large, button.message, input.message[type=button], input.message[type=submit], a.message, .message.switch[type='checkbox'], .message.input[type=text], .message.input[type=password], .message.input[type=email], .message.select {
+  .message.is-large, button.message,
+  input.message[type=button],
+  input.message[type=submit],
+  a.message, .message.switch[type='checkbox'], .message.input[type=text],
+  .message.input[type=password],
+  .message.input[type=email], .message.select {
     font-size: 1.5rem; }
   .message.is-white {
     background-color: white; }
@@ -4332,7 +4528,12 @@ a.navbar-item,
     font-size: 0.75rem; }
   .pagination.is-medium {
     font-size: 1.25rem; }
-  .pagination.is-large, button.pagination, input.pagination[type=button], input.pagination[type=submit], a.pagination, .pagination.switch[type='checkbox'], .pagination.input[type=text], .pagination.input[type=password], .pagination.input[type=email], .pagination.select {
+  .pagination.is-large, button.pagination,
+  input.pagination[type=button],
+  input.pagination[type=submit],
+  a.pagination, .pagination.switch[type='checkbox'], .pagination.input[type=text],
+  .pagination.input[type=password],
+  .pagination.input[type=email], .pagination.select {
     font-size: 1.5rem; }
   .pagination.is-rounded .pagination-previous, .pagination.switch[type='checkbox'] .pagination-previous,
   .pagination.is-rounded .pagination-next,
@@ -4704,7 +4905,12 @@ label.panel-block {
     font-size: 0.75rem; }
   .tabs.is-medium {
     font-size: 1.25rem; }
-  .tabs.is-large, button.tabs, input.tabs[type=button], input.tabs[type=submit], a.tabs, .tabs.switch[type='checkbox'], .tabs.input[type=text], .tabs.input[type=password], .tabs.input[type=email], .tabs.select {
+  .tabs.is-large, button.tabs,
+  input.tabs[type=button],
+  input.tabs[type=submit],
+  a.tabs, .tabs.switch[type='checkbox'], .tabs.input[type=text],
+  .tabs.input[type=password],
+  .tabs.input[type=email], .tabs.select {
     font-size: 1.5rem; }
 
 /* Bulma Grid */
@@ -6970,13 +7176,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-weight: 700 !important; }
 
 .is-family-primary {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Sofia Pro" !important; }
 
 .is-family-secondary {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Sofia Pro" !important; }
 
 .is-family-sans-serif {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Sofia Pro" !important; }
 
 .is-family-monospace {
   font-family: monospace !important; }
@@ -7780,7 +7986,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   @media screen and (min-width: 1024px) {
     .section.is-medium {
       padding: 9rem 1.5rem; }
-    .section.is-large, button.section, input.section[type=button], input.section[type=submit], a.section, .section.switch[type='checkbox'], .section.input[type=text], .section.input[type=password], .section.input[type=email], .section.select {
+    .section.is-large, button.section,
+    input.section[type=button],
+    input.section[type=submit],
+    a.section, .section.switch[type='checkbox'], .section.input[type=text],
+    .section.input[type=password],
+    .section.input[type=email], .section.select {
       padding: 18rem 1.5rem; } }
 
 .footer {
@@ -9107,7 +9318,14 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 /**
  * 02 Basics
  */
-.primaryA, .backgroundInversePrimary, button.rectanglePrimary, button.pillPrimary, input.rectanglePrimary[type=button], input.pillPrimary[type=button], input.rectanglePrimary[type=submit], input.pillPrimary[type=submit], a.rectanglePrimary, a.pillPrimary, .switch[type='checkbox'] + label::before, .switch[type='checkbox'] + label:before, .switch[type='checkbox']:checked[type='checkbox'] + label:before, .is-checkradio[type='checkbox'] + label::before, .is-checkradio[type='checkbox'] + label:before, .is-checkradio[type='radio'] + label::before, .is-checkradio[type='radio'] + label:before, .contentInversePrimary, .borderInverseSelected, .is-checkradio[type='checkbox'], .is-checkradio[type='radio'] {
+.primaryA, .backgroundInversePrimary, button.rectanglePrimary, button.pillPrimary,
+input.rectanglePrimary[type=button],
+input.pillPrimary[type=button],
+input.rectanglePrimary[type=submit],
+input.pillPrimary[type=submit],
+a.rectanglePrimary,
+a.pillPrimary, .switch[type='checkbox'] + label::before, .switch[type='checkbox'] + label:before,
+.switch[type='checkbox']:checked[type='checkbox'] + label:before, .is-checkradio[type='checkbox'] + label::before, .is-checkradio[type='checkbox'] + label:before, .is-checkradio[type='radio'] + label::before, .is-checkradio[type='radio'] + label:before, .contentInversePrimary, .borderInverseSelected, .is-checkradio[type='checkbox'], .is-checkradio[type='radio'] {
   background-color: #000000; }
 
 .primaryB, .backgroundPrimary, .borderSelected {
@@ -9133,7 +9351,27 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .backgroundSecondary {
   background-color: #F6F6F6; }
 
-.backgroundTertiary, button.rectangleSecondary, button.pillSecondary, input.rectangleSecondary[type=button], input.pillSecondary[type=button], input.rectangleSecondary[type=submit], input.pillSecondary[type=submit], a.rectangleSecondary, a.pillSecondary, button.rectangleTertiary:hover, button.pillTertiary:hover, input.rectangleTertiary[type=button]:hover, input.pillTertiary[type=button]:hover, input.rectangleTertiary[type=submit]:hover, input.pillTertiary[type=submit]:hover, a.rectangleTertiary:hover, a.pillTertiary:hover, button.rectangleTertiary:active, button.pillTertiary:active, input.rectangleTertiary[type=button]:active, input.pillTertiary[type=button]:active, input.rectangleTertiary[type=submit]:active, input.pillTertiary[type=submit]:active, a.rectangleTertiary:active, a.pillTertiary:active, .input[type=text], .input[type=password], .input[type=email], .select select {
+.backgroundTertiary, button.rectangleSecondary, button.pillSecondary,
+input.rectangleSecondary[type=button],
+input.pillSecondary[type=button],
+input.rectangleSecondary[type=submit],
+input.pillSecondary[type=submit],
+a.rectangleSecondary,
+a.pillSecondary, button.rectangleTertiary:hover, button.pillTertiary:hover,
+input.rectangleTertiary[type=button]:hover,
+input.pillTertiary[type=button]:hover,
+input.rectangleTertiary[type=submit]:hover,
+input.pillTertiary[type=submit]:hover,
+a.rectangleTertiary:hover,
+a.pillTertiary:hover, button.rectangleTertiary:active, button.pillTertiary:active,
+input.rectangleTertiary[type=button]:active,
+input.pillTertiary[type=button]:active,
+input.rectangleTertiary[type=submit]:active,
+input.pillTertiary[type=submit]:active,
+a.rectangleTertiary:active,
+a.pillTertiary:active, .input[type=text],
+.input[type=password],
+.input[type=email], .select select {
   background-color: #EAEAEA; }
 
 .backgroundInverseSecondary {
@@ -9145,16 +9383,32 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 /**
  * 04 Background Extentions
  */
-.backgroundStateDisabled, button.rectanglePrimary:disabled, button.pillPrimary:disabled, input.rectanglePrimary[type=button]:disabled, input.pillPrimary[type=button]:disabled, input.rectanglePrimary[type=submit]:disabled, input.pillPrimary[type=submit]:disabled, a.rectanglePrimary:disabled, a.pillPrimary:disabled, button.rectangleSecondary:disabled, button.pillSecondary:disabled, input.rectangleSecondary[type=button]:disabled, input.pillSecondary[type=button]:disabled, input.rectangleSecondary[type=submit]:disabled, input.pillSecondary[type=submit]:disabled, a.rectangleSecondary:disabled, a.pillSecondary:disabled {
+.backgroundStateDisabled, button.rectanglePrimary:disabled, button.pillPrimary:disabled,
+input.rectanglePrimary[type=button]:disabled,
+input.pillPrimary[type=button]:disabled,
+input.rectanglePrimary[type=submit]:disabled,
+input.pillPrimary[type=submit]:disabled,
+a.rectanglePrimary:disabled,
+a.pillPrimary:disabled, button.rectangleSecondary:disabled, button.pillSecondary:disabled,
+input.rectangleSecondary[type=button]:disabled,
+input.pillSecondary[type=button]:disabled,
+input.rectangleSecondary[type=submit]:disabled,
+input.pillSecondary[type=submit]:disabled,
+a.rectangleSecondary:disabled,
+a.pillSecondary:disabled {
   background-color: #EAEAEA; }
 
 .backgroundLightAccent {
   background-color: #ECF8FD; }
 
-.backgroundLightPositive, .input.positive[type=text], .input.backgroundPositive[type=text], .input.positive[type=password], .input.backgroundPositive[type=password], .input.positive[type=email], .input.backgroundPositive[type=email], .select.positive select, .select.backgroundPositive select {
+.backgroundLightPositive, .input.positive[type=text], .input.backgroundPositive[type=text],
+.input.positive[type=password], .input.backgroundPositive[type=password],
+.input.positive[type=email], .input.backgroundPositive[type=email], .select.positive select, .select.backgroundPositive select {
   background-color: #EFFBF6; }
 
-.backgroundLightNegative, .input.negative[type=text], .input.backgroundNegative[type=text], .input.negative[type=password], .input.backgroundNegative[type=password], .input.negative[type=email], .input.backgroundNegative[type=email], .select.negative select, .select.backgroundNegative select {
+.backgroundLightNegative, .input.negative[type=text], .input.backgroundNegative[type=text],
+.input.negative[type=password], .input.backgroundNegative[type=password],
+.input.negative[type=email], .input.backgroundNegative[type=email], .select.negative select, .select.backgroundNegative select {
   background-color: #FDF0EC; }
 
 .backgroundLightWarning {
@@ -9169,13 +9423,61 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 /**
  * 05 Content
  */
-.contentPrimary, button.rectangleSecondary, button.pillSecondary, input.rectangleSecondary[type=button], input.pillSecondary[type=button], input.rectangleSecondary[type=submit], input.pillSecondary[type=submit], a.rectangleSecondary, a.pillSecondary, button.rectangleSecondary:hover, button.pillSecondary:hover, input.rectangleSecondary[type=button]:hover, input.pillSecondary[type=button]:hover, input.rectangleSecondary[type=submit]:hover, input.pillSecondary[type=submit]:hover, a.rectangleSecondary:hover, a.pillSecondary:hover, button.rectangleSecondary:active, button.pillSecondary:active, input.rectangleSecondary[type=button]:active, input.pillSecondary[type=button]:active, input.rectangleSecondary[type=submit]:active, input.pillSecondary[type=submit]:active, a.rectangleSecondary:active, a.pillSecondary:active, button.rectangleSecondary:enabled, button.pillSecondary:enabled, input.rectangleSecondary[type=button]:enabled, input.pillSecondary[type=button]:enabled, input.rectangleSecondary[type=submit]:enabled, input.pillSecondary[type=submit]:enabled, a.rectangleSecondary:enabled, a.pillSecondary:enabled, button.rectangleTertiary:hover, button.pillTertiary:hover, input.rectangleTertiary[type=button]:hover, input.pillTertiary[type=button]:hover, input.rectangleTertiary[type=submit]:hover, input.pillTertiary[type=submit]:hover, a.rectangleTertiary:hover, a.pillTertiary:hover, button.rectangleTertiary:active, button.pillTertiary:active, input.rectangleTertiary[type=button]:active, input.pillTertiary[type=button]:active, input.rectangleTertiary[type=submit]:active, input.pillTertiary[type=submit]:active, a.rectangleTertiary:active, a.pillTertiary:active, button.rectangleTertiary:enabled, button.pillTertiary:enabled, input.rectangleTertiary[type=button]:enabled, input.pillTertiary[type=button]:enabled, input.rectangleTertiary[type=submit]:enabled, input.pillTertiary[type=submit]:enabled, a.rectangleTertiary:enabled, a.pillTertiary:enabled, .input[type=text]:focus, .input[type=text]:active, .input[type=password]:focus, .input[type=password]:active, .input[type=email]:focus, .input[type=email]:active, .select select:focus, .select select:active {
+.contentPrimary, button.rectangleSecondary, button.pillSecondary,
+input.rectangleSecondary[type=button],
+input.pillSecondary[type=button],
+input.rectangleSecondary[type=submit],
+input.pillSecondary[type=submit],
+a.rectangleSecondary,
+a.pillSecondary, button.rectangleSecondary:hover, button.pillSecondary:hover,
+input.rectangleSecondary[type=button]:hover,
+input.pillSecondary[type=button]:hover,
+input.rectangleSecondary[type=submit]:hover,
+input.pillSecondary[type=submit]:hover,
+a.rectangleSecondary:hover,
+a.pillSecondary:hover, button.rectangleSecondary:active, button.pillSecondary:active,
+input.rectangleSecondary[type=button]:active,
+input.pillSecondary[type=button]:active,
+input.rectangleSecondary[type=submit]:active,
+input.pillSecondary[type=submit]:active,
+a.rectangleSecondary:active,
+a.pillSecondary:active, button.rectangleSecondary:enabled, button.pillSecondary:enabled,
+input.rectangleSecondary[type=button]:enabled,
+input.pillSecondary[type=button]:enabled,
+input.rectangleSecondary[type=submit]:enabled,
+input.pillSecondary[type=submit]:enabled,
+a.rectangleSecondary:enabled,
+a.pillSecondary:enabled, button.rectangleTertiary:hover, button.pillTertiary:hover,
+input.rectangleTertiary[type=button]:hover,
+input.pillTertiary[type=button]:hover,
+input.rectangleTertiary[type=submit]:hover,
+input.pillTertiary[type=submit]:hover,
+a.rectangleTertiary:hover,
+a.pillTertiary:hover, button.rectangleTertiary:active, button.pillTertiary:active,
+input.rectangleTertiary[type=button]:active,
+input.pillTertiary[type=button]:active,
+input.rectangleTertiary[type=submit]:active,
+input.pillTertiary[type=submit]:active,
+a.rectangleTertiary:active,
+a.pillTertiary:active, button.rectangleTertiary:enabled, button.pillTertiary:enabled,
+input.rectangleTertiary[type=button]:enabled,
+input.pillTertiary[type=button]:enabled,
+input.rectangleTertiary[type=submit]:enabled,
+input.pillTertiary[type=submit]:enabled,
+a.rectangleTertiary:enabled,
+a.pillTertiary:enabled, .input[type=text]:focus, .input[type=text]:active,
+.input[type=password]:focus,
+.input[type=password]:active,
+.input[type=email]:focus,
+.input[type=email]:active, .select select:focus, .select select:active {
   color: #000000; }
 
 .contentSecondary {
   color: #595959; }
 
-.contentTertiary, .input[type=text], .input[type=password], .input[type=email], .field .help, .select select {
+.contentTertiary, .input[type=text],
+.input[type=password],
+.input[type=email], .field .help, .select select {
   color: #949494; }
 
 .contentInversePrimary {
@@ -9191,7 +9493,25 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 /**
  * 06 Text Extentions
  */
-.contentStateDisabled, button.rectanglePrimary:disabled, button.pillPrimary:disabled, input.rectanglePrimary[type=button]:disabled, input.pillPrimary[type=button]:disabled, input.rectanglePrimary[type=submit]:disabled, input.pillPrimary[type=submit]:disabled, a.rectanglePrimary:disabled, a.pillPrimary:disabled, button.rectangleSecondary:disabled, button.pillSecondary:disabled, input.rectangleSecondary[type=button]:disabled, input.pillSecondary[type=button]:disabled, input.rectangleSecondary[type=submit]:disabled, input.pillSecondary[type=submit]:disabled, a.rectangleSecondary:disabled, a.pillSecondary:disabled, button.rectangleTertiary:disabled, button.pillTertiary:disabled, input.rectangleTertiary[type=button]:disabled, input.pillTertiary[type=button]:disabled, input.rectangleTertiary[type=submit]:disabled, input.pillTertiary[type=submit]:disabled, a.rectangleTertiary:disabled, a.pillTertiary:disabled {
+.contentStateDisabled, button.rectanglePrimary:disabled, button.pillPrimary:disabled,
+input.rectanglePrimary[type=button]:disabled,
+input.pillPrimary[type=button]:disabled,
+input.rectanglePrimary[type=submit]:disabled,
+input.pillPrimary[type=submit]:disabled,
+a.rectanglePrimary:disabled,
+a.pillPrimary:disabled, button.rectangleSecondary:disabled, button.pillSecondary:disabled,
+input.rectangleSecondary[type=button]:disabled,
+input.pillSecondary[type=button]:disabled,
+input.rectangleSecondary[type=submit]:disabled,
+input.pillSecondary[type=submit]:disabled,
+a.rectangleSecondary:disabled,
+a.pillSecondary:disabled, button.rectangleTertiary:disabled, button.pillTertiary:disabled,
+input.rectangleTertiary[type=button]:disabled,
+input.pillTertiary[type=button]:disabled,
+input.rectangleTertiary[type=submit]:disabled,
+input.pillTertiary[type=submit]:disabled,
+a.rectangleTertiary:disabled,
+a.pillTertiary:disabled {
   color: #AFAFAF; }
 
 .contentAccent {
@@ -9352,19 +9672,73 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 /**
  * 04 - Label
  */
-.labelLarge, button.rectanglePrimary, button.pillPrimary, input.rectanglePrimary[type=button], input.pillPrimary[type=button], input.rectanglePrimary[type=submit], input.pillPrimary[type=submit], a.rectanglePrimary, a.pillPrimary, button.rectangleSecondary, button.pillSecondary, input.rectangleSecondary[type=button], input.pillSecondary[type=button], input.rectangleSecondary[type=submit], input.pillSecondary[type=submit], a.rectangleSecondary, a.pillSecondary, button.rectangleTertiary, button.pillTertiary, input.rectangleTertiary[type=button], input.pillTertiary[type=button], input.rectangleTertiary[type=submit], input.pillTertiary[type=submit], a.rectangleTertiary, a.pillTertiary {
+.labelLarge, button.rectanglePrimary, button.pillPrimary,
+input.rectanglePrimary[type=button],
+input.pillPrimary[type=button],
+input.rectanglePrimary[type=submit],
+input.pillPrimary[type=submit],
+a.rectanglePrimary,
+a.pillPrimary, button.rectangleSecondary, button.pillSecondary,
+input.rectangleSecondary[type=button],
+input.pillSecondary[type=button],
+input.rectangleSecondary[type=submit],
+input.pillSecondary[type=submit],
+a.rectangleSecondary,
+a.pillSecondary, button.rectangleTertiary, button.pillTertiary,
+input.rectangleTertiary[type=button],
+input.pillTertiary[type=button],
+input.rectangleTertiary[type=submit],
+input.pillTertiary[type=submit],
+a.rectangleTertiary,
+a.pillTertiary {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px; }
 
-.labelMedium, button.rectanglePrimary.mediumLabel, button.mediumLabel.pillPrimary, input.rectanglePrimary.mediumLabel[type=button], input.mediumLabel.pillPrimary[type=button], input.rectanglePrimary.mediumLabel[type=submit], input.mediumLabel.pillPrimary[type=submit], a.rectanglePrimary.mediumLabel, a.mediumLabel.pillPrimary, button.rectangleSecondary.mediumLabel, button.mediumLabel.pillSecondary, input.rectangleSecondary.mediumLabel[type=button], input.mediumLabel.pillSecondary[type=button], input.rectangleSecondary.mediumLabel[type=submit], input.mediumLabel.pillSecondary[type=submit], a.rectangleSecondary.mediumLabel, a.mediumLabel.pillSecondary, button.rectangleTertiary.mediumLabel, button.mediumLabel.pillTertiary, input.rectangleTertiary.mediumLabel[type=button], input.mediumLabel.pillTertiary[type=button], input.rectangleTertiary.mediumLabel[type=submit], input.mediumLabel.pillTertiary[type=submit], a.rectangleTertiary.mediumLabel, a.mediumLabel.pillTertiary {
+.labelMedium, button.rectanglePrimary.mediumLabel, button.mediumLabel.pillPrimary,
+input.rectanglePrimary.mediumLabel[type=button],
+input.mediumLabel.pillPrimary[type=button],
+input.rectanglePrimary.mediumLabel[type=submit],
+input.mediumLabel.pillPrimary[type=submit],
+a.rectanglePrimary.mediumLabel,
+a.mediumLabel.pillPrimary, button.rectangleSecondary.mediumLabel, button.mediumLabel.pillSecondary,
+input.rectangleSecondary.mediumLabel[type=button],
+input.mediumLabel.pillSecondary[type=button],
+input.rectangleSecondary.mediumLabel[type=submit],
+input.mediumLabel.pillSecondary[type=submit],
+a.rectangleSecondary.mediumLabel,
+a.mediumLabel.pillSecondary, button.rectangleTertiary.mediumLabel, button.mediumLabel.pillTertiary,
+input.rectangleTertiary.mediumLabel[type=button],
+input.mediumLabel.pillTertiary[type=button],
+input.rectangleTertiary.mediumLabel[type=submit],
+input.mediumLabel.pillTertiary[type=submit],
+a.rectangleTertiary.mediumLabel,
+a.mediumLabel.pillTertiary {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px; }
 
-.labelSmall, button.rectanglePrimary.smallLabel, button.smallLabel.pillPrimary, input.rectanglePrimary.smallLabel[type=button], input.smallLabel.pillPrimary[type=button], input.rectanglePrimary.smallLabel[type=submit], input.smallLabel.pillPrimary[type=submit], a.rectanglePrimary.smallLabel, a.smallLabel.pillPrimary, button.rectangleSecondary.smallLabel, button.smallLabel.pillSecondary, input.rectangleSecondary.smallLabel[type=button], input.smallLabel.pillSecondary[type=button], input.rectangleSecondary.smallLabel[type=submit], input.smallLabel.pillSecondary[type=submit], a.rectangleSecondary.smallLabel, a.smallLabel.pillSecondary, button.rectangleTertiary.smallLabel, button.smallLabel.pillTertiary, input.rectangleTertiary.smallLabel[type=button], input.smallLabel.pillTertiary[type=button], input.rectangleTertiary.smallLabel[type=submit], input.smallLabel.pillTertiary[type=submit], a.rectangleTertiary.smallLabel, a.smallLabel.pillTertiary, .field .help {
+.labelSmall, button.rectanglePrimary.smallLabel, button.smallLabel.pillPrimary,
+input.rectanglePrimary.smallLabel[type=button],
+input.smallLabel.pillPrimary[type=button],
+input.rectanglePrimary.smallLabel[type=submit],
+input.smallLabel.pillPrimary[type=submit],
+a.rectanglePrimary.smallLabel,
+a.smallLabel.pillPrimary, button.rectangleSecondary.smallLabel, button.smallLabel.pillSecondary,
+input.rectangleSecondary.smallLabel[type=button],
+input.smallLabel.pillSecondary[type=button],
+input.rectangleSecondary.smallLabel[type=submit],
+input.smallLabel.pillSecondary[type=submit],
+a.rectangleSecondary.smallLabel,
+a.smallLabel.pillSecondary, button.rectangleTertiary.smallLabel, button.smallLabel.pillTertiary,
+input.rectangleTertiary.smallLabel[type=button],
+input.smallLabel.pillTertiary[type=button],
+input.rectangleTertiary.smallLabel[type=submit],
+input.smallLabel.pillTertiary[type=submit],
+a.rectangleTertiary.smallLabel,
+a.smallLabel.pillTertiary, .field .help {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -9379,7 +9753,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 /**
  * Buttons
  */
-button, input[type=button], input[type=submit], a {
+button,
+input[type=button],
+input[type=submit],
+a {
   height: 56px;
   /**
    * Rectangle
@@ -9387,42 +9764,129 @@ button, input[type=button], input[type=submit], a {
   /**
    * Pill
    */ }
-  button.rectanglePrimary, button.pillPrimary, input[type=button].rectanglePrimary, input.pillPrimary[type=button], input[type=submit].rectanglePrimary, input.pillPrimary[type=submit], a.rectanglePrimary, a.pillPrimary {
+  button.rectanglePrimary, button.pillPrimary,
+  input[type=button].rectanglePrimary,
+  input.pillPrimary[type=button],
+  input[type=submit].rectanglePrimary,
+  input.pillPrimary[type=submit],
+  a.rectanglePrimary,
+  a.pillPrimary {
     color: #FFFFFF;
     border: 0; }
-    button.rectanglePrimary:disabled, button.pillPrimary:disabled, input[type=button].rectanglePrimary:disabled, input.pillPrimary[type=button]:disabled, input[type=submit].rectanglePrimary:disabled, input.pillPrimary[type=submit]:disabled, a.rectanglePrimary:disabled, a.pillPrimary:disabled {
+    button.rectanglePrimary:disabled, button.pillPrimary:disabled,
+    input[type=button].rectanglePrimary:disabled,
+    input.pillPrimary[type=button]:disabled,
+    input[type=submit].rectanglePrimary:disabled,
+    input.pillPrimary[type=submit]:disabled,
+    a.rectanglePrimary:disabled,
+    a.pillPrimary:disabled {
       pointer-events: none; }
-    button.rectanglePrimary:hover, button.pillPrimary:hover, input[type=button].rectanglePrimary:hover, input.pillPrimary[type=button]:hover, input[type=submit].rectanglePrimary:hover, input.pillPrimary[type=submit]:hover, a.rectanglePrimary:hover, a.pillPrimary:hover {
+    button.rectanglePrimary:hover, button.pillPrimary:hover,
+    input[type=button].rectanglePrimary:hover,
+    input.pillPrimary[type=button]:hover,
+    input[type=submit].rectanglePrimary:hover,
+    input.pillPrimary[type=submit]:hover,
+    a.rectanglePrimary:hover,
+    a.pillPrimary:hover {
       opacity: 0.8;
       color: #FFFFFF; }
-    button.rectanglePrimary:active, button.pillPrimary:active, input[type=button].rectanglePrimary:active, input.pillPrimary[type=button]:active, input[type=submit].rectanglePrimary:active, input.pillPrimary[type=submit]:active, a.rectanglePrimary:active, a.pillPrimary:active {
+    button.rectanglePrimary:active, button.pillPrimary:active,
+    input[type=button].rectanglePrimary:active,
+    input.pillPrimary[type=button]:active,
+    input[type=submit].rectanglePrimary:active,
+    input.pillPrimary[type=submit]:active,
+    a.rectanglePrimary:active,
+    a.pillPrimary:active {
       opacity: 0.7;
       color: #FFFFFF; }
-    button.rectanglePrimary:enabled, button.pillPrimary:enabled, input[type=button].rectanglePrimary:enabled, input.pillPrimary[type=button]:enabled, input[type=submit].rectanglePrimary:enabled, input.pillPrimary[type=submit]:enabled, a.rectanglePrimary:enabled, a.pillPrimary:enabled {
+    button.rectanglePrimary:enabled, button.pillPrimary:enabled,
+    input[type=button].rectanglePrimary:enabled,
+    input.pillPrimary[type=button]:enabled,
+    input[type=submit].rectanglePrimary:enabled,
+    input.pillPrimary[type=submit]:enabled,
+    a.rectanglePrimary:enabled,
+    a.pillPrimary:enabled {
       color: #FFFFFF; }
-  button.rectangleSecondary, button.pillSecondary, input[type=button].rectangleSecondary, input.pillSecondary[type=button], input[type=submit].rectangleSecondary, input.pillSecondary[type=submit], a.rectangleSecondary, a.pillSecondary {
+  button.rectangleSecondary, button.pillSecondary,
+  input[type=button].rectangleSecondary,
+  input.pillSecondary[type=button],
+  input[type=submit].rectangleSecondary,
+  input.pillSecondary[type=submit],
+  a.rectangleSecondary,
+  a.pillSecondary {
     border: 0; }
-    button.rectangleSecondary:disabled, button.pillSecondary:disabled, input[type=button].rectangleSecondary:disabled, input.pillSecondary[type=button]:disabled, input[type=submit].rectangleSecondary:disabled, input.pillSecondary[type=submit]:disabled, a.rectangleSecondary:disabled, a.pillSecondary:disabled {
+    button.rectangleSecondary:disabled, button.pillSecondary:disabled,
+    input[type=button].rectangleSecondary:disabled,
+    input.pillSecondary[type=button]:disabled,
+    input[type=submit].rectangleSecondary:disabled,
+    input.pillSecondary[type=submit]:disabled,
+    a.rectangleSecondary:disabled,
+    a.pillSecondary:disabled {
       pointer-events: none; }
-    button.rectangleSecondary:hover, button.pillSecondary:hover, input[type=button].rectangleSecondary:hover, input.pillSecondary[type=button]:hover, input[type=submit].rectangleSecondary:hover, input.pillSecondary[type=submit]:hover, a.rectangleSecondary:hover, a.pillSecondary:hover {
+    button.rectangleSecondary:hover, button.pillSecondary:hover,
+    input[type=button].rectangleSecondary:hover,
+    input.pillSecondary[type=button]:hover,
+    input[type=submit].rectangleSecondary:hover,
+    input.pillSecondary[type=submit]:hover,
+    a.rectangleSecondary:hover,
+    a.pillSecondary:hover {
       opacity: 0.82; }
-    button.rectangleSecondary:active, button.pillSecondary:active, input[type=button].rectangleSecondary:active, input.pillSecondary[type=button]:active, input[type=submit].rectangleSecondary:active, input.pillSecondary[type=submit]:active, a.rectangleSecondary:active, a.pillSecondary:active {
+    button.rectangleSecondary:active, button.pillSecondary:active,
+    input[type=button].rectangleSecondary:active,
+    input.pillSecondary[type=button]:active,
+    input[type=submit].rectangleSecondary:active,
+    input.pillSecondary[type=submit]:active,
+    a.rectangleSecondary:active,
+    a.pillSecondary:active {
       opacity: 0.7; }
-  button.rectangleTertiary, button.pillTertiary, input[type=button].rectangleTertiary, input.pillTertiary[type=button], input[type=submit].rectangleTertiary, input.pillTertiary[type=submit], a.rectangleTertiary, a.pillTertiary {
+  button.rectangleTertiary, button.pillTertiary,
+  input[type=button].rectangleTertiary,
+  input.pillTertiary[type=button],
+  input[type=submit].rectangleTertiary,
+  input.pillTertiary[type=submit],
+  a.rectangleTertiary,
+  a.pillTertiary {
     border: 0; }
-    button.rectangleTertiary:disabled, button.pillTertiary:disabled, input[type=button].rectangleTertiary:disabled, input.pillTertiary[type=button]:disabled, input[type=submit].rectangleTertiary:disabled, input.pillTertiary[type=submit]:disabled, a.rectangleTertiary:disabled, a.pillTertiary:disabled {
+    button.rectangleTertiary:disabled, button.pillTertiary:disabled,
+    input[type=button].rectangleTertiary:disabled,
+    input.pillTertiary[type=button]:disabled,
+    input[type=submit].rectangleTertiary:disabled,
+    input.pillTertiary[type=submit]:disabled,
+    a.rectangleTertiary:disabled,
+    a.pillTertiary:disabled {
       pointer-events: none; }
-    button.rectangleTertiary:hover, button.pillTertiary:hover, input[type=button].rectangleTertiary:hover, input.pillTertiary[type=button]:hover, input[type=submit].rectangleTertiary:hover, input.pillTertiary[type=submit]:hover, a.rectangleTertiary:hover, a.pillTertiary:hover {
+    button.rectangleTertiary:hover, button.pillTertiary:hover,
+    input[type=button].rectangleTertiary:hover,
+    input.pillTertiary[type=button]:hover,
+    input[type=submit].rectangleTertiary:hover,
+    input.pillTertiary[type=submit]:hover,
+    a.rectangleTertiary:hover,
+    a.pillTertiary:hover {
       opacity: 0.82; }
-    button.rectangleTertiary:active, button.pillTertiary:active, input[type=button].rectangleTertiary:active, input.pillTertiary[type=button]:active, input[type=submit].rectangleTertiary:active, input.pillTertiary[type=submit]:active, a.rectangleTertiary:active, a.pillTertiary:active {
+    button.rectangleTertiary:active, button.pillTertiary:active,
+    input[type=button].rectangleTertiary:active,
+    input.pillTertiary[type=button]:active,
+    input[type=submit].rectangleTertiary:active,
+    input.pillTertiary[type=submit]:active,
+    a.rectangleTertiary:active,
+    a.pillTertiary:active {
       opacity: 0.7; }
-  button.pillPrimary, input[type=button].pillPrimary, input[type=submit].pillPrimary, a.pillPrimary {
+  button.pillPrimary,
+  input[type=button].pillPrimary,
+  input[type=submit].pillPrimary,
+  a.pillPrimary {
     width: auto !important;
     border-radius: 100px; }
-  button.pillSecondary, input[type=button].pillSecondary, input[type=submit].pillSecondary, a.pillSecondary {
+  button.pillSecondary,
+  input[type=button].pillSecondary,
+  input[type=submit].pillSecondary,
+  a.pillSecondary {
     width: auto !important;
     border-radius: 100px; }
-  button.pillTertiary, input[type=button].pillTertiary, input[type=submit].pillTertiary, a.pillTertiary {
+  button.pillTertiary,
+  input[type=button].pillTertiary,
+  input[type=submit].pillTertiary,
+  a.pillTertiary {
     width: auto !important;
     border-radius: 100px; }
 
@@ -9432,7 +9896,8 @@ button, input[type=button], input[type=submit], a {
 /**
  * Switch
  */
-.switch[type='checkbox']:checked + label:before, .switch[type='checkbox']:checked[type='checkbox'] + label:before {
+.switch[type='checkbox']:checked + label:before,
+.switch[type='checkbox']:checked[type='checkbox'] + label:before {
   background-color: #000000;
   border: 0; }
 
@@ -9463,25 +9928,57 @@ button, input[type=button], input[type=submit], a {
 /**
  * Inputs
  */
-.input[type=text], .input[type=password], .input[type=email] {
+.input[type=text],
+.input[type=password],
+.input[type=email] {
   border: 2px solid transparent;
   border-radius: 0;
   height: 56px; }
-  .input[type=text]:focus, .input[type=text]:active, .input[type=password]:focus, .input[type=password]:active, .input[type=email]:focus, .input[type=email]:active {
+  .input[type=text]:focus, .input[type=text]:active,
+  .input[type=password]:focus,
+  .input[type=password]:active,
+  .input[type=email]:focus,
+  .input[type=email]:active {
     background-color: #FFFFFF;
     border: 2px solid #000000;
     box-shadow: none; }
-  .input[type=text]:enabled, .input[type=password]:enabled, .input[type=email]:enabled {
+  .input[type=text]:enabled,
+  .input[type=password]:enabled,
+  .input[type=email]:enabled {
     color: #000000; }
-  .input[type=text].positive, .input.backgroundPositive[type=text], .input[type=password].positive, .input.backgroundPositive[type=password], .input[type=email].positive, .input.backgroundPositive[type=email] {
+  .input[type=text].positive, .input.backgroundPositive[type=text],
+  .input[type=password].positive,
+  .input.backgroundPositive[type=password],
+  .input[type=email].positive,
+  .input.backgroundPositive[type=email] {
     border-bottom: 2px solid #33CC8C; }
-    .input[type=text].positive:focus, .input.backgroundPositive[type=text]:focus, .input[type=text].positive:active, .input.backgroundPositive[type=text]:active, .input[type=password].positive:focus, .input.backgroundPositive[type=password]:focus, .input[type=password].positive:active, .input.backgroundPositive[type=password]:active, .input[type=email].positive:focus, .input.backgroundPositive[type=email]:focus, .input[type=email].positive:active, .input.backgroundPositive[type=email]:active {
+    .input[type=text].positive:focus, .input.backgroundPositive[type=text]:focus, .input[type=text].positive:active, .input.backgroundPositive[type=text]:active,
+    .input[type=password].positive:focus,
+    .input.backgroundPositive[type=password]:focus,
+    .input[type=password].positive:active,
+    .input.backgroundPositive[type=password]:active,
+    .input[type=email].positive:focus,
+    .input.backgroundPositive[type=email]:focus,
+    .input[type=email].positive:active,
+    .input.backgroundPositive[type=email]:active {
       border-top: 2px solid transparent;
       border-left: 2px solid transparent;
       border-right: 2px solid transparent; }
-  .input[type=text].negative, .input.backgroundNegative[type=text], .input[type=password].negative, .input.backgroundNegative[type=password], .input[type=email].negative, .input.backgroundNegative[type=email] {
+  .input[type=text].negative, .input.backgroundNegative[type=text],
+  .input[type=password].negative,
+  .input.backgroundNegative[type=password],
+  .input[type=email].negative,
+  .input.backgroundNegative[type=email] {
     border-bottom: 2px solid #EB4114; }
-    .input[type=text].negative:focus, .input.backgroundNegative[type=text]:focus, .input[type=text].negative:active, .input.backgroundNegative[type=text]:active, .input[type=password].negative:focus, .input.backgroundNegative[type=password]:focus, .input[type=password].negative:active, .input.backgroundNegative[type=password]:active, .input[type=email].negative:focus, .input.backgroundNegative[type=email]:focus, .input[type=email].negative:active, .input.backgroundNegative[type=email]:active {
+    .input[type=text].negative:focus, .input.backgroundNegative[type=text]:focus, .input[type=text].negative:active, .input.backgroundNegative[type=text]:active,
+    .input[type=password].negative:focus,
+    .input.backgroundNegative[type=password]:focus,
+    .input[type=password].negative:active,
+    .input.backgroundNegative[type=password]:active,
+    .input[type=email].negative:focus,
+    .input.backgroundNegative[type=email]:focus,
+    .input[type=email].negative:active,
+    .input.backgroundNegative[type=email]:active {
       border-top: 2px solid transparent;
       border-left: 2px solid transparent;
       border-right: 2px solid transparent; }

@@ -6,3 +6,6 @@
   url('../resources/fonts/BuenosAires.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
   url('../resources/fonts/BuenosAires.svg#BuenosAires-Regular') format('svg'); /* iOS 4.1- */
 }
+
+// Import font 'Sofia Pro'
+@import '../node_modules/@sorabhtomar/sofia-pro/stylesheet.css';
