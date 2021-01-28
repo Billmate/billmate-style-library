@@ -2,6 +2,7 @@
  * 01 Color palette
  */
 @import url(../node_modules/@sorabhtomar/sofia-pro/stylesheet.css);
+@import url(../node_modules/fontawesome5-webfont/css/fontawesome-all.css);
 @font-face {
   font-family: 'BuenosAires';
   src: url("../resources/fonts/BuenosAires.eot");

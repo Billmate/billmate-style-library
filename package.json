@@ -27,7 +27,8 @@
     "bulma": "^0.9.0",
     "bulma-checkradio": "^1.1.1",
     "bulma-switch": "^2.0.0",
-    "@sorabhtomar/sofia-pro": "^1.0.0"
+    "@sorabhtomar/sofia-pro": "^1.0.0",
+    "fontawesome5-webfont": "^5.0.4"
   },
   "devDependencies": {
     "node-sass": "^5.0.0",
