@@ -2,8 +2,12 @@
  * Buttons
  */
 
-button, input[type=button], input[type=submit], a {
+button,
+input[type=button],
+input[type=submit],
+a {
   @extend .is-large;
+
   height: 56px;
 
   /**
@@ -14,6 +18,7 @@ button, input[type=button], input[type=submit], a {
     @extend .is-fullwidth;
     @extend .labelLarge;
     @extend .backgroundInversePrimary;
+
     color: $white;
     border: 0;
 
@@ -30,6 +35,7 @@ button, input[type=button], input[type=submit], a {
     &:disabled {
       @extend .backgroundStateDisabled;
       @extend .contentStateDisabled;
+
       pointer-events: none;
     }
 
@@ -54,6 +60,7 @@ button, input[type=button], input[type=submit], a {
     @extend .labelLarge;
     @extend .backgroundTertiary;
     @extend .contentPrimary;
+
     border: 0;
 
     // Medium button
@@ -69,16 +76,19 @@ button, input[type=button], input[type=submit], a {
     &:disabled {
       @extend .backgroundStateDisabled;
       @extend .contentStateDisabled;
+
       pointer-events: none;
     }
 
     &:hover {
       @extend .contentPrimary;
+
       opacity: 0.82;
     }
 
     &:active {
       @extend .contentPrimary;
+
       opacity: 0.7;
     }
 
@@ -91,6 +101,7 @@ button, input[type=button], input[type=submit], a {
   &.rectangleTertiary {
     @extend .is-fullwidth;
     @extend .labelLarge;
+
     border: 0;
 
     // Medium button
@@ -105,18 +116,21 @@ button, input[type=button], input[type=submit], a {
 
     &:disabled {
       @extend .contentStateDisabled;
+
       pointer-events: none;
     }
 
     &:hover {
       @extend .backgroundTertiary;
       @extend .contentPrimary;
+
       opacity: 0.82;
     }
 
     &:active {
       @extend .backgroundTertiary;
       @extend .contentPrimary;
+
       opacity: 0.7;
     }
 
@@ -131,6 +145,7 @@ button, input[type=button], input[type=submit], a {
   // Pill Primary
   &.pillPrimary {
     @extend .rectanglePrimary;
+
     width: auto !important;
     border-radius: 100px;
   }
@@ -138,6 +153,7 @@ button, input[type=button], input[type=submit], a {
   // Pill Secondary
   &.pillSecondary {
     @extend .rectangleSecondary;
+
     width: auto !important;
     border-radius: 100px;
   }
@@ -145,6 +161,7 @@ button, input[type=button], input[type=submit], a {
   // Pill Tertiary
   &.pillTertiary {
     @extend .rectangleTertiary;
+
     width: auto !important;
     border-radius: 100px;
   }

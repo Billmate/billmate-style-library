@@ -7,11 +7,14 @@
   select {
     @extend .backgroundTertiary;
     @extend .contentTertiary;
+
     border: 0;
     border-radius: 0;
 
-    &:focus, &:active {
+    &:focus,
+    &:active {
       @extend .contentPrimary;
+
       background-color: $white;
       border: 2px solid $black;
       box-shadow: none;
@@ -22,9 +25,11 @@
   &.positive {
     select {
       @extend .backgroundLightPositive;
+
       border-bottom: 2px solid $green400;
 
-      &:focus, &:active {
+      &:focus,
+      &:active {
         border-top: 0;
         border-left: 0;
         border-right: 0;
@@ -36,9 +41,11 @@
   &.negative {
     select {
       @extend .backgroundLightNegative;
+
       border-bottom: 2px solid $red400;
 
-      &:focus, &:active {
+      &:focus,
+      &:active {
         border-top: 0;
         border-left: 0;
         border-right: 0;

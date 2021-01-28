@@ -9,20 +9,23 @@
   @extend .is-large;
   @extend .is-rounded;
 
-  &[type='checkbox']+label {
+  &[type='checkbox'] + label {
     @extend .paragraphSmall;
   }
 
   // Active state
-  &+label {
-    &::before, &:before {
+  & + label {
+    &::before,
+    &:before {
       @extend .backgroundInversePrimary;
     }
   }
 
   // Disabled state
-  &:checked+label:before, &:checked[type='checkbox']+label:before {
+  &:checked + label:before,
+  &:checked[type='checkbox'] + label:before {
     @extend .backgroundInversePrimary;
+
     background-color: $black;
     border: 0;
   }
@@ -33,34 +36,40 @@
  */
 .is-checkradio[type='checkbox'] {
   @extend .primaryA;
+
   border: 0;
 
   // Active state
-  &+label {
-    &::before, &:before {
+  & + label {
+    &::before,
+    &:before {
       // contentTertiary
       @extend .backgroundInversePrimary;
+
       border-radius: 0;
       border: 0;
     }
 
     // Disabled state
-    &::after, &:after {
+    &::after,
+    &:after {
       border-color: $white;
     }
   }
 
   // Hover state
-  &:hover:not([disabled])+label {
-    &:before, &::before {
+  &:hover:not([disabled]) + label {
+    &:before,
+    &::before {
       border: 0;
     }
   }
 
   // Checked
   &:checked {
-    &+label {
-      &:before, &::before {
+    & + label {
+      &:before,
+      &::before {
         border: 0;
       }
     }
@@ -74,20 +83,23 @@
   @extend .primaryA;
 
   // Active state
-  &+label {
-    &::before, &:before {
+  & + label {
+    &::before,
+    &:before {
       @extend .backgroundInversePrimary;
     }
 
     // Disabled state
-    &::after, &:after {
+    &::after,
+    &:after {
       background-color: $white;
     }
   }
 
   // Hover state
-  &:hover:not([disabled])+label {
-    &:before, &::before {
+  &:hover:not([disabled]) + label {
+    &:before,
+    &::before {
       border: 0;
     }
   }
