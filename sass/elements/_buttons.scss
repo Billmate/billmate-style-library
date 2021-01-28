@@ -1,0 +1,151 @@
+/**
+ * Buttons
+ */
+
+button, input[type=button], input[type=submit], a {
+  @extend .is-large;
+  height: 56px;
+
+  /**
+   * Rectangle
+   */
+  // Rectangle Primary
+  &.rectanglePrimary {
+    @extend .is-fullwidth;
+    @extend .labelLarge;
+    @extend .backgroundInversePrimary;
+    color: $white;
+    border: 0;
+
+    // Medium button
+    &.mediumLabel {
+      @extend .labelMedium;
+    }
+
+    // Small button
+    &.smallLabel {
+      @extend .labelSmall;
+    }
+
+    &:disabled {
+      @extend .backgroundStateDisabled;
+      @extend .contentStateDisabled;
+      pointer-events: none;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      color: $white;
+    }
+
+    &:active {
+      opacity: 0.7;
+      color: $white;
+    }
+
+    &:enabled {
+      color: $white;
+    }
+  }
+
+  // Rectangle Secondary
+  &.rectangleSecondary {
+    @extend .is-fullwidth;
+    @extend .labelLarge;
+    @extend .backgroundTertiary;
+    @extend .contentPrimary;
+    border: 0;
+
+    // Medium button
+    &.mediumLabel {
+      @extend .labelMedium;
+    }
+
+    // Small button
+    &.smallLabel {
+      @extend .labelSmall;
+    }
+
+    &:disabled {
+      @extend .backgroundStateDisabled;
+      @extend .contentStateDisabled;
+      pointer-events: none;
+    }
+
+    &:hover {
+      @extend .contentPrimary;
+      opacity: 0.82;
+    }
+
+    &:active {
+      @extend .contentPrimary;
+      opacity: 0.7;
+    }
+
+    &:enabled {
+      @extend .contentPrimary;
+    }
+  }
+
+  // Rectangle Tertiary
+  &.rectangleTertiary {
+    @extend .is-fullwidth;
+    @extend .labelLarge;
+    border: 0;
+
+    // Medium button
+    &.mediumLabel {
+      @extend .labelMedium;
+    }
+
+    // Small button
+    &.smallLabel {
+      @extend .labelSmall;
+    }
+
+    &:disabled {
+      @extend .contentStateDisabled;
+      pointer-events: none;
+    }
+
+    &:hover {
+      @extend .backgroundTertiary;
+      @extend .contentPrimary;
+      opacity: 0.82;
+    }
+
+    &:active {
+      @extend .backgroundTertiary;
+      @extend .contentPrimary;
+      opacity: 0.7;
+    }
+
+    &:enabled {
+      @extend .contentPrimary;
+    }
+  }
+
+  /**
+   * Pill
+   */
+  // Pill Primary
+  &.pillPrimary {
+    @extend .rectanglePrimary;
+    width: auto !important;
+    border-radius: 100px;
+  }
+
+  // Pill Secondary
+  &.pillSecondary {
+    @extend .rectangleSecondary;
+    width: auto !important;
+    border-radius: 100px;
+  }
+
+  // Pill Tertiary
+  &.pillTertiary {
+    @extend .rectangleTertiary;
+    width: auto !important;
+    border-radius: 100px;
+  }
+}

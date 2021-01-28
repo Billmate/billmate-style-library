@@ -1,0 +1,94 @@
+/**
+ * Controls
+ */
+
+/**
+ * Switch
+ */
+.switch[type='checkbox'] {
+  @extend .is-large;
+  @extend .is-rounded;
+
+  &[type='checkbox']+label {
+    @extend .paragraphSmall;
+  }
+
+  // Active state
+  &+label {
+    &::before, &:before {
+      @extend .backgroundInversePrimary;
+    }
+  }
+
+  // Disabled state
+  &:checked+label:before, &:checked[type='checkbox']+label:before {
+    @extend .backgroundInversePrimary;
+    background-color: $black;
+    border: 0;
+  }
+}
+
+/**
+ * Check
+ */
+.is-checkradio[type='checkbox'] {
+  @extend .primaryA;
+  border: 0;
+
+  // Active state
+  &+label {
+    &::before, &:before {
+      // contentTertiary
+      @extend .backgroundInversePrimary;
+      border-radius: 0;
+      border: 0;
+    }
+
+    // Disabled state
+    &::after, &:after {
+      border-color: $white;
+    }
+  }
+
+  // Hover state
+  &:hover:not([disabled])+label {
+    &:before, &::before {
+      border: 0;
+    }
+  }
+
+  // Checked
+  &:checked {
+    &+label {
+      &:before, &::before {
+        border: 0;
+      }
+    }
+  }
+}
+
+/**
+ * Radio
+ */
+.is-checkradio[type='radio'] {
+  @extend .primaryA;
+
+  // Active state
+  &+label {
+    &::before, &:before {
+      @extend .backgroundInversePrimary;
+    }
+
+    // Disabled state
+    &::after, &:after {
+      background-color: $white;
+    }
+  }
+
+  // Hover state
+  &:hover:not([disabled])+label {
+    &:before, &::before {
+      border: 0;
+    }
+  }
+}

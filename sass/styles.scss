@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'fonts';
+
+// Set values to be used for Bulma components
+$control-radius: 0;
+// $family-sans-serif: 'Sofia Pro';
+
+// Import Bulma general styles
+@import '../node_modules/bulma/bulma.sass';
+@import '../node_modules/bulma-switch/src/sass/index.sass';
+@import '../node_modules/bulma-checkradio/src/sass/index.sass';
+
+// Billmate styles
+@import 'colors';
+@import 'typography';
+@import 'elements/buttons';
+@import 'elements/controls';
+@import 'elements/inputs';
+@import 'elements/selects';

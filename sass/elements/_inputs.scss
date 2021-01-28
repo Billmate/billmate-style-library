@@ -1,0 +1,62 @@
+/**
+ * Inputs
+ */
+.input[type=text], .input[type=password], .input[type=email] {
+  @extend .is-large;
+  @extend .backgroundTertiary;
+  @extend .contentTertiary;
+  border: 2px solid transparent;
+  border-radius: 0;
+  height: 56px;
+
+  &:focus, &:active {
+    @extend .contentPrimary;
+    background-color: $white;
+    border: 2px solid $black;
+    box-shadow: none;
+  }
+
+  &:enabled {
+    color: $black;
+  }
+
+  // Positive
+  &.positive {
+    @extend .backgroundLightPositive;
+    border-bottom: 2px solid $green400;
+
+    &:focus, &:active {
+      border-top: 2px solid transparent;
+      border-left: 2px solid transparent;
+      border-right: 2px solid transparent;
+    }
+  }
+
+  // Negative
+  &.negative {
+    @extend .backgroundLightNegative;
+    border-bottom: 2px solid $red400;
+
+    &:focus, &:active {
+      border-top: 2px solid transparent;
+      border-left: 2px solid transparent;
+      border-right: 2px solid transparent;
+    }
+  }
+}
+
+// Hint helpers
+.field {
+  .help {
+    @extend .labelSmall;
+    @extend .contentTertiary;
+
+    &.is-success {
+      @extend .contentPositive;
+    }
+
+    &.is-danger {
+      @extend .contentNegative;
+    }
+  }
+}

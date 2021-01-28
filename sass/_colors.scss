@@ -1,0 +1,200 @@
+/**
+ * 02 Basics
+ */
+.primaryA {
+  background-color: $black;
+}
+
+.primaryB {
+  background-color: $white;
+  border: 1px solid $grey200;
+  box-sizing: border-box;
+}
+
+.accent {
+  background-color: $blue400;
+}
+
+.positive {
+  background-color: $green400;
+}
+
+.warning {
+  background-color: $yellow400;
+}
+
+.negative {
+  background-color: $red400;
+}
+
+/**
+ * 03 Background
+ */
+.backgroundPrimary {
+  @extend .primaryB;
+}
+
+.backgroundSecondary {
+  background-color: $grey50;
+}
+
+.backgroundTertiary {
+  background-color: $grey100;
+}
+
+.backgroundInversePrimary {
+  @extend .primaryA;
+}
+
+.backgroundInverseSecondary {
+  background-color: $grey800;
+}
+
+.backgroundInverseTertiary {
+  background-color: $grey700;
+}
+
+/**
+ * 04 Background Extentions
+ */
+.backgroundStateDisabled {
+  background-color: $grey100;
+}
+
+.backgroundAccent {
+  @extend .accent;
+}
+
+.backgroundPositive {
+  @extend .positive;
+}
+
+.backgroundNegative {
+  @extend .negative;
+}
+
+.backgroundWarning {
+  @extend .warning;
+}
+
+.backgroundLightAccent {
+  background-color: $blue50;
+}
+
+.backgroundLightPositive {
+  background-color: $green50;
+}
+
+.backgroundLightNegative {
+  background-color: $red50;
+}
+
+.backgroundLightWarning {
+  background-color: $yellow50;
+}
+
+.backgroundOverlayLight {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.backgroundOverlayLight {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/**
+ * 05 Content
+ */
+.contentPrimary {
+  color: $black;
+}
+
+.contentSecondary {
+  color: $grey600;
+}
+
+.contentTertiary {
+  color: $grey400;
+}
+
+.contentInversePrimary {
+  @extend .primaryA;
+  border: 1px solid $grey600;
+  box-sizing: border-box;
+}
+
+.contentInverseSecondary {
+  color: $grey300;
+}
+
+.contentInverseTertiary {
+  color: $grey500;
+}
+
+/**
+ * 06 Text Extentions
+ */
+.contentStateDisabled {
+  color: $grey300;
+}
+
+.contentAccent {
+  color: $blue400;
+}
+
+.contentNegative {
+  color: $red400;
+}
+
+.contentPositive {
+  color: $green400;
+}
+
+.contentWarning {
+  color: $yellow400;
+}
+
+/**
+ * 07 Borders
+ */
+.borderDefault {
+  border: $grey200;
+}
+
+.borderSelected {
+  @extend .primaryB;
+}
+
+.borderInverseDefault {
+  border: $grey700;
+}
+
+.borderInverseSelected {
+  @extend .primaryA;
+}
+
+/**
+ * 08 Borders Extentions
+ */
+.borderStateDisabled {
+  border: $grey50;
+}
+
+.borderAccent {
+  border: $blue400;
+}
+
+.borderAccentLight {
+  border: $blue200;
+}
+
+.borderNegative {
+  border: $red200;
+}
+
+.borderPositive {
+  border: $green200;
+}
+
+.borderWarning {
+  border: $yellow200;
+}

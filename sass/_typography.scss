@@ -1,0 +1,191 @@
+/**
+ * Typography
+ */
+.secondaryFont {
+  font-family: 'BuenosAires';
+}
+
+/**
+ * 01 Display
+ */
+.displayL {
+  @extend .secondaryFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 112px;
+  letter-spacing: -0.02em;
+  color: $black;
+}
+
+.displayM {
+  @extend .secondaryFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 76px;
+  letter-spacing: -0.02em;
+  color: $black;
+}
+
+.displayS {
+  @extend .secondaryFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -0.02em;
+  color: $black;
+}
+
+.displayXS {
+  @extend .secondaryFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: $black;
+}
+
+/**
+ * 02 - Heading
+ */
+.headingXLarge {
+  @extend .secondaryFont;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.headingLarge {
+  @extend .secondaryFont;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.headingM {
+  @extend .secondaryFont;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.headingSmall {
+  @extend .secondaryFont;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.headingXSmall {
+  @extend .secondaryFont;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.headingXXSmall {
+  @extend .secondaryFont;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.header, h1, h2, h3, h4, h5, h6 {
+  div.header-content {
+    &.headingXLarge {
+      @extend .headingXLarge;
+    }
+    &.headingLarge {
+      @extend .headingLarge;
+    }
+    &.headingM {
+      @extend .headingM;
+    }
+    &.headingSmall {
+      @extend .headingSmall;
+    }
+    &.headingXSmall {
+      @extend .headingXSmall;
+    }
+    &.headingXXSmall {
+      @extend .headingXXSmall;
+    }
+  }
+}
+
+/**
+ * 03 - Paragraph
+ */
+.paragraphLarge {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.paragraphMedium {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.paragraphSmall {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.paragraphXSmall {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/**
+ * 04 - Label
+ */
+.labelLarge {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.labelMedium {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.labelSmall {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.labelXSmall {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
