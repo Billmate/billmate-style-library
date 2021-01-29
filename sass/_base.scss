@@ -1,0 +1,12 @@
+body {
+  font-family: 'Sofia Pro', sans-serif;
+
+  &.fontLoaded {
+    font-family: 'Sofia Pro', sans-serif;
+  }
+}
+
+p,
+label {
+  font-family: 'Sofia Pro', sans-serif;
+}

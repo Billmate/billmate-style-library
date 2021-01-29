@@ -1,3 +1,19 @@
+/*
+---
+name: Font
+category: Typography
+---
+
+The available fonts are:
+- BuenosAires
+- Sofia Pro
+
+```types.html
+<h1 class="displayL">BuenosAires</h1>
+<h1 class="title is-1">Sofia Pro</h1>
+```
+*/
+
 // BuenosAires
 @font-face {font-family: 'BuenosAires';
   src: url('../resources/fonts/BuenosAires/BuenosAires.eot'); /* IE9*/

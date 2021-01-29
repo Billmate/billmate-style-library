@@ -9,7 +9,7 @@
     "css:lint": "npx stylelint sass/**/*.scss",
     "styleguide:watch": "stylemark -i sass/ -o styleguide/ -w -b -c .stylemark.yml",
     "styleguide:build": "stylemark -i sass/ -o styleguide/ -c .stylemark.yml",
-    "start": "npm run css-watch"
+    "start": "npm run css:watch"
   },
   "repository": {
     "type": "git",

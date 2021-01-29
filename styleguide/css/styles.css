@@ -1,6 +1,21 @@
 /**
  * 01 Color palette
  */
+/*
+---
+name: Font
+category: Typography
+---
+
+The available fonts are:
+- BuenosAires
+- Sofia Pro
+
+```types.html
+<h1 class="displayL">BuenosAires</h1>
+<h1 class="title is-1">Sofia Pro</h1>
+```
+*/
 @import url(../node_modules/fontawesome5-webfont/css/fontawesome-all.css);
 @font-face {
   font-family: 'BuenosAires';
@@ -9862,9 +9877,15 @@ a.smallLabel.pillTertiary, .field .help {
   font-size: 12px;
   line-height: 18px; }
 
-/**
- * Buttons
- */
+body {
+  font-family: 'Sofia Pro', sans-serif; }
+  body.fontLoaded {
+    font-family: 'Sofia Pro', sans-serif; }
+
+p,
+label {
+  font-family: 'Sofia Pro', sans-serif; }
+
 /*
 ---
 name: Button
@@ -9886,6 +9907,27 @@ Types of buttons:
 <button class="button rectangleTertiary">Rectangle Tertiary</button>
 ```
 */
+/*
+---
+name: Pill
+category: Components
+---
+
+Pills can be used with `<a>`, `<button>`, and `<input>` elements.
+
+Types of pills:
+- Pill Primary: Standard pill
+- Pill Secondary: Add an secondary indication over the primary pill
+- Pill Tertiary: Add an tertiary indication over the other pill types
+
+```types.html
+<button class="button pillPrimary">Pill Primary</button>
+<button class="button pillPrimary mediumLabel">Pill Primary - medium button</button>
+<button class="button pillPrimary smallLabel">Pill Primary - small button</button>
+<button class="button pillSecondary">Pill Secondary</button>
+<button class="button pillTertiary">Pill Tertiary</button>
+```
+*/
 button,
 input[type=button],
 input[type=submit],
@@ -9893,9 +9935,6 @@ a {
   height: 56px;
   /**
    * Rectangle
-   */
-  /**
-   * Pill
    */ }
   button.rectanglePrimary, button.pillPrimary,
   input[type=button].rectanglePrimary,
