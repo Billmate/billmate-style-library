@@ -1,0 +1,16 @@
+name: Billmate style library
+
+assets:
+  - resources
+
+theme:
+  #css:
+  #  - css/styles.css
+
+  sidebar:
+    background: "#000000"
+    textColor: "#ffffff"
+
+examples:
+  css:
+    - css/styles.css

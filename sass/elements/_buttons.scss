@@ -2,6 +2,29 @@
  * Buttons
  */
 
+
+/*
+---
+name: Button
+category: Components
+---
+
+Buttons can be used with `<a>`, `<button>`, and `<input>` elements.
+
+Types of buttons:
+- Rectangle Primary: Standard button
+- Rectangle Secondary: Add an secondary indication over the primary button
+- Rectangle Tertiary: Add an tertiary indication over the other button types
+
+```types.html
+<button class="button rectanglePrimary">Rectangle Primary</button>
+<button class="button rectanglePrimary mediumLabel">Rectangle Primary - medium button</button>
+<button class="button rectanglePrimary smallLabel">Rectangle Primary - small button</button>
+<button class="button rectangleSecondary">Rectangle Secondary</button>
+<button class="button rectangleTertiary">Rectangle Tertiary</button>
+```
+*/
+
 button,
 input[type=button],
 input[type=submit],

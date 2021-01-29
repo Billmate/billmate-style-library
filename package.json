@@ -4,9 +4,11 @@
   "description": "Billmate styling library",
   "main": "index.js",
   "scripts": {
-    "css:build": "node-sass --omit-source-map-url sass/styles.scss css/styles.css",
+    "css:build": "node-sass --include-path resources/ --omit-source-map-url sass/styles.scss css/styles.css",
     "css:watch": "npm run css:build -- --watch",
     "css:lint": "npx stylelint sass/**/*.scss",
+    "styleguide:watch": "stylemark -i sass/ -o styleguide/ -w -b -c .stylemark.yml",
+    "styleguide:build": "stylemark -i sass/ -o styleguide/ -c .stylemark.yml",
     "start": "npm run css-watch"
   },
   "repository": {
@@ -27,12 +29,12 @@
     "bulma": "^0.9.0",
     "bulma-checkradio": "^1.1.1",
     "bulma-switch": "^2.0.0",
-    "@sorabhtomar/sofia-pro": "^1.0.0",
     "fontawesome5-webfont": "^5.0.4"
   },
   "devDependencies": {
     "node-sass": "^5.0.0",
     "stylelint": "^13.9.0",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint-config-standard": "^20.0.0",
+    "stylemark": "^3.1.7"
   }
 }
