@@ -1,15 +1,12 @@
-name: Billmate style library
-
 assets:
   - resources
 
 theme:
-  #css:
-  #  - css/styles.css
+  logo: resources/images/logo.svg
 
   sidebar:
-    background: "#000000"
-    textColor: "#ffffff"
+    background: "#fbfbfb"
+    textColor: "#000000"
 
 examples:
   css:
