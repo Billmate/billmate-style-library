@@ -1,8 +1,3 @@
-/**
- * Buttons
- */
-
-
 /*
 ---
 name: Button
@@ -22,6 +17,28 @@ Types of buttons:
 <button class="button rectanglePrimary smallLabel">Rectangle Primary - small button</button>
 <button class="button rectangleSecondary">Rectangle Secondary</button>
 <button class="button rectangleTertiary">Rectangle Tertiary</button>
+```
+*/
+
+/*
+---
+name: Pill
+category: Components
+---
+
+Pills can be used with `<a>`, `<button>`, and `<input>` elements.
+
+Types of pills:
+- Pill Primary: Standard pill
+- Pill Secondary: Add an secondary indication over the primary pill
+- Pill Tertiary: Add an tertiary indication over the other pill types
+
+```types.html
+<button class="button pillPrimary">Pill Primary</button>
+<button class="button pillPrimary mediumLabel">Pill Primary - medium button</button>
+<button class="button pillPrimary smallLabel">Pill Primary - small button</button>
+<button class="button pillSecondary">Pill Secondary</button>
+<button class="button pillTertiary">Pill Tertiary</button>
 ```
 */
 
@@ -162,9 +179,6 @@ a {
     }
   }
 
-  /**
-   * Pill
-   */
   // Pill Primary
   &.pillPrimary {
     @extend .rectanglePrimary;

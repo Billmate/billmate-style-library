@@ -23,6 +23,7 @@
 						<option disabled selected>Go to…</option>
 							<optgroup label="Components">
 									<option value="button">Button</option>
+									<option value="pill">Pill</option>
 							</optgroup>
 					</select>
 				</form>
@@ -85,6 +86,62 @@
 </div></div>
 </div>
 
+						<div id="pill" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Pill</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">elements/_buttons.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Pills can be used with <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;input&gt;</code> elements.</p>
+<p>Types of pills:</p>
+<ul>
+<li>Pill Primary: Standard pill</li>
+<li>Pill Secondary: Add an secondary indication over the primary pill</li>
+<li>Pill Tertiary: Add an tertiary indication over the other pill types</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="pill-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="pill-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;button pillPrimary&quot;&gt;Pill Primary&lt;/button&gt;
+&lt;button class=&quot;button pillPrimary mediumLabel&quot;&gt;Pill Primary - medium button&lt;/button&gt;
+&lt;button class=&quot;button pillPrimary smallLabel&quot;&gt;Pill Primary - small button&lt;/button&gt;
+&lt;button class=&quot;button pillSecondary&quot;&gt;Pill Secondary&lt;/button&gt;
+&lt;button class=&quot;button pillTertiary&quot;&gt;Pill Tertiary&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;button pillPrimary&quot;&gt;Pill Primary&lt;/button&gt;
+&lt;button class=&quot;button pillPrimary mediumLabel&quot;&gt;Pill Primary - medium button&lt;/button&gt;
+&lt;button class=&quot;button pillPrimary smallLabel&quot;&gt;Pill Primary - small button&lt;/button&gt;
+&lt;button class=&quot;button pillSecondary&quot;&gt;Pill Secondary&lt;/button&gt;
+&lt;button class=&quot;button pillTertiary&quot;&gt;Pill Tertiary&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 				</div>
 		</div>
 		<div
@@ -110,7 +167,7 @@
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Button "
+							data-filter-value=" Button  Pill "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -124,6 +181,13 @@
 									data-filter-value="Button"
 								>
 									<span>Button</span>
+								</a>
+								<a
+									href="#pill"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Pill"
+								>
+									<span>Pill</span>
 								</a>
 						</div>
 			
