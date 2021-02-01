@@ -1,13 +1,22 @@
-/**
- * Typography
- */
 .secondaryFont {
   font-family: 'BuenosAires';
 }
 
-/**
- * 01 Display
- */
+/*
+---
+name: Display
+category: Typography
+---
+
+Display types can be used on any element that contains text.
+
+```types.html
+<p class="displayL">Display Large</p>
+<p class="displayM">Display Medium</p>
+<p class="displayS">Display Small</p>
+<p class="displayXS">Display Extra Small</p>
+```
+*/
 .displayL {
   @extend .secondaryFont;
   font-style: normal;
@@ -48,9 +57,23 @@
   color: $black;
 }
 
-/**
- * 02 - Heading
- */
+/*
+---
+name: Heading
+category: Typography
+---
+
+Heading types  can be used with `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` and `<h6>` elements.
+
+```types.html
+<h1 class="headingXLarge">Heading Extra Large</h1>
+<h1 class="headingLarge">Heading Large</h1>
+<h1 class="headingM">Heading Medium</h1>
+<h1 class="headingSmall">Heading Small</h1>
+<h1 class="headingXSmall">Heading Extra Small</h1>
+<h1 class="headingXXSmall">Heading Extra Extra Small</h1>
+```
+*/
 .headingXLarge {
   @extend .secondaryFont;
   font-style: normal;
@@ -128,9 +151,21 @@
   }
 }
 
-/**
- * 03 - Paragraph
- */
+/*
+---
+name: Paragraph
+category: Typography
+---
+
+Heading types can be used with `<p>` elements.
+
+```types.html
+<p class="paragraphLarge">Paragraph Large</h1>
+<p class="paragraphMedium">Paragraph Medium</h1>
+<p class="paragraphSmall">Paragraph Small</h1>
+<p class="paragraphXSmall">Paragraph Extra Small</h1>
+```
+*/
 .paragraphLarge {
   font-style: normal;
   font-weight: normal;
@@ -159,9 +194,21 @@
   line-height: 20px;
 }
 
-/**
- * 04 - Label
- */
+/*
+---
+name: Label
+category: Typography
+---
+
+Heading types can be used any type of text elements.
+
+```types.html
+<div class="labelLarge">Label Large</div>
+<div class="labelMedium">Label Medium</div>
+<div class="labelSmall">Label Small</div>
+<div class="labelXSmall">Label Extra Small</div>
+```
+*/
 .labelLarge {
   font-style: normal;
   font-weight: 500;

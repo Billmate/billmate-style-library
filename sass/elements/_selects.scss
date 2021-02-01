@@ -1,6 +1,32 @@
-/**
- * Selects
- */
+/*
+---
+name: Select
+category: Components
+---
+
+Select can be used with `<select>`  elements.
+
+```types.html
+<div class="select">
+  <select>
+    <option>Select dropdown</option>
+    <option>With options</option>
+  </select>
+</div>
+<div class="select positive">
+  <select>
+    <option>Select dropdown Positive</option>
+    <option>With options</option>
+  </select>
+</div>
+<div class="select negative">
+  <select>
+    <option>Select dropdown Negative</option>
+    <option>With options</option>
+  </select>
+</div>
+```
+*/
 .select {
   @extend .is-large;
 

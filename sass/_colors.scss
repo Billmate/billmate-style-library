@@ -1,6 +1,20 @@
-/**
- * 02 Basics
- */
+/*
+---
+name: Basics
+category: Colors
+---
+
+The basic colors types available.
+
+```types.html
+<div class="primaryA">Primary A</div>
+<div class="primaryB">Primary B</div>
+<div class="accent">Accent</div>
+<div class="positive">Positive</div>
+<div class="warning">Warning</div>
+<div class="negative">Negative</div>
+```
+*/
 .primaryA {
   background-color: $black;
 }
@@ -27,9 +41,23 @@
   background-color: $red400;
 }
 
-/**
- * 03 Background
- */
+/*
+---
+name: Background
+category: Colors
+---
+
+The background colors types available.
+
+```types.html
+<div class="backgroundPrimary">Background Primary</div>
+<div class="backgroundSecondary">Background Secondary</div>
+<div class="backgroundTertiary">Background Tertiary</div>
+<div class="backgroundInversePrimary">Background Inverse Primary</div>
+<div class="backgroundInverseSecondary">Background Inverse Secondary</div>
+<div class="backgroundInverseTertiary">Background Inverse Tertiary</div>
+```
+*/
 .backgroundPrimary {
   @extend .primaryB;
 }
@@ -54,9 +82,28 @@
   background-color: $grey700;
 }
 
-/**
- * 04 Background Extentions
- */
+/*
+---
+name: Background Extensions
+category: Colors
+---
+
+The background colors extensions available.
+
+```types.html
+<div class="backgroundStateDisabled">Background State Disabled</div>
+<div class="backgroundAccent">Background Accent</div>
+<div class="backgroundPositive">Background Positive</div>
+<div class="backgroundNegative">Background Negative</div>
+<div class="backgroundWarning">Background Warning</div>
+<div class="backgroundLightAccent">Background Light Accent</div>
+<div class="backgroundLightPositive">Background Light Positive</div>
+<div class="backgroundLightNegative">Background Light Negative</div>
+<div class="backgroundLightWarning">Background Light Warning</div>
+<div class="backgroundOverlayLight">Background Overlay Light</div>
+<div class="backgroundOverlayLightDark">Background Overlay Light Dark</div>
+```
+*/
 .backgroundStateDisabled {
   background-color: $grey100;
 }
@@ -97,13 +144,27 @@
   background-color: rgba(0, 0, 0, 0.08);
 }
 
-.backgroundOverlayLight {
+.backgroundOverlayLightDark {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/**
- * 05 Content
- */
+/*
+---
+name: Content
+category: Colors
+---
+
+The text colors that can be used with `<p>` elements or any element with text.
+
+```types.html
+<div class="contentPrimary">Content Primary</div>
+<div class="contentSecondary">Content Secondary</div>
+<div class="contentTertiary">Content Tertiary</div>
+<div class="contentInversePrimary">Content Inverse Primary</div>
+<div class="contentInverseSecondary">Content Inverse Secondary</div>
+<div class="contentInverseSecondary">Content Inverse Tertiary</div>
+```
+*/
 .contentPrimary {
   color: $black;
 }
@@ -130,9 +191,22 @@
   color: $grey500;
 }
 
-/**
- * 06 Text Extentions
- */
+/*
+---
+name: Text extensions
+category: Colors
+---
+
+The text colors that can be used with `<p>` elements or any element with text.
+
+```types.html
+<div class="contentStateDisabled">Content State Disabled</div>
+<div class="contentAccent">Content Accent</div>
+<div class="contentNegative">Content Negative</div>
+<div class="contentPositive">Content Positive</div>
+<div class="contentWarning">Content Warning</div>
+```
+*/
 .contentStateDisabled {
   color: $grey300;
 }
@@ -153,11 +227,23 @@
   color: $yellow400;
 }
 
-/**
- * 07 Borders
- */
+/*
+---
+name: Border
+category: Colors
+---
+
+The border colors that can be used with any element.
+
+```types.html
+<div class="borderDefault">Border Default</div>
+<div class="borderSelected">Border Selected</div>
+<div class="borderInverseDefault">Border Inverse Default</div>
+<div class="borderInverseSelected">Border Inverse Selected</div>
+```
+*/
 .borderDefault {
-  border: $grey200;
+  border: 1px solid $grey200;
 }
 
 .borderSelected {
@@ -165,36 +251,50 @@
 }
 
 .borderInverseDefault {
-  border: $grey700;
+  border: 1px solid $grey700;
 }
 
 .borderInverseSelected {
   @extend .primaryA;
 }
 
-/**
- * 08 Borders Extentions
- */
+/*
+---
+name: Border extensions
+category: Colors
+---
+
+The border colors that can be used with any element.
+
+```types.html
+<div class="borderStateDisabled">Border State Disabled</div>
+<div class="borderAccent">Border Accent</div>
+<div class="borderAccentLight">Border Accent Light</div>
+<div class="borderNegative">Border Negative</div>
+<div class="borderPositive">Border Positive</div>
+<div class="borderWarning">Border Warning</div>
+```
+*/
 .borderStateDisabled {
-  border: $grey50;
+  border: 1px solid $grey50;
 }
 
 .borderAccent {
-  border: $blue400;
+  border: 1px solid $blue400;
 }
 
 .borderAccentLight {
-  border: $blue200;
+  border: 1px solid $blue200;
 }
 
 .borderNegative {
-  border: $red200;
+  border: 1px solid $red200;
 }
 
 .borderPositive {
-  border: $green200;
+  border: 1px solid $green200;
 }
 
 .borderWarning {
-  border: $yellow200;
+  border: 1px solid $yellow200;
 }

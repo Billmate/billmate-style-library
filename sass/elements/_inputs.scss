@@ -1,6 +1,22 @@
-/**
- * Inputs
- */
+/*
+---
+name: Input
+category: Components
+---
+
+Input can be used with `<input>`, `<textarea>`, and `<select>` other form based elements.
+
+Types of inputs:
+- Standard input: Standard input without any accent
+- Positive input: Input with positive accent
+- Negative input: Input with negative accent
+
+```types.html
+<input type="text" class="input" value="Standard input" />
+<input type="text" class="input positive" value="Positive input" />
+<input type="text" class="input negative" value="Negative input" />
+```
+*/
 .input[type=text],
 .input[type=password],
 .input[type=email] {
@@ -54,7 +70,25 @@
   }
 }
 
-// Hint helpers
+/*
+---
+name: Input - hint helpers
+category: Components
+---
+
+Hin helpers can be used with `<p>` in structure with field class.
+
+```types.html
+<div class="field">
+  <input type="text" class="input" value="Standard input" />
+  <p class="help is-success">Helper success</p>
+</div>
+<div class="field">
+  <input type="text" class="input" value="Standard input" />
+  <p class="help is-danger">Helper danger</p>
+</div>
+```
+*/
 .field {
   .help {
     @extend .labelSmall;

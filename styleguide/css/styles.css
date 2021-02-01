@@ -9442,9 +9442,23 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   border-color: #fff !important;
   background-color: #fff !important; }
 
-/**
- * 02 Basics
- */
+/*
+---
+name: Basics
+category: Colors
+---
+
+The basic colors types available.
+
+```types.html
+<div class="primaryA">Primary A</div>
+<div class="primaryB">Primary B</div>
+<div class="accent">Accent</div>
+<div class="positive">Positive</div>
+<div class="warning">Warning</div>
+<div class="negative">Negative</div>
+```
+*/
 .primaryA, .backgroundInversePrimary, button.rectanglePrimary, button.pillPrimary,
 input.rectanglePrimary[type=button],
 input.pillPrimary[type=button],
@@ -9472,9 +9486,23 @@ a.pillPrimary, .switch[type='checkbox'] + label::before, .switch[type='checkbox'
 .negative, .backgroundNegative {
   background-color: #EB4114; }
 
-/**
- * 03 Background
- */
+/*
+---
+name: Background
+category: Colors
+---
+
+The background colors types available.
+
+```types.html
+<div class="backgroundPrimary">Background Primary</div>
+<div class="backgroundSecondary">Background Secondary</div>
+<div class="backgroundTertiary">Background Tertiary</div>
+<div class="backgroundInversePrimary">Background Inverse Primary</div>
+<div class="backgroundInverseSecondary">Background Inverse Secondary</div>
+<div class="backgroundInverseTertiary">Background Inverse Tertiary</div>
+```
+*/
 .backgroundSecondary {
   background-color: #F6F6F6; }
 
@@ -9507,9 +9535,28 @@ a.pillTertiary:active, .input[type=text],
 .backgroundInverseTertiary {
   background-color: #3B3B3B; }
 
-/**
- * 04 Background Extentions
- */
+/*
+---
+name: Background Extensions
+category: Colors
+---
+
+The background colors extensions available.
+
+```types.html
+<div class="backgroundStateDisabled">Background State Disabled</div>
+<div class="backgroundAccent">Background Accent</div>
+<div class="backgroundPositive">Background Positive</div>
+<div class="backgroundNegative">Background Negative</div>
+<div class="backgroundWarning">Background Warning</div>
+<div class="backgroundLightAccent">Background Light Accent</div>
+<div class="backgroundLightPositive">Background Light Positive</div>
+<div class="backgroundLightNegative">Background Light Negative</div>
+<div class="backgroundLightWarning">Background Light Warning</div>
+<div class="backgroundOverlayLight">Background Overlay Light</div>
+<div class="backgroundOverlayLightDark">Background Overlay Light Dark</div>
+```
+*/
 .backgroundStateDisabled, button.rectanglePrimary:disabled, button.pillPrimary:disabled,
 input.rectanglePrimary[type=button]:disabled,
 input.pillPrimary[type=button]:disabled,
@@ -9544,12 +9591,26 @@ a.pillSecondary:disabled {
 .backgroundOverlayLight {
   background-color: rgba(0, 0, 0, 0.08); }
 
-.backgroundOverlayLight {
+.backgroundOverlayLightDark {
   background-color: rgba(0, 0, 0, 0.3); }
 
-/**
- * 05 Content
- */
+/*
+---
+name: Content
+category: Colors
+---
+
+The text colors that can be used with `<p>` elements or any element with text.
+
+```types.html
+<div class="contentPrimary">Content Primary</div>
+<div class="contentSecondary">Content Secondary</div>
+<div class="contentTertiary">Content Tertiary</div>
+<div class="contentInversePrimary">Content Inverse Primary</div>
+<div class="contentInverseSecondary">Content Inverse Secondary</div>
+<div class="contentInverseSecondary">Content Inverse Tertiary</div>
+```
+*/
 .contentPrimary, button.rectangleSecondary, button.pillSecondary,
 input.rectangleSecondary[type=button],
 input.pillSecondary[type=button],
@@ -9617,9 +9678,22 @@ a.pillTertiary:enabled, .input[type=text]:focus, .input[type=text]:active,
 .contentInverseTertiary {
   color: #6F6F6F; }
 
-/**
- * 06 Text Extentions
- */
+/*
+---
+name: Text extensions
+category: Colors
+---
+
+The text colors that can be used with `<p>` elements or any element with text.
+
+```types.html
+<div class="contentStateDisabled">Content State Disabled</div>
+<div class="contentAccent">Content Accent</div>
+<div class="contentNegative">Content Negative</div>
+<div class="contentPositive">Content Positive</div>
+<div class="contentWarning">Content Warning</div>
+```
+*/
 .contentStateDisabled, button.rectanglePrimary:disabled, button.pillPrimary:disabled,
 input.rectanglePrimary[type=button]:disabled,
 input.pillPrimary[type=button]:disabled,
@@ -9653,45 +9727,76 @@ a.pillTertiary:disabled {
 .contentWarning {
   color: #E9A316; }
 
-/**
- * 07 Borders
- */
+/*
+---
+name: Borders
+category: Colors
+---
+
+The border colors that can be used with any element.
+
+```types.html
+<div class="borderDefault">Border Default</div>
+<div class="borderSelected">Border Selected</div>
+<div class="borderInverseDefault">Border Inverse Default</div>
+<div class="borderInverseSelected">Border Inverse Selected</div>
+```
+*/
 .borderDefault {
-  border: #CFCFCF; }
+  border: 1px solid #CFCFCF; }
 
 .borderInverseDefault {
-  border: #3B3B3B; }
+  border: 1px solid #3B3B3B; }
 
-/**
- * 08 Borders Extentions
- */
+/*
+---
+name: Border extensions
+category: Colors
+---
+
+The border colors that can be used with any element.
+
+```types.html
+<div class="borderDefault">Border Default</div>
+
+```
+*/
 .borderStateDisabled {
-  border: #F6F6F6; }
+  border: 1px solid #F6F6F6; }
 
 .borderAccent {
-  border: #14A3EB; }
+  border: 1px solid #14A3EB; }
 
 .borderAccentLight {
-  border: #95D6F6; }
+  border: 1px solid #95D6F6; }
 
 .borderNegative {
-  border: #F6A995; }
+  border: 1px solid #F6A995; }
 
 .borderPositive {
-  border: #A3E8CB; }
+  border: 1px solid #A3E8CB; }
 
 .borderWarning {
-  border: #F5D696; }
+  border: 1px solid #F5D696; }
 
-/**
- * Typography
- */
 .secondaryFont, .displayL, .displayM, .displayS, .displayXS, .headingXLarge, .header div.header-content.headingXLarge, h1 div.header-content.headingXLarge, h2 div.header-content.headingXLarge, h3 div.header-content.headingXLarge, h4 div.header-content.headingXLarge, h5 div.header-content.headingXLarge, h6 div.header-content.headingXLarge, .headingLarge, .header div.header-content.headingLarge, h1 div.header-content.headingLarge, h2 div.header-content.headingLarge, h3 div.header-content.headingLarge, h4 div.header-content.headingLarge, h5 div.header-content.headingLarge, h6 div.header-content.headingLarge, .headingM, .header div.header-content.headingM, h1 div.header-content.headingM, h2 div.header-content.headingM, h3 div.header-content.headingM, h4 div.header-content.headingM, h5 div.header-content.headingM, h6 div.header-content.headingM, .headingSmall, .header div.header-content.headingSmall, h1 div.header-content.headingSmall, h2 div.header-content.headingSmall, h3 div.header-content.headingSmall, h4 div.header-content.headingSmall, h5 div.header-content.headingSmall, h6 div.header-content.headingSmall, .headingXSmall, .header div.header-content.headingXSmall, h1 div.header-content.headingXSmall, h2 div.header-content.headingXSmall, h3 div.header-content.headingXSmall, h4 div.header-content.headingXSmall, h5 div.header-content.headingXSmall, h6 div.header-content.headingXSmall, .headingXXSmall, .header div.header-content.headingXXSmall, h1 div.header-content.headingXXSmall, h2 div.header-content.headingXXSmall, h3 div.header-content.headingXXSmall, h4 div.header-content.headingXXSmall, h5 div.header-content.headingXXSmall, h6 div.header-content.headingXXSmall {
   font-family: 'BuenosAires'; }
 
-/**
- * 01 Display
- */
+/*
+---
+name: Display
+category: Typography
+---
+
+Display types can be used on any element that contains text.
+
+```types.html
+<p class="displayL">Display Large</p>
+<p class="displayM">Display Medium</p>
+<p class="displayS">Display Small</p>
+<p class="displayXS">Display Extra Small</p>
+```
+*/
 .displayL {
   font-style: normal;
   font-weight: 600;
@@ -9724,9 +9829,23 @@ a.pillTertiary:disabled {
   letter-spacing: -0.02em;
   color: #000000; }
 
-/**
- * 02 - Heading
- */
+/*
+---
+name: Heading
+category: Typography
+---
+
+Heading types  can be used with `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` and `<h6>` elements.
+
+```types.html
+<h1 class="headingXLarge">Heading Extra Large</h1>
+<h1 class="headingLarge">Heading Large</h1>
+<h1 class="headingM">Heading Medium</h1>
+<h1 class="headingSmall">Heading Small</h1>
+<h1 class="headingXSmall">Heading Extra Small</h1>
+<h1 class="headingXXSmall">Heading Extra Extra Small</h1>
+```
+*/
 .headingXLarge, .header div.header-content.headingXLarge, h1 div.header-content.headingXLarge, h2 div.header-content.headingXLarge, h3 div.header-content.headingXLarge, h4 div.header-content.headingXLarge, h5 div.header-content.headingXLarge, h6 div.header-content.headingXLarge {
   font-style: normal;
   font-weight: 500;
@@ -9769,9 +9888,21 @@ a.pillTertiary:disabled {
   font-size: 18px;
   line-height: 22px; }
 
-/**
- * 03 - Paragraph
- */
+/*
+---
+name: Paragraph
+category: Typography
+---
+
+Heading types can be used with `<p>` elements.
+
+```types.html
+<p class="paragraphLarge">Paragraph Large</h1>
+<p class="paragraphMedium">Paragraph Medium</h1>
+<p class="paragraphSmall">Paragraph Small</h1>
+<p class="paragraphXSmall">Paragraph Extra Small</h1>
+```
+*/
 .paragraphLarge {
   font-style: normal;
   font-weight: normal;
@@ -9796,9 +9927,21 @@ a.pillTertiary:disabled {
   font-size: 12px;
   line-height: 20px; }
 
-/**
- * 04 - Label
- */
+/*
+---
+name: Label
+category: Typography
+---
+
+Heading types can be used any type of text elements.
+
+```types.html
+<div class="labelLarge">Label Large</div>
+<div class="labelMedium">Label Medium</div>
+<div class="labelSmall">Label Small</div>
+<div class="labelXSmall">Label Extra Small</div>
+```
+*/
 .labelLarge, button.rectanglePrimary, button.pillPrimary,
 input.rectanglePrimary[type=button],
 input.pillPrimary[type=button],

@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+
+	<head>
+		<style>
+		</style>
+
+		<style>
+			html, body {
+				min-height: 0 !important;
+				height: auto !important;
+			}
+		</style>
+
+		<script>
+			function findAndHandleStylemarkBlocks(languages, handler) {
+				var blocks = getStylemarkBlocks(languages);
+				handleStylemarkBlocks(blocks, handler);
+			}
+
+			function getStylemarkBlocks(languages) {
+				languages = typeof languages === 'string' ? [languages] : languages;
+
+				var selectors = [];
+
+				for (var i = 0; i < languages.length; i++) {
+					selectors.push('script[data-language="' + languages[i] + '"]');
+				}
+
+				var selector = selectors.join(',');
+				var scripts = document.querySelectorAll(selector);
+				var blocks = [];
+
+				for (var i = 0, length = scripts.length; i < length; i++) {
+					if (scripts[i].innerText) {
+						blocks.push(scripts[i].innerText);
+					}
+				}
+
+				return blocks;
+			}
+
+			function handleStylemarkBlocks(blocks, handler) {
+				for (var i = 0, length = blocks.length; i < length; i++) {
+					handler(blocks[i], i);
+				}
+			}
+		</script>
+
+			<link rel="stylesheet" href="css/styles.css">
+
+		
+	</head>
+
+	<body>					<div style="background: #000000;">$black</div>
+<div style="background: #FFFFFF;">$white</div>
+
+<div style="background: #08415E;">$blue700</div>
+<div style="background: #0C628D;">$blue600</div>
+<div style="background: #0F7AB0;">$blue500</div>
+<div style="background: #14A3EB;">$blue400</div>
+<div style="background: #4FBAF0;">$blue300</div>
+<div style="background: #95D6F6;">$blue200</div>
+<div style="background: #D0EDFB;">$blue100</div>
+<div style="background: #ECF8FD;">$blue50</div>
+
+<div style="background: #5D2509;">$orange700</div>
+<div style="background: #8C370D;">$orange600</div>
+<div style="background: #AF4510;">$orange500</div>
+<div style="background: #E95C16;">$orange400</div>
+<div style="background: #EF8550;">$orange300</div>
+<div style="background: #F5B696;">$orange200</div>
+<div style="background: #FBDED0;">$orange100</div>
+<div style="background: #FDF2EC;">$orange50</div>
+
+<div style="background: #145238;">$green700</div>
+<div style="background: #1F7A54;">$green600</div>
+<div style="background: #269969;">$green500</div>
+<div style="background: #33CC8C;">$green400</div>
+<div style="background: #66D9A9;">$green300</div>
+<div style="background: #A3E8CB;">$green200</div>
+<div style="background: #D6F5E8;">$green100</div>
+<div style="background: #EFFBF6;">$green50</div>
+
+<div style="background: #5E1A08;">$red700</div>
+<div style="background: #8D270C;">$red600</div>
+<div style="background: #B0310F;">$red500</div>
+<div style="background: #EB4114;">$red400</div>
+<div style="background: #F0704F;">$red300</div>
+<div style="background: #F6A995;">$red200</div>
+<div style="background: #FBD9D0;">$red100</div>
+<div style="background: #FDF0EC;">$red50</div>
+
+<div style="background: #5D4109;">$yellow700</div>
+<div style="background: #8C620D;">$yellow600</div>
+<div style="background: #AF7A10;">$yellow500</div>
+<div style="background: #E9A316;">$yellow400</div>
+<div style="background: #EFBA50;">$yellow300</div>
+<div style="background: #F5D696;">$yellow200</div>
+<div style="background: #FBEDD0;">$yellow100</div>
+<div style="background: #FDF8EC;">$yellow50</div>
+
+<div style="background: #222222;">$grey800</div>
+<div style="background: #3B3B3B;">$grey700</div>
+<div style="background: #595959;">$grey600</div>
+<div style="background: #6F6F6F;">$grey500</div>
+<div style="background: #949494;">$grey400</div>
+<div style="background: #AFAFAF;">$grey300</div>
+<div style="background: #CFCFCF;">$grey200</div>
+<div style="background: #EAEAEA;">$grey100</div>
+<div style="background: #F6F6F6;">$grey50</div>
+
+<div style="background: #2F3237;">$platinum700</div>
+<div style="background: #464A53;">$platinum600</div>
+<div style="background: #585D68;">$platinum500</div>
+<div style="background: #757C8A;">$platinum400</div>
+<div style="background: #989DA7;">$platinum300</div>
+<div style="background: #C1C4CA;">$platinum200</div>
+<div style="background: #E3E5E8;">$platinum100</div>
+<div style="background: #F4F5F6;">$platinum50</div>
+
+<div style="background: #443C37;">$beige700</div>
+<div style="background: #655B52;">$beige600</div>
+<div style="background: #7F7167;">$beige500</div>
+<div style="background: #A99789;">$beige400</div>
+<div style="background: #BFB1A7;">$beige300</div>
+<div style="background: #D8D0CA;">$beige200</div>
+<div style="background: #EEEAE7;">$beige100</div>
+<div style="background: #F8F7F6;">$beige50</div>
+			<script type="text/x-stylemark" data-language="html"><div style="background: #000000;">$black</div>
+<div style="background: #FFFFFF;">$white</div>
+
+<div style="background: #08415E;">$blue700</div>
+<div style="background: #0C628D;">$blue600</div>
+<div style="background: #0F7AB0;">$blue500</div>
+<div style="background: #14A3EB;">$blue400</div>
+<div style="background: #4FBAF0;">$blue300</div>
+<div style="background: #95D6F6;">$blue200</div>
+<div style="background: #D0EDFB;">$blue100</div>
+<div style="background: #ECF8FD;">$blue50</div>
+
+<div style="background: #5D2509;">$orange700</div>
+<div style="background: #8C370D;">$orange600</div>
+<div style="background: #AF4510;">$orange500</div>
+<div style="background: #E95C16;">$orange400</div>
+<div style="background: #EF8550;">$orange300</div>
+<div style="background: #F5B696;">$orange200</div>
+<div style="background: #FBDED0;">$orange100</div>
+<div style="background: #FDF2EC;">$orange50</div>
+
+<div style="background: #145238;">$green700</div>
+<div style="background: #1F7A54;">$green600</div>
+<div style="background: #269969;">$green500</div>
+<div style="background: #33CC8C;">$green400</div>
+<div style="background: #66D9A9;">$green300</div>
+<div style="background: #A3E8CB;">$green200</div>
+<div style="background: #D6F5E8;">$green100</div>
+<div style="background: #EFFBF6;">$green50</div>
+
+<div style="background: #5E1A08;">$red700</div>
+<div style="background: #8D270C;">$red600</div>
+<div style="background: #B0310F;">$red500</div>
+<div style="background: #EB4114;">$red400</div>
+<div style="background: #F0704F;">$red300</div>
+<div style="background: #F6A995;">$red200</div>
+<div style="background: #FBD9D0;">$red100</div>
+<div style="background: #FDF0EC;">$red50</div>
+
+<div style="background: #5D4109;">$yellow700</div>
+<div style="background: #8C620D;">$yellow600</div>
+<div style="background: #AF7A10;">$yellow500</div>
+<div style="background: #E9A316;">$yellow400</div>
+<div style="background: #EFBA50;">$yellow300</div>
+<div style="background: #F5D696;">$yellow200</div>
+<div style="background: #FBEDD0;">$yellow100</div>
+<div style="background: #FDF8EC;">$yellow50</div>
+
+<div style="background: #222222;">$grey800</div>
+<div style="background: #3B3B3B;">$grey700</div>
+<div style="background: #595959;">$grey600</div>
+<div style="background: #6F6F6F;">$grey500</div>
+<div style="background: #949494;">$grey400</div>
+<div style="background: #AFAFAF;">$grey300</div>
+<div style="background: #CFCFCF;">$grey200</div>
+<div style="background: #EAEAEA;">$grey100</div>
+<div style="background: #F6F6F6;">$grey50</div>
+
+<div style="background: #2F3237;">$platinum700</div>
+<div style="background: #464A53;">$platinum600</div>
+<div style="background: #585D68;">$platinum500</div>
+<div style="background: #757C8A;">$platinum400</div>
+<div style="background: #989DA7;">$platinum300</div>
+<div style="background: #C1C4CA;">$platinum200</div>
+<div style="background: #E3E5E8;">$platinum100</div>
+<div style="background: #F4F5F6;">$platinum50</div>
+
+<div style="background: #443C37;">$beige700</div>
+<div style="background: #655B52;">$beige600</div>
+<div style="background: #7F7167;">$beige500</div>
+<div style="background: #A99789;">$beige400</div>
+<div style="background: #BFB1A7;">$beige300</div>
+<div style="background: #D8D0CA;">$beige200</div>
+<div style="background: #EEEAE7;">$beige100</div>
+<div style="background: #F8F7F6;">$beige50</div></script>
+
+		<!--
+			Vanilla JS
+		-->
+
+		<script>
+			findAndHandleStylemarkBlocks('js', function(block) {
+				eval(block);
+			});
+		</script>
+
+		<!--
+			AngularJS
+		-->
+
+		<script>
+			(function(angular) {
+
+				if (!angular) {
+					return;
+				}
+
+				findAndHandleStylemarkBlocks('angularjs', function(block, index) {
+					var moduleElem = document.querySelector('[ng-app]');
+					var module;
+
+					if (moduleElem) {
+						// Uses an existing module
+						module = angular.module(moduleElem.getAttribute('ng-app'));
+					}
+					else {
+						// Creates a new module
+						module = angular.module('stylemark-color-palette-types', []);
+					}
+
+					module.controller('stylemark-color-palette-types-' + index, function($scope) {
+						$scope.$eval(block);
+					});
+				});
+			})(window.angular);
+		</script>
+
+		<!--
+			React / JSX
+		-->
+
+		<script>
+			(function(ReactDOM) {
+
+				if (!ReactDOM) {
+					return;
+				}
+
+				findAndHandleStylemarkBlocks('jsx', function(block, index) {
+					var rootNode = document.querySelectorAll('.stylemark-react-root')[index];
+					var Component = eval(block);
+					ReactDOM.render(Component, rootNode);
+				});
+			})(window.ReactDOM);
+		</script>
+
+		<!--
+			Ember
+		-->
+
+		<script>
+			(function(Ember) {
+
+				if (!Ember) {
+					return;
+				}
+
+				findAndHandleStylemarkBlocks(['handlebars', 'hbs'], function(block, index) {
+					var render = function() {
+						var app = window.noop
+						var container = app.__container__;
+						var renderer = container.lookup('renderer:-dom');
+						var template = Ember.HTMLBars.compile(block);
+
+						var jsBlocks = getStylemarkBlocks('js');
+						var jsBlock = jsBlocks && jsBlocks[0] ? jsBlocks[0] : '{}';
+						var context;
+						eval('context = ' + jsBlock);
+
+						// Credit:
+						// http://stackoverflow.com/questions/27950413/render-ember-js-hbs-template-to-a-string#answer-35625858
+						var compile = function(container, template, context) {
+							return new Ember.RSVP.Promise(function(resolve) {
+								Ember.Component.extend(Ember.merge({
+									style: 'display:none;',
+									layout: template,
+									container: container,
+									renderer: renderer,
+
+									init: function() {
+										this._super.apply(this, arguments);
+										Ember.setOwner(this, container);
+									},
+
+									didRender: function() {
+										var elem = this.$();
+										resolve(elem);
+										this.destroy();
+									}
+								}, context))
+									.create()
+									.append();
+
+							});
+						};
+
+						compile(container, template, context).then(function(elem) {
+							var node = document.querySelectorAll('.stylemark-ember-root')[index];
+							jQuery(node).append(elem);
+						});
+					};
+
+					var isReady = function() {
+						return window.noop
+							&& window.noop.__container__;
+					};
+
+					var checkReady = function() {
+						if (isReady()) {
+							render();
+						}
+						else {
+							setTimeout(checkReady, 20);
+						}
+					};
+
+					checkReady();
+				});
+
+			})(window.Ember);
+		</script>
+
+		<script src="_stylemark/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	</body>
+</html>
