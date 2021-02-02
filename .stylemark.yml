@@ -11,3 +11,8 @@ theme:
 examples:
   css:
     - css/styles.css
+
+order:
+  - +Variables
+  - +Colors
+  - +Typography
