@@ -1,6 +1,10 @@
 # Billmate style library
 
-A frontend styling library for using Billmate styles.
+A frontend styling library for using [Billmate styles](https://www.figma.com/file/mJStDGNw8r1NZWD3fAAeuS/Billmate-Design-Library?node-id=0%3A1). It is built upon the CSS framework
+called [Bulma](https://bulma.io/) and contains the icon library [Font Awesome](https://fontawesome.com/).
+
+So basically any component or styling from [Bulma documentation](https://bulma.io/documentation/) can be used 
+but with a Billmate look and feel. 
 
 ## Installation
 
