@@ -22,6 +22,7 @@
 					<select class="form-control form-control-lg theme-mobile-nav-select">
 						<option disabled selected>Go to…</option>
 							<optgroup label="Introduction">
+									<option value="installation">Installation</option>
 									<option value="overview">Overview</option>
 							</optgroup>
 							<optgroup label="Variables">
@@ -58,6 +59,40 @@
 			</div>
 
 				<div id="category-introduction" class="theme-content-category">
+						<div id="installation" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Installation</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">styles.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>To use this library inside other projects you can use both the SASS or CSS files. Add the package into a npm based project.
+Add the following to package.json:</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&quot;billmate-style-library&quot;: &quot;git+https://&lt;GITHUB_TOKEN&gt;@github.com/Billmate/billmate-style-library.git#&lt;VERSION&gt;&quot;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&quot;billmate-style-library&quot;: &quot;git+https://&lt;GITHUB_TOKEN&gt;@github.com/Billmate/billmate-style-library.git#&lt;VERSION&gt;&quot;</code></pre>
+	</div>
+</div><h3>CSS</h3><p>To use the CSS file.</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="@import &#39;~billmate-style-library/css/styles.css&#39;;">Copy</button>
+		<pre class="mb-0"><code class="lang-">@import &#39;~billmate-style-library/css/styles.css&#39;;</code></pre>
+	</div>
+</div><h3>SASS</h3><p>To use the SASS file and the framework.</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="@import &#39;~billmate-style-library/sass/styles.scss&#39;;">Copy</button>
+		<pre class="mb-0"><code class="lang-">@import &#39;~billmate-style-library/sass/styles.scss&#39;;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="overview" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Overview</h1>
 	<span class="theme-content-element-source">
@@ -1347,7 +1382,7 @@ but with a Billmate look and feel.</p>
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Overview "
+							data-filter-value=" Installation  Overview "
 						>
 							<a href="#category-introduction" class="i-sidebar-list-item">
 								<b>Introduction</b>
@@ -1355,6 +1390,13 @@ but with a Billmate look and feel.</p>
 						</h5>
 			
 						<div>
+								<a
+									href="#installation"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Installation"
+								>
+									<span>Installation</span>
+								</a>
 								<a
 									href="#overview"
 									class="i-sidebar-list-item theme-sidebar-element"

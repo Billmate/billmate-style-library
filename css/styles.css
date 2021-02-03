@@ -13,6 +13,30 @@ but with a Billmate look and feel.
 */
 /*
 ---
+name: Installation
+category: Introduction
+---
+
+To use this library inside other projects you can use both the SASS or CSS files. Add the package into a npm based project.
+Add the following to package.json:
+
+    "billmate-style-library": "git+https://<GITHUB_TOKEN>@github.com/Billmate/billmate-style-library.git#<VERSION>"
+
+### CSS
+
+To use the CSS file.
+
+    @import '~billmate-style-library/css/styles.css';
+
+### SASS
+
+To use the SASS file and the framework.
+
+    @import '~billmate-style-library/sass/styles.scss';
+
+*/
+/*
+---
 name: Color palette
 category: Variables
 ---

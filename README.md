@@ -6,6 +6,25 @@ called [Bulma](https://bulma.io/) and contains the icon library [Font Awesome](h
 So basically any component or styling from [Bulma documentation](https://bulma.io/documentation/) can be used 
 but with a Billmate look and feel. 
 
+## Usage in projects
+
+To use this library inside other projects you can use both the SASS or CSS files. Add the package into a npm based project.
+Add the following to package.json:
+
+    "billmate-style-library": "git+https://<GITHUB_TOKEN>@github.com/Billmate/billmate-style-library.git#<VERSION>"
+
+### CSS
+
+To use the CSS file.
+
+    @import '~billmate-style-library/css/styles.css';
+
+### SASS
+
+To use the SASS file and the framework.
+
+    @import '~billmate-style-library/sass/styles.scss';
+
 ## Installation
 
 To being able to work and test this repo the following steps needs to be done.
