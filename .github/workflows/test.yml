@@ -1,6 +1,6 @@
 name: Tests
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   test:
@@ -34,5 +34,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run the test suite
+      - name: Run the CSS linting
         run: npm run css:lint
