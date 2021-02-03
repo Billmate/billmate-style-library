@@ -16,203 +16,203 @@ The available fonts are:
 
 // BuenosAires
 @font-face {font-family: 'BuenosAires';
-  src: url('../resources/fonts/BuenosAires/BuenosAires.eot'); /* IE9*/
-  src: url('../resources/fonts/BuenosAires/BuenosAires.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../resources/fonts/BuenosAires/BuenosAires.woff2') format('woff2'), /* chrome、firefox */
-  url('../resources/fonts/BuenosAires/BuenosAires.woff') format('woff'), /* chrome、firefox */
-  url('../resources/fonts/BuenosAires/BuenosAires.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('../resources/fonts/BuenosAires/BuenosAires.svg#BuenosAires-Regular') format('svg'); /* iOS 4.1- */
+  src: url('/../resources/fonts/BuenosAires/BuenosAires.eot'); /* IE9*/
+  src: url('/../resources/fonts/BuenosAires/BuenosAires.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/../resources/fonts/BuenosAires/BuenosAires.woff2') format('woff2'), /* chrome、firefox */
+  url('/../resources/fonts/BuenosAires/BuenosAires.woff') format('woff'), /* chrome、firefox */
+  url('/../resources/fonts/BuenosAires/BuenosAires.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('/../resources/fonts/BuenosAires/BuenosAires.svg#BuenosAires-Regular') format('svg'); /* iOS 4.1- */
 }
 
 // Sofia Pro
 @font-face {
   font-family: 'Sofia Pro Semi';
-  src: url('../resources/fonts/SofiaPro/SofiaProSemiBold.eot');
+  src: url('/../resources/fonts/SofiaPro/SofiaProSemiBold.eot');
   src: local('Sofia Pro Semi Bold'), local('SofiaProSemiBold'),
-  url('../resources/fonts/SofiaPro/SofiaProSemiBold.eot?#iefix') format('embedded-opentype'),
-  url('../resources/fonts/SofiaPro/SofiaProSemiBold.woff2') format('woff2'),
-  url('../resources/fonts/SofiaPro/SofiaProSemiBold.woff') format('woff'),
-  url('../resources/fonts/SofiaPro/SofiaProSemiBold.ttf') format('truetype');
+  url('/../resources/fonts/SofiaPro/SofiaProSemiBold.eot?#iefix') format('embedded-opentype'),
+  url('/../resources/fonts/SofiaPro/SofiaProSemiBold.woff2') format('woff2'),
+  url('/../resources/fonts/SofiaPro/SofiaProSemiBold.woff') format('woff'),
+  url('/../resources/fonts/SofiaPro/SofiaProSemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url('../resources/fonts/SofiaPro/SofiaProRegular-Italic.eot');
+  src: url('/../resources/fonts/SofiaPro/SofiaProRegular-Italic.eot');
   src: local('Sofia Pro Regular Italic'), local('SofiaProRegular-Italic'),
-  url('../resources/fonts/SofiaPro/SofiaProRegular-Italic.eot?#iefix') format('embedded-opentype'),
-  url('../resources/fonts/SofiaPro/SofiaProRegular-Italic.woff2') format('woff2'),
-  url('../resources/fonts/SofiaPro/SofiaProRegular-Italic.woff') format('woff'),
-  url('../resources/fonts/SofiaPro/SofiaProRegular-Italic.ttf') format('truetype');
+  url('/../resources/fonts/SofiaPro/SofiaProRegular-Italic.eot?#iefix') format('embedded-opentype'),
+  url('/../resources/fonts/SofiaPro/SofiaProRegular-Italic.woff2') format('woff2'),
+  url('/../resources/fonts/SofiaPro/SofiaProRegular-Italic.woff') format('woff'),
+  url('/../resources/fonts/SofiaPro/SofiaProRegular-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Sofia Pro Semi';
-  src: url('../resources/fonts/SofiaPro/SofiaProSemiBold-Italic.eot');
+  src: url('/../resources/fonts/SofiaPro/SofiaProSemiBold-Italic.eot');
   src: local('Sofia Pro Semi Bold Italic'), local('SofiaProSemiBold-Italic'),
-  url('../resources/fonts/SofiaPro/SofiaProSemiBold-Italic.eot?#iefix') format('embedded-opentype'),
-  url('../resources/fonts/SofiaPro/SofiaProSemiBold-Italic.woff2') format('woff2'),
-  url('../resources/fonts/SofiaPro/SofiaProSemiBold-Italic.woff') format('woff'),
-  url('../resources/fonts/SofiaPro/SofiaProSemiBold-Italic.ttf') format('truetype');
+  url('/../resources/fonts/SofiaPro/SofiaProSemiBold-Italic.eot?#iefix') format('embedded-opentype'),
+  url('/../resources/fonts/SofiaPro/SofiaProSemiBold-Italic.woff2') format('woff2'),
+  url('/../resources/fonts/SofiaPro/SofiaProSemiBold-Italic.woff') format('woff'),
+  url('/../resources/fonts/SofiaPro/SofiaProSemiBold-Italic.ttf') format('truetype');
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url('../resources/fonts/SofiaPro/SofiaProLight.eot');
+  src: url('/../resources/fonts/SofiaPro/SofiaProLight.eot');
   src: local('Sofia Pro Light'), local('SofiaProLight'),
-  url('../resources/fonts/SofiaPro/SofiaProLight.eot?#iefix') format('embedded-opentype'),
-  url('../resources/fonts/SofiaPro/SofiaProLight.woff2') format('woff2'),
-  url('../resources/fonts/SofiaPro/SofiaProLight.woff') format('woff'),
-  url('../resources/fonts/SofiaPro/SofiaProLight.ttf') format('truetype');
+  url('/../resources/fonts/SofiaPro/SofiaProLight.eot?#iefix') format('embedded-opentype'),
+  url('/../resources/fonts/SofiaPro/SofiaProLight.woff2') format('woff2'),
+  url('/../resources/fonts/SofiaPro/SofiaProLight.woff') format('woff'),
+  url('/../resources/fonts/SofiaPro/SofiaProLight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url('../resources/fonts/SofiaPro/SofiaProExtraLight.eot');
+  src: url('/../resources/fonts/SofiaPro/SofiaProExtraLight.eot');
   src: local('Sofia Pro ExtraLight'), local('SofiaProExtraLight'),
-  url('../resources/fonts/SofiaPro/SofiaProExtraLight.eot?#iefix') format('embedded-opentype'),
-  url('../resources/fonts/SofiaPro/SofiaProExtraLight.woff2') format('woff2'),
-  url('../resources/fonts/SofiaPro/SofiaProExtraLight.woff') format('woff'),
-  url('../resources/fonts/SofiaPro/SofiaProExtraLight.ttf') format('truetype');
+  url('/../resources/fonts/SofiaPro/SofiaProExtraLight.eot?#iefix') format('embedded-opentype'),
+  url('/../resources/fonts/SofiaPro/SofiaProExtraLight.woff2') format('woff2'),
+  url('/../resources/fonts/SofiaPro/SofiaProExtraLight.woff') format('woff'),
+  url('/../resources/fonts/SofiaPro/SofiaProExtraLight.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url('../resources/fonts/SofiaPro/SofiaProMedium-Italic.eot');
+  src: url('/../resources/fonts/SofiaPro/SofiaProMedium-Italic.eot');
   src: local('Sofia Pro Medium Italic'), local('SofiaProMedium-Italic'),
-  url('../resources/fonts/SofiaPro/SofiaProMedium-Italic.eot?#iefix') format('embedded-opentype'),
-  url('../resources/fonts/SofiaPro/SofiaProMedium-Italic.woff2') format('woff2'),
-  url('../resources/fonts/SofiaPro/SofiaProMedium-Italic.woff') format('woff'),
-  url('../resources/fonts/SofiaPro/SofiaProMedium-Italic.ttf') format('truetype');
+  url('/../resources/fonts/SofiaPro/SofiaProMedium-Italic.eot?#iefix') format('embedded-opentype'),
+  url('/../resources/fonts/SofiaPro/SofiaProMedium-Italic.woff2') format('woff2'),
+  url('/../resources/fonts/SofiaPro/SofiaProMedium-Italic.woff') format('woff'),
+  url('/../resources/fonts/SofiaPro/SofiaProMedium-Italic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url('../resources/fonts/SofiaPro/SofiaProUltraLight-Italic.eot');
+  src: url('/../resources/fonts/SofiaPro/SofiaProUltraLight-Italic.eot');
   src: local('Sofia Pro UltraLight Italic'), local('SofiaProUltraLight-Italic'),
-  url('../resources/fonts/SofiaPro/SofiaProUltraLight-Italic.eot?#iefix') format('embedded-opentype'),
-  url('../resources/fonts/SofiaPro/SofiaProUltraLight-Italic.woff2') format('woff2'),
-  url('../resources/fonts/SofiaPro/SofiaProUltraLight-Italic.woff') format('woff'),
-  url('../resources/fonts/SofiaPro/SofiaProUltraLight-Italic.ttf') format('truetype');
+  url('/../resources/fonts/SofiaPro/SofiaProUltraLight-Italic.eot?#iefix') format('embedded-opentype'),
+  url('/../resources/fonts/SofiaPro/SofiaProUltraLight-Italic.woff2') format('woff2'),
+  url('/../resources/fonts/SofiaPro/SofiaProUltraLight-Italic.woff') format('woff'),
+  url('/../resources/fonts/SofiaPro/SofiaProUltraLight-Italic.ttf') format('truetype');
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url('../resources/fonts/SofiaPro/SofiaProRegular.eot');
+  src: url('/../resources/fonts/SofiaPro/SofiaProRegular.eot');
   src: local('Sofia Pro Regular'), local('SofiaProRegular'),
-  url('../resources/fonts/SofiaPro/SofiaProRegular.eot?#iefix') format('embedded-opentype'),
-  url('../resources/fonts/SofiaPro/SofiaProRegular.woff2') format('woff2'),
-  url('../resources/fonts/SofiaPro/SofiaProRegular.woff') format('woff'),
-  url('../resources/fonts/SofiaPro/SofiaProRegular.ttf') format('truetype');
+  url('/../resources/fonts/SofiaPro/SofiaProRegular.eot?#iefix') format('embedded-opentype'),
+  url('/../resources/fonts/SofiaPro/SofiaProRegular.woff2') format('woff2'),
+  url('/../resources/fonts/SofiaPro/SofiaProRegular.woff') format('woff'),
+  url('/../resources/fonts/SofiaPro/SofiaProRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url('../resources/fonts/SofiaPro/SofiaProMedium.eot');
+  src: url('/../resources/fonts/SofiaPro/SofiaProMedium.eot');
   src: local('Sofia Pro Medium'), local('SofiaProMedium'),
-  url('../resources/fonts/SofiaPro/SofiaProMedium.eot?#iefix') format('embedded-opentype'),
-  url('../resources/fonts/SofiaPro/SofiaProMedium.woff2') format('woff2'),
-  url('../resources/fonts/SofiaPro/SofiaProMedium.woff') format('woff'),
-  url('../resources/fonts/SofiaPro/SofiaProMedium.ttf') format('truetype');
+  url('/../resources/fonts/SofiaPro/SofiaProMedium.eot?#iefix') format('embedded-opentype'),
+  url('/../resources/fonts/SofiaPro/SofiaProMedium.woff2') format('woff2'),
+  url('/../resources/fonts/SofiaPro/SofiaProMedium.woff') format('woff'),
+  url('/../resources/fonts/SofiaPro/SofiaProMedium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url('../resources/fonts/SofiaPro/SofiaProBold.eot');
+  src: url('/../resources/fonts/SofiaPro/SofiaProBold.eot');
   src: local('Sofia Pro Bold'), local('SofiaProBold'),
-  url('../resources/fonts/SofiaPro/SofiaProBold.eot?#iefix') format('embedded-opentype'),
-  url('../resources/fonts/SofiaPro/SofiaProBold.woff2') format('woff2'),
-  url('../resources/fonts/SofiaPro/SofiaProBold.woff') format('woff'),
-  url('../resources/fonts/SofiaPro/SofiaProBold.ttf') format('truetype');
+  url('/../resources/fonts/SofiaPro/SofiaProBold.eot?#iefix') format('embedded-opentype'),
+  url('/../resources/fonts/SofiaPro/SofiaProBold.woff2') format('woff2'),
+  url('/../resources/fonts/SofiaPro/SofiaProBold.woff') format('woff'),
+  url('/../resources/fonts/SofiaPro/SofiaProBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url('../resources/fonts/SofiaPro/SofiaProExtraLight-Italic.eot');
+  src: url('/../resources/fonts/SofiaPro/SofiaProExtraLight-Italic.eot');
   src: local('Sofia Pro ExtraLight Italic'), local('SofiaProExtraLight-Italic'),
-  url('../resources/fonts/SofiaPro/SofiaProExtraLight-Italic.eot?#iefix') format('embedded-opentype'),
-  url('../resources/fonts/SofiaPro/SofiaProExtraLight-Italic.woff2') format('woff2'),
-  url('../resources/fonts/SofiaPro/SofiaProExtraLight-Italic.woff') format('woff'),
-  url('../resources/fonts/SofiaPro/SofiaProExtraLight-Italic.ttf') format('truetype');
+  url('/../resources/fonts/SofiaPro/SofiaProExtraLight-Italic.eot?#iefix') format('embedded-opentype'),
+  url('/../resources/fonts/SofiaPro/SofiaProExtraLight-Italic.woff2') format('woff2'),
+  url('/../resources/fonts/SofiaPro/SofiaProExtraLight-Italic.woff') format('woff'),
+  url('/../resources/fonts/SofiaPro/SofiaProExtraLight-Italic.ttf') format('truetype');
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url('../resources/fonts/SofiaPro/SofiaProLight-Italic.eot');
+  src: url('/../resources/fonts/SofiaPro/SofiaProLight-Italic.eot');
   src: local('Sofia Pro Light Italic'), local('SofiaProLight-Italic'),
-  url('../resources/fonts/SofiaPro/SofiaProLight-Italic.eot?#iefix') format('embedded-opentype'),
-  url('../resources/fonts/SofiaPro/SofiaProLight-Italic.woff2') format('woff2'),
-  url('../resources/fonts/SofiaPro/SofiaProLight-Italic.woff') format('woff'),
-  url('../resources/fonts/SofiaPro/SofiaProLight-Italic.ttf') format('truetype');
+  url('/../resources/fonts/SofiaPro/SofiaProLight-Italic.eot?#iefix') format('embedded-opentype'),
+  url('/../resources/fonts/SofiaPro/SofiaProLight-Italic.woff2') format('woff2'),
+  url('/../resources/fonts/SofiaPro/SofiaProLight-Italic.woff') format('woff'),
+  url('/../resources/fonts/SofiaPro/SofiaProLight-Italic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url('../resources/fonts/SofiaPro/SofiaProBlack-Italic.eot');
+  src: url('/../resources/fonts/SofiaPro/SofiaProBlack-Italic.eot');
   src: local('Sofia Pro Black Italic'), local('SofiaProBlack-Italic'),
-  url('../resources/fonts/SofiaPro/SofiaProBlack-Italic.eot?#iefix') format('embedded-opentype'),
-  url('../resources/fonts/SofiaPro/SofiaProBlack-Italic.woff2') format('woff2'),
-  url('../resources/fonts/SofiaPro/SofiaProBlack-Italic.woff') format('woff'),
-  url('../resources/fonts/SofiaPro/SofiaProBlack-Italic.ttf') format('truetype');
+  url('/../resources/fonts/SofiaPro/SofiaProBlack-Italic.eot?#iefix') format('embedded-opentype'),
+  url('/../resources/fonts/SofiaPro/SofiaProBlack-Italic.woff2') format('woff2'),
+  url('/../resources/fonts/SofiaPro/SofiaProBlack-Italic.woff') format('woff'),
+  url('/../resources/fonts/SofiaPro/SofiaProBlack-Italic.ttf') format('truetype');
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url('../resources/fonts/SofiaPro/SofiaProBlack.eot');
+  src: url('/../resources/fonts/SofiaPro/SofiaProBlack.eot');
   src: local('Sofia Pro Black'), local('SofiaProBlack'),
-  url('../resources/fonts/SofiaPro/SofiaProBlack.eot?#iefix') format('embedded-opentype'),
-  url('../resources/fonts/SofiaPro/SofiaProBlack.woff2') format('woff2'),
-  url('../resources/fonts/SofiaPro/SofiaProBlack.woff') format('woff'),
-  url('../resources/fonts/SofiaPro/SofiaProBlack.ttf') format('truetype');
+  url('/../resources/fonts/SofiaPro/SofiaProBlack.eot?#iefix') format('embedded-opentype'),
+  url('/../resources/fonts/SofiaPro/SofiaProBlack.woff2') format('woff2'),
+  url('/../resources/fonts/SofiaPro/SofiaProBlack.woff') format('woff'),
+  url('/../resources/fonts/SofiaPro/SofiaProBlack.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url('../resources/fonts/SofiaPro/SofiaProUltraLight.eot');
+  src: url('/../resources/fonts/SofiaPro/SofiaProUltraLight.eot');
   src: local('Sofia Pro UltraLight'), local('SofiaProUltraLight'),
-  url('../resources/fonts/SofiaPro/SofiaProUltraLight.eot?#iefix') format('embedded-opentype'),
-  url('../resources/fonts/SofiaPro/SofiaProUltraLight.woff2') format('woff2'),
-  url('../resources/fonts/SofiaPro/SofiaProUltraLight.woff') format('woff'),
-  url('../resources/fonts/SofiaPro/SofiaProUltraLight.ttf') format('truetype');
+  url('/../resources/fonts/SofiaPro/SofiaProUltraLight.eot?#iefix') format('embedded-opentype'),
+  url('/../resources/fonts/SofiaPro/SofiaProUltraLight.woff2') format('woff2'),
+  url('/../resources/fonts/SofiaPro/SofiaProUltraLight.woff') format('woff'),
+  url('/../resources/fonts/SofiaPro/SofiaProUltraLight.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url('../resources/fonts/SofiaPro/SofiaProBold-Italic.eot');
+  src: url('/../resources/fonts/SofiaPro/SofiaProBold-Italic.eot');
   src: local('Sofia Pro Bold Italic'), local('SofiaProBold-Italic'),
-  url('../resources/fonts/SofiaPro/SofiaProBold-Italic.eot?#iefix') format('embedded-opentype'),
-  url('../resources/fonts/SofiaPro/SofiaProBold-Italic.woff2') format('woff2'),
-  url('../resources/fonts/SofiaPro/SofiaProBold-Italic.woff') format('woff'),
-  url('../resources/fonts/SofiaPro/SofiaProBold-Italic.ttf') format('truetype');
+  url('/../resources/fonts/SofiaPro/SofiaProBold-Italic.eot?#iefix') format('embedded-opentype'),
+  url('/../resources/fonts/SofiaPro/SofiaProBold-Italic.woff2') format('woff2'),
+  url('/../resources/fonts/SofiaPro/SofiaProBold-Italic.woff') format('woff'),
+  url('/../resources/fonts/SofiaPro/SofiaProBold-Italic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
