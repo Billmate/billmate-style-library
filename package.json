@@ -4,7 +4,7 @@
   "description": "Billmate styling library",
   "main": "index.js",
   "scripts": {
-    "css:build": "npm run css:resources && node-sass --include-path resources/ --omit-source-map-url sass/styles.scss css/styles.css",
+    "css:build": "npm run css:resources && node-sass --include-path resources/ --omit-source-map-url --importer node_modules/node-sass-package-importer/dist/cli.js sass/styles.scss css/styles.css",
     "css:watch": "npm run css:build -- --watch",
     "css:lint": "npx stylelint sass/**/*.scss",
     "css:resources": "cp ./node_modules/fontawesome5-webfont/css/fontawesome-all.css ./resources/fontawesome/css/ && cp -r ./node_modules/fontawesome5-webfont/webfonts  ./resources/fontawesome/",
@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "node-sass": "^5.0.0",
+    "node-sass-package-importer": "^5.3.2",
     "stylelint": "^13.9.0",
     "stylelint-config-standard": "^20.0.0",
     "stylemark": "^3.1.7"

@@ -20,9 +20,9 @@ $control-radius: 0;
 $family-sans-serif: 'Sofia Pro';
 
 // Import Bulma general styles
-@import '../node_modules/bulma/bulma.sass';
-@import '../node_modules/bulma-switch/src/sass/index.sass';
-@import '../node_modules/bulma-checkradio/src/sass/index.sass';
+@import '~bulma/bulma.sass';
+@import '~bulma-switch/src/sass/index.sass';
+@import '~bulma-checkradio/src/sass/index.sass';
 
 // Import Fontawesome 5 icons
 @import '../resources/fontawesome/css/fontawesome-all.css';
