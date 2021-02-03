@@ -1,5 +1,18 @@
 /*
 ---
+name: Overview
+category: Introduction
+---
+
+A frontend styling library for using Billmate styles. It is built upon the CSS framework
+called Bulma (https://bulma.io/) and contains the icon library Font Awesome (https://fontawesome.com/).
+
+So basically any component or styling from Bulma documentation (https://bulma.io/documentation/) can be used
+but with a Billmate look and feel.
+
+*/
+/*
+---
 name: Color palette
 category: Variables
 ---
@@ -10506,3 +10519,12 @@ Select can be used with `<select>`  elements.
 
 .select:not(.is-multiple):not(.is-loading)::after {
   border-color: #000000; }
+
+.panel-block {
+  color: #000000; }
+
+.is-size-5 {
+  font-size: 1.125rem !important; }
+
+.has-text-grey {
+  color: #6F6F6F !important; }

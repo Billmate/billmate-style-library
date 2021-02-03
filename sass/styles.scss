@@ -35,3 +35,6 @@ $family-sans-serif: 'Sofia Pro';
 @import 'elements/controls';
 @import 'elements/inputs';
 @import 'elements/selects';
+
+// Bulma override specific for Billmate
+@import 'bulma-overrides';
