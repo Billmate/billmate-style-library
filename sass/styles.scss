@@ -35,7 +35,13 @@ To use the SASS file and the framework.
 
     @import '~billmate-style-library/sass/styles.scss';
 
+Then there is a need to override the SASS variable with the correct path.
+
+    $billmate-resource-path: '~billmate-style-library';
+
 */
+
+$billmate-resource-path: '../' !default;
 
 @import 'variables';
 @import 'fonts';
@@ -50,7 +56,7 @@ $family-sans-serif: 'Sofia Pro';
 @import '~bulma-checkradio/src/sass/index.sass';
 
 // Import Fontawesome 5 icons
-@import '/../resources/fontawesome/css/fontawesome-all.css';
+@import url($billmate-resource-path + '/resources/fontawesome/css/fontawesome-all.css');
 
 // Billmate styles
 @import 'colors';

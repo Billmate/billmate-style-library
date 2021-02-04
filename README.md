@@ -19,6 +19,10 @@ To use the CSS file.
 
     @import '~billmate-style-library/css/styles.css';
 
+Then there is a need to override the SASS variable with the correct path.
+
+    $billmate-resource-path: '~billmate-style-library';
+
 ### SASS
 
 To use the SASS file and the framework.
