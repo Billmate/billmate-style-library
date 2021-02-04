@@ -1,6 +1,6 @@
 {
   "name": "billmate-style-library",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Billmate styling library",
   "main": "index.js",
   "scripts": {
