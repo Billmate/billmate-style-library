@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "css:build": "npm run css:resources && node-sass --include-path resources/ --omit-source-map-url --importer node_modules/node-sass-package-importer/dist/cli.js sass/styles.scss css/styles.css",
+    "css:build:minified": "npm run css:resources && node-sass --include-path resources/ --omit-source-map-url --importer node_modules/node-sass-package-importer/dist/cli.js sass/styles.scss css/styles.min.css --output-style compressed",
     "css:watch": "npm run css:build -- --watch",
     "css:lint": "npx stylelint sass/**/*.scss",
     "css:resources": "cp ./node_modules/fontawesome5-webfont/css/fontawesome-all.css ./resources/fontawesome/css/ && cp -r ./node_modules/fontawesome5-webfont/webfonts  ./resources/fontawesome/",
+    "css:prod": "npm run css:build && npm run css:build:minified",
     "styleguide:watch": "stylemark -i sass/ -o docs/ -w -b -c .stylemark.yml",
     "styleguide:build": "stylemark -i sass/ -o docs/ -c .stylemark.yml",
     "start": "npm run css:watch"

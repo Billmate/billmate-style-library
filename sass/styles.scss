@@ -29,6 +29,10 @@ To use the CSS file.
 
     @import '~billmate-style-library/css/styles.css';
 
+To use the minified CSS file.
+
+    @import '~billmate-style-library/css/styles.min.css';
+
 ### SASS
 
 To use the SASS file and the framework.
@@ -41,7 +45,7 @@ Then there is a need to override the SASS variable with the correct path.
 
 */
 
-$billmate-resource-path: '../' !default;
+$billmate-resource-path: '..' !default;
 
 @import 'variables';
 @import 'fonts';

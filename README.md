@@ -19,15 +19,19 @@ To use the CSS file.
 
     @import '~billmate-style-library/css/styles.css';
 
-Then there is a need to override the SASS variable with the correct path.
+To use the minified CSS file.
 
-    $billmate-resource-path: '~billmate-style-library';
+    @import '~billmate-style-library/css/styles.min.css';
 
 ### SASS
 
 To use the SASS file and the framework.
 
     @import '~billmate-style-library/sass/styles.scss';
+
+Then there is a need to override the SASS variable with the correct path.
+
+    $billmate-resource-path: '~billmate-style-library';
 
 ## Installation
 
@@ -50,6 +54,18 @@ The following commands are available for CSS and SASS.
     npm run css:build
 
 Builds the CSS files for Production.
+
+#### Building minified
+
+    npm run css:build:minified
+
+Builds the CSS files for Production as minified.
+
+#### Building all
+
+    npm run css:prod
+
+Builds all the necessary CSS files at once.
 
 #### Watching
 
