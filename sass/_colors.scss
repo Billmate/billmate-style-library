@@ -179,15 +179,17 @@ The text colors that can be used with `<p>` elements or any element with text.
 
 .contentInversePrimary {
   @extend .primaryA;
+  color: $white;
   border: 1px solid $grey600;
-  box-sizing: border-box;
 }
 
 .contentInverseSecondary {
+  @extend .primaryA;
   color: $grey300;
 }
 
 .contentInverseTertiary {
+  @extend .primaryA;
   color: $grey500;
 }
 

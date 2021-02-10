@@ -9594,7 +9594,7 @@ input.rectanglePrimary[type=submit],
 input.pillPrimary[type=submit],
 a.rectanglePrimary,
 a.pillPrimary, .switch[type='checkbox'] + label::before, .switch[type='checkbox'] + label:before,
-.switch[type='checkbox']:checked[type='checkbox'] + label:before, .is-checkradio[type='checkbox'] + label::before, .is-checkradio[type='checkbox'] + label:before, .is-checkradio[type='radio'] + label::before, .is-checkradio[type='radio'] + label:before, .contentInversePrimary, .is-checkradio[type='checkbox'], .is-checkradio[type='radio'] {
+.switch[type='checkbox']:checked[type='checkbox'] + label:before, .is-checkradio[type='checkbox'] + label::before, .is-checkradio[type='checkbox'] + label:before, .is-checkradio[type='radio'] + label::before, .is-checkradio[type='radio'] + label:before, .contentInversePrimary, .contentInverseSecondary, .contentInverseTertiary, .is-checkradio[type='checkbox'], .is-checkradio[type='radio'] {
   background-color: #000000; }
 
 .primaryB, .backgroundPrimary {
@@ -9797,8 +9797,8 @@ a.pillTertiary:enabled, .input[type=text]:focus, .input[type=text]:active,
   color: #949494; }
 
 .contentInversePrimary {
-  border: 1px solid #595959;
-  box-sizing: border-box; }
+  color: #FFFFFF;
+  border: 1px solid #595959; }
 
 .contentInverseSecondary {
   color: #AFAFAF; }
@@ -10159,6 +10159,7 @@ a.smallLabel.pillTertiary, .field .help {
   line-height: 18px; }
 
 body {
+  color: #000000;
   font-family: 'Sofia Pro', sans-serif; }
   body.fontLoaded {
     font-family: 'Sofia Pro', sans-serif; }
