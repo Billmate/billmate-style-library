@@ -10226,7 +10226,30 @@ a {
   a.rectanglePrimary,
   a.pillPrimary {
     color: #FFFFFF;
-    border: 0; }
+    border: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 56px; }
+    button.rectanglePrimary.mediumLabel, button.mediumLabel.pillPrimary,
+    input[type=button].rectanglePrimary.mediumLabel,
+    input.pillPrimary[type=button].mediumLabel,
+    input[type=submit].rectanglePrimary.mediumLabel,
+    input.pillPrimary[type=submit].mediumLabel,
+    a.rectanglePrimary.mediumLabel,
+    a.mediumLabel.pillPrimary {
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 48px; }
+    button.rectanglePrimary.smallLabel, button.smallLabel.pillPrimary,
+    input[type=button].rectanglePrimary.smallLabel,
+    input.pillPrimary[type=button].smallLabel,
+    input[type=submit].rectanglePrimary.smallLabel,
+    input.pillPrimary[type=submit].smallLabel,
+    a.rectanglePrimary.smallLabel,
+    a.smallLabel.pillPrimary {
+      padding-left: 12px;
+      padding-right: 12px;
+      height: 36px; }
     button.rectanglePrimary:disabled, button.pillPrimary:disabled,
     input[type=button].rectanglePrimary:disabled,
     input.pillPrimary[type=button]:disabled,
@@ -10268,7 +10291,30 @@ a {
   input.pillSecondary[type=submit],
   a.rectangleSecondary,
   a.pillSecondary {
-    border: 0; }
+    border: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 56px; }
+    button.rectangleSecondary.mediumLabel, button.mediumLabel.pillSecondary,
+    input[type=button].rectangleSecondary.mediumLabel,
+    input.pillSecondary[type=button].mediumLabel,
+    input[type=submit].rectangleSecondary.mediumLabel,
+    input.pillSecondary[type=submit].mediumLabel,
+    a.rectangleSecondary.mediumLabel,
+    a.mediumLabel.pillSecondary {
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 48px; }
+    button.rectangleSecondary.smallLabel, button.smallLabel.pillSecondary,
+    input[type=button].rectangleSecondary.smallLabel,
+    input.pillSecondary[type=button].smallLabel,
+    input[type=submit].rectangleSecondary.smallLabel,
+    input.pillSecondary[type=submit].smallLabel,
+    a.rectangleSecondary.smallLabel,
+    a.smallLabel.pillSecondary {
+      padding-left: 12px;
+      padding-right: 12px;
+      height: 36px; }
     button.rectangleSecondary:disabled, button.pillSecondary:disabled,
     input[type=button].rectangleSecondary:disabled,
     input.pillSecondary[type=button]:disabled,
@@ -10284,7 +10330,7 @@ a {
     input.pillSecondary[type=submit]:hover,
     a.rectangleSecondary:hover,
     a.pillSecondary:hover {
-      opacity: 0.82; }
+      background-color: rgba(0, 0, 0, 0.12); }
     button.rectangleSecondary:active, button.pillSecondary:active,
     input[type=button].rectangleSecondary:active,
     input.pillSecondary[type=button]:active,
@@ -10292,7 +10338,7 @@ a {
     input.pillSecondary[type=submit]:active,
     a.rectangleSecondary:active,
     a.pillSecondary:active {
-      opacity: 0.7; }
+      background-color: rgba(0, 0, 0, 0.2); }
   button.rectangleTertiary, button.pillTertiary,
   input[type=button].rectangleTertiary,
   input.pillTertiary[type=button],
@@ -10300,7 +10346,30 @@ a {
   input.pillTertiary[type=submit],
   a.rectangleTertiary,
   a.pillTertiary {
-    border: 0; }
+    border: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 56px; }
+    button.rectangleTertiary.mediumLabel, button.mediumLabel.pillTertiary,
+    input[type=button].rectangleTertiary.mediumLabel,
+    input.pillTertiary[type=button].mediumLabel,
+    input[type=submit].rectangleTertiary.mediumLabel,
+    input.pillTertiary[type=submit].mediumLabel,
+    a.rectangleTertiary.mediumLabel,
+    a.mediumLabel.pillTertiary {
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 48px; }
+    button.rectangleTertiary.smallLabel, button.smallLabel.pillTertiary,
+    input[type=button].rectangleTertiary.smallLabel,
+    input.pillTertiary[type=button].smallLabel,
+    input[type=submit].rectangleTertiary.smallLabel,
+    input.pillTertiary[type=submit].smallLabel,
+    a.rectangleTertiary.smallLabel,
+    a.smallLabel.pillTertiary {
+      padding-left: 12px;
+      padding-right: 12px;
+      height: 36px; }
     button.rectangleTertiary:disabled, button.pillTertiary:disabled,
     input[type=button].rectangleTertiary:disabled,
     input.pillTertiary[type=button]:disabled,
@@ -10316,7 +10385,7 @@ a {
     input.pillTertiary[type=submit]:hover,
     a.rectangleTertiary:hover,
     a.pillTertiary:hover {
-      opacity: 0.82; }
+      background-color: rgba(0, 0, 0, 0.12); }
     button.rectangleTertiary:active, button.pillTertiary:active,
     input[type=button].rectangleTertiary:active,
     input.pillTertiary[type=button]:active,
@@ -10324,7 +10393,7 @@ a {
     input.pillTertiary[type=submit]:active,
     a.rectangleTertiary:active,
     a.pillTertiary:active {
-      opacity: 0.7; }
+      background-color: rgba(0, 0, 0, 0.2); }
   button.pillPrimary,
   input[type=button].pillPrimary,
   input[type=submit].pillPrimary,
