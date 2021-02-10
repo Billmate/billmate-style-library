@@ -9788,7 +9788,9 @@ a.pillTertiary:enabled, .input[type=text]:focus, .input[type=text]:active,
 .input[type=email]:active, .select select:focus, .select select:active {
   color: #000000; }
 
-.contentSecondary {
+.contentSecondary, .input[type=text]::placeholder,
+.input[type=password]::placeholder,
+.input[type=email]::placeholder {
   color: #595959; }
 
 .contentTertiary, .input[type=text],
@@ -10495,6 +10497,7 @@ Types of inputs:
 - Negative input: Input with negative accent
 
 ```types.html
+<input type="text" class="input" placeholder="Placeholder text" />
 <input type="text" class="input" value="Standard input" />
 <input type="text" class="input positive" value="Positive input" />
 <input type="text" class="input negative" value="Negative input" />
@@ -10503,9 +10506,11 @@ Types of inputs:
 .input[type=text],
 .input[type=password],
 .input[type=email] {
-  border: 2px solid transparent;
+  border: 0;
   border-radius: 0;
-  height: 56px; }
+  height: 56px;
+  font-size: 18px;
+  box-shadow: none; }
   .input[type=text]:focus, .input[type=text]:active,
   .input[type=password]:focus,
   .input[type=password]:active,
