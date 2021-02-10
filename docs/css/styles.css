@@ -9594,10 +9594,10 @@ input.rectanglePrimary[type=submit],
 input.pillPrimary[type=submit],
 a.rectanglePrimary,
 a.pillPrimary, .switch[type='checkbox'] + label::before, .switch[type='checkbox'] + label:before,
-.switch[type='checkbox']:checked[type='checkbox'] + label:before, .is-checkradio[type='checkbox'] + label::before, .is-checkradio[type='checkbox'] + label:before, .is-checkradio[type='radio'] + label::before, .is-checkradio[type='radio'] + label:before, .contentInversePrimary, .borderInverseSelected, .is-checkradio[type='checkbox'], .is-checkradio[type='radio'] {
+.switch[type='checkbox']:checked[type='checkbox'] + label:before, .is-checkradio[type='checkbox'] + label::before, .is-checkradio[type='checkbox'] + label:before, .is-checkradio[type='radio'] + label::before, .is-checkradio[type='radio'] + label:before, .contentInversePrimary, .is-checkradio[type='checkbox'], .is-checkradio[type='radio'] {
   background-color: #000000; }
 
-.primaryB, .backgroundPrimary, .borderSelected {
+.primaryB, .backgroundPrimary {
   background-color: #FFFFFF;
   border: 1px solid #CFCFCF;
   box-sizing: border-box; }
@@ -9873,8 +9873,14 @@ The border colors that can be used with any element.
 .borderDefault {
   border: 1px solid #CFCFCF; }
 
+.borderSelected {
+  border: 1px solid #000000; }
+
 .borderInverseDefault {
   border: 1px solid #3B3B3B; }
+
+.borderInverseSelected {
+  border: 1px solid #FFFFFF; }
 
 /*
 ---
@@ -9894,7 +9900,7 @@ The border colors that can be used with any element.
 ```
 */
 .borderStateDisabled {
-  border: 1px solid #F6F6F6; }
+  border: 1px solid #EAEAEA; }
 
 .borderAccent {
   border: 1px solid #14A3EB; }

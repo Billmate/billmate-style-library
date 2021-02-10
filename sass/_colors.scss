@@ -247,7 +247,7 @@ The border colors that can be used with any element.
 }
 
 .borderSelected {
-  @extend .primaryB;
+  border: 1px solid $black;
 }
 
 .borderInverseDefault {
@@ -255,7 +255,7 @@ The border colors that can be used with any element.
 }
 
 .borderInverseSelected {
-  @extend .primaryA;
+  border: 1px solid $white;
 }
 
 /*
@@ -276,7 +276,7 @@ The border colors that can be used with any element.
 ```
 */
 .borderStateDisabled {
-  border: 1px solid $grey50;
+  border: 1px solid $grey100;
 }
 
 .borderAccent {
