@@ -1,7 +1,18 @@
+@mixin svg-include($svgPath) {
+  -webkit-mask-image: url($svgPath);
+  mask-image: url($svgPath);
+}
+
 .bm-icon {
   width: 100%;
   height: 100%;
   margin: 0;
+  background-color: currentColor;
+  content: '';
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
 }
 
 /*
@@ -20,7 +31,7 @@ Misc icons can be used with `<i>` and `<span>` elements and within `<input>` and
 */
 .bm-icon-placeholder {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/misc/placeholder.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/misc/placeholder.svg');
 }
 
 /*
@@ -60,47 +71,47 @@ Direction icons can be used with `<i>` and `<span>` elements and within `<input>
 */
 .bm-icon-arrow-left {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/direction/arrow-left.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/direction/arrow-left.svg');
 }
 
 .bm-icon-arrow-up {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/direction/arrow-up.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/direction/arrow-up.svg');
 }
 
 .bm-icon-arrow-down {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/direction/arrow-down.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/direction/arrow-down.svg');
 }
 
 .bm-icon-arrow-right {
-  @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/direction/arrow-right.svg') no-repeat center;
+  @extend .bm-icon;;
+  @include svg-include($billmate-resource-path + '/resources/icons/direction/arrow-right.svg');
 }
 
 .bm-icon-chevron-left {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/direction/chevron-left.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/direction/chevron-left.svg');
 }
 
 .bm-icon-chevron-up {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/direction/chevron-up.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/direction/chevron-up.svg');
 }
 
 .bm-icon-chevron-down {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/direction/chevron-down.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/direction/chevron-down.svg');
 }
 
 .bm-icon-chevron-right {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/direction/chevron-right.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/direction/chevron-right.svg');
 }
 
 /*
 ---
-name: Basics
+name: Basic
 category: Icons
 ---
 
@@ -144,57 +155,57 @@ Basic icons can be used with `<i>` and `<span>` elements and within `<input>` an
 */
 .bm-icon-cross-circle-outlined {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/basics/cross-circle-outlined.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/basics/cross-circle-outlined.svg');
 }
 
 .bm-icon-cross-circle-solid {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/basics/cross-circle-solid.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/basics/cross-circle-solid.svg');
 }
 
 .bm-icon-cross {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/basics/cross.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/basics/cross.svg');
 }
 
 .bm-icon-check {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/basics/check.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/basics/check.svg');
 }
 
 .bm-icon-alert {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/basics/alert.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/basics/alert.svg');
 }
 
 .bm-icon-chat {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/basics/chat.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/basics/chat.svg');
 }
 
 .bm-icon-bell {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/basics/bell.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/basics/bell.svg');
 }
 
 .bm-icon-search {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/basics/search.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/basics/search.svg');
 }
 
 .bm-icon-options {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/basics/options.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/basics/options.svg');
 }
 
 .bm-icon-copy-v1 {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/basics/copy-v1.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/basics/copy-v1.svg');
 }
 
 .bm-icon-copy-v2 {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/basics/copy-v2.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/basics/copy-v2.svg');
 }
 
 /*
@@ -222,22 +233,22 @@ Payment icons can be used with `<i>` and `<span>` elements and within `<input>` 
 */
 .bm-icon-mastercard {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/payment/mastercard.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/payment/mastercard.svg');
 }
 
 .bm-icon-credit-card-v1 {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/payment/credit-card-v1.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/payment/credit-card-v1.svg');
 }
 
 .bm-icon-credit-card-v2 {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/payment/credit-card-v2.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/payment/credit-card-v2.svg');
 }
 
 .bm-icon-bank-id-sv {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/payment/bank-id-sv.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/payment/bank-id-sv.svg');
 }
 
 /*
@@ -259,10 +270,10 @@ User icons can be used with `<i>` and `<span>` elements and within `<input>` and
 */
 .bm-profile-circular {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/user/profile-circular.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/user/profile-circular.svg');
 }
 
 .bm-profile {
   @extend .bm-icon;
-  background: url($billmate-resource-path + '/resources/icons/user/profile.svg') no-repeat center;
+  @include svg-include($billmate-resource-path + '/resources/icons/user/profile.svg');
 }

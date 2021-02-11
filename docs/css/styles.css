@@ -10173,7 +10173,13 @@ label {
 .bm-icon, .bm-icon-placeholder, .bm-icon-arrow-left, .bm-icon-arrow-up, .bm-icon-arrow-down, .bm-icon-arrow-right, .bm-icon-chevron-left, .bm-icon-chevron-up, .bm-icon-chevron-down, .bm-icon-chevron-right, .bm-icon-cross-circle-outlined, .bm-icon-cross-circle-solid, .bm-icon-cross, .bm-icon-check, .bm-icon-alert, .bm-icon-chat, .bm-icon-bell, .bm-icon-search, .bm-icon-options, .bm-icon-copy-v1, .bm-icon-copy-v2, .bm-icon-mastercard, .bm-icon-credit-card-v1, .bm-icon-credit-card-v2, .bm-icon-bank-id-sv, .bm-profile-circular, .bm-profile {
   width: 100%;
   height: 100%;
-  margin: 0; }
+  margin: 0;
+  background-color: currentColor;
+  content: '';
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center; }
 
 /*
 ---
@@ -10190,7 +10196,8 @@ Misc icons can be used with `<i>` and `<span>` elements and within `<input>` and
 ```
 */
 .bm-icon-placeholder {
-  background: url("../resources/icons/misc/placeholder.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/misc/placeholder.svg");
+  mask-image: url("../resources/icons/misc/placeholder.svg"); }
 
 /*
 ---
@@ -10228,32 +10235,40 @@ Direction icons can be used with `<i>` and `<span>` elements and within `<input>
 ```
 */
 .bm-icon-arrow-left {
-  background: url("../resources/icons/direction/arrow-left.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/direction/arrow-left.svg");
+  mask-image: url("../resources/icons/direction/arrow-left.svg"); }
 
 .bm-icon-arrow-up {
-  background: url("../resources/icons/direction/arrow-up.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/direction/arrow-up.svg");
+  mask-image: url("../resources/icons/direction/arrow-up.svg"); }
 
 .bm-icon-arrow-down {
-  background: url("../resources/icons/direction/arrow-down.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/direction/arrow-down.svg");
+  mask-image: url("../resources/icons/direction/arrow-down.svg"); }
 
 .bm-icon-arrow-right {
-  background: url("../resources/icons/direction/arrow-right.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/direction/arrow-right.svg");
+  mask-image: url("../resources/icons/direction/arrow-right.svg"); }
 
 .bm-icon-chevron-left {
-  background: url("../resources/icons/direction/chevron-left.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/direction/chevron-left.svg");
+  mask-image: url("../resources/icons/direction/chevron-left.svg"); }
 
 .bm-icon-chevron-up {
-  background: url("../resources/icons/direction/chevron-up.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/direction/chevron-up.svg");
+  mask-image: url("../resources/icons/direction/chevron-up.svg"); }
 
 .bm-icon-chevron-down {
-  background: url("../resources/icons/direction/chevron-down.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/direction/chevron-down.svg");
+  mask-image: url("../resources/icons/direction/chevron-down.svg"); }
 
 .bm-icon-chevron-right {
-  background: url("../resources/icons/direction/chevron-right.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/direction/chevron-right.svg");
+  mask-image: url("../resources/icons/direction/chevron-right.svg"); }
 
 /*
 ---
-name: Basics
+name: Basic
 category: Icons
 ---
 
@@ -10296,37 +10311,48 @@ Basic icons can be used with `<i>` and `<span>` elements and within `<input>` an
 ```
 */
 .bm-icon-cross-circle-outlined {
-  background: url("../resources/icons/basics/cross-circle-outlined.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/basics/cross-circle-outlined.svg");
+  mask-image: url("../resources/icons/basics/cross-circle-outlined.svg"); }
 
 .bm-icon-cross-circle-solid {
-  background: url("../resources/icons/basics/cross-circle-solid.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/basics/cross-circle-solid.svg");
+  mask-image: url("../resources/icons/basics/cross-circle-solid.svg"); }
 
 .bm-icon-cross {
-  background: url("../resources/icons/basics/cross.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/basics/cross.svg");
+  mask-image: url("../resources/icons/basics/cross.svg"); }
 
 .bm-icon-check {
-  background: url("../resources/icons/basics/check.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/basics/check.svg");
+  mask-image: url("../resources/icons/basics/check.svg"); }
 
 .bm-icon-alert {
-  background: url("../resources/icons/basics/alert.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/basics/alert.svg");
+  mask-image: url("../resources/icons/basics/alert.svg"); }
 
 .bm-icon-chat {
-  background: url("../resources/icons/basics/chat.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/basics/chat.svg");
+  mask-image: url("../resources/icons/basics/chat.svg"); }
 
 .bm-icon-bell {
-  background: url("../resources/icons/basics/bell.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/basics/bell.svg");
+  mask-image: url("../resources/icons/basics/bell.svg"); }
 
 .bm-icon-search {
-  background: url("../resources/icons/basics/search.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/basics/search.svg");
+  mask-image: url("../resources/icons/basics/search.svg"); }
 
 .bm-icon-options {
-  background: url("../resources/icons/basics/options.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/basics/options.svg");
+  mask-image: url("../resources/icons/basics/options.svg"); }
 
 .bm-icon-copy-v1 {
-  background: url("../resources/icons/basics/copy-v1.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/basics/copy-v1.svg");
+  mask-image: url("../resources/icons/basics/copy-v1.svg"); }
 
 .bm-icon-copy-v2 {
-  background: url("../resources/icons/basics/copy-v2.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/basics/copy-v2.svg");
+  mask-image: url("../resources/icons/basics/copy-v2.svg"); }
 
 /*
 ---
@@ -10352,16 +10378,20 @@ Payment icons can be used with `<i>` and `<span>` elements and within `<input>` 
 ```
 */
 .bm-icon-mastercard {
-  background: url("../resources/icons/payment/mastercard.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/payment/mastercard.svg");
+  mask-image: url("../resources/icons/payment/mastercard.svg"); }
 
 .bm-icon-credit-card-v1 {
-  background: url("../resources/icons/payment/credit-card-v1.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/payment/credit-card-v1.svg");
+  mask-image: url("../resources/icons/payment/credit-card-v1.svg"); }
 
 .bm-icon-credit-card-v2 {
-  background: url("../resources/icons/payment/credit-card-v2.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/payment/credit-card-v2.svg");
+  mask-image: url("../resources/icons/payment/credit-card-v2.svg"); }
 
 .bm-icon-bank-id-sv {
-  background: url("../resources/icons/payment/bank-id-sv.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/payment/bank-id-sv.svg");
+  mask-image: url("../resources/icons/payment/bank-id-sv.svg"); }
 
 /*
 ---
@@ -10381,10 +10411,12 @@ User icons can be used with `<i>` and `<span>` elements and within `<input>` and
 ```
 */
 .bm-profile-circular {
-  background: url("../resources/icons/user/profile-circular.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/user/profile-circular.svg");
+  mask-image: url("../resources/icons/user/profile-circular.svg"); }
 
 .bm-profile {
-  background: url("../resources/icons/user/profile.svg") no-repeat center; }
+  -webkit-mask-image: url("../resources/icons/user/profile.svg");
+  mask-image: url("../resources/icons/user/profile.svg"); }
 
 /*
 ---
@@ -10404,7 +10436,21 @@ Types of buttons:
 <button class="button rectanglePrimary mediumLabel">Rectangle Primary - medium button</button>
 <button class="button rectanglePrimary smallLabel">Rectangle Primary - small button</button>
 <button class="button rectangleSecondary">Rectangle Secondary</button>
-<button class="button rectangleTertiary">Rectangle Tertiary</button>
+<button class="button rectangleTertiary"><span class="icon">
+  <i class="bm-icon-placeholder"></i>
+</span>Rectangle Tertiary</button>
+<button class="button rectanglePrimary">
+  <span class="icon">
+    <i class="bm-icon-placeholder"></i>
+  </span>
+  <span>Rectangle Tertiary</span>
+</button>
+<button class="button rectanglePrimary">
+  <span>Rectangle Tertiary</span>
+  <span class="icon">
+    <i class="bm-icon-arrow-right"></i>
+  </span>
+</button>
 ```
 */
 /*

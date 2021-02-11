@@ -52,44 +52,72 @@
 		
 	</head>
 
-	<body>					<button class="button rectanglePrimary">Rectangle Primary</button>
-<button class="button rectanglePrimary mediumLabel">Rectangle Primary - medium button</button>
-<button class="button rectanglePrimary smallLabel">Rectangle Primary - small button</button>
-<button class="button rectangleSecondary">Rectangle Secondary</button>
-<button class="button rectangleTertiary"><span class="icon">
-  <i class="bm-icon-placeholder"></i>
-</span>Rectangle Tertiary</button>
-<button class="button rectanglePrimary">
-  <span class="icon">
-    <i class="bm-icon-placeholder"></i>
-  </span>
-  <span>Rectangle Tertiary</span>
-</button>
-<button class="button rectanglePrimary">
-  <span>Rectangle Tertiary</span>
-  <span class="icon">
-    <i class="bm-icon-arrow-right"></i>
-  </span>
-</button>
-			<script type="text/x-stylemark" data-language="html"><button class="button rectanglePrimary">Rectangle Primary</button>
-<button class="button rectanglePrimary mediumLabel">Rectangle Primary - medium button</button>
-<button class="button rectanglePrimary smallLabel">Rectangle Primary - small button</button>
-<button class="button rectangleSecondary">Rectangle Secondary</button>
-<button class="button rectangleTertiary"><span class="icon">
-  <i class="bm-icon-placeholder"></i>
-</span>Rectangle Tertiary</button>
-<button class="button rectanglePrimary">
-  <span class="icon">
-    <i class="bm-icon-placeholder"></i>
-  </span>
-  <span>Rectangle Tertiary</span>
-</button>
-<button class="button rectanglePrimary">
-  <span>Rectangle Tertiary</span>
-  <span class="icon">
-    <i class="bm-icon-arrow-right"></i>
-  </span>
-</button></script>
+	<body>					<span class="icon">
+  <i class="bm-icon-cross-circle-outlined"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-cross-circle-solid"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-cross"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-check"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-alert"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-chat"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-bell"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-search"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-options"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-copy-v1"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-copy-v2"></i>
+</span>
+			<script type="text/x-stylemark" data-language="html"><span class="icon">
+  <i class="bm-icon-cross-circle-outlined"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-cross-circle-solid"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-cross"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-check"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-alert"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-chat"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-bell"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-search"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-options"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-copy-v1"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-copy-v2"></i>
+</span></script>
 
 		<!--
 			Vanilla JS
@@ -122,10 +150,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-button-types', []);
+						module = angular.module('stylemark-basic-icons', []);
 					}
 
-					module.controller('stylemark-button-types-' + index, function($scope) {
+					module.controller('stylemark-basic-icons-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
