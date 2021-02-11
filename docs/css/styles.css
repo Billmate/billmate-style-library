@@ -10170,6 +10170,222 @@ p,
 label {
   font-family: 'Sofia Pro', sans-serif; }
 
+.bm-icon, .bm-icon-placeholder, .bm-icon-arrow-left, .bm-icon-arrow-up, .bm-icon-arrow-down, .bm-icon-arrow-right, .bm-icon-chevron-left, .bm-icon-chevron-up, .bm-icon-chevron-down, .bm-icon-chevron-right, .bm-icon-cross-circle-outlined, .bm-icon-cross-circle-solid, .bm-icon-cross, .bm-icon-check, .bm-icon-alert, .bm-icon-chat, .bm-icon-bell, .bm-icon-search, .bm-icon-options, .bm-icon-copy-v1, .bm-icon-copy-v2, .bm-icon-mastercard, .bm-icon-credit-card-v1, .bm-icon-credit-card-v2, .bm-icon-bank-id-sv, .bm-profile-circular, .bm-profile {
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+/*
+---
+name: Misc
+category: Icons
+---
+
+Misc icons can be used with `<i>` and `<span>` elements and within `<input>` and `<button>`.
+
+```icons.html
+<span class="icon">
+  <i class="bm-icon-placeholder"></i>
+</span>
+```
+*/
+.bm-icon-placeholder {
+  background: url("../resources/icons/misc/placeholder.svg") no-repeat center; }
+
+/*
+---
+name: Direction
+category: Icons
+---
+
+Direction icons can be used with `<i>` and `<span>` elements and within `<input>` and `<button>`.
+
+```icons.html
+<span class="icon">
+  <i class="bm-icon-arrow-left"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-arrow-up"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-arrow-down"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-arrow-right"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-chevron-left"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-chevron-up"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-chevron-down"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-chevron-right"></i>
+</span>
+```
+*/
+.bm-icon-arrow-left {
+  background: url("../resources/icons/direction/arrow-left.svg") no-repeat center; }
+
+.bm-icon-arrow-up {
+  background: url("../resources/icons/direction/arrow-up.svg") no-repeat center; }
+
+.bm-icon-arrow-down {
+  background: url("../resources/icons/direction/arrow-down.svg") no-repeat center; }
+
+.bm-icon-arrow-right {
+  background: url("../resources/icons/direction/arrow-right.svg") no-repeat center; }
+
+.bm-icon-chevron-left {
+  background: url("../resources/icons/direction/chevron-left.svg") no-repeat center; }
+
+.bm-icon-chevron-up {
+  background: url("../resources/icons/direction/chevron-up.svg") no-repeat center; }
+
+.bm-icon-chevron-down {
+  background: url("../resources/icons/direction/chevron-down.svg") no-repeat center; }
+
+.bm-icon-chevron-right {
+  background: url("../resources/icons/direction/chevron-right.svg") no-repeat center; }
+
+/*
+---
+name: Basics
+category: Icons
+---
+
+Basic icons can be used with `<i>` and `<span>` elements and within `<input>` and `<button>`.
+
+```icons.html
+<span class="icon">
+  <i class="bm-icon-cross-circle-outlined"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-cross-circle-solid"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-cross"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-check"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-alert"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-chat"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-bell"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-search"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-options"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-copy-v1"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-copy-v2"></i>
+</span>
+```
+*/
+.bm-icon-cross-circle-outlined {
+  background: url("../resources/icons/basics/cross-circle-outlined.svg") no-repeat center; }
+
+.bm-icon-cross-circle-solid {
+  background: url("../resources/icons/basics/cross-circle-solid.svg") no-repeat center; }
+
+.bm-icon-cross {
+  background: url("../resources/icons/basics/cross.svg") no-repeat center; }
+
+.bm-icon-check {
+  background: url("../resources/icons/basics/check.svg") no-repeat center; }
+
+.bm-icon-alert {
+  background: url("../resources/icons/basics/alert.svg") no-repeat center; }
+
+.bm-icon-chat {
+  background: url("../resources/icons/basics/chat.svg") no-repeat center; }
+
+.bm-icon-bell {
+  background: url("../resources/icons/basics/bell.svg") no-repeat center; }
+
+.bm-icon-search {
+  background: url("../resources/icons/basics/search.svg") no-repeat center; }
+
+.bm-icon-options {
+  background: url("../resources/icons/basics/options.svg") no-repeat center; }
+
+.bm-icon-copy-v1 {
+  background: url("../resources/icons/basics/copy-v1.svg") no-repeat center; }
+
+.bm-icon-copy-v2 {
+  background: url("../resources/icons/basics/copy-v2.svg") no-repeat center; }
+
+/*
+---
+name: Payment
+category: Icons
+---
+
+Payment icons can be used with `<i>` and `<span>` elements and within `<input>` and `<button>`.
+
+```icons.html
+<span class="icon">
+  <i class="bm-icon-mastercard"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-credit-card-v1"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-credit-card-v2"></i>
+</span>
+<span class="icon">
+  <i class="bm-icon-bank-id-sv"></i>
+</span>
+```
+*/
+.bm-icon-mastercard {
+  background: url("../resources/icons/payment/mastercard.svg") no-repeat center; }
+
+.bm-icon-credit-card-v1 {
+  background: url("../resources/icons/payment/credit-card-v1.svg") no-repeat center; }
+
+.bm-icon-credit-card-v2 {
+  background: url("../resources/icons/payment/credit-card-v2.svg") no-repeat center; }
+
+.bm-icon-bank-id-sv {
+  background: url("../resources/icons/payment/bank-id-sv.svg") no-repeat center; }
+
+/*
+---
+name: User
+category: Icons
+---
+
+User icons can be used with `<i>` and `<span>` elements and within `<input>` and `<button>`.
+
+```icons.html
+<span class="icon">
+  <i class="bm-profile-circular"></i>
+</span>
+<span class="icon">
+  <i class="bm-profile"></i>
+</span>
+```
+*/
+.bm-profile-circular {
+  background: url("../resources/icons/user/profile-circular.svg") no-repeat center; }
+
+.bm-profile {
+  background: url("../resources/icons/user/profile.svg") no-repeat center; }
+
 /*
 ---
 name: Button
