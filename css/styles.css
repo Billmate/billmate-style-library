@@ -10170,6 +10170,10 @@ p,
 label {
   font-family: 'Sofia Pro', sans-serif; }
 
+span.icon {
+  position: relative;
+  top: -2px; }
+
 .bm-icon, .bm-icon-placeholder, .bm-icon-arrow-left, .bm-icon-arrow-up, .bm-icon-arrow-down, .bm-icon-arrow-right, .bm-icon-chevron-left, .bm-icon-chevron-up, .bm-icon-chevron-down, .bm-icon-chevron-right, .bm-icon-cross-circle-outlined, .bm-icon-cross-circle-solid, .bm-icon-cross, .bm-icon-check, .bm-icon-alert, .bm-icon-chat, .bm-icon-bell, .bm-icon-search, .bm-icon-options, .bm-icon-copy-v1, .bm-icon-copy-v2, .bm-icon-mastercard, .bm-icon-credit-card-v1, .bm-icon-credit-card-v2, .bm-icon-bank-id-sv, .bm-profile-circular, .bm-profile {
   width: 100%;
   height: 100%;
@@ -10433,6 +10437,24 @@ Types of buttons:
 
 ```types.html
 <button class="button rectanglePrimary">Rectangle Primary</button>
+<button class="button rectanglePrimary">
+  <span class="icon">
+    <i class="bm-icon-placeholder"></i>
+  </span>
+  <span>Rectangle Primary</span>
+</button>
+<button class="button rectanglePrimary">
+  <span class="is-left">Rectangle Primary</span>
+  <span class="icon">
+    <i class="bm-icon-arrow-right"></i>
+  </span>
+</button>
+<button class="button rectanglePrimary content-space-between">
+  <span>Rectangle Primary</span>
+  <span class="icon">
+    <i class="bm-icon-arrow-right"></i>
+  </span>
+</button>
 <button class="button rectanglePrimary mediumLabel">Rectangle Primary - medium button</button>
 <button class="button rectanglePrimary smallLabel">Rectangle Primary - small button</button>
 <button class="button rectangleSecondary">Rectangle Secondary</button>
@@ -10468,6 +10490,11 @@ a {
   /**
    * Rectangle
    */ }
+  button.content-space-between,
+  input[type=button].content-space-between,
+  input[type=submit].content-space-between,
+  a.content-space-between {
+    justify-content: space-between; }
   button.rectanglePrimary, button.pillPrimary,
   input[type=button].rectanglePrimary,
   input.pillPrimary[type=button],

@@ -3,6 +3,13 @@
   mask-image: url($svgPath);
 }
 
+span {
+  &.icon {
+    position: relative;
+    top: -2px;
+  }
+}
+
 .bm-icon {
   width: 100%;
   height: 100%;
