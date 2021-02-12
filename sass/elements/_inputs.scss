@@ -14,8 +14,18 @@ Types of inputs:
 ```types.html
 <input type="text" class="input" placeholder="Placeholder text" />
 <input type="text" class="input" value="Standard input" />
-<input type="text" class="input positive" value="Positive input" />
-<input type="text" class="input negative" value="Negative input" />
+<div class="control has-icons-right">
+  <input type="text" class="input positive" value="Positive input" />
+  <span class="icon is-small is-right">
+    <i class="bm-icon-check contentPositive"></i>
+  </span>
+</div>
+<div class="control has-icons-right">
+  <input type="text" class="input negative" value="Negative input" />
+  <span class="icon is-small is-right">
+    <i class="bm-icon-alert contentNegative"></i>
+  </span>
+</div>
 ```
 */
 .input[type=text],

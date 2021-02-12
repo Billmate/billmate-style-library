@@ -3,13 +3,6 @@
   mask-image: url($svgPath);
 }
 
-span {
-  &.icon {
-    position: relative;
-    top: -2px;
-  }
-}
-
 .bm-icon {
   width: 100%;
   height: 100%;
@@ -240,7 +233,7 @@ Payment icons can be used with `<i>` and `<span>` elements and within `<input>` 
 */
 .bm-icon-mastercard {
   @extend .bm-icon;
-  @include svg-include($billmate-resource-path + '/resources/icons/payment/mastercard.svg');
+  background: url($billmate-resource-path + '/resources/icons/payment/mastercard.svg') no-repeat center;
 }
 
 .bm-icon-credit-card-v1 {
@@ -255,7 +248,7 @@ Payment icons can be used with `<i>` and `<span>` elements and within `<input>` 
 
 .bm-icon-bank-id-sv {
   @extend .bm-icon;
-  @include svg-include($billmate-resource-path + '/resources/icons/payment/bank-id-sv.svg');
+  background: url($billmate-resource-path + '/resources/icons/payment/bank-id-sv.svg') no-repeat center;
 }
 
 /*

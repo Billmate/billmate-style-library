@@ -10170,10 +10170,6 @@ p,
 label {
   font-family: 'Sofia Pro', sans-serif; }
 
-span.icon {
-  position: relative;
-  top: -2px; }
-
 .bm-icon, .bm-icon-placeholder, .bm-icon-arrow-left, .bm-icon-arrow-up, .bm-icon-arrow-down, .bm-icon-arrow-right, .bm-icon-chevron-left, .bm-icon-chevron-up, .bm-icon-chevron-down, .bm-icon-chevron-right, .bm-icon-cross-circle-outlined, .bm-icon-cross-circle-solid, .bm-icon-cross, .bm-icon-check, .bm-icon-alert, .bm-icon-chat, .bm-icon-bell, .bm-icon-search, .bm-icon-options, .bm-icon-copy-v1, .bm-icon-copy-v2, .bm-icon-mastercard, .bm-icon-credit-card-v1, .bm-icon-credit-card-v2, .bm-icon-bank-id-sv, .bm-profile-circular, .bm-profile {
   width: 100%;
   height: 100%;
@@ -10382,8 +10378,7 @@ Payment icons can be used with `<i>` and `<span>` elements and within `<input>` 
 ```
 */
 .bm-icon-mastercard {
-  -webkit-mask-image: url("../resources/icons/payment/mastercard.svg");
-  mask-image: url("../resources/icons/payment/mastercard.svg"); }
+  background: url("../resources/icons/payment/mastercard.svg") no-repeat center; }
 
 .bm-icon-credit-card-v1 {
   -webkit-mask-image: url("../resources/icons/payment/credit-card-v1.svg");
@@ -10394,8 +10389,7 @@ Payment icons can be used with `<i>` and `<span>` elements and within `<input>` 
   mask-image: url("../resources/icons/payment/credit-card-v2.svg"); }
 
 .bm-icon-bank-id-sv {
-  -webkit-mask-image: url("../resources/icons/payment/bank-id-sv.svg");
-  mask-image: url("../resources/icons/payment/bank-id-sv.svg"); }
+  background: url("../resources/icons/payment/bank-id-sv.svg") no-repeat center; }
 
 /*
 ---
@@ -10495,6 +10489,12 @@ a {
   input[type=submit].content-space-between,
   a.content-space-between {
     justify-content: space-between; }
+  button span.icon,
+  input[type=button] span.icon,
+  input[type=submit] span.icon,
+  a span.icon {
+    position: relative;
+    top: -2px; }
   button.rectanglePrimary, button.pillPrimary,
   input[type=button].rectanglePrimary,
   input.pillPrimary[type=button],
@@ -10774,8 +10774,18 @@ Types of inputs:
 ```types.html
 <input type="text" class="input" placeholder="Placeholder text" />
 <input type="text" class="input" value="Standard input" />
-<input type="text" class="input positive" value="Positive input" />
-<input type="text" class="input negative" value="Negative input" />
+<div class="control has-icons-right">
+  <input type="text" class="input positive" value="Positive input" />
+  <span class="icon is-small is-right">
+    <i class="bm-icon-check contentPositive"></i>
+  </span>
+</div>
+<div class="control has-icons-right">
+  <input type="text" class="input negative" value="Negative input" />
+  <span class="icon is-small is-right">
+    <i class="bm-icon-alert contentNegative"></i>
+  </span>
+</div>
 ```
 */
 .input[type=text],

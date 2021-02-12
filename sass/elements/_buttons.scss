@@ -72,6 +72,13 @@ a {
     justify-content: space-between;
   }
 
+  span {
+    &.icon {
+      position: relative;
+      top: -2px;
+    }
+  }
+
   /**
    * Rectangle
    */
@@ -173,7 +180,7 @@ a {
     &:active {
       @extend .contentPrimary;
 
-      background-color: rgba($black, 0.20);
+      background-color: rgba($black, 0.2);
     }
 
     &:enabled {
@@ -226,7 +233,7 @@ a {
       @extend .backgroundTertiary;
       @extend .contentPrimary;
 
-      background-color: rgba($black, 0.20);
+      background-color: rgba($black, 0.2);
     }
 
     &:enabled {
