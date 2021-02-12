@@ -26,6 +26,7 @@ Types of inputs:
     <i class="bm-icon-alert contentNegative"></i>
   </span>
 </div>
+<input type="text" class="input" disabled value="Standard input" />
 ```
 */
 .input[type=text],
@@ -52,6 +53,21 @@ Types of inputs:
 
   &:enabled {
     color: $black;
+  }
+
+  &:disabled {
+    @extend .backgroundTertiary;
+
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+
+    &:enabled,
+    &:focus,
+    &:active {
+      @extend .backgroundTertiary;
+      @extend .contentTertiary;
+    }
   }
 
   &::placeholder {

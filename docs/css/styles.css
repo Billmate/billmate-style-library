@@ -9654,7 +9654,15 @@ input.pillTertiary[type=submit]:active,
 a.rectangleTertiary:active,
 a.pillTertiary:active, .input[type=text],
 .input[type=password],
-.input[type=email], .select select {
+.input[type=email], .input[type=text]:disabled,
+.input[type=password]:disabled,
+.input[type=email]:disabled, .input[type=text]:disabled:enabled, .input[type=text]:disabled:focus, .input[type=text]:disabled:active,
+.input[type=password]:disabled:enabled,
+.input[type=password]:disabled:focus,
+.input[type=password]:disabled:active,
+.input[type=email]:disabled:enabled,
+.input[type=email]:disabled:focus,
+.input[type=email]:disabled:active, .select select {
   background-color: #EAEAEA; }
 
 .backgroundInverseSecondary {
@@ -9736,7 +9744,7 @@ The text colors that can be used with `<p>` elements or any element with text.
 <div class="contentTertiary">Content Tertiary</div>
 <div class="contentInversePrimary">Content Inverse Primary</div>
 <div class="contentInverseSecondary">Content Inverse Secondary</div>
-<div class="contentInverseSecondary">Content Inverse Tertiary</div>
+<div class="contentInverseTertiary">Content Inverse Tertiary</div>
 ```
 */
 .contentPrimary, button.rectangleSecondary, button.pillSecondary,
@@ -9795,12 +9803,17 @@ a.pillTertiary:enabled, .input[type=text]:focus, .input[type=text]:active,
 
 .contentTertiary, .input[type=text],
 .input[type=password],
-.input[type=email], .field .help, .select select {
+.input[type=email], .input[type=text]:disabled:enabled, .input[type=text]:disabled:focus, .input[type=text]:disabled:active,
+.input[type=password]:disabled:enabled,
+.input[type=password]:disabled:focus,
+.input[type=password]:disabled:active,
+.input[type=email]:disabled:enabled,
+.input[type=email]:disabled:focus,
+.input[type=email]:disabled:active, .field .help, .select select {
   color: #949494; }
 
 .contentInversePrimary {
-  color: #FFFFFF;
-  border: 1px solid #595959; }
+  color: #FFFFFF; }
 
 .contentInverseSecondary {
   color: #AFAFAF; }
@@ -10786,6 +10799,7 @@ Types of inputs:
     <i class="bm-icon-alert contentNegative"></i>
   </span>
 </div>
+<input type="text" class="input" disabled value="Standard input" />
 ```
 */
 .input[type=text],
@@ -10808,6 +10822,12 @@ Types of inputs:
   .input[type=password]:enabled,
   .input[type=email]:enabled {
     color: #000000; }
+  .input[type=text]:disabled,
+  .input[type=password]:disabled,
+  .input[type=email]:disabled {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none; }
   .input[type=text].positive, .input.backgroundPositive[type=text],
   .input[type=password].positive,
   .input.backgroundPositive[type=password],

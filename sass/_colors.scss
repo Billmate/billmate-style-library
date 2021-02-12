@@ -162,7 +162,7 @@ The text colors that can be used with `<p>` elements or any element with text.
 <div class="contentTertiary">Content Tertiary</div>
 <div class="contentInversePrimary">Content Inverse Primary</div>
 <div class="contentInverseSecondary">Content Inverse Secondary</div>
-<div class="contentInverseSecondary">Content Inverse Tertiary</div>
+<div class="contentInverseTertiary">Content Inverse Tertiary</div>
 ```
 */
 .contentPrimary {
@@ -180,7 +180,6 @@ The text colors that can be used with `<p>` elements or any element with text.
 .contentInversePrimary {
   @extend .primaryA;
   color: $white;
-  border: 1px solid $grey600;
 }
 
 .contentInverseSecondary {
