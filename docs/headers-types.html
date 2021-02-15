@@ -52,14 +52,18 @@
 		
 	</head>
 
-	<body>					<p class="paragraphLarge">Paragraph Large</p>
-<p class="paragraphMedium">Paragraph Medium</p>
-<p class="paragraphSmall">Paragraph Small</h1>
-<p class="paragraphXSmall">Paragraph Extra Small</p>
-			<script type="text/x-stylemark" data-language="html"><p class="paragraphLarge">Paragraph Large</p>
-<p class="paragraphMedium">Paragraph Medium</p>
-<p class="paragraphSmall">Paragraph Small</h1>
-<p class="paragraphXSmall">Paragraph Extra Small</p></script>
+	<body>					<h1>Header 1</h1>
+<h2>Header 2</h2>
+<h3>Header 3</h3>
+<h4>Header 4</h4>
+<h5>Header 5</h5>
+<h6>Header 6</h6>
+			<script type="text/x-stylemark" data-language="html"><h1>Header 1</h1>
+<h2>Header 2</h2>
+<h3>Header 3</h3>
+<h4>Header 4</h4>
+<h5>Header 5</h5>
+<h6>Header 6</h6></script>
 
 		<!--
 			Vanilla JS
@@ -92,10 +96,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-paragraph-types', []);
+						module = angular.module('stylemark-headers-types', []);
 					}
 
-					module.controller('stylemark-paragraph-types-' + index, function($scope) {
+					module.controller('stylemark-headers-types-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

@@ -9932,7 +9932,7 @@ The border colors that can be used with any element.
 .borderWarning {
   border: 1px solid #F5D696; }
 
-.secondaryFont, .displayL, .displayM, .displayS, .displayXS, .headingXLarge, .header div.header-content.headingXLarge, h1 div.header-content.headingXLarge, h2 div.header-content.headingXLarge, h3 div.header-content.headingXLarge, h4 div.header-content.headingXLarge, h5 div.header-content.headingXLarge, h6 div.header-content.headingXLarge, .headingLarge, .header div.header-content.headingLarge, h1 div.header-content.headingLarge, h2 div.header-content.headingLarge, h3 div.header-content.headingLarge, h4 div.header-content.headingLarge, h5 div.header-content.headingLarge, h6 div.header-content.headingLarge, .headingM, .header div.header-content.headingM, h1 div.header-content.headingM, h2 div.header-content.headingM, h3 div.header-content.headingM, h4 div.header-content.headingM, h5 div.header-content.headingM, h6 div.header-content.headingM, .headingSmall, .header div.header-content.headingSmall, h1 div.header-content.headingSmall, h2 div.header-content.headingSmall, h3 div.header-content.headingSmall, h4 div.header-content.headingSmall, h5 div.header-content.headingSmall, h6 div.header-content.headingSmall, .headingXSmall, .header div.header-content.headingXSmall, h1 div.header-content.headingXSmall, h2 div.header-content.headingXSmall, h3 div.header-content.headingXSmall, h4 div.header-content.headingXSmall, h5 div.header-content.headingXSmall, h6 div.header-content.headingXSmall, .headingXXSmall, .header div.header-content.headingXXSmall, h1 div.header-content.headingXXSmall, h2 div.header-content.headingXXSmall, h3 div.header-content.headingXXSmall, h4 div.header-content.headingXXSmall, h5 div.header-content.headingXXSmall, h6 div.header-content.headingXXSmall {
+.secondaryFont, .displayL, .displayM, .displayS, .displayXS, .headingXLarge, h1, .header div.header-content.headingXLarge, h1 div.header-content.headingXLarge, h2 div.header-content.headingXLarge, h3 div.header-content.headingXLarge, h4 div.header-content.headingXLarge, h5 div.header-content.headingXLarge, h6 div.header-content.headingXLarge, .headingLarge, h2, .header div.header-content.headingLarge, h1 div.header-content.headingLarge, h2 div.header-content.headingLarge, h3 div.header-content.headingLarge, h4 div.header-content.headingLarge, h5 div.header-content.headingLarge, h6 div.header-content.headingLarge, .headingM, h3, .header div.header-content.headingM, h1 div.header-content.headingM, h2 div.header-content.headingM, h3 div.header-content.headingM, h4 div.header-content.headingM, h5 div.header-content.headingM, h6 div.header-content.headingM, .headingSmall, h4, .header div.header-content.headingSmall, h1 div.header-content.headingSmall, h2 div.header-content.headingSmall, h3 div.header-content.headingSmall, h4 div.header-content.headingSmall, h5 div.header-content.headingSmall, h6 div.header-content.headingSmall, .headingXSmall, h5, .header div.header-content.headingXSmall, h1 div.header-content.headingXSmall, h2 div.header-content.headingXSmall, h3 div.header-content.headingXSmall, h4 div.header-content.headingXSmall, h5 div.header-content.headingXSmall, h6 div.header-content.headingXSmall, .headingXXSmall, h6, .header div.header-content.headingXXSmall, h1 div.header-content.headingXXSmall, h2 div.header-content.headingXXSmall, h3 div.header-content.headingXXSmall, h4 div.header-content.headingXXSmall, h5 div.header-content.headingXXSmall, h6 div.header-content.headingXXSmall {
   font-family: 'BuenosAires'; }
 
 /*
@@ -9988,7 +9988,7 @@ name: Heading
 category: Typography
 ---
 
-Heading types  can be used with `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` and `<h6>` elements.
+Heading types can be used with `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` and `<h6>` elements.
 
 ```types.html
 <h1 class="headingXLarge">Heading Extra Large</h1>
@@ -9999,48 +9999,65 @@ Heading types  can be used with `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` and `<h6>
 <h1 class="headingXXSmall">Heading Extra Extra Small</h1>
 ```
 */
-.headingXLarge, .header div.header-content.headingXLarge, h1 div.header-content.headingXLarge, h2 div.header-content.headingXLarge, h3 div.header-content.headingXLarge, h4 div.header-content.headingXLarge, h5 div.header-content.headingXLarge, h6 div.header-content.headingXLarge {
+.headingXLarge, h1, .header div.header-content.headingXLarge, h1 div.header-content.headingXLarge, h2 div.header-content.headingXLarge, h3 div.header-content.headingXLarge, h4 div.header-content.headingXLarge, h5 div.header-content.headingXLarge, h6 div.header-content.headingXLarge {
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.02em;
   font-size: 48px;
   line-height: 58px; }
 
-.headingLarge, .header div.header-content.headingLarge, h1 div.header-content.headingLarge, h2 div.header-content.headingLarge, h3 div.header-content.headingLarge, h4 div.header-content.headingLarge, h5 div.header-content.headingLarge, h6 div.header-content.headingLarge {
+.headingLarge, h2, .header div.header-content.headingLarge, h1 div.header-content.headingLarge, h2 div.header-content.headingLarge, h3 div.header-content.headingLarge, h4 div.header-content.headingLarge, h5 div.header-content.headingLarge, h6 div.header-content.headingLarge {
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.02em;
   font-size: 36px;
   line-height: 44px; }
 
-.headingM, .header div.header-content.headingM, h1 div.header-content.headingM, h2 div.header-content.headingM, h3 div.header-content.headingM, h4 div.header-content.headingM, h5 div.header-content.headingM, h6 div.header-content.headingM {
+.headingM, h3, .header div.header-content.headingM, h1 div.header-content.headingM, h2 div.header-content.headingM, h3 div.header-content.headingM, h4 div.header-content.headingM, h5 div.header-content.headingM, h6 div.header-content.headingM {
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.02em;
   font-size: 32px;
   line-height: 38px; }
 
-.headingSmall, .header div.header-content.headingSmall, h1 div.header-content.headingSmall, h2 div.header-content.headingSmall, h3 div.header-content.headingSmall, h4 div.header-content.headingSmall, h5 div.header-content.headingSmall, h6 div.header-content.headingSmall {
+.headingSmall, h4, .header div.header-content.headingSmall, h1 div.header-content.headingSmall, h2 div.header-content.headingSmall, h3 div.header-content.headingSmall, h4 div.header-content.headingSmall, h5 div.header-content.headingSmall, h6 div.header-content.headingSmall {
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.02em;
   font-size: 24px;
   line-height: 28px; }
 
-.headingXSmall, .header div.header-content.headingXSmall, h1 div.header-content.headingXSmall, h2 div.header-content.headingXSmall, h3 div.header-content.headingXSmall, h4 div.header-content.headingXSmall, h5 div.header-content.headingXSmall, h6 div.header-content.headingXSmall {
+.headingXSmall, h5, .header div.header-content.headingXSmall, h1 div.header-content.headingXSmall, h2 div.header-content.headingXSmall, h3 div.header-content.headingXSmall, h4 div.header-content.headingXSmall, h5 div.header-content.headingXSmall, h6 div.header-content.headingXSmall {
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.02em;
   font-size: 20px;
   line-height: 24px; }
 
-.headingXXSmall, .header div.header-content.headingXXSmall, h1 div.header-content.headingXXSmall, h2 div.header-content.headingXXSmall, h3 div.header-content.headingXXSmall, h4 div.header-content.headingXXSmall, h5 div.header-content.headingXXSmall, h6 div.header-content.headingXXSmall {
+.headingXXSmall, h6, .header div.header-content.headingXXSmall, h1 div.header-content.headingXXSmall, h2 div.header-content.headingXXSmall, h3 div.header-content.headingXXSmall, h4 div.header-content.headingXXSmall, h5 div.header-content.headingXXSmall, h6 div.header-content.headingXXSmall {
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.02em;
   font-size: 18px;
   line-height: 22px; }
 
+/*
+---
+name: Headers
+category: Typography
+---
+
+Headers are `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` and `<h6>` elements.
+
+```types.html
+<h1>Header 1</h1>
+<h2>Header 2</h2>
+<h3>Header 3</h3>
+<h4>Header 4</h4>
+<h5>Header 5</h5>
+<h6>Header 6</h6>
+```
+*/
 /*
 ---
 name: Paragraph
@@ -10050,10 +10067,10 @@ category: Typography
 Heading types can be used with `<p>` elements.
 
 ```types.html
-<p class="paragraphLarge">Paragraph Large</h1>
-<p class="paragraphMedium">Paragraph Medium</h1>
+<p class="paragraphLarge">Paragraph Large</p>
+<p class="paragraphMedium">Paragraph Medium</p>
 <p class="paragraphSmall">Paragraph Small</h1>
-<p class="paragraphXSmall">Paragraph Extra Small</h1>
+<p class="paragraphXSmall">Paragraph Extra Small</p>
 ```
 */
 .paragraphLarge {

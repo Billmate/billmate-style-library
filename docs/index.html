@@ -40,6 +40,7 @@
 							</optgroup>
 							<optgroup label="Typography">
 									<option value="display">Display</option>
+									<option value="headers">Headers</option>
 									<option value="heading">Heading</option>
 									<option value="label">Label</option>
 									<option value="paragraph">Paragraph</option>
@@ -789,13 +790,65 @@ but with a Billmate look and feel.</p>
 </div></div>
 </div>
 
+						<div id="headers" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Headers</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_typography.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Headers are <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> and <code>&lt;h6&gt;</code> elements.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="headers-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="headers-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;h1&gt;Header 1&lt;/h1&gt;
+&lt;h2&gt;Header 2&lt;/h2&gt;
+&lt;h3&gt;Header 3&lt;/h3&gt;
+&lt;h4&gt;Header 4&lt;/h4&gt;
+&lt;h5&gt;Header 5&lt;/h5&gt;
+&lt;h6&gt;Header 6&lt;/h6&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;h1&gt;Header 1&lt;/h1&gt;
+&lt;h2&gt;Header 2&lt;/h2&gt;
+&lt;h3&gt;Header 3&lt;/h3&gt;
+&lt;h4&gt;Header 4&lt;/h4&gt;
+&lt;h5&gt;Header 5&lt;/h5&gt;
+&lt;h6&gt;Header 6&lt;/h6&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="heading" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Heading</h1>
 	<span class="theme-content-element-source">
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">_typography.scss</span>
 	</span>
-	<div class="theme-content-element-description"><p>Heading types  can be used with <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> and <code>&lt;h6&gt;</code> elements.</p>
+	<div class="theme-content-element-description"><p>Heading types can be used with <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> and <code>&lt;h6&gt;</code> elements.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -925,14 +978,14 @@ but with a Billmate look and feel.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;p class=&quot;paragraphLarge&quot;&gt;Paragraph Large&lt;/h1&gt;
-&lt;p class=&quot;paragraphMedium&quot;&gt;Paragraph Medium&lt;/h1&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;p class=&quot;paragraphLarge&quot;&gt;Paragraph Large&lt;/p&gt;
+&lt;p class=&quot;paragraphMedium&quot;&gt;Paragraph Medium&lt;/p&gt;
 &lt;p class=&quot;paragraphSmall&quot;&gt;Paragraph Small&lt;/h1&gt;
-&lt;p class=&quot;paragraphXSmall&quot;&gt;Paragraph Extra Small&lt;/h1&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;p class=&quot;paragraphLarge&quot;&gt;Paragraph Large&lt;/h1&gt;
-&lt;p class=&quot;paragraphMedium&quot;&gt;Paragraph Medium&lt;/h1&gt;
+&lt;p class=&quot;paragraphXSmall&quot;&gt;Paragraph Extra Small&lt;/p&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;p class=&quot;paragraphLarge&quot;&gt;Paragraph Large&lt;/p&gt;
+&lt;p class=&quot;paragraphMedium&quot;&gt;Paragraph Medium&lt;/p&gt;
 &lt;p class=&quot;paragraphSmall&quot;&gt;Paragraph Small&lt;/h1&gt;
-&lt;p class=&quot;paragraphXSmall&quot;&gt;Paragraph Extra Small&lt;/h1&gt;</code></pre>
+&lt;p class=&quot;paragraphXSmall&quot;&gt;Paragraph Extra Small&lt;/p&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -1987,7 +2040,7 @@ but with a Billmate look and feel.</p>
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Display  Heading  Label  Paragraph "
+							data-filter-value=" Display  Headers  Heading  Label  Paragraph "
 						>
 							<a href="#category-typography" class="i-sidebar-list-item">
 								<b>Typography</b>
@@ -2001,6 +2054,13 @@ but with a Billmate look and feel.</p>
 									data-filter-value="Display"
 								>
 									<span>Display</span>
+								</a>
+								<a
+									href="#headers"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Headers"
+								>
+									<span>Headers</span>
 								</a>
 								<a
 									href="#heading"
