@@ -1321,7 +1321,7 @@ but with a Billmate look and feel.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">elements/_selects.scss</span>
 	</span>
-	<div class="theme-content-element-description"><p>Select can be used with <code>&lt;select&gt;</code>  elements.</p>
+	<div class="theme-content-element-description"><p>Select can be used with <code>&lt;select&gt;</code> elements.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -1351,41 +1351,83 @@ but with a Billmate look and feel.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;select&quot;&gt;
-  &lt;select&gt;
-    &lt;option&gt;Select dropdown&lt;/option&gt;
-    &lt;option&gt;With options&lt;/option&gt;
-  &lt;/select&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;control&quot;&gt;
+  &lt;div class=&quot;select&quot;&gt;
+    &lt;select&gt;
+      &lt;option&gt;Select dropdown&lt;/option&gt;
+      &lt;option&gt;With options&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;select positive&quot;&gt;
-  &lt;select&gt;
-    &lt;option&gt;Select dropdown Positive&lt;/option&gt;
-    &lt;option&gt;With options&lt;/option&gt;
-  &lt;/select&gt;
+&lt;div class=&quot;control has-icons-right&quot;&gt;
+  &lt;div class=&quot;select positive&quot;&gt;
+    &lt;select&gt;
+      &lt;option selected&gt;Country&lt;/option&gt;
+      &lt;option&gt;Select dropdown&lt;/option&gt;
+      &lt;option&gt;With options&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;span class=&quot;icon is-right&quot;&gt;
+      &lt;i class=&quot;bm-icon-check contentPositive&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;select negative&quot;&gt;
-  &lt;select&gt;
-    &lt;option&gt;Select dropdown Negative&lt;/option&gt;
-    &lt;option&gt;With options&lt;/option&gt;
-  &lt;/select&gt;
+&lt;div class=&quot;control has-icons-right&quot;&gt;
+  &lt;div class=&quot;select negative&quot;&gt;
+    &lt;select&gt;
+      &lt;option&gt;Select dropdown Negative&lt;/option&gt;
+      &lt;option&gt;With options and longer options&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;span class=&quot;icon is-right&quot;&gt;
+      &lt;i class=&quot;bm-icon-alert contentNegative&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;control&quot;&gt;
+  &lt;div class=&quot;select&quot;&gt;
+    &lt;select disabled&gt;
+      &lt;option&gt;Select dropdown disabled&lt;/option&gt;
+      &lt;option&gt;With options&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;select&quot;&gt;
-  &lt;select&gt;
-    &lt;option&gt;Select dropdown&lt;/option&gt;
-    &lt;option&gt;With options&lt;/option&gt;
-  &lt;/select&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;control&quot;&gt;
+  &lt;div class=&quot;select&quot;&gt;
+    &lt;select&gt;
+      &lt;option&gt;Select dropdown&lt;/option&gt;
+      &lt;option&gt;With options&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;select positive&quot;&gt;
-  &lt;select&gt;
-    &lt;option&gt;Select dropdown Positive&lt;/option&gt;
-    &lt;option&gt;With options&lt;/option&gt;
-  &lt;/select&gt;
+&lt;div class=&quot;control has-icons-right&quot;&gt;
+  &lt;div class=&quot;select positive&quot;&gt;
+    &lt;select&gt;
+      &lt;option selected&gt;Country&lt;/option&gt;
+      &lt;option&gt;Select dropdown&lt;/option&gt;
+      &lt;option&gt;With options&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;span class=&quot;icon is-right&quot;&gt;
+      &lt;i class=&quot;bm-icon-check contentPositive&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;select negative&quot;&gt;
-  &lt;select&gt;
-    &lt;option&gt;Select dropdown Negative&lt;/option&gt;
-    &lt;option&gt;With options&lt;/option&gt;
-  &lt;/select&gt;
+&lt;div class=&quot;control has-icons-right&quot;&gt;
+  &lt;div class=&quot;select negative&quot;&gt;
+    &lt;select&gt;
+      &lt;option&gt;Select dropdown Negative&lt;/option&gt;
+      &lt;option&gt;With options and longer options&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;span class=&quot;icon is-right&quot;&gt;
+      &lt;i class=&quot;bm-icon-alert contentNegative&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;control&quot;&gt;
+  &lt;div class=&quot;select&quot;&gt;
+    &lt;select disabled&gt;
+      &lt;option&gt;Select dropdown disabled&lt;/option&gt;
+      &lt;option&gt;With options&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>

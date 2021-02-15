@@ -4,36 +4,79 @@ name: Select
 category: Components
 ---
 
-Select can be used with `<select>`  elements.
+Select can be used with `<select>` elements.
 
 ```types.html
-<div class="select">
-  <select>
-    <option>Select dropdown</option>
-    <option>With options</option>
-  </select>
+<div class="control">
+  <div class="select">
+    <select>
+      <option>Select dropdown</option>
+      <option>With options</option>
+    </select>
+  </div>
 </div>
-<div class="select positive">
-  <select>
-    <option>Select dropdown Positive</option>
-    <option>With options</option>
-  </select>
+<div class="control has-icons-right">
+  <div class="select positive">
+    <select>
+      <option selected>Country</option>
+      <option>Select dropdown</option>
+      <option>With options</option>
+    </select>
+    <span class="icon is-right">
+      <i class="bm-icon-check contentPositive"></i>
+    </span>
+  </div>
 </div>
-<div class="select negative">
-  <select>
-    <option>Select dropdown Negative</option>
-    <option>With options</option>
-  </select>
+<div class="control has-icons-right">
+  <div class="select negative">
+    <select>
+      <option>Select dropdown Negative</option>
+      <option>With options and longer options</option>
+    </select>
+    <span class="icon is-right">
+      <i class="bm-icon-alert contentNegative"></i>
+    </span>
+  </div>
+</div>
+<div class="control">
+  <div class="select">
+    <select disabled>
+      <option>Select dropdown disabled</option>
+      <option>With options</option>
+    </select>
+  </div>
 </div>
 ```
 */
 .select {
   @extend .is-large;
 
+  font-size: 18px;
+
+  &:not(.is-multiple) {
+    height: 56px;
+
+    &:not(.is-loading) {
+      &::after {
+        @extend .bm-icon-chevron-down;
+
+        width: 12px;
+        height: 12px;
+        border: 0;
+        transform: unset;
+        transform-origin: unset;
+        top: 40%;
+        right: 16px;
+      }
+    }
+  }
+
   select {
     @extend .backgroundTertiary;
-    @extend .contentTertiary;
+    @extend .contentPrimary;
 
+    padding: 16px;
+    height: 100%;
     border: 0;
     border-radius: 0;
 
@@ -44,6 +87,24 @@ Select can be used with `<select>`  elements.
       background-color: $white;
       border: 2px solid $black;
       box-shadow: none;
+    }
+
+    &:not([multiple]) {
+      padding-right: 32px;
+    }
+
+    &:disabled {
+      @extend .contentSecondary;
+      @extend .backgroundTertiary;
+
+      &:enabled,
+      &:focus,
+      &:active {
+        @extend .backgroundTertiary;
+        @extend .contentSecondary;
+
+        border: 0;
+      }
     }
   }
 
@@ -82,5 +143,12 @@ Select can be used with `<select>`  elements.
   // Select arrow
   &:not(.is-multiple):not(.is-loading)::after {
     border-color: $black;
+  }
+
+  .icon {
+    &.is-right {
+      right: 30px !important;
+      top: 6px;
+    }
   }
 }

@@ -9662,7 +9662,7 @@ a.pillTertiary:active, .input[type=text],
 .input[type=password]:disabled:active,
 .input[type=email]:disabled:enabled,
 .input[type=email]:disabled:focus,
-.input[type=email]:disabled:active, .select select {
+.input[type=email]:disabled:active, .select select, .select select:disabled, .select select:disabled:enabled, .select select:disabled:focus, .select select:disabled:active {
   background-color: #EAEAEA; }
 
 .backgroundInverseSecondary {
@@ -9793,12 +9793,12 @@ a.pillTertiary:enabled, .input[type=text]:focus, .input[type=text]:active,
 .input[type=password]:focus,
 .input[type=password]:active,
 .input[type=email]:focus,
-.input[type=email]:active, .select select:focus, .select select:active {
+.input[type=email]:active, .select select {
   color: #000000; }
 
 .contentSecondary, .input[type=text]::placeholder,
 .input[type=password]::placeholder,
-.input[type=email]::placeholder {
+.input[type=email]::placeholder, .select select:disabled, .select select:disabled:enabled, .select select:disabled:focus, .select select:disabled:active {
   color: #595959; }
 
 .contentTertiary, .input[type=text],
@@ -9809,7 +9809,7 @@ a.pillTertiary:enabled, .input[type=text]:focus, .input[type=text]:active,
 .input[type=password]:disabled:active,
 .input[type=email]:disabled:enabled,
 .input[type=email]:disabled:focus,
-.input[type=email]:disabled:active, .field .help, .select select {
+.input[type=email]:disabled:active, .field .help {
   color: #949494; }
 
 .contentInversePrimary {
@@ -10183,7 +10183,7 @@ p,
 label {
   font-family: 'Sofia Pro', sans-serif; }
 
-.bm-icon, .bm-icon-placeholder, .bm-icon-arrow-left, .bm-icon-arrow-up, .bm-icon-arrow-down, .bm-icon-arrow-right, .bm-icon-chevron-left, .bm-icon-chevron-up, .bm-icon-chevron-down, .bm-icon-chevron-right, .bm-icon-cross-circle-outlined, .bm-icon-cross-circle-solid, .bm-icon-cross, .bm-icon-check, .bm-icon-alert, .bm-icon-chat, .bm-icon-bell, .bm-icon-search, .bm-icon-options, .bm-icon-copy-v1, .bm-icon-copy-v2, .bm-icon-mastercard, .bm-icon-credit-card-v1, .bm-icon-credit-card-v2, .bm-icon-bank-id-sv, .bm-profile-circular, .bm-profile {
+.bm-icon, .bm-icon-placeholder, .bm-icon-arrow-left, .bm-icon-arrow-up, .bm-icon-arrow-down, .bm-icon-arrow-right, .bm-icon-chevron-left, .bm-icon-chevron-up, .bm-icon-chevron-down, .select:not(.is-multiple):not(.is-loading)::after, .bm-icon-chevron-right, .bm-icon-cross-circle-outlined, .bm-icon-cross-circle-solid, .bm-icon-cross, .bm-icon-check, .bm-icon-alert, .bm-icon-chat, .bm-icon-bell, .bm-icon-search, .bm-icon-options, .bm-icon-copy-v1, .bm-icon-copy-v2, .bm-icon-mastercard, .bm-icon-credit-card-v1, .bm-icon-credit-card-v2, .bm-icon-bank-id-sv, .bm-profile-circular, .bm-profile {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -10271,7 +10271,7 @@ Direction icons can be used with `<i>` and `<span>` elements and within `<input>
   -webkit-mask-image: url("../resources/icons/direction/chevron-up.svg");
   mask-image: url("../resources/icons/direction/chevron-up.svg"); }
 
-.bm-icon-chevron-down {
+.bm-icon-chevron-down, .select:not(.is-multiple):not(.is-loading)::after {
   -webkit-mask-image: url("../resources/icons/direction/chevron-down.svg");
   mask-image: url("../resources/icons/direction/chevron-down.svg"); }
 
@@ -10892,53 +10892,92 @@ name: Select
 category: Components
 ---
 
-Select can be used with `<select>`  elements.
+Select can be used with `<select>` elements.
 
 ```types.html
-<div class="select">
-  <select>
-    <option>Select dropdown</option>
-    <option>With options</option>
-  </select>
+<div class="control">
+  <div class="select">
+    <select>
+      <option>Select dropdown</option>
+      <option>With options</option>
+    </select>
+  </div>
 </div>
-<div class="select positive">
-  <select>
-    <option>Select dropdown Positive</option>
-    <option>With options</option>
-  </select>
+<div class="control has-icons-right">
+  <div class="select positive">
+    <select>
+      <option selected>Country</option>
+      <option>Select dropdown</option>
+      <option>With options</option>
+    </select>
+    <span class="icon is-right">
+      <i class="bm-icon-check contentPositive"></i>
+    </span>
+  </div>
 </div>
-<div class="select negative">
-  <select>
-    <option>Select dropdown Negative</option>
-    <option>With options</option>
-  </select>
+<div class="control has-icons-right">
+  <div class="select negative">
+    <select>
+      <option>Select dropdown Negative</option>
+      <option>With options and longer options</option>
+    </select>
+    <span class="icon is-right">
+      <i class="bm-icon-alert contentNegative"></i>
+    </span>
+  </div>
+</div>
+<div class="control">
+  <div class="select">
+    <select disabled>
+      <option>Select dropdown disabled</option>
+      <option>With options</option>
+    </select>
+  </div>
 </div>
 ```
 */
-.select select {
-  border: 0;
-  border-radius: 0; }
-  .select select:focus, .select select:active {
-    background-color: #FFFFFF;
-    border: 2px solid #000000;
-    box-shadow: none; }
-
-.select.positive select, .select.backgroundPositive select {
-  border-bottom: 2px solid #33CC8C; }
-  .select.positive select:focus, .select.backgroundPositive select:focus, .select.positive select:active, .select.backgroundPositive select:active {
-    border-top: 0;
-    border-left: 0;
-    border-right: 0; }
-
-.select.negative select, .select.backgroundNegative select {
-  border-bottom: 2px solid #EB4114; }
-  .select.negative select:focus, .select.backgroundNegative select:focus, .select.negative select:active, .select.backgroundNegative select:active {
-    border-top: 0;
-    border-left: 0;
-    border-right: 0; }
-
-.select:not(.is-multiple):not(.is-loading)::after {
-  border-color: #000000; }
+.select {
+  font-size: 18px; }
+  .select:not(.is-multiple) {
+    height: 56px; }
+    .select:not(.is-multiple):not(.is-loading)::after {
+      width: 12px;
+      height: 12px;
+      border: 0;
+      transform: unset;
+      transform-origin: unset;
+      top: 40%;
+      right: 16px; }
+  .select select {
+    padding: 16px;
+    height: 100%;
+    border: 0;
+    border-radius: 0; }
+    .select select:focus, .select select:active {
+      background-color: #FFFFFF;
+      border: 2px solid #000000;
+      box-shadow: none; }
+    .select select:not([multiple]) {
+      padding-right: 32px; }
+    .select select:disabled:enabled, .select select:disabled:focus, .select select:disabled:active {
+      border: 0; }
+  .select.positive select, .select.backgroundPositive select {
+    border-bottom: 2px solid #33CC8C; }
+    .select.positive select:focus, .select.backgroundPositive select:focus, .select.positive select:active, .select.backgroundPositive select:active {
+      border-top: 0;
+      border-left: 0;
+      border-right: 0; }
+  .select.negative select, .select.backgroundNegative select {
+    border-bottom: 2px solid #EB4114; }
+    .select.negative select:focus, .select.backgroundNegative select:focus, .select.negative select:active, .select.backgroundNegative select:active {
+      border-top: 0;
+      border-left: 0;
+      border-right: 0; }
+  .select:not(.is-multiple):not(.is-loading)::after {
+    border-color: #000000; }
+  .select .icon.is-right {
+    right: 30px !important;
+    top: 6px; }
 
 .panel-block {
   color: #000000; }
