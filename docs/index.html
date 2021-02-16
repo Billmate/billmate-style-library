@@ -58,6 +58,7 @@
 							<optgroup label="Icons">
 									<option value="basic">Basic</option>
 									<option value="direction">Direction</option>
+									<option value="input-states">Input states</option>
 									<option value="misc">Misc</option>
 									<option value="payment">Payment</option>
 									<option value="user">User</option>
@@ -1123,10 +1124,26 @@ but with a Billmate look and feel.</p>
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;field&quot;&gt;
   &lt;input id=&quot;checkExample&quot; type=&quot;checkbox&quot; name=&quot;checkExample&quot; class=&quot;is-checkradio&quot;&gt;
   &lt;label for=&quot;checkExample&quot;&gt;Check example&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;checkExampleEnabledDisabled&quot; type=&quot;checkbox&quot; name=&quot;checkExampleEnabledDisabled&quot; class=&quot;is-checkradio&quot; checked disabled&gt;
+  &lt;label for=&quot;checkExampleEnabledDisabled&quot;&gt;Check example enabled disabled&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;checkExampleDisabled&quot; type=&quot;checkbox&quot; name=&quot;checkExampleDisabled&quot; class=&quot;is-checkradio&quot; disabled&gt;
+  &lt;label for=&quot;checkExampleDisabled&quot;&gt;Check example disabled&lt;/label&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;field&quot;&gt;
   &lt;input id=&quot;checkExample&quot; type=&quot;checkbox&quot; name=&quot;checkExample&quot; class=&quot;is-checkradio&quot;&gt;
   &lt;label for=&quot;checkExample&quot;&gt;Check example&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;checkExampleEnabledDisabled&quot; type=&quot;checkbox&quot; name=&quot;checkExampleEnabledDisabled&quot; class=&quot;is-checkradio&quot; checked disabled&gt;
+  &lt;label for=&quot;checkExampleEnabledDisabled&quot;&gt;Check example enabled disabled&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;checkExampleDisabled&quot; type=&quot;checkbox&quot; name=&quot;checkExampleDisabled&quot; class=&quot;is-checkradio&quot; disabled&gt;
+  &lt;label for=&quot;checkExampleDisabled&quot;&gt;Check example disabled&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
@@ -1730,6 +1747,64 @@ but with a Billmate look and feel.</p>
 </div></div>
 </div>
 
+						<div id="input-states" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Input states</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_icons.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>User icons can be used with <code>&lt;i&gt;</code> and <code>&lt;span&gt;</code> elements and within <code>&lt;input&gt;</code> and <code>&lt;button&gt;</code>.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="input-states-icons.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="input-states-icons.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-check-enabled&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-check-enabled-off&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-check-disabled&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-check-enabled&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-check-enabled-off&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-check-disabled&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="misc" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Misc</h1>
 	<span class="theme-content-element-source">
@@ -2161,7 +2236,7 @@ but with a Billmate look and feel.</p>
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Basic  Direction  Misc  Payment  User "
+							data-filter-value=" Basic  Direction  Input states  Misc  Payment  User "
 						>
 							<a href="#category-icons" class="i-sidebar-list-item">
 								<b>Icons</b>
@@ -2182,6 +2257,13 @@ but with a Billmate look and feel.</p>
 									data-filter-value="Direction"
 								>
 									<span>Direction</span>
+								</a>
+								<a
+									href="#input-states"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Input states"
+								>
+									<span>Input states</span>
 								</a>
 								<a
 									href="#misc"

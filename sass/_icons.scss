@@ -277,3 +277,38 @@ User icons can be used with `<i>` and `<span>` elements and within `<input>` and
   @extend .bm-icon;
   @include svg-include($billmate-resource-path + '/resources/icons/user/profile.svg');
 }
+
+/*
+---
+name: Input states
+category: Icons
+---
+
+User icons can be used with `<i>` and `<span>` elements and within `<input>` and `<button>`.
+
+```icons.html
+<span class="icon">
+  <i class="bm-check-enabled"></i>
+</span>
+<span class="icon">
+  <i class="bm-check-enabled-off"></i>
+</span>
+<span class="icon">
+  <i class="bm-check-disabled"></i>
+</span>
+```
+*/
+.bm-check-enabled {
+  @extend .bm-icon;
+  @include svg-include($billmate-resource-path + '/resources/icons/input/check/check-enabled.svg');
+}
+
+.bm-check-enabled-off {
+  @extend .bm-icon;
+  @include svg-include($billmate-resource-path + '/resources/icons/input/check/check-enabled-off.svg');
+}
+
+.bm-check-disabled {
+  @extend .bm-icon;
+  @include svg-include($billmate-resource-path + '/resources/icons/input/check/check-disabled.svg');
+}

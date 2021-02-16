@@ -52,30 +52,12 @@
 		
 	</head>
 
-	<body>					<div class="field">
-  <input id="checkExample" type="checkbox" name="checkExample" class="is-checkradio">
-  <label for="checkExample">Check example</label>
-</div>
-<div class="field">
-  <input id="checkExampleEnabledDisabled" type="checkbox" name="checkExampleEnabledDisabled" class="is-checkradio" checked disabled>
-  <label for="checkExampleEnabledDisabled">Check example enabled disabled</label>
-</div>
-<div class="field">
-  <input id="checkExampleDisabled" type="checkbox" name="checkExampleDisabled" class="is-checkradio" disabled>
-  <label for="checkExampleDisabled">Check example disabled</label>
-</div>
-			<script type="text/x-stylemark" data-language="html"><div class="field">
-  <input id="checkExample" type="checkbox" name="checkExample" class="is-checkradio">
-  <label for="checkExample">Check example</label>
-</div>
-<div class="field">
-  <input id="checkExampleEnabledDisabled" type="checkbox" name="checkExampleEnabledDisabled" class="is-checkradio" checked disabled>
-  <label for="checkExampleEnabledDisabled">Check example enabled disabled</label>
-</div>
-<div class="field">
-  <input id="checkExampleDisabled" type="checkbox" name="checkExampleDisabled" class="is-checkradio" disabled>
-  <label for="checkExampleDisabled">Check example disabled</label>
-</div></script>
+	<body>					<span class="icon">
+  <i class="bm-check-enabled"></i>
+</span>
+			<script type="text/x-stylemark" data-language="html"><span class="icon">
+  <i class="bm-check-enabled"></i>
+</span></script>
 
 		<!--
 			Vanilla JS
@@ -108,10 +90,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-check-types', []);
+						module = angular.module('stylemark-input-icons', []);
 					}
 
-					module.controller('stylemark-check-types-' + index, function($scope) {
+					module.controller('stylemark-input-icons-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

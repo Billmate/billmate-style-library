@@ -52,20 +52,29 @@ Check can be used with `<input>` elements.
   <input id="checkExample" type="checkbox" name="checkExample" class="is-checkradio">
   <label for="checkExample">Check example</label>
 </div>
+<div class="field">
+  <input id="checkExampleEnabledDisabled" type="checkbox" name="checkExampleEnabledDisabled" class="is-checkradio" checked disabled>
+  <label for="checkExampleEnabledDisabled">Check example enabled disabled</label>
+</div>
+<div class="field">
+  <input id="checkExampleDisabled" type="checkbox" name="checkExampleDisabled" class="is-checkradio" disabled>
+  <label for="checkExampleDisabled">Check example disabled</label>
+</div>
 ```
 */
 .is-checkradio[type='checkbox'] {
-  @extend .primaryA;
-
   border: 0;
 
   // Active state
   & + label {
+    font-size: 18px;
+
     &::before,
     &:before {
-      // contentTertiary
-      @extend .backgroundInversePrimary;
+      @extend .bm-check-enabled-off;
 
+      width: 24px;
+      height: 24px;
       border-radius: 0;
       border: 0;
     }
@@ -73,7 +82,13 @@ Check can be used with `<input>` elements.
     // Disabled state
     &::after,
     &:after {
-      border-color: $white;
+      @extend .bm-check-enabled;
+
+      width: 24px;
+      height: 24px;
+      transform: unset;
+      top: 0;
+      left: 0;
     }
   }
 
