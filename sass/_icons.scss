@@ -294,7 +294,10 @@ User icons can be used with `<i>` and `<span>` elements and within `<input>` and
   <i class="bm-check-enabled-off"></i>
 </span>
 <span class="icon">
-  <i class="bm-check-disabled"></i>
+  <i class="bm-bullet-enabled"></i>
+</span>
+<span class="icon">
+  <i class="bm-bullet-enabled-off"></i>
 </span>
 ```
 */
@@ -308,7 +311,12 @@ User icons can be used with `<i>` and `<span>` elements and within `<input>` and
   @include svg-include($billmate-resource-path + '/resources/icons/input/check/check-enabled-off.svg');
 }
 
-.bm-check-disabled {
+.bm-bullet-enabled {
   @extend .bm-icon;
-  @include svg-include($billmate-resource-path + '/resources/icons/input/check/check-disabled.svg');
+  @include svg-include($billmate-resource-path + '/resources/icons/input/bullet/bullet-enabled.svg');
+}
+
+.bm-bullet-enabled-off {
+  @extend .bm-icon;
+  @include svg-include($billmate-resource-path + '/resources/icons/input/bullet/bullet-enabled-off.svg');
 }

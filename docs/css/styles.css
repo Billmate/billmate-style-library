@@ -9594,7 +9594,7 @@ input.rectanglePrimary[type=submit],
 input.pillPrimary[type=submit],
 a.rectanglePrimary,
 a.pillPrimary, .switch[type='checkbox'] + label::before, .switch[type='checkbox'] + label:before,
-.switch[type='checkbox']:checked[type='checkbox'] + label:before, .is-checkradio[type='radio'] + label::before, .is-checkradio[type='radio'] + label:before, .contentInversePrimary, .contentInverseSecondary, .contentInverseTertiary, .is-checkradio[type='radio'] {
+.switch[type='checkbox']:checked[type='checkbox'] + label:before, .contentInversePrimary, .contentInverseSecondary, .contentInverseTertiary {
   background-color: #000000; }
 
 .primaryB, .backgroundPrimary {
@@ -10200,7 +10200,7 @@ p,
 label {
   font-family: 'Sofia Pro', sans-serif; }
 
-.bm-icon, .bm-icon-placeholder, .bm-icon-arrow-left, .bm-icon-arrow-up, .bm-icon-arrow-down, .bm-icon-arrow-right, .bm-icon-chevron-left, .bm-icon-chevron-up, .bm-icon-chevron-down, .select:not(.is-multiple):not(.is-loading)::after, .bm-icon-chevron-right, .bm-icon-cross-circle-outlined, .bm-icon-cross-circle-solid, .bm-icon-cross, .bm-icon-check, .bm-icon-alert, .bm-icon-chat, .bm-icon-bell, .bm-icon-search, .bm-icon-options, .bm-icon-copy-v1, .bm-icon-copy-v2, .bm-icon-mastercard, .bm-icon-credit-card-v1, .bm-icon-credit-card-v2, .bm-icon-bank-id-sv, .bm-profile-circular, .bm-profile, .bm-check-enabled, .is-checkradio[type='checkbox'] + label::after, .is-checkradio[type='checkbox'] + label:after, .bm-check-enabled-off, .is-checkradio[type='checkbox'] + label::before, .is-checkradio[type='checkbox'] + label:before, .bm-check-disabled {
+.bm-icon, .bm-icon-placeholder, .bm-icon-arrow-left, .bm-icon-arrow-up, .bm-icon-arrow-down, .bm-icon-arrow-right, .bm-icon-chevron-left, .bm-icon-chevron-up, .bm-icon-chevron-down, .select:not(.is-multiple):not(.is-loading)::after, .bm-icon-chevron-right, .bm-icon-cross-circle-outlined, .bm-icon-cross-circle-solid, .bm-icon-cross, .bm-icon-check, .bm-icon-alert, .bm-icon-chat, .bm-icon-bell, .bm-icon-search, .bm-icon-options, .bm-icon-copy-v1, .bm-icon-copy-v2, .bm-icon-mastercard, .bm-icon-credit-card-v1, .bm-icon-credit-card-v2, .bm-icon-bank-id-sv, .bm-profile-circular, .bm-profile, .bm-check-enabled, .is-checkradio[type='checkbox'] + label::after, .is-checkradio[type='checkbox'] + label:after, .bm-check-enabled-off, .is-checkradio[type='checkbox'] + label::before, .is-checkradio[type='checkbox'] + label:before, .bm-bullet-enabled, .is-checkradio[type='radio'] + label::after, .is-checkradio[type='radio'] + label:after, .bm-bullet-enabled-off, .is-checkradio[type='radio'] + label::before, .is-checkradio[type='radio'] + label:before {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -10462,7 +10462,10 @@ User icons can be used with `<i>` and `<span>` elements and within `<input>` and
   <i class="bm-check-enabled-off"></i>
 </span>
 <span class="icon">
-  <i class="bm-check-disabled"></i>
+  <i class="bm-bullet-enabled"></i>
+</span>
+<span class="icon">
+  <i class="bm-bullet-enabled-off"></i>
 </span>
 ```
 */
@@ -10474,9 +10477,13 @@ User icons can be used with `<i>` and `<span>` elements and within `<input>` and
   -webkit-mask-image: url("../resources/icons/input/check/check-enabled-off.svg");
   mask-image: url("../resources/icons/input/check/check-enabled-off.svg"); }
 
-.bm-check-disabled {
-  -webkit-mask-image: url("../resources/icons/input/check/check-disabled.svg");
-  mask-image: url("../resources/icons/input/check/check-disabled.svg"); }
+.bm-bullet-enabled, .is-checkradio[type='radio'] + label::after, .is-checkradio[type='radio'] + label:after {
+  -webkit-mask-image: url("../resources/icons/input/bullet/bullet-enabled.svg");
+  mask-image: url("../resources/icons/input/bullet/bullet-enabled.svg"); }
+
+.bm-bullet-enabled-off, .is-checkradio[type='radio'] + label::before, .is-checkradio[type='radio'] + label:before {
+  -webkit-mask-image: url("../resources/icons/input/bullet/bullet-enabled-off.svg");
+  mask-image: url("../resources/icons/input/bullet/bullet-enabled-off.svg"); }
 
 /*
 ---
@@ -10827,13 +10834,32 @@ Radio can be used with `<input>` elements.
 
 ```types.html
 <div class="field">
-  <input id="radioExample" type="radio" name="radioExample" class="is-checkradio">
-  <label for="radioExample">Radio example</label>
+  <input id="radioExample1" type="radio" name="radioExample" class="is-checkradio" checked>
+  <label for="radioExample1">Radio example 1 checked</label>
+  <input id="radioExample2" type="radio" name="radioExample" class="is-checkradio">
+  <label for="radioExample2">Radio example 2</label>
+</div>
+<div class="field">
+  <input id="radioExampleEnabledDisabled" type="radio" name="radioExampleEnabledDisabled" class="is-checkradio" checked disabled>
+  <label for="radioExampleEnabledDisabled">Radio example enabled disabled</label>
+</div>
+<div class="field">
+  <input id="radioExampleDisabled" type="radio" name="radioExampleDisabled" class="is-checkradio" disabled>
+  <label for="radioExampleDisabled">Radio example disabled</label>
 </div>
 ```
 */
-.is-checkradio[type="radio"] + label::after, .is-checkradio[type="radio"] + label:after {
-  background-color: #FFFFFF; }
+.is-checkradio[type="radio"] + label {
+  font-size: 18px; }
+  .is-checkradio[type="radio"] + label::before, .is-checkradio[type="radio"] + label:before {
+    width: 24px;
+    height: 24px; }
+  .is-checkradio[type="radio"] + label::after, .is-checkradio[type="radio"] + label:after {
+    width: 24px;
+    height: 24px;
+    transform: unset;
+    top: 0;
+    left: 0; }
 
 .is-checkradio[type='radio']:hover:not([disabled]) + label:before, .is-checkradio[type='radio']:hover:not([disabled]) + label::before {
   border: 0; }
