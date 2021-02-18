@@ -1,0 +1,47 @@
+/*
+---
+name: Tags
+category: Components
+---
+
+Tags can be used with `<div>` or `<span>` elements.
+
+```types.html
+<div class="tags-static backgroundSecondary"><span class="contentPrimary">Waiting for delivery</span></div>
+<div class="tags-static backgroundLightPositive">Paid</div>
+<div class="tags-static backgroundLightAccent">7 days left</div>
+<div class="tags-static backgroundLightNegative">4 days late</div>
+```
+*/
+.tags-static {
+  @extend .tag;
+  @extend .is-rounded;
+
+  &:not(body) {
+    @extend .paragraphMedium;
+
+    height: 40px;
+    padding: 8px 16px;
+  }
+
+  &.backgroundLightPositive {
+    &:not(body) {
+      @extend .backgroundLightPositive;
+      @extend .contentPositive;
+    }
+  }
+
+  &.backgroundLightAccent {
+    &:not(body) {
+      @extend .backgroundLightAccent;
+      @extend .contentAccent;
+    }
+  }
+
+  &.backgroundLightNegative {
+    &:not(body) {
+      @extend .backgroundLightNegative;
+      @extend .contentNegative;
+    }
+  }
+}

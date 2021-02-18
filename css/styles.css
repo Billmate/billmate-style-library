@@ -1483,7 +1483,7 @@ a.box:active {
         color: #cc0f35; }
   .button.is-small {
     font-size: 0.75rem; }
-    .button.is-small:not(.is-rounded):not(.switch[type='checkbox']) {
+    .button.is-small:not(.is-rounded):not(.switch[type='checkbox']):not(.tags-static) {
       border-radius: 2px; }
   .button.is-normal {
     font-size: 1rem; }
@@ -1537,7 +1537,7 @@ a.box:active {
     color: #7a7a7a;
     box-shadow: none;
     pointer-events: none; }
-  .button.is-rounded, .button.switch[type='checkbox'] {
+  .button.is-rounded, .button.switch[type='checkbox'], .button.tags-static {
     border-radius: 290486px;
     padding-left: calc(1em + 0.25em);
     padding-right: calc(1em + 0.25em); }
@@ -1557,7 +1557,7 @@ a.box:active {
     margin-bottom: 1rem; }
   .buttons.are-small .button:not(.is-normal):not(.is-medium):not(.is-large):not(button):not(input[type=button]):not(input[type=submit]):not(a):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select) {
     font-size: 0.75rem; }
-    .buttons.are-small .button:not(.is-normal):not(.is-medium):not(.is-large):not(button):not(input[type=button]):not(input[type=submit]):not(a):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select):not(.is-rounded):not(.switch[type='checkbox']) {
+    .buttons.are-small .button:not(.is-normal):not(.is-medium):not(.is-large):not(button):not(input[type=button]):not(input[type=submit]):not(a):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select):not(.is-rounded):not(.switch[type='checkbox']):not(.tags-static) {
       border-radius: 2px; }
   .buttons.are-medium .button:not(.is-small):not(.is-normal):not(.is-large):not(button):not(input[type=button]):not(input[type=submit]):not(a):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select) {
     font-size: 1.25rem; }
@@ -1814,7 +1814,7 @@ div.icon-text {
     display: block;
     height: auto;
     width: 100%; }
-    .image img.is-rounded, .image img.switch[type='checkbox'] {
+    .image img.is-rounded, .image img.switch[type='checkbox'], .image img.tags-static {
       border-radius: 290486px; }
   .image.is-fullwidth, button.image.rectanglePrimary, button.image.pillPrimary,
   input.image.rectanglePrimary[type=button],
@@ -2267,40 +2267,40 @@ div.icon-text {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start; }
-  .tags .tag {
+  .tags .tag, .tags .tags-static {
     margin-bottom: 0.5rem; }
-    .tags .tag:not(:last-child) {
+    .tags .tag:not(:last-child), .tags .tags-static:not(:last-child) {
       margin-right: 0.5rem; }
   .tags:last-child {
     margin-bottom: -0.5rem; }
   .tags:not(:last-child) {
     margin-bottom: 1rem; }
-  .tags.are-medium .tag:not(.is-normal):not(.is-large):not(button):not(input[type=button]):not(input[type=submit]):not(a):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select) {
+  .tags.are-medium .tag:not(.is-normal):not(.is-large):not(button):not(input[type=button]):not(input[type=submit]):not(a):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select), .tags.are-medium .tags-static:not(.is-normal):not(.is-large):not(button):not(input[type=button]):not(input[type=submit]):not(a):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select) {
     font-size: 1rem; }
-  .tags.are-large .tag:not(.is-normal):not(.is-medium) {
+  .tags.are-large .tag:not(.is-normal):not(.is-medium), .tags.are-large .tags-static:not(.is-normal):not(.is-medium) {
     font-size: 1.25rem; }
   .tags.is-centered {
     justify-content: center; }
-    .tags.is-centered .tag {
+    .tags.is-centered .tag, .tags.is-centered .tags-static {
       margin-right: 0.25rem;
       margin-left: 0.25rem; }
   .tags.is-right {
     justify-content: flex-end; }
-    .tags.is-right .tag:not(:first-child) {
+    .tags.is-right .tag:not(:first-child), .tags.is-right .tags-static:not(:first-child) {
       margin-left: 0.5rem; }
-    .tags.is-right .tag:not(:last-child) {
+    .tags.is-right .tag:not(:last-child), .tags.is-right .tags-static:not(:last-child) {
       margin-right: 0; }
-  .tags.has-addons .tag {
+  .tags.has-addons .tag, .tags.has-addons .tags-static {
     margin-right: 0; }
-    .tags.has-addons .tag:not(:first-child) {
+    .tags.has-addons .tag:not(:first-child), .tags.has-addons .tags-static:not(:first-child) {
       margin-left: 0;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
-    .tags.has-addons .tag:not(:last-child) {
+    .tags.has-addons .tag:not(:last-child), .tags.has-addons .tags-static:not(:last-child) {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; }
 
-.tag:not(body) {
+.tag:not(body), .tags-static:not(body) {
   align-items: center;
   background-color: whitesmoke;
   border-radius: 4px;
@@ -2313,83 +2313,83 @@ div.icon-text {
   padding-left: 0.75em;
   padding-right: 0.75em;
   white-space: nowrap; }
-  .tag:not(body) .delete {
+  .tag:not(body) .delete, .tags-static:not(body) .delete {
     margin-left: 0.25rem;
     margin-right: -0.375rem; }
-  .tag:not(body).is-white {
+  .tag:not(body).is-white, .tags-static:not(body).is-white {
     background-color: #FFFFFF;
     color: #000000; }
-  .tag:not(body).is-black {
+  .tag:not(body).is-black, .tags-static:not(body).is-black {
     background-color: #000000;
     color: #FFFFFF; }
-  .tag:not(body).is-light {
+  .tag:not(body).is-light, .tags-static:not(body).is-light {
     background-color: whitesmoke;
     color: rgba(0, 0, 0, 0.7); }
-  .tag:not(body).is-dark {
+  .tag:not(body).is-dark, .tags-static:not(body).is-dark {
     background-color: #363636;
     color: #fff; }
-  .tag:not(body).is-primary {
+  .tag:not(body).is-primary, .tags-static:not(body).is-primary {
     background-color: #00d1b2;
     color: #fff; }
-    .tag:not(body).is-primary.is-light {
+    .tag:not(body).is-primary.is-light, .tags-static:not(body).is-primary.is-light {
       background-color: #ebfffc;
       color: #00947e; }
-  .tag:not(body).is-link {
+  .tag:not(body).is-link, .tags-static:not(body).is-link {
     background-color: #3273dc;
     color: #fff; }
-    .tag:not(body).is-link.is-light {
+    .tag:not(body).is-link.is-light, .tags-static:not(body).is-link.is-light {
       background-color: #eef3fc;
       color: #2160c4; }
-  .tag:not(body).is-info {
+  .tag:not(body).is-info, .tags-static:not(body).is-info {
     background-color: #3298dc;
     color: #fff; }
-    .tag:not(body).is-info.is-light {
+    .tag:not(body).is-info.is-light, .tags-static:not(body).is-info.is-light {
       background-color: #eef6fc;
       color: #1d72aa; }
-  .tag:not(body).is-success {
+  .tag:not(body).is-success, .tags-static:not(body).is-success {
     background-color: #48c774;
     color: #fff; }
-    .tag:not(body).is-success.is-light {
+    .tag:not(body).is-success.is-light, .tags-static:not(body).is-success.is-light {
       background-color: #effaf3;
       color: #257942; }
-  .tag:not(body).is-warning {
+  .tag:not(body).is-warning, .tags-static:not(body).is-warning {
     background-color: #ffdd57;
     color: rgba(0, 0, 0, 0.7); }
-    .tag:not(body).is-warning.is-light {
+    .tag:not(body).is-warning.is-light, .tags-static:not(body).is-warning.is-light {
       background-color: #fffbeb;
       color: #947600; }
-  .tag:not(body).is-danger {
+  .tag:not(body).is-danger, .tags-static:not(body).is-danger {
     background-color: #f14668;
     color: #fff; }
-    .tag:not(body).is-danger.is-light {
+    .tag:not(body).is-danger.is-light, .tags-static:not(body).is-danger.is-light {
       background-color: #feecf0;
       color: #cc0f35; }
-  .tag:not(body).is-normal {
+  .tag:not(body).is-normal, .tags-static:not(body).is-normal {
     font-size: 0.75rem; }
-  .tag:not(body).is-medium {
+  .tag:not(body).is-medium, .tags-static:not(body).is-medium {
     font-size: 1rem; }
-  .tag:not(body).is-large, button.tag:not(body),
-  input.tag:not(body)[type=button],
-  input.tag:not(body)[type=submit],
-  a.tag:not(body), .tag.switch:not(body)[type='checkbox'], .tag.input:not(body)[type=text],
-  .tag.input:not(body)[type=password],
-  .tag.input:not(body)[type=email], .tag.select:not(body) {
+  .tag:not(body).is-large, button.tag:not(body), button.tags-static:not(body),
+  input.tag:not(body)[type=button], input.tags-static:not(body)[type=button],
+  input.tag:not(body)[type=submit], input.tags-static:not(body)[type=submit],
+  a.tag:not(body), a.tags-static:not(body), .tag.switch:not(body)[type='checkbox'], .switch.tags-static:not(body)[type='checkbox'], .tag.input:not(body)[type=text], .input.tags-static:not(body)[type=text],
+  .tag.input:not(body)[type=password], .input.tags-static:not(body)[type=password],
+  .tag.input:not(body)[type=email], .input.tags-static:not(body)[type=email], .tag.select:not(body), .select.tags-static:not(body), .tags-static:not(body).is-large {
     font-size: 1.25rem; }
-  .tag:not(body) .icon:first-child:not(:last-child) {
+  .tag:not(body) .icon:first-child:not(:last-child), .tags-static:not(body) .icon:first-child:not(:last-child) {
     margin-left: -0.375em;
     margin-right: 0.1875em; }
-  .tag:not(body) .icon:last-child:not(:first-child) {
+  .tag:not(body) .icon:last-child:not(:first-child), .tags-static:not(body) .icon:last-child:not(:first-child) {
     margin-left: 0.1875em;
     margin-right: -0.375em; }
-  .tag:not(body) .icon:first-child:last-child {
+  .tag:not(body) .icon:first-child:last-child, .tags-static:not(body) .icon:first-child:last-child {
     margin-left: -0.375em;
     margin-right: -0.375em; }
-  .tag:not(body).is-delete {
+  .tag:not(body).is-delete, .tags-static:not(body).is-delete {
     margin-left: 1px;
     padding: 0;
     position: relative;
     width: 2em; }
-    .tag:not(body).is-delete::before, .tag:not(body).is-delete::after {
+    .tag:not(body).is-delete::before, .tags-static:not(body).is-delete::before, .tag:not(body).is-delete::after, .tags-static:not(body).is-delete::after {
       background-color: currentColor;
       content: "";
       display: block;
@@ -2398,20 +2398,20 @@ div.icon-text {
       top: 50%;
       transform: translateX(-50%) translateY(-50%) rotate(45deg);
       transform-origin: center center; }
-    .tag:not(body).is-delete::before {
+    .tag:not(body).is-delete::before, .tags-static:not(body).is-delete::before {
       height: 1px;
       width: 50%; }
-    .tag:not(body).is-delete::after {
+    .tag:not(body).is-delete::after, .tags-static:not(body).is-delete::after {
       height: 50%;
       width: 1px; }
-    .tag:not(body).is-delete:hover, .tag:not(body).is-delete:focus {
+    .tag:not(body).is-delete:hover, .tags-static:not(body).is-delete:hover, .tag:not(body).is-delete:focus, .tags-static:not(body).is-delete:focus {
       background-color: #e8e8e8; }
-    .tag:not(body).is-delete:active {
+    .tag:not(body).is-delete:active, .tags-static:not(body).is-delete:active {
       background-color: #dbdbdb; }
-  .tag:not(body).is-rounded, .tag.switch:not(body)[type='checkbox'] {
+  .tag:not(body).is-rounded, .tag.switch:not(body)[type='checkbox'], .switch.tags-static:not(body)[type='checkbox'], .tags-static:not(body) {
     border-radius: 290486px; }
 
-a.tag:hover {
+a.tag:hover, a.tags-static:hover {
   text-decoration: underline; }
 
 .title,
@@ -2428,8 +2428,9 @@ a.tag:hover {
   .title sup,
   .subtitle sup {
     font-size: 0.75em; }
-  .title .tag,
-  .subtitle .tag {
+  .title .tag, .title .tags-static,
+  .subtitle .tag,
+  .subtitle .tags-static {
     vertical-align: middle; }
 
 .title {
@@ -2671,7 +2672,7 @@ a.tag:hover {
     display: inline;
     width: auto; }
 
-.input.is-rounded, .input.switch[type='checkbox'] {
+.input.is-rounded, .input.switch[type='checkbox'], .input.tags-static {
   border-radius: 290486px;
   padding-left: calc(calc(0.75em - 1px) + 0.375em);
   padding-right: calc(calc(0.75em - 1px) + 0.375em); }
@@ -2728,7 +2729,7 @@ a.tag:hover {
     border-color: #3273dc;
     right: 1.125em;
     z-index: 4; }
-  .select.is-rounded select, .select.switch[type='checkbox'] select {
+  .select.is-rounded select, .select.switch[type='checkbox'] select, .select.tags-static select {
     border-radius: 290486px;
     padding-left: 1em; }
   .select select {
@@ -3783,7 +3784,7 @@ button.dropdown-item {
   font-size: 1rem; }
   .message strong {
     color: currentColor; }
-  .message a:not(.button):not(.tag):not(.dropdown-item) {
+  .message a:not(.button):not(.tag):not(.tags-static):not(.dropdown-item) {
     color: currentColor;
     text-decoration: underline; }
   .message.is-small {
@@ -4790,13 +4791,14 @@ a.navbar-item,
   .pagination.input[type=password],
   .pagination.input[type=email], .pagination.select {
     font-size: 1.5rem; }
-  .pagination.is-rounded .pagination-previous, .pagination.switch[type='checkbox'] .pagination-previous,
+  .pagination.is-rounded .pagination-previous, .pagination.switch[type='checkbox'] .pagination-previous, .pagination.tags-static .pagination-previous,
   .pagination.is-rounded .pagination-next,
-  .pagination.switch[type='checkbox'] .pagination-next {
+  .pagination.switch[type='checkbox'] .pagination-next,
+  .pagination.tags-static .pagination-next {
     padding-left: 1em;
     padding-right: 1em;
     border-radius: 290486px; }
-  .pagination.is-rounded .pagination-link, .pagination.switch[type='checkbox'] .pagination-link {
+  .pagination.is-rounded .pagination-link, .pagination.switch[type='checkbox'] .pagination-link, .pagination.tags-static .pagination-link {
     border-radius: 290486px; }
 
 .pagination,
@@ -7741,7 +7743,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .hero.is-white {
     background-color: #FFFFFF;
     color: #000000; }
-    .hero.is-white a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-white a:not(.button):not(.dropdown-item):not(.tag):not(.tags-static):not(.pagination-link.is-current),
     .hero.is-white strong {
       color: inherit; }
     .hero.is-white .title {
@@ -7785,7 +7787,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .hero.is-black {
     background-color: #000000;
     color: #FFFFFF; }
-    .hero.is-black a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-black a:not(.button):not(.dropdown-item):not(.tag):not(.tags-static):not(.pagination-link.is-current),
     .hero.is-black strong {
       color: inherit; }
     .hero.is-black .title {
@@ -7829,7 +7831,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .hero.is-light {
     background-color: whitesmoke;
     color: rgba(0, 0, 0, 0.7); }
-    .hero.is-light a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-light a:not(.button):not(.dropdown-item):not(.tag):not(.tags-static):not(.pagination-link.is-current),
     .hero.is-light strong {
       color: inherit; }
     .hero.is-light .title {
@@ -7873,7 +7875,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .hero.is-dark {
     background-color: #363636;
     color: #fff; }
-    .hero.is-dark a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-dark a:not(.button):not(.dropdown-item):not(.tag):not(.tags-static):not(.pagination-link.is-current),
     .hero.is-dark strong {
       color: inherit; }
     .hero.is-dark .title {
@@ -7917,7 +7919,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .hero.is-primary {
     background-color: #00d1b2;
     color: #fff; }
-    .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag):not(.tags-static):not(.pagination-link.is-current),
     .hero.is-primary strong {
       color: inherit; }
     .hero.is-primary .title {
@@ -7961,7 +7963,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .hero.is-link {
     background-color: #3273dc;
     color: #fff; }
-    .hero.is-link a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-link a:not(.button):not(.dropdown-item):not(.tag):not(.tags-static):not(.pagination-link.is-current),
     .hero.is-link strong {
       color: inherit; }
     .hero.is-link .title {
@@ -8005,7 +8007,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .hero.is-info {
     background-color: #3298dc;
     color: #fff; }
-    .hero.is-info a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-info a:not(.button):not(.dropdown-item):not(.tag):not(.tags-static):not(.pagination-link.is-current),
     .hero.is-info strong {
       color: inherit; }
     .hero.is-info .title {
@@ -8049,7 +8051,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .hero.is-success {
     background-color: #48c774;
     color: #fff; }
-    .hero.is-success a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-success a:not(.button):not(.dropdown-item):not(.tag):not(.tags-static):not(.pagination-link.is-current),
     .hero.is-success strong {
       color: inherit; }
     .hero.is-success .title {
@@ -8093,7 +8095,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .hero.is-warning {
     background-color: #ffdd57;
     color: rgba(0, 0, 0, 0.7); }
-    .hero.is-warning a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-warning a:not(.button):not(.dropdown-item):not(.tag):not(.tags-static):not(.pagination-link.is-current),
     .hero.is-warning strong {
       color: inherit; }
     .hero.is-warning .title {
@@ -8137,7 +8139,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .hero.is-danger {
     background-color: #f14668;
     color: #fff; }
-    .hero.is-danger a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-danger a:not(.button):not(.dropdown-item):not(.tag):not(.tags-static):not(.pagination-link.is-current),
     .hero.is-danger strong {
       color: inherit; }
     .hero.is-danger .title {
@@ -8333,9 +8335,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     height: 0.375rem; }
   .switch[type="checkbox"].is-thin + label::after, .switch[type="checkbox"].is-thin + label:after {
     box-shadow: 0px 0px 3px #7a7a7a; }
-  .switch[type="checkbox"].is-rounded + label::before, .switch[type="checkbox"][type='checkbox'] + label::before, .switch[type="checkbox"].is-rounded + label:before, .switch[type="checkbox"][type='checkbox'] + label:before {
+  .switch[type="checkbox"].is-rounded + label::before, .switch[type="checkbox"][type='checkbox'] + label::before, .switch.tags-static[type="checkbox"] + label::before, .switch[type="checkbox"].is-rounded + label:before, .switch[type="checkbox"][type='checkbox'] + label:before, .switch.tags-static[type="checkbox"] + label:before {
     border-radius: 24px; }
-  .switch[type="checkbox"].is-rounded + label::after, .switch[type="checkbox"][type='checkbox'] + label::after, .switch[type="checkbox"].is-rounded + label:after, .switch[type="checkbox"][type='checkbox'] + label:after {
+  .switch[type="checkbox"].is-rounded + label::after, .switch[type="checkbox"][type='checkbox'] + label::after, .switch.tags-static[type="checkbox"] + label::after, .switch[type="checkbox"].is-rounded + label:after, .switch[type="checkbox"][type='checkbox'] + label:after, .switch.tags-static[type="checkbox"] + label:after {
     border-radius: 50%; }
   .switch[type="checkbox"].is-small + label {
     position: relative;
@@ -8399,9 +8401,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     height: 0.28125rem; }
   .switch[type="checkbox"].is-small.is-thin + label::after, .switch[type="checkbox"].is-small.is-thin + label:after {
     box-shadow: 0px 0px 3px #7a7a7a; }
-  .switch[type="checkbox"].is-small.is-rounded + label::before, .switch[type="checkbox"].is-small[type='checkbox'] + label::before, .switch[type="checkbox"].is-small.is-rounded + label:before, .switch[type="checkbox"].is-small[type='checkbox'] + label:before {
+  .switch[type="checkbox"].is-small.is-rounded + label::before, .switch[type="checkbox"].is-small[type='checkbox'] + label::before, .switch.tags-static[type="checkbox"].is-small + label::before, .switch[type="checkbox"].is-small.is-rounded + label:before, .switch[type="checkbox"].is-small[type='checkbox'] + label:before, .switch.tags-static[type="checkbox"].is-small + label:before {
     border-radius: 24px; }
-  .switch[type="checkbox"].is-small.is-rounded + label::after, .switch[type="checkbox"].is-small[type='checkbox'] + label::after, .switch[type="checkbox"].is-small.is-rounded + label:after, .switch[type="checkbox"].is-small[type='checkbox'] + label:after {
+  .switch[type="checkbox"].is-small.is-rounded + label::after, .switch[type="checkbox"].is-small[type='checkbox'] + label::after, .switch.tags-static[type="checkbox"].is-small + label::after, .switch[type="checkbox"].is-small.is-rounded + label:after, .switch[type="checkbox"].is-small[type='checkbox'] + label:after, .switch.tags-static[type="checkbox"].is-small + label:after {
     border-radius: 50%; }
   .switch[type="checkbox"].is-medium + label {
     position: relative;
@@ -8465,9 +8467,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     height: 0.46875rem; }
   .switch[type="checkbox"].is-medium.is-thin + label::after, .switch[type="checkbox"].is-medium.is-thin + label:after {
     box-shadow: 0px 0px 3px #7a7a7a; }
-  .switch[type="checkbox"].is-medium.is-rounded + label::before, .switch[type="checkbox"].is-medium[type='checkbox'] + label::before, .switch[type="checkbox"].is-medium.is-rounded + label:before, .switch[type="checkbox"].is-medium[type='checkbox'] + label:before {
+  .switch[type="checkbox"].is-medium.is-rounded + label::before, .switch[type="checkbox"].is-medium[type='checkbox'] + label::before, .switch.tags-static[type="checkbox"].is-medium + label::before, .switch[type="checkbox"].is-medium.is-rounded + label:before, .switch[type="checkbox"].is-medium[type='checkbox'] + label:before, .switch.tags-static[type="checkbox"].is-medium + label:before {
     border-radius: 24px; }
-  .switch[type="checkbox"].is-medium.is-rounded + label::after, .switch[type="checkbox"].is-medium[type='checkbox'] + label::after, .switch[type="checkbox"].is-medium.is-rounded + label:after, .switch[type="checkbox"].is-medium[type='checkbox'] + label:after {
+  .switch[type="checkbox"].is-medium.is-rounded + label::after, .switch[type="checkbox"].is-medium[type='checkbox'] + label::after, .switch.tags-static[type="checkbox"].is-medium + label::after, .switch[type="checkbox"].is-medium.is-rounded + label:after, .switch[type="checkbox"].is-medium[type='checkbox'] + label:after, .switch.tags-static[type="checkbox"].is-medium + label:after {
     border-radius: 50%; }
   .switch[type="checkbox"].is-large + label, button.switch[type="checkbox"] + label, input.switch[type="checkbox"][type=button] + label, input.switch[type="checkbox"][type=submit] + label, a.switch[type="checkbox"] + label, .switch[type="checkbox"][type='checkbox'] + label, .switch.input[type="checkbox"][type=text] + label, .switch.input[type="checkbox"][type=password] + label, .switch.input[type="checkbox"][type=email] + label, .switch.select[type="checkbox"] + label {
     position: relative;
@@ -8531,9 +8533,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     height: 0.5625rem; }
   .switch[type="checkbox"].is-large.is-thin + label::after, button.switch[type="checkbox"].is-thin + label::after, input.switch[type="checkbox"].is-thin[type=button] + label::after, input.switch[type="checkbox"].is-thin[type=submit] + label::after, a.switch[type="checkbox"].is-thin + label::after, .switch[type="checkbox"].is-thin[type='checkbox'] + label::after, .switch.input[type="checkbox"].is-thin[type=text] + label::after, .switch.input[type="checkbox"].is-thin[type=password] + label::after, .switch.input[type="checkbox"].is-thin[type=email] + label::after, .switch.select[type="checkbox"].is-thin + label::after, .switch[type="checkbox"].is-large.is-thin + label:after, button.switch[type="checkbox"].is-thin + label:after, input.switch[type="checkbox"].is-thin[type=button] + label:after, input.switch[type="checkbox"].is-thin[type=submit] + label:after, a.switch[type="checkbox"].is-thin + label:after, .switch[type="checkbox"].is-thin[type='checkbox'] + label:after, .switch.input[type="checkbox"].is-thin[type=text] + label:after, .switch.input[type="checkbox"].is-thin[type=password] + label:after, .switch.input[type="checkbox"].is-thin[type=email] + label:after, .switch.select[type="checkbox"].is-thin + label:after {
     box-shadow: 0px 0px 3px #7a7a7a; }
-  .switch[type="checkbox"].is-large.is-rounded + label::before, button.switch[type="checkbox"].is-rounded + label::before, button.switch[type="checkbox"][type='checkbox'] + label::before, input.switch[type="checkbox"].is-rounded[type=button] + label::before, input.switch[type="checkbox"][type=button][type='checkbox'] + label::before, input.switch[type="checkbox"].is-rounded[type=submit] + label::before, input.switch[type="checkbox"][type=submit][type='checkbox'] + label::before, a.switch[type="checkbox"].is-rounded + label::before, a.switch[type="checkbox"][type='checkbox'] + label::before, .switch[type="checkbox"][type='checkbox'] + label::before, .switch.input[type="checkbox"].is-rounded[type=text] + label::before, .switch.input[type="checkbox"][type=text][type='checkbox'] + label::before, .switch.input[type="checkbox"].is-rounded[type=password] + label::before, .switch.input[type="checkbox"][type=password][type='checkbox'] + label::before, .switch.input[type="checkbox"].is-rounded[type=email] + label::before, .switch.input[type="checkbox"][type=email][type='checkbox'] + label::before, .switch.select[type="checkbox"].is-rounded + label::before, .switch.select[type="checkbox"][type='checkbox'] + label::before, .switch[type="checkbox"].is-large.is-rounded + label:before, button.switch[type="checkbox"].is-rounded + label:before, button.switch[type="checkbox"][type='checkbox'] + label:before, input.switch[type="checkbox"].is-rounded[type=button] + label:before, input.switch[type="checkbox"][type=button][type='checkbox'] + label:before, input.switch[type="checkbox"].is-rounded[type=submit] + label:before, input.switch[type="checkbox"][type=submit][type='checkbox'] + label:before, a.switch[type="checkbox"].is-rounded + label:before, a.switch[type="checkbox"][type='checkbox'] + label:before, .switch[type="checkbox"][type='checkbox'] + label:before, .switch.input[type="checkbox"].is-rounded[type=text] + label:before, .switch.input[type="checkbox"][type=text][type='checkbox'] + label:before, .switch.input[type="checkbox"].is-rounded[type=password] + label:before, .switch.input[type="checkbox"][type=password][type='checkbox'] + label:before, .switch.input[type="checkbox"].is-rounded[type=email] + label:before, .switch.input[type="checkbox"][type=email][type='checkbox'] + label:before, .switch.select[type="checkbox"].is-rounded + label:before, .switch.select[type="checkbox"][type='checkbox'] + label:before {
+  .switch[type="checkbox"].is-large.is-rounded + label::before, button.switch[type="checkbox"].is-rounded + label::before, button.switch[type="checkbox"][type='checkbox'] + label::before, button.switch.tags-static[type="checkbox"] + label::before, input.switch[type="checkbox"].is-rounded[type=button] + label::before, input.switch[type="checkbox"][type=button][type='checkbox'] + label::before, input.switch.tags-static[type="checkbox"][type=button] + label::before, input.switch[type="checkbox"].is-rounded[type=submit] + label::before, input.switch[type="checkbox"][type=submit][type='checkbox'] + label::before, input.switch.tags-static[type="checkbox"][type=submit] + label::before, a.switch[type="checkbox"].is-rounded + label::before, a.switch[type="checkbox"][type='checkbox'] + label::before, a.switch.tags-static[type="checkbox"] + label::before, .switch[type="checkbox"][type='checkbox'] + label::before, .switch.input[type="checkbox"].is-rounded[type=text] + label::before, .switch.input[type="checkbox"][type=text][type='checkbox'] + label::before, .switch.input.tags-static[type="checkbox"][type=text] + label::before, .switch.input[type="checkbox"].is-rounded[type=password] + label::before, .switch.input[type="checkbox"][type=password][type='checkbox'] + label::before, .switch.input.tags-static[type="checkbox"][type=password] + label::before, .switch.input[type="checkbox"].is-rounded[type=email] + label::before, .switch.input[type="checkbox"][type=email][type='checkbox'] + label::before, .switch.input.tags-static[type="checkbox"][type=email] + label::before, .switch.select[type="checkbox"].is-rounded + label::before, .switch.select[type="checkbox"][type='checkbox'] + label::before, .switch.select.tags-static[type="checkbox"] + label::before, .switch.tags-static[type="checkbox"].is-large + label::before, .switch.tags-static[type="checkbox"][type='checkbox'] + label::before, .switch[type="checkbox"].is-large.is-rounded + label:before, button.switch[type="checkbox"].is-rounded + label:before, button.switch[type="checkbox"][type='checkbox'] + label:before, button.switch.tags-static[type="checkbox"] + label:before, input.switch[type="checkbox"].is-rounded[type=button] + label:before, input.switch[type="checkbox"][type=button][type='checkbox'] + label:before, input.switch.tags-static[type="checkbox"][type=button] + label:before, input.switch[type="checkbox"].is-rounded[type=submit] + label:before, input.switch[type="checkbox"][type=submit][type='checkbox'] + label:before, input.switch.tags-static[type="checkbox"][type=submit] + label:before, a.switch[type="checkbox"].is-rounded + label:before, a.switch[type="checkbox"][type='checkbox'] + label:before, a.switch.tags-static[type="checkbox"] + label:before, .switch[type="checkbox"][type='checkbox'] + label:before, .switch.input[type="checkbox"].is-rounded[type=text] + label:before, .switch.input[type="checkbox"][type=text][type='checkbox'] + label:before, .switch.input.tags-static[type="checkbox"][type=text] + label:before, .switch.input[type="checkbox"].is-rounded[type=password] + label:before, .switch.input[type="checkbox"][type=password][type='checkbox'] + label:before, .switch.input.tags-static[type="checkbox"][type=password] + label:before, .switch.input[type="checkbox"].is-rounded[type=email] + label:before, .switch.input[type="checkbox"][type=email][type='checkbox'] + label:before, .switch.input.tags-static[type="checkbox"][type=email] + label:before, .switch.select[type="checkbox"].is-rounded + label:before, .switch.select[type="checkbox"][type='checkbox'] + label:before, .switch.select.tags-static[type="checkbox"] + label:before, .switch.tags-static[type="checkbox"].is-large + label:before, .switch.tags-static[type="checkbox"][type='checkbox'] + label:before {
     border-radius: 24px; }
-  .switch[type="checkbox"].is-large.is-rounded + label::after, button.switch[type="checkbox"].is-rounded + label::after, button.switch[type="checkbox"][type='checkbox'] + label::after, input.switch[type="checkbox"].is-rounded[type=button] + label::after, input.switch[type="checkbox"][type=button][type='checkbox'] + label::after, input.switch[type="checkbox"].is-rounded[type=submit] + label::after, input.switch[type="checkbox"][type=submit][type='checkbox'] + label::after, a.switch[type="checkbox"].is-rounded + label::after, a.switch[type="checkbox"][type='checkbox'] + label::after, .switch[type="checkbox"][type='checkbox'] + label::after, .switch.input[type="checkbox"].is-rounded[type=text] + label::after, .switch.input[type="checkbox"][type=text][type='checkbox'] + label::after, .switch.input[type="checkbox"].is-rounded[type=password] + label::after, .switch.input[type="checkbox"][type=password][type='checkbox'] + label::after, .switch.input[type="checkbox"].is-rounded[type=email] + label::after, .switch.input[type="checkbox"][type=email][type='checkbox'] + label::after, .switch.select[type="checkbox"].is-rounded + label::after, .switch.select[type="checkbox"][type='checkbox'] + label::after, .switch[type="checkbox"].is-large.is-rounded + label:after, button.switch[type="checkbox"].is-rounded + label:after, button.switch[type="checkbox"][type='checkbox'] + label:after, input.switch[type="checkbox"].is-rounded[type=button] + label:after, input.switch[type="checkbox"][type=button][type='checkbox'] + label:after, input.switch[type="checkbox"].is-rounded[type=submit] + label:after, input.switch[type="checkbox"][type=submit][type='checkbox'] + label:after, a.switch[type="checkbox"].is-rounded + label:after, a.switch[type="checkbox"][type='checkbox'] + label:after, .switch[type="checkbox"][type='checkbox'] + label:after, .switch.input[type="checkbox"].is-rounded[type=text] + label:after, .switch.input[type="checkbox"][type=text][type='checkbox'] + label:after, .switch.input[type="checkbox"].is-rounded[type=password] + label:after, .switch.input[type="checkbox"][type=password][type='checkbox'] + label:after, .switch.input[type="checkbox"].is-rounded[type=email] + label:after, .switch.input[type="checkbox"][type=email][type='checkbox'] + label:after, .switch.select[type="checkbox"].is-rounded + label:after, .switch.select[type="checkbox"][type='checkbox'] + label:after {
+  .switch[type="checkbox"].is-large.is-rounded + label::after, button.switch[type="checkbox"].is-rounded + label::after, button.switch[type="checkbox"][type='checkbox'] + label::after, button.switch.tags-static[type="checkbox"] + label::after, input.switch[type="checkbox"].is-rounded[type=button] + label::after, input.switch[type="checkbox"][type=button][type='checkbox'] + label::after, input.switch.tags-static[type="checkbox"][type=button] + label::after, input.switch[type="checkbox"].is-rounded[type=submit] + label::after, input.switch[type="checkbox"][type=submit][type='checkbox'] + label::after, input.switch.tags-static[type="checkbox"][type=submit] + label::after, a.switch[type="checkbox"].is-rounded + label::after, a.switch[type="checkbox"][type='checkbox'] + label::after, a.switch.tags-static[type="checkbox"] + label::after, .switch[type="checkbox"][type='checkbox'] + label::after, .switch.input[type="checkbox"].is-rounded[type=text] + label::after, .switch.input[type="checkbox"][type=text][type='checkbox'] + label::after, .switch.input.tags-static[type="checkbox"][type=text] + label::after, .switch.input[type="checkbox"].is-rounded[type=password] + label::after, .switch.input[type="checkbox"][type=password][type='checkbox'] + label::after, .switch.input.tags-static[type="checkbox"][type=password] + label::after, .switch.input[type="checkbox"].is-rounded[type=email] + label::after, .switch.input[type="checkbox"][type=email][type='checkbox'] + label::after, .switch.input.tags-static[type="checkbox"][type=email] + label::after, .switch.select[type="checkbox"].is-rounded + label::after, .switch.select[type="checkbox"][type='checkbox'] + label::after, .switch.select.tags-static[type="checkbox"] + label::after, .switch.tags-static[type="checkbox"].is-large + label::after, .switch.tags-static[type="checkbox"][type='checkbox'] + label::after, .switch[type="checkbox"].is-large.is-rounded + label:after, button.switch[type="checkbox"].is-rounded + label:after, button.switch[type="checkbox"][type='checkbox'] + label:after, button.switch.tags-static[type="checkbox"] + label:after, input.switch[type="checkbox"].is-rounded[type=button] + label:after, input.switch[type="checkbox"][type=button][type='checkbox'] + label:after, input.switch.tags-static[type="checkbox"][type=button] + label:after, input.switch[type="checkbox"].is-rounded[type=submit] + label:after, input.switch[type="checkbox"][type=submit][type='checkbox'] + label:after, input.switch.tags-static[type="checkbox"][type=submit] + label:after, a.switch[type="checkbox"].is-rounded + label:after, a.switch[type="checkbox"][type='checkbox'] + label:after, a.switch.tags-static[type="checkbox"] + label:after, .switch[type="checkbox"][type='checkbox'] + label:after, .switch.input[type="checkbox"].is-rounded[type=text] + label:after, .switch.input[type="checkbox"][type=text][type='checkbox'] + label:after, .switch.input.tags-static[type="checkbox"][type=text] + label:after, .switch.input[type="checkbox"].is-rounded[type=password] + label:after, .switch.input[type="checkbox"][type=password][type='checkbox'] + label:after, .switch.input.tags-static[type="checkbox"][type=password] + label:after, .switch.input[type="checkbox"].is-rounded[type=email] + label:after, .switch.input[type="checkbox"][type=email][type='checkbox'] + label:after, .switch.input.tags-static[type="checkbox"][type=email] + label:after, .switch.select[type="checkbox"].is-rounded + label:after, .switch.select[type="checkbox"][type='checkbox'] + label:after, .switch.select.tags-static[type="checkbox"] + label:after, .switch.tags-static[type="checkbox"].is-large + label:after, .switch.tags-static[type="checkbox"][type='checkbox'] + label:after {
     border-radius: 50%; }
   .switch[type="checkbox"].is-white:checked + label::before, .switch[type="checkbox"].is-white:checked + label:before {
     background: #FFFFFF; }
@@ -9708,17 +9710,17 @@ a.rectangleSecondary:disabled,
 a.pillSecondary:disabled {
   background-color: #EAEAEA; }
 
-.backgroundLightAccent {
+.backgroundLightAccent, .tags-static.backgroundLightAccent:not(body) {
   background-color: #ECF8FD; }
 
 .backgroundLightPositive, .input.positive[type=text], .input.backgroundPositive[type=text],
 .input.positive[type=password], .input.backgroundPositive[type=password],
-.input.positive[type=email], .input.backgroundPositive[type=email], .select.positive select, .select.backgroundPositive select {
+.input.positive[type=email], .input.backgroundPositive[type=email], .select.positive select, .select.backgroundPositive select, .tags-static.backgroundLightPositive:not(body) {
   background-color: #EFFBF6; }
 
 .backgroundLightNegative, .input.negative[type=text], .input.backgroundNegative[type=text],
 .input.negative[type=password], .input.backgroundNegative[type=password],
-.input.negative[type=email], .input.backgroundNegative[type=email], .select.negative select, .select.backgroundNegative select {
+.input.negative[type=email], .input.backgroundNegative[type=email], .select.negative select, .select.backgroundNegative select, .tags-static.backgroundLightNegative:not(body) {
   background-color: #FDF0EC; }
 
 .backgroundLightWarning {
@@ -9858,13 +9860,13 @@ a.rectangleTertiary:disabled,
 a.pillTertiary:disabled {
   color: #AFAFAF; }
 
-.contentAccent {
+.contentAccent, .tags-static.backgroundLightAccent:not(body) {
   color: #14A3EB; }
 
-.contentNegative, .field .help.is-danger {
+.contentNegative, .field .help.is-danger, .tags-static.backgroundLightNegative:not(body) {
   color: #EB4114; }
 
-.contentPositive, .field .help.is-success {
+.contentPositive, .field .help.is-success, .tags-static.backgroundLightPositive:not(body) {
   color: #33CC8C; }
 
 .contentWarning {
@@ -10079,7 +10081,7 @@ Heading types can be used with `<p>` elements.
   font-size: 18px;
   line-height: 28px; }
 
-.paragraphMedium {
+.paragraphMedium, .tags-static:not(body) {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -11112,11 +11114,28 @@ Select can be used with `<select>` elements.
       border-top: 0;
       border-left: 0;
       border-right: 0; }
-  .select:not(.is-multiple):not(.is-loading)::after {
-    border-color: #000000; }
   .select .icon.is-right {
     right: 30px !important;
     top: 6px; }
+
+/*
+---
+name: Tags
+category: Components
+---
+
+Tags can be used with `<div>` or `<span>` elements.
+
+```types.html
+<div class="tags-static backgroundSecondary"><span class="contentPrimary">Waiting for delivery</span></div>
+<div class="tags-static backgroundLightPositive">Paid</div>
+<div class="tags-static backgroundLightAccent">7 days left</div>
+<div class="tags-static backgroundLightNegative">4 days late</div>
+```
+*/
+.tags-static:not(body) {
+  height: 40px;
+  padding: 8px 16px; }
 
 .panel-block {
   color: #000000; }

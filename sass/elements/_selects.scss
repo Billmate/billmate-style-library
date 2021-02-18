@@ -140,11 +140,6 @@ Select can be used with `<select>` elements.
     }
   }
 
-  // Select arrow
-  &:not(.is-multiple):not(.is-loading)::after {
-    border-color: $black;
-  }
-
   .icon {
     &.is-right {
       right: 30px !important;
