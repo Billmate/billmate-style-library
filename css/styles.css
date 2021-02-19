@@ -10612,8 +10612,6 @@ a {
   input[type=button] span.icon,
   input[type=submit] span.icon,
   a span.icon {
-    position: relative;
-    top: -3px;
     width: 24px !important;
     height: 24px !important; }
   button.rectanglePrimary, button.pillPrimary,
