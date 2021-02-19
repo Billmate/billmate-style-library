@@ -10726,7 +10726,7 @@ a {
     input.pillSecondary[type=submit]:hover,
     a.rectangleSecondary:hover,
     a.pillSecondary:hover {
-      background-color: rgba(0, 0, 0, 0.12); }
+      opacity: 0.88; }
     button.rectangleSecondary:active, button.pillSecondary:active,
     input[type=button].rectangleSecondary:active,
     input.pillSecondary[type=button]:active,
@@ -10734,7 +10734,7 @@ a {
     input.pillSecondary[type=submit]:active,
     a.rectangleSecondary:active,
     a.pillSecondary:active {
-      background-color: rgba(0, 0, 0, 0.2); }
+      opacity: 0.8; }
   button.rectangleTertiary, button.pillTertiary,
   input[type=button].rectangleTertiary,
   input.pillTertiary[type=button],
@@ -10781,7 +10781,7 @@ a {
     input.pillTertiary[type=submit]:hover,
     a.rectangleTertiary:hover,
     a.pillTertiary:hover {
-      background-color: rgba(0, 0, 0, 0.12); }
+      opacity: 0.88; }
     button.rectangleTertiary:active, button.pillTertiary:active,
     input[type=button].rectangleTertiary:active,
     input.pillTertiary[type=button]:active,
@@ -10789,7 +10789,7 @@ a {
     input.pillTertiary[type=submit]:active,
     a.rectangleTertiary:active,
     a.pillTertiary:active {
-      background-color: rgba(0, 0, 0, 0.2); }
+      opacity: 0.8; }
   button.pillPrimary,
   input[type=button].pillPrimary,
   input[type=submit].pillPrimary,

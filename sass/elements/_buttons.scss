@@ -174,13 +174,13 @@ a {
     &:hover {
       @extend .contentPrimary;
 
-      background-color: rgba($black, 0.12);
+      opacity: 0.88;
     }
 
     &:active {
       @extend .contentPrimary;
 
-      background-color: rgba($black, 0.2);
+      opacity: 0.8;
     }
 
     &:enabled {
@@ -226,14 +226,14 @@ a {
       @extend .backgroundTertiary;
       @extend .contentPrimary;
 
-      background-color: rgba($black, 0.12);
+      opacity: 0.88;
     }
 
     &:active {
       @extend .backgroundTertiary;
       @extend .contentPrimary;
 
-      background-color: rgba($black, 0.2);
+      opacity: 0.8;
     }
 
     &:enabled {
