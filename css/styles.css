@@ -10794,19 +10794,16 @@ a {
   input[type=button].pillPrimary,
   input[type=submit].pillPrimary,
   a.pillPrimary {
-    width: auto !important;
     border-radius: 100px; }
   button.pillSecondary,
   input[type=button].pillSecondary,
   input[type=submit].pillSecondary,
   a.pillSecondary {
-    width: auto !important;
     border-radius: 100px; }
   button.pillTertiary,
   input[type=button].pillTertiary,
   input[type=submit].pillTertiary,
   a.pillTertiary {
-    width: auto !important;
     border-radius: 100px; }
 
 /*
