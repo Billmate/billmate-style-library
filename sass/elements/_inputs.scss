@@ -78,7 +78,7 @@ Types of inputs:
   &.positive {
     @extend .backgroundLightPositive;
 
-    border-bottom: 2px solid $green400;
+    border-bottom: 2px solid $green500;
 
     &:focus,
     &:active {
@@ -92,7 +92,7 @@ Types of inputs:
   &.negative {
     @extend .backgroundLightNegative;
 
-    border-bottom: 2px solid $red400;
+    border-bottom: 2px solid $red500;
 
     &:focus,
     &:active {

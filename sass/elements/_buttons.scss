@@ -64,19 +64,10 @@ button,
 input[type=button],
 input[type=submit],
 a {
-  @extend .is-large;
-
-  height: 56px;
+  height: 64px;
 
   &.content-space-between {
     justify-content: space-between;
-  }
-
-  span {
-    &.icon {
-      width: 24px !important;
-      height: 24px !important;
-    }
   }
 
   /**
@@ -92,7 +83,7 @@ a {
     border: 0;
     padding-left: 24px;
     padding-right: 24px;
-    height: 56px;
+    height: 64px;
 
     // Medium button
     &.mediumLabel {
@@ -109,7 +100,7 @@ a {
 
       padding-left: 12px;
       padding-right: 12px;
-      height: 36px;
+      height: 40px;
     }
 
     &:disabled {
@@ -136,7 +127,6 @@ a {
 
   // Rectangle Secondary
   &.rectangleSecondary {
-    @extend .is-fullwidth;
     @extend .labelLarge;
     @extend .backgroundTertiary;
     @extend .contentPrimary;
@@ -244,21 +234,18 @@ a {
   // Pill Primary
   &.pillPrimary {
     @extend .rectanglePrimary;
-
     border-radius: 100px;
   }
 
   // Pill Secondary
   &.pillSecondary {
     @extend .rectangleSecondary;
-
     border-radius: 100px;
   }
 
   // Pill Tertiary
   &.pillTertiary {
     @extend .rectangleTertiary;
-
     border-radius: 100px;
   }
 }

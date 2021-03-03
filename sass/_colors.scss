@@ -16,29 +16,29 @@ The basic colors types available.
 ```
 */
 .primaryA {
-  background-color: $black;
+  background-color: $grey900;
 }
 
 .primaryB {
   background-color: $white;
-  border: 1px solid $grey200;
+  border: 1px solid $grey300;
   box-sizing: border-box;
 }
 
 .accent {
-  background-color: $blue400;
+  background-color: $blue500;
 }
 
 .positive {
-  background-color: $green400;
+  background-color: $green500;
 }
 
 .warning {
-  background-color: $yellow400;
+  background-color: $yellow500;
 }
 
 .negative {
-  background-color: $red400;
+  background-color: $red500;
 }
 
 /*
@@ -125,27 +125,27 @@ The background colors extensions available.
 }
 
 .backgroundLightAccent {
-  background-color: $blue50;
+  background-color: $blue100;
 }
 
 .backgroundLightPositive {
-  background-color: $green50;
+  background-color: $green100;
 }
 
 .backgroundLightNegative {
-  background-color: $red50;
+  background-color: $red100;
 }
 
 .backgroundLightWarning {
-  background-color: $yellow50;
+  background-color: $yellow100;
 }
 
 .backgroundOverlayLight {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: rgba($grey900, 0.5);
 }
 
-.backgroundOverlayLightDark {
-  background-color: rgba(0, 0, 0, 0.3);
+.backgroundOverlayDark {
+  background-color: rgba($grey900, 0.3);
 }
 
 /*
@@ -170,11 +170,11 @@ The text colors that can be used with `<p>` elements or any element with text.
 }
 
 .contentSecondary {
-  color: $grey600;
+  color: $grey400;
 }
 
 .contentTertiary {
-  color: $grey400;
+  color: $grey300;
 }
 
 .contentInversePrimary {
@@ -189,7 +189,7 @@ The text colors that can be used with `<p>` elements or any element with text.
 
 .contentInverseTertiary {
   @extend .primaryA;
-  color: $grey500;
+  color: $grey400;
 }
 
 /*
@@ -213,19 +213,27 @@ The text colors that can be used with `<p>` elements or any element with text.
 }
 
 .contentAccent {
-  color: $blue400;
+  color: $blue500;
+}
+
+.contentOnColorPrimary {
+  color: $white;
+}
+
+.contentOnColorSecondary {
+  color: rgba($white, 0.5);
 }
 
 .contentNegative {
-  color: $red400;
+  color: $red500;
 }
 
 .contentPositive {
-  color: $green400;
+  color: $green500;
 }
 
 .contentWarning {
-  color: $yellow400;
+  color: $yellow500;
 }
 
 /*
@@ -244,11 +252,11 @@ The border colors that can be used with any element.
 ```
 */
 .borderDefault {
-  border: 1px solid $grey200;
+  border: 1px solid $grey100;
 }
 
 .borderSelected {
-  border: 1px solid $black;
+  border: 2px solid $grey900;
 }
 
 .borderInverseDefault {
@@ -256,7 +264,7 @@ The border colors that can be used with any element.
 }
 
 .borderInverseSelected {
-  border: 1px solid $white;
+  border: 2px solid $white;
 }
 
 /*
@@ -281,21 +289,17 @@ The border colors that can be used with any element.
 }
 
 .borderAccent {
-  border: 1px solid $blue400;
-}
-
-.borderAccentLight {
-  border: 1px solid $blue200;
+  border: 1px solid $blue500;
 }
 
 .borderNegative {
-  border: 1px solid $red200;
+  border: 1px solid $red500;
 }
 
 .borderPositive {
-  border: 1px solid $green200;
+  border: 1px solid $green500;
 }
 
 .borderWarning {
-  border: 1px solid $yellow200;
+  border: 1px solid $yellow500;
 }

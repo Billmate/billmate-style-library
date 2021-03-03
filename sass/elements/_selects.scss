@@ -113,7 +113,7 @@ Select can be used with `<select>` elements.
     select {
       @extend .backgroundLightPositive;
 
-      border-bottom: 2px solid $green400;
+      border-bottom: 2px solid $green500;
 
       &:focus,
       &:active {
@@ -129,7 +129,7 @@ Select can be used with `<select>` elements.
     select {
       @extend .backgroundLightNegative;
 
-      border-bottom: 2px solid $red400;
+      border-bottom: 2px solid $red500;
 
       &:focus,
       &:active {

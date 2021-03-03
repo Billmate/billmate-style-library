@@ -216,3 +216,18 @@ The available fonts are:
   font-weight: bold;
   font-style: italic;
 }
+
+/**
+  Default font
+ */
+
+@font-face {
+  font-family: 'GT Walsheim';
+  src: local('GT Walsheim'),
+  url($billmate-resource-path + '/resources/fonts/GTWalsheim/GT-Walsheim-Regular.woff2') format('woff2'),
+  url($billmate-resource-path + '/resources/fonts/GTWalsheim/GT-Walsheim-Regular.woff') format('woff'),
+  url($billmate-resource-path + '/resources/fonts/GTWalsheim/GT-Walsheim-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
