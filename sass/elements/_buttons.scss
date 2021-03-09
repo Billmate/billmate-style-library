@@ -78,6 +78,11 @@ a {
     justify-content: space-between;
   }
 
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+
   /**
    * Rectangle
    */
@@ -269,10 +274,15 @@ a {
 
     //Circ Button
     &.circ {
-      display: flex; //links are not displaying as block
+      display: flex; //links are not displaying as flex
       border-radius: 100px;
       width: 64px;
       height: 64px;
+
+      //align everything in the button to center
+      align-items: center;
+      padding: 0;
+      justify-content: center;
 
       &.medium {
         width: 56px;

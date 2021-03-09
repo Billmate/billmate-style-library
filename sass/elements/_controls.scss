@@ -21,6 +21,24 @@ Switch can be used with `<input>` elements.
     @extend .paragraphSmall;
   }
 
+  &:focus {
+    & + label {
+      &::before,
+      &:before {
+        outline: 0;
+      }
+    }
+  }
+
+  &:after {
+    & + label {
+      &::before,
+      &:before {
+        outline: 0;
+      }
+    }
+  }
+
   // Active state
   & + label {
     &::before,
