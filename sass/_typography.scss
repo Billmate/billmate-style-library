@@ -11,10 +11,13 @@ category: Typography
 Title types can be used on any element that contains text.
 
 ```types.html
-<p class="displayL">Display Large</p>
-<p class="displayM">Display Medium</p>
-<p class="displayS">Display Small</p>
-<p class="displayXS">Display Extra Small</p>
+<div class="title-x8">Title x8</div>
+<div class="title-x7">Title x7</div>
+<div class="title-x6">Title x6</div>
+<div class="title-x5">Title x5</div>
+<div class="title-x4">Title x4</div>
+<div class="title-x3">Title x3</div>
+<div class="title-x2">Title x2</div>
 ```
 */
 .title-x8 {
@@ -49,15 +52,6 @@ Title types can be used on any element that contains text.
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  line-height: 1;
-  color: $black;
-}
-
-.title-x4 {
-  @extend .secondaryFont;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
   line-height: 1;
   color: $black;
 }
@@ -160,7 +154,7 @@ Title types can be used on any element that contains text.
 
 /*
 ---
-name: Display
+name: Display (Deprecated)
 category: Typography
 ---
 
@@ -196,7 +190,7 @@ Not used on Website.
 
 /*
 ---
-name: Heading
+name: Heading (Deprecated)
 category: Typography
 ---
 
@@ -267,7 +261,7 @@ Heading types can be used with `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` and `<h6>`
 
 /*
 ---
-name: Headers
+name: Headers (Deprecated)
 category: Typography
 ---
 
@@ -331,7 +325,7 @@ h6 {
 
 /*
 ---
-name: Paragraph
+name: Paragraph (Deprecated)
 category: Typography
 ---
 

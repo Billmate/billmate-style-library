@@ -10,6 +10,7 @@ Types of buttons:
 - Rectangle Primary: Standard button
 - Rectangle Secondary: Add an secondary indication over the primary button
 - Rectangle Tertiary: Add an tertiary indication over the other button types
+- Circle Primary: Standard button
 
 ```types.html
 <button class="button rectanglePrimary">Rectangle Primary</button>
@@ -35,6 +36,13 @@ Types of buttons:
 <button class="button rectanglePrimary smallLabel">Rectangle Primary - small button</button>
 <button class="button rectangleSecondary">Rectangle Secondary</button>
 <button class="button rectangleTertiary">Rectangle Tertiary</button>
+<button class="button pillPrimary circ">01</button>
+<button class="button pillSecondary circ">02</button>
+<button class="button pillSecondary circ">
+  <span class="icon">
+    <i class="bm-icon-arrow-right"></i>
+  </span>
+</button>
 ```
 */
 
@@ -75,22 +83,21 @@ a {
    */
   // Rectangle Primary
   &.rectanglePrimary {
-    @extend .is-fullwidth;
     @extend .labelLarge;
     @extend .backgroundInversePrimary;
 
     color: $white;
     border: 0;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
     height: 64px;
 
     // Medium button
     &.mediumLabel {
       @extend .labelMedium;
 
-      padding-left: 16px;
-      padding-right: 16px;
+      padding-left: 24px;
+      padding-right: 24px;
       height: 48px;
     }
 
@@ -98,8 +105,8 @@ a {
     &.smallLabel {
       @extend .labelSmall;
 
-      padding-left: 12px;
-      padding-right: 12px;
+      padding-left: 16px;
+      padding-right: 16px;
       height: 40px;
     }
 
@@ -111,12 +118,12 @@ a {
     }
 
     &:hover {
-      opacity: 0.8;
+      background: rgba($grey900, 0.8);
       color: $white;
     }
 
     &:active {
-      opacity: 0.7;
+      background: rgba($grey900, 0.7);
       color: $white;
     }
 
@@ -132,26 +139,26 @@ a {
     @extend .contentPrimary;
 
     border: 0;
-    padding-left: 24px;
-    padding-right: 24px;
-    height: 56px;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 64px;
 
     // Medium button
     &.mediumLabel {
       @extend .labelMedium;
 
-      padding-left: 16px;
-      padding-right: 16px;
-      height: 48px;
+      padding-left: 24px;
+      padding-right: 24px;
+      height: 56px;
     }
 
     // Small button
     &.smallLabel {
       @extend .labelSmall;
 
-      padding-left: 12px;
-      padding-right: 12px;
-      height: 36px;
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 40px;
     }
 
     &:disabled {
@@ -163,14 +170,12 @@ a {
 
     &:hover {
       @extend .contentPrimary;
-
-      opacity: 0.88;
+      background: linear-gradient(0deg, rgba(23, 25, 28, 0.08), rgba(23, 25, 28, 0.08)), $grey100;
     }
 
     &:active {
       @extend .contentPrimary;
-
-      opacity: 0.8;
+      background: linear-gradient(0deg, rgba(23, 25, 28, 0.16), rgba(23, 25, 28, 0.16)), $grey100;
     }
 
     &:enabled {
@@ -180,30 +185,29 @@ a {
 
   // Rectangle Tertiary
   &.rectangleTertiary {
-    @extend .is-fullwidth;
     @extend .labelLarge;
 
     border: 0;
-    padding-left: 24px;
-    padding-right: 24px;
-    height: 56px;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 64px;
 
     // Medium button
     &.mediumLabel {
       @extend .labelMedium;
 
-      padding-left: 16px;
-      padding-right: 16px;
-      height: 48px;
+      padding-left: 24px;
+      padding-right: 24px;
+      height: 56px;
     }
 
     // Small button
     &.smallLabel {
       @extend .labelSmall;
 
-      padding-left: 12px;
-      padding-right: 12px;
-      height: 36px;
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 40px;
     }
 
     &:disabled {
@@ -235,12 +239,51 @@ a {
   &.pillPrimary {
     @extend .rectanglePrimary;
     border-radius: 100px;
+
+    //Circ Button
+    &.circ {
+      display: flex; //links are not displaying as block
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      width: 64px;
+      height: 64px;
+
+      &.medium {
+        width: 56px;
+        height: 56px;
+      }
+
+      &.small {
+        width: 48px;
+        height: 48px;
+      }
+    }
   }
 
   // Pill Secondary
   &.pillSecondary {
     @extend .rectangleSecondary;
     border-radius: 100px;
+
+    //Circ Button
+    &.circ {
+      display: flex; //links are not displaying as block
+      border-radius: 100px;
+      width: 64px;
+      height: 64px;
+
+      &.medium {
+        width: 56px;
+        height: 56px;
+      }
+
+      &.small {
+        width: 48px;
+        height: 48px;
+      }
+    }
   }
 
   // Pill Tertiary
@@ -248,4 +291,5 @@ a {
     @extend .rectangleTertiary;
     border-radius: 100px;
   }
+
 }

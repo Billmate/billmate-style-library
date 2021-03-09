@@ -52,66 +52,18 @@
 		
 	</head>
 
-	<body>					<button class="button rectanglePrimary">Rectangle Primary</button>
-<button class="button rectanglePrimary">
-  <span class="icon">
-    <i class="bm-icon-placeholder"></i>
-  </span>
-  <span>Rectangle Primary</span>
-</button>
-<button class="button rectanglePrimary">
-  <span class="is-left">Rectangle Primary</span>
-  <span class="icon">
-    <i class="bm-icon-arrow-right"></i>
-  </span>
-</button>
-<button class="button rectanglePrimary content-space-between">
-  <span>Rectangle Primary</span>
-  <span class="icon">
-    <i class="bm-icon-arrow-right"></i>
-  </span>
-</button>
-<button class="button rectanglePrimary mediumLabel">Rectangle Primary - medium button</button>
-<button class="button rectanglePrimary smallLabel">Rectangle Primary - small button</button>
-<button class="button rectangleSecondary">Rectangle Secondary</button>
-<button class="button rectangleTertiary">Rectangle Tertiary</button>
-<button class="button pillPrimary circ">01</button>
-<button class="button pillSecondary circ">02</button>
-<button class="button pillSecondary circ">
-  <span class="icon">
-    <i class="bm-icon-arrow-right"></i>
-  </span>
-</button>
-			<script type="text/x-stylemark" data-language="html"><button class="button rectanglePrimary">Rectangle Primary</button>
-<button class="button rectanglePrimary">
-  <span class="icon">
-    <i class="bm-icon-placeholder"></i>
-  </span>
-  <span>Rectangle Primary</span>
-</button>
-<button class="button rectanglePrimary">
-  <span class="is-left">Rectangle Primary</span>
-  <span class="icon">
-    <i class="bm-icon-arrow-right"></i>
-  </span>
-</button>
-<button class="button rectanglePrimary content-space-between">
-  <span>Rectangle Primary</span>
-  <span class="icon">
-    <i class="bm-icon-arrow-right"></i>
-  </span>
-</button>
-<button class="button rectanglePrimary mediumLabel">Rectangle Primary - medium button</button>
-<button class="button rectanglePrimary smallLabel">Rectangle Primary - small button</button>
-<button class="button rectangleSecondary">Rectangle Secondary</button>
-<button class="button rectangleTertiary">Rectangle Tertiary</button>
-<button class="button pillPrimary circ">01</button>
-<button class="button pillSecondary circ">02</button>
-<button class="button pillSecondary circ">
-  <span class="icon">
-    <i class="bm-icon-arrow-right"></i>
-  </span>
-</button></script>
+	<body>					<h1 class="headingXLarge">Heading Extra Large</h1>
+<h1 class="headingLarge">Heading Large</h1>
+<h1 class="headingM">Heading Medium</h1>
+<h1 class="headingSmall">Heading Small</h1>
+<h1 class="headingXSmall">Heading Extra Small</h1>
+<h1 class="headingXXSmall">Heading Extra Extra Small</h1>
+			<script type="text/x-stylemark" data-language="html"><h1 class="headingXLarge">Heading Extra Large</h1>
+<h1 class="headingLarge">Heading Large</h1>
+<h1 class="headingM">Heading Medium</h1>
+<h1 class="headingSmall">Heading Small</h1>
+<h1 class="headingXSmall">Heading Extra Small</h1>
+<h1 class="headingXXSmall">Heading Extra Extra Small</h1></script>
 
 		<!--
 			Vanilla JS
@@ -144,10 +96,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-button-types', []);
+						module = angular.module('stylemark-heading-deprecated-types', []);
 					}
 
-					module.controller('stylemark-button-types-' + index, function($scope) {
+					module.controller('stylemark-heading-deprecated-types-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

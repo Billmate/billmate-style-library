@@ -52,81 +52,215 @@ category: Variables
 The available color palettes.
 
 ```types.html
-<div style="background: #000000;">$black</div>
-<div style="background: #FFFFFF;">$white</div>
 
-<div style="background: #08415E;">$blue700</div>
-<div style="background: #0C628D;">$blue600</div>
-<div style="background: #0F7AB0;">$blue500</div>
-<div style="background: #14A3EB;">$blue400</div>
-<div style="background: #4FBAF0;">$blue300</div>
-<div style="background: #95D6F6;">$blue200</div>
-<div style="background: #D0EDFB;">$blue100</div>
-<div style="background: #ECF8FD;">$blue50</div>
+<div class="theme-color">
+  <div style="background: #CCEEFF; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $blue100<br />
+  #CCEEFF
+</div>
 
-<div style="background: #5D2509;">$orange700</div>
-<div style="background: #8C370D;">$orange600</div>
-<div style="background: #AF4510;">$orange500</div>
-<div style="background: #E95C16;">$orange400</div>
-<div style="background: #EF8550;">$orange300</div>
-<div style="background: #F5B696;">$orange200</div>
-<div style="background: #FBDED0;">$orange100</div>
-<div style="background: #FDF2EC;">$orange50</div>
+<div class="theme-color">
+  <div style="background: #83CFFC; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $blue300<br />
+  #83CFFC
+</div>
 
-<div style="background: #145238;">$green700</div>
-<div style="background: #1F7A54;">$green600</div>
-<div style="background: #269969;">$green500</div>
-<div style="background: #33CC8C;">$green400</div>
-<div style="background: #66D9A9;">$green300</div>
-<div style="background: #A3E8CB;">$green200</div>
-<div style="background: #D6F5E8;">$green100</div>
-<div style="background: #EFFBF6;">$green50</div>
+<div class="theme-color">
+  <div style="background: #1975FF; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $blue500<br />
+  #1975FF
+</div>
 
-<div style="background: #5E1A08;">$red700</div>
-<div style="background: #8D270C;">$red600</div>
-<div style="background: #B0310F;">$red500</div>
-<div style="background: #EB4114;">$red400</div>
-<div style="background: #F0704F;">$red300</div>
-<div style="background: #F6A995;">$red200</div>
-<div style="background: #FBD9D0;">$red100</div>
-<div style="background: #FDF0EC;">$red50</div>
+<div class="theme-color">
+  <div style="background: #1F49AD; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $blue700<br />
+  #1F49AD
+</div>
 
-<div style="background: #5D4109;">$yellow700</div>
-<div style="background: #8C620D;">$yellow600</div>
-<div style="background: #AF7A10;">$yellow500</div>
-<div style="background: #E9A316;">$yellow400</div>
-<div style="background: #EFBA50;">$yellow300</div>
-<div style="background: #F5D696;">$yellow200</div>
-<div style="background: #FBEDD0;">$yellow100</div>
-<div style="background: #FDF8EC;">$yellow50</div>
+<div style="width: 100%; margin-top: 15px;"></div>
 
-<div style="background: #222222;">$grey800</div>
-<div style="background: #3B3B3B;">$grey700</div>
-<div style="background: #595959;">$grey600</div>
-<div style="background: #6F6F6F;">$grey500</div>
-<div style="background: #949494;">$grey400</div>
-<div style="background: #AFAFAF;">$grey300</div>
-<div style="background: #CFCFCF;">$grey200</div>
-<div style="background: #EAEAEA;">$grey100</div>
-<div style="background: #F6F6F6;">$grey50</div>
+<div class="theme-color">
+  <div style="background: #FFF8CC; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $yellow100<br />
+  #FFF8CC
+</div>
 
-<div style="background: #2F3237;">$platinum700</div>
-<div style="background: #464A53;">$platinum600</div>
-<div style="background: #585D68;">$platinum500</div>
-<div style="background: #757C8A;">$platinum400</div>
-<div style="background: #989DA7;">$platinum300</div>
-<div style="background: #C1C4CA;">$platinum200</div>
-<div style="background: #E3E5E8;">$platinum100</div>
-<div style="background: #F4F5F6;">$platinum50</div>
+<div class="theme-color">
+  <div style="background: #FFD042; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $yellow300<br />
+  #FFD042
+</div>
 
-<div style="background: #443C37;">$beige700</div>
-<div style="background: #655B52;">$beige600</div>
-<div style="background: #7F7167;">$beige500</div>
-<div style="background: #A99789;">$beige400</div>
-<div style="background: #BFB1A7;">$beige300</div>
-<div style="background: #D8D0CA;">$beige200</div>
-<div style="background: #EEEAE7;">$beige100</div>
-<div style="background: #F8F7F6;">$beige50</div>
+<div class="theme-color">
+  <div style="background: #FFA719; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $yellow500<br />
+  #FFA719
+</div>
+
+<div class="theme-color">
+  <div style="background: #E66D0A; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $yellow700<br />
+  #E66D0A
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #CCFFDD; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $green100<br />
+  #CCFFDD
+</div>
+
+<div class="theme-color">
+  <div style="background: #7DE8A9; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $green300<br />
+  #7DE8A9
+</div>
+
+<div class="theme-color">
+  <div style="background: #1DC872; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $green500<br />
+  #1DC872
+</div>
+
+<div class="theme-color">
+  <div style="background: #267349; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $green700<br />
+  #267349
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #ECD6F5; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $purple100<br />
+  #ECD6F5
+</div>
+
+<div class="theme-color">
+  <div style="background: #D199E5; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $purple300<br />
+  #D199E5
+</div>
+
+<div class="theme-color">
+  <div style="background: #9547D1; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $purple500<br />
+  #9547D1
+</div>
+
+<div class="theme-color">
+  <div style="background: #593A78; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $purple700<br />
+  #593A78
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #FFD8CC; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $red100<br />
+  #FFD8CC
+</div>
+
+<div class="theme-color">
+  <div style="background: #F8917C; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $red300<br />
+  #F8917C
+</div>
+
+<div class="theme-color">
+  <div style="background: #E84030; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $red500<br />
+  #E84030
+</div>
+
+<div class="theme-color">
+  <div style="background: #932F1F; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $red700<br />
+  #932F1F
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #ffffff; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $white<br />
+  #ffffff
+</div>
+
+<div class="theme-color">
+  <div style="background: #F9FAFB; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey50<br />
+  #F9FAFB
+</div>
+
+<div class="theme-color">
+  <div style="background: #E2E5E9; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey100<br />
+  #E2E5E9
+</div>
+
+<div class="theme-color">
+  <div style="background: #ABB1BA; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey300<br />
+  #ABB1BA
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #6A717C; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey400<br />
+  #ffffff
+</div>
+
+<div class="theme-color">
+  <div style="background: #454B54; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey700<br />
+  #454B54
+</div>
+
+<div class="theme-color">
+  <div style="background: #2E3238; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey800<br />
+  #2E3238
+</div>
+
+<div class="theme-color">
+  <div style="background: #17191C; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey900<br />
+  #17191C
+</div>
+
 ```
 */
 /*
@@ -136,12 +270,10 @@ category: Variables
 ---
 
 The available fonts are:
-- BuenosAires
-- Sofia Pro
+- GT Walsheim
 
 ```types.html
-<h1 class="displayL">BuenosAires</h1>
-<h1 class="title is-1">Sofia Pro</h1>
+<h1 class="title-x8">GT Walsheim</h1>
 ```
 */
 @import url("../resources/fontawesome/css/fontawesome-all.css");
@@ -263,6 +395,16 @@ The available fonts are:
   src: local("Sofia Pro Bold Italic"), local("SofiaProBold-Italic"), url("../resources/fonts/SofiaPro/SofiaProBold-Italic.eot?#iefix") format("embedded-opentype"), url("../resources/fonts/SofiaPro/SofiaProBold-Italic.woff2") format("woff2"), url("../resources/fonts/SofiaPro/SofiaProBold-Italic.woff") format("woff"), url("../resources/fonts/SofiaPro/SofiaProBold-Italic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic; }
+
+/**
+  Default font
+ */
+@font-face {
+  font-family: 'GT Walsheim';
+  src: local("GT Walsheim"), url("../resources/fonts/GTWalsheim/GT-Walsheim-Regular.woff2") format("woff2"), url("../resources/fonts/GTWalsheim/GT-Walsheim-Regular.woff") format("woff"), url("../resources/fonts/GTWalsheim/GT-Walsheim-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
 
 /*! bulma.io v0.9.2 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
@@ -413,15 +555,9 @@ The available fonts are:
     min-height: 24px;
     min-width: 24px;
     width: 24px; }
-  .is-large.delete, button.delete,
-  input.delete[type=button],
-  input.delete[type=submit],
-  a.delete, .delete.switch[type='checkbox'], .delete.input[type=text],
+  .is-large.delete, .delete.switch[type='checkbox'], .delete.input[type=text],
   .delete.input[type=password],
-  .delete.input[type=email], .delete.select, .is-large.modal-close, button.modal-close,
-  input.modal-close[type=button],
-  input.modal-close[type=submit],
-  a.modal-close, .modal-close.switch[type='checkbox'], .modal-close.input[type=text],
+  .delete.input[type=email], .delete.select, .is-large.modal-close, .modal-close.switch[type='checkbox'], .modal-close.input[type=text],
   .modal-close.input[type=password],
   .modal-close.input[type=email], .modal-close.select {
     height: 32px;
@@ -563,7 +699,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: "Sofia Pro"; }
+  font-family: "GT Walsheim"; }
 
 code,
 pre {
@@ -683,10 +819,7 @@ a.box:active {
   white-space: nowrap; }
   .button strong {
     color: inherit; }
-  .button .icon, .button .icon.is-small, .button .icon.is-medium, .button .icon.is-large, .button button.icon,
-  .button input.icon[type=button],
-  .button input.icon[type=submit],
-  .button a.icon, .button .icon.switch[type='checkbox'], .button .icon.input[type=text],
+  .button .icon, .button .icon.is-small, .button .icon.is-medium, .button .icon.is-large, .button .icon.switch[type='checkbox'], .button .icon.input[type=text],
   .button .icon.input[type=password],
   .button .icon.input[type=email], .button .icon.select {
     height: 1.5em;
@@ -1489,10 +1622,7 @@ a.box:active {
     font-size: 1rem; }
   .button.is-medium {
     font-size: 1.25rem; }
-  .button.is-large, button.button,
-  input.button[type=button],
-  input.button[type=submit],
-  a.button, .button.switch[type='checkbox'], .button.input[type=text],
+  .button.is-large, .button.switch[type='checkbox'], .button.input[type=text],
   .button.input[type=password],
   .button.input[type=email], .button.select {
     font-size: 1.5rem; }
@@ -1502,25 +1632,7 @@ a.box:active {
     border-color: #dbdbdb;
     box-shadow: none;
     opacity: 0.5; }
-  .button.is-fullwidth, button.button.rectanglePrimary, button.button.pillPrimary,
-  input.button.rectanglePrimary[type=button],
-  input.button.pillPrimary[type=button],
-  input.button.rectanglePrimary[type=submit],
-  input.button.pillPrimary[type=submit],
-  a.button.rectanglePrimary,
-  a.button.pillPrimary, button.button.rectangleSecondary, button.button.pillSecondary,
-  input.button.rectangleSecondary[type=button],
-  input.button.pillSecondary[type=button],
-  input.button.rectangleSecondary[type=submit],
-  input.button.pillSecondary[type=submit],
-  a.button.rectangleSecondary,
-  a.button.pillSecondary, button.button.rectangleTertiary, button.button.pillTertiary,
-  input.button.rectangleTertiary[type=button],
-  input.button.pillTertiary[type=button],
-  input.button.rectangleTertiary[type=submit],
-  input.button.pillTertiary[type=submit],
-  a.button.rectangleTertiary,
-  a.button.pillTertiary {
+  .button.is-fullwidth {
     display: flex;
     width: 100%; }
   .button.is-loading {
@@ -1549,17 +1661,17 @@ a.box:active {
   justify-content: flex-start; }
   .buttons .button {
     margin-bottom: 0.5rem; }
-    .buttons .button:not(:last-child):not(.is-fullwidth):not(button.rectanglePrimary):not(button.pillPrimary):not(input.rectanglePrimary[type=button]):not(input.pillPrimary[type=button]):not(input.rectanglePrimary[type=submit]):not(input.pillPrimary[type=submit]):not(a.rectanglePrimary):not(a.pillPrimary):not(button.rectangleSecondary):not(button.pillSecondary):not(input.rectangleSecondary[type=button]):not(input.pillSecondary[type=button]):not(input.rectangleSecondary[type=submit]):not(input.pillSecondary[type=submit]):not(a.rectangleSecondary):not(a.pillSecondary):not(button.rectangleTertiary):not(button.pillTertiary):not(input.rectangleTertiary[type=button]):not(input.pillTertiary[type=button]):not(input.rectangleTertiary[type=submit]):not(input.pillTertiary[type=submit]):not(a.rectangleTertiary):not(a.pillTertiary) {
+    .buttons .button:not(:last-child):not(.is-fullwidth) {
       margin-right: 0.5rem; }
   .buttons:last-child {
     margin-bottom: -0.5rem; }
   .buttons:not(:last-child) {
     margin-bottom: 1rem; }
-  .buttons.are-small .button:not(.is-normal):not(.is-medium):not(.is-large):not(button):not(input[type=button]):not(input[type=submit]):not(a):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select) {
+  .buttons.are-small .button:not(.is-normal):not(.is-medium):not(.is-large):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select) {
     font-size: 0.75rem; }
-    .buttons.are-small .button:not(.is-normal):not(.is-medium):not(.is-large):not(button):not(input[type=button]):not(input[type=submit]):not(a):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select):not(.is-rounded):not(.switch[type='checkbox']):not(.tags-static) {
+    .buttons.are-small .button:not(.is-normal):not(.is-medium):not(.is-large):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select):not(.is-rounded):not(.switch[type='checkbox']):not(.tags-static) {
       border-radius: 2px; }
-  .buttons.are-medium .button:not(.is-small):not(.is-normal):not(.is-large):not(button):not(input[type=button]):not(input[type=submit]):not(a):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select) {
+  .buttons.are-medium .button:not(.is-small):not(.is-normal):not(.is-large):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select) {
     font-size: 1.25rem; }
   .buttons.are-large .button:not(.is-small):not(.is-normal):not(.is-medium) {
     font-size: 1.5rem; }
@@ -1583,12 +1695,12 @@ a.box:active {
     flex-shrink: 1; }
   .buttons.is-centered {
     justify-content: center; }
-    .buttons.is-centered:not(.has-addons) .button:not(.is-fullwidth):not(button.rectanglePrimary):not(button.pillPrimary):not(input.rectanglePrimary[type=button]):not(input.pillPrimary[type=button]):not(input.rectanglePrimary[type=submit]):not(input.pillPrimary[type=submit]):not(a.rectanglePrimary):not(a.pillPrimary):not(button.rectangleSecondary):not(button.pillSecondary):not(input.rectangleSecondary[type=button]):not(input.pillSecondary[type=button]):not(input.rectangleSecondary[type=submit]):not(input.pillSecondary[type=submit]):not(a.rectangleSecondary):not(a.pillSecondary):not(button.rectangleTertiary):not(button.pillTertiary):not(input.rectangleTertiary[type=button]):not(input.pillTertiary[type=button]):not(input.rectangleTertiary[type=submit]):not(input.pillTertiary[type=submit]):not(a.rectangleTertiary):not(a.pillTertiary) {
+    .buttons.is-centered:not(.has-addons) .button:not(.is-fullwidth) {
       margin-left: 0.25rem;
       margin-right: 0.25rem; }
   .buttons.is-right {
     justify-content: flex-end; }
-    .buttons.is-right:not(.has-addons) .button:not(.is-fullwidth):not(button.rectanglePrimary):not(button.pillPrimary):not(input.rectanglePrimary[type=button]):not(input.pillPrimary[type=button]):not(input.rectanglePrimary[type=submit]):not(input.pillPrimary[type=submit]):not(a.rectanglePrimary):not(a.pillPrimary):not(button.rectangleSecondary):not(button.pillSecondary):not(input.rectangleSecondary[type=button]):not(input.pillSecondary[type=button]):not(input.rectangleSecondary[type=submit]):not(input.pillSecondary[type=submit]):not(a.rectangleSecondary):not(a.pillSecondary):not(button.rectangleTertiary):not(button.pillTertiary):not(input.rectangleTertiary[type=button]):not(input.pillTertiary[type=button]):not(input.rectangleTertiary[type=submit]):not(input.pillTertiary[type=submit]):not(a.rectangleTertiary):not(a.pillTertiary) {
+    .buttons.is-right:not(.has-addons) .button:not(.is-fullwidth) {
       margin-left: 0.25rem;
       margin-right: 0.25rem; }
 
@@ -1760,10 +1872,7 @@ a.box:active {
 .content.is-medium {
   font-size: 1.25rem; }
 
-.content.is-large, button.content,
-input.content[type=button],
-input.content[type=submit],
-a.content, .content.switch[type='checkbox'], .content.input[type=text],
+.content.is-large, .content.switch[type='checkbox'], .content.input[type=text],
 .content.input[type=password],
 .content.input[type=email], .content.select {
   font-size: 1.5rem; }
@@ -1780,10 +1889,7 @@ a.content, .content.switch[type='checkbox'], .content.input[type=text],
   .icon.is-medium {
     height: 2rem;
     width: 2rem; }
-  .icon.is-large, button.icon,
-  input.icon[type=button],
-  input.icon[type=submit],
-  a.icon, .icon.switch[type='checkbox'], .icon.input[type=text],
+  .icon.is-large, .icon.switch[type='checkbox'], .icon.input[type=text],
   .icon.input[type=password],
   .icon.input[type=email], .icon.select {
     height: 3rem;
@@ -1816,25 +1922,7 @@ div.icon-text {
     width: 100%; }
     .image img.is-rounded, .image img.switch[type='checkbox'], .image img.tags-static {
       border-radius: 290486px; }
-  .image.is-fullwidth, button.image.rectanglePrimary, button.image.pillPrimary,
-  input.image.rectanglePrimary[type=button],
-  input.image.pillPrimary[type=button],
-  input.image.rectanglePrimary[type=submit],
-  input.image.pillPrimary[type=submit],
-  a.image.rectanglePrimary,
-  a.image.pillPrimary, button.image.rectangleSecondary, button.image.pillSecondary,
-  input.image.rectangleSecondary[type=button],
-  input.image.pillSecondary[type=button],
-  input.image.rectangleSecondary[type=submit],
-  input.image.pillSecondary[type=submit],
-  a.image.rectangleSecondary,
-  a.image.pillSecondary, button.image.rectangleTertiary, button.image.pillTertiary,
-  input.image.rectangleTertiary[type=button],
-  input.image.pillTertiary[type=button],
-  input.image.rectangleTertiary[type=submit],
-  input.image.pillTertiary[type=submit],
-  a.image.rectangleTertiary,
-  a.image.pillTertiary {
+  .image.is-fullwidth {
     width: 100%; }
   .image.is-square img,
   .image.is-square .has-ratio, .image.is-1by1 img,
@@ -2098,10 +2186,7 @@ div.icon-text {
     height: 0.75rem; }
   .progress.is-medium {
     height: 1.25rem; }
-  .progress.is-large, button.progress,
-  input.progress[type=button],
-  input.progress[type=submit],
-  a.progress, .progress.switch[type='checkbox'], .progress.input[type=text],
+  .progress.is-large, .progress.switch[type='checkbox'], .progress.input[type=text],
   .progress.input[type=password],
   .progress.input[type=email], .progress.select {
     height: 1.5rem; }
@@ -2224,25 +2309,7 @@ div.icon-text {
   .table.is-bordered tr:last-child td,
   .table.is-bordered tr:last-child th {
     border-bottom-width: 1px; }
-  .table.is-fullwidth, button.table.rectanglePrimary, button.table.pillPrimary,
-  input.table.rectanglePrimary[type=button],
-  input.table.pillPrimary[type=button],
-  input.table.rectanglePrimary[type=submit],
-  input.table.pillPrimary[type=submit],
-  a.table.rectanglePrimary,
-  a.table.pillPrimary, button.table.rectangleSecondary, button.table.pillSecondary,
-  input.table.rectangleSecondary[type=button],
-  input.table.pillSecondary[type=button],
-  input.table.rectangleSecondary[type=submit],
-  input.table.pillSecondary[type=submit],
-  a.table.rectangleSecondary,
-  a.table.pillSecondary, button.table.rectangleTertiary, button.table.pillTertiary,
-  input.table.rectangleTertiary[type=button],
-  input.table.pillTertiary[type=button],
-  input.table.rectangleTertiary[type=submit],
-  input.table.pillTertiary[type=submit],
-  a.table.rectangleTertiary,
-  a.table.pillTertiary {
+  .table.is-fullwidth {
     width: 100%; }
   .table.is-hoverable tbody tr:not(.is-selected):hover {
     background-color: #fafafa; }
@@ -2275,7 +2342,7 @@ div.icon-text {
     margin-bottom: -0.5rem; }
   .tags:not(:last-child) {
     margin-bottom: 1rem; }
-  .tags.are-medium .tag:not(.is-normal):not(.is-large):not(button):not(input[type=button]):not(input[type=submit]):not(a):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select), .tags.are-medium .tags-static:not(.is-normal):not(.is-large):not(button):not(input[type=button]):not(input[type=submit]):not(a):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select) {
+  .tags.are-medium .tag:not(.is-normal):not(.is-large):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select), .tags.are-medium .tags-static:not(.is-normal):not(.is-large):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select) {
     font-size: 1rem; }
   .tags.are-large .tag:not(.is-normal):not(.is-medium), .tags.are-large .tags-static:not(.is-normal):not(.is-medium) {
     font-size: 1.25rem; }
@@ -2368,10 +2435,7 @@ div.icon-text {
     font-size: 0.75rem; }
   .tag:not(body).is-medium, .tags-static:not(body).is-medium {
     font-size: 1rem; }
-  .tag:not(body).is-large, button.tag:not(body), button.tags-static:not(body),
-  input.tag:not(body)[type=button], input.tags-static:not(body)[type=button],
-  input.tag:not(body)[type=submit], input.tags-static:not(body)[type=submit],
-  a.tag:not(body), a.tags-static:not(body), .tag.switch:not(body)[type='checkbox'], .switch.tags-static:not(body)[type='checkbox'], .tag.input:not(body)[type=text], .input.tags-static:not(body)[type=text],
+  .tag:not(body).is-large, .tag.switch:not(body)[type='checkbox'], .switch.tags-static:not(body)[type='checkbox'], .tag.input:not(body)[type=text], .input.tags-static:not(body)[type=text],
   .tag.input:not(body)[type=password], .input.tags-static:not(body)[type=password],
   .tag.input:not(body)[type=email], .input.tags-static:not(body)[type=email], .tag.select:not(body), .select.tags-static:not(body), .tags-static:not(body).is-large {
     font-size: 1.25rem; }
@@ -2619,53 +2683,11 @@ a.tag:hover, a.tags-static:hover {
     font-size: 0.75rem; }
   .is-medium.input, .is-medium.textarea {
     font-size: 1.25rem; }
-  .is-large.input, button.input,
-  input.input[type=button],
-  input.input[type=submit],
-  a.input, .input.switch[type='checkbox'], .input[type=text],
+  .is-large.input, .input.switch[type='checkbox'], .input[type=text],
   .input[type=password],
-  .input[type=email], .input.select, .is-large.textarea, button.textarea,
-  input.textarea[type=button],
-  input.textarea[type=submit],
-  a.textarea, .textarea.switch[type='checkbox'], .textarea.select {
+  .input[type=email], .input.select, .is-large.textarea, .textarea.switch[type='checkbox'], .textarea.select {
     font-size: 1.5rem; }
-  .is-fullwidth.input, button.input.rectanglePrimary, button.input.pillPrimary,
-  input.input.rectanglePrimary[type=button],
-  input.input.pillPrimary[type=button],
-  input.input.rectanglePrimary[type=submit],
-  input.input.pillPrimary[type=submit],
-  a.input.rectanglePrimary,
-  a.input.pillPrimary, button.input.rectangleSecondary, button.input.pillSecondary,
-  input.input.rectangleSecondary[type=button],
-  input.input.pillSecondary[type=button],
-  input.input.rectangleSecondary[type=submit],
-  input.input.pillSecondary[type=submit],
-  a.input.rectangleSecondary,
-  a.input.pillSecondary, button.input.rectangleTertiary, button.input.pillTertiary,
-  input.input.rectangleTertiary[type=button],
-  input.input.pillTertiary[type=button],
-  input.input.rectangleTertiary[type=submit],
-  input.input.pillTertiary[type=submit],
-  a.input.rectangleTertiary,
-  a.input.pillTertiary, .is-fullwidth.textarea, button.textarea.rectanglePrimary, button.textarea.pillPrimary,
-  input.textarea.rectanglePrimary[type=button],
-  input.textarea.pillPrimary[type=button],
-  input.textarea.rectanglePrimary[type=submit],
-  input.textarea.pillPrimary[type=submit],
-  a.textarea.rectanglePrimary,
-  a.textarea.pillPrimary, button.textarea.rectangleSecondary, button.textarea.pillSecondary,
-  input.textarea.rectangleSecondary[type=button],
-  input.textarea.pillSecondary[type=button],
-  input.textarea.rectangleSecondary[type=submit],
-  input.textarea.pillSecondary[type=submit],
-  a.textarea.rectangleSecondary,
-  a.textarea.pillSecondary, button.textarea.rectangleTertiary, button.textarea.pillTertiary,
-  input.textarea.rectangleTertiary[type=button],
-  input.textarea.pillTertiary[type=button],
-  input.textarea.rectangleTertiary[type=submit],
-  input.textarea.pillTertiary[type=submit],
-  a.textarea.rectangleTertiary,
-  a.textarea.pillTertiary {
+  .is-fullwidth.input, .is-fullwidth.textarea {
     display: block;
     width: 100%; }
   .is-inline.input, .is-inline.textarea {
@@ -2837,35 +2859,15 @@ a.tag:hover, a.tags-static:hover {
     font-size: 0.75rem; }
   .select.is-medium {
     font-size: 1.25rem; }
-  .select.is-large,
-  input.select[type=button],
-  input.select[type=submit], .select.switch[type='checkbox'], .select.input[type=text],
+  .select.is-large, .select.switch[type='checkbox'], .select.input[type=text],
   .select.input[type=password],
   .select.input[type=email], .select {
     font-size: 1.5rem; }
   .select.is-disabled::after {
     border-color: #7a7a7a; }
-  .select.is-fullwidth, button.select.rectanglePrimary, button.select.pillPrimary,
-  input.select.rectanglePrimary[type=button],
-  input.select.pillPrimary[type=button],
-  input.select.rectanglePrimary[type=submit],
-  input.select.pillPrimary[type=submit],
-  a.select.rectanglePrimary,
-  a.select.pillPrimary, button.select.rectangleSecondary, button.select.pillSecondary,
-  input.select.rectangleSecondary[type=button],
-  input.select.pillSecondary[type=button],
-  input.select.rectangleSecondary[type=submit],
-  input.select.pillSecondary[type=submit],
-  a.select.rectangleSecondary,
-  a.select.pillSecondary, button.select.rectangleTertiary, button.select.pillTertiary,
-  input.select.rectangleTertiary[type=button],
-  input.select.pillTertiary[type=button],
-  input.select.rectangleTertiary[type=submit],
-  input.select.pillTertiary[type=submit],
-  a.select.rectangleTertiary,
-  a.select.pillTertiary {
+  .select.is-fullwidth {
     width: 100%; }
-    .select.is-fullwidth select, button.select.rectanglePrimary select, button.select.pillPrimary select, input.select.rectanglePrimary[type=button] select, input.select.pillPrimary[type=button] select, input.select.rectanglePrimary[type=submit] select, input.select.pillPrimary[type=submit] select, a.select.rectanglePrimary select, a.select.pillPrimary select, button.select.rectangleSecondary select, button.select.pillSecondary select, input.select.rectangleSecondary[type=button] select, input.select.pillSecondary[type=button] select, input.select.rectangleSecondary[type=submit] select, input.select.pillSecondary[type=submit] select, a.select.rectangleSecondary select, a.select.pillSecondary select, button.select.rectangleTertiary select, button.select.pillTertiary select, input.select.rectangleTertiary[type=button] select, input.select.pillTertiary[type=button] select, input.select.rectangleTertiary[type=submit] select, input.select.pillTertiary[type=submit] select, a.select.rectangleTertiary select, a.select.pillTertiary select {
+    .select.is-fullwidth select {
       width: 100%; }
   .select.is-loading::after {
     margin-top: 0;
@@ -3051,14 +3053,11 @@ a.tag:hover, a.tags-static:hover {
     font-size: 1.25rem; }
     .file.is-medium .file-icon .fa {
       font-size: 21px; }
-  .file.is-large, button.file,
-  input.file[type=button],
-  input.file[type=submit],
-  a.file, .file.switch[type='checkbox'], .file.input[type=text],
+  .file.is-large, .file.switch[type='checkbox'], .file.input[type=text],
   .file.input[type=password],
   .file.input[type=email], .file.select {
     font-size: 1.5rem; }
-    .file.is-large .file-icon .fa, button.file .file-icon .fa, input.file[type=button] .file-icon .fa, input.file[type=submit] .file-icon .fa, a.file .file-icon .fa, .file.switch[type='checkbox'] .file-icon .fa, .file.input[type=text] .file-icon .fa, .file.input[type=password] .file-icon .fa, .file.input[type=email] .file-icon .fa, .file.select .file-icon .fa {
+    .file.is-large .file-icon .fa, .file.switch[type='checkbox'] .file-icon .fa, .file.input[type=text] .file-icon .fa, .file.input[type=password] .file-icon .fa, .file.input[type=email] .file-icon .fa, .file.select .file-icon .fa {
       font-size: 28px; }
   .file.has-name .file-cta {
     border-bottom-right-radius: 0;
@@ -3087,7 +3086,7 @@ a.tag:hover, a.tags-static:hover {
     font-size: 14px; }
   .file.is-boxed.is-medium .file-icon .fa {
     font-size: 28px; }
-  .file.is-boxed.is-large .file-icon .fa, button.file.is-boxed .file-icon .fa, input.file.is-boxed[type=button] .file-icon .fa, input.file.is-boxed[type=submit] .file-icon .fa, a.file.is-boxed .file-icon .fa, .file.is-boxed.switch[type='checkbox'] .file-icon .fa, .file.is-boxed.input[type=text] .file-icon .fa, .file.is-boxed.input[type=password] .file-icon .fa, .file.is-boxed.input[type=email] .file-icon .fa, .file.is-boxed.select .file-icon .fa {
+  .file.is-boxed.is-large .file-icon .fa, .file.is-boxed.switch[type='checkbox'] .file-icon .fa, .file.is-boxed.input[type=text] .file-icon .fa, .file.is-boxed.input[type=password] .file-icon .fa, .file.is-boxed.input[type=email] .file-icon .fa, .file.is-boxed.select .file-icon .fa {
     font-size: 35px; }
   .file.is-boxed.has-name .file-cta {
     border-radius: 4px 4px 0 0; }
@@ -3096,9 +3095,9 @@ a.tag:hover, a.tags-static:hover {
     border-width: 0 1px 1px; }
   .file.is-centered {
     justify-content: center; }
-  .file.is-fullwidth .file-label, button.file.rectanglePrimary .file-label, button.file.pillPrimary .file-label, input.file.rectanglePrimary[type=button] .file-label, input.file.pillPrimary[type=button] .file-label, input.file.rectanglePrimary[type=submit] .file-label, input.file.pillPrimary[type=submit] .file-label, a.file.rectanglePrimary .file-label, a.file.pillPrimary .file-label, button.file.rectangleSecondary .file-label, button.file.pillSecondary .file-label, input.file.rectangleSecondary[type=button] .file-label, input.file.pillSecondary[type=button] .file-label, input.file.rectangleSecondary[type=submit] .file-label, input.file.pillSecondary[type=submit] .file-label, a.file.rectangleSecondary .file-label, a.file.pillSecondary .file-label, button.file.rectangleTertiary .file-label, button.file.pillTertiary .file-label, input.file.rectangleTertiary[type=button] .file-label, input.file.pillTertiary[type=button] .file-label, input.file.rectangleTertiary[type=submit] .file-label, input.file.pillTertiary[type=submit] .file-label, a.file.rectangleTertiary .file-label, a.file.pillTertiary .file-label {
+  .file.is-fullwidth .file-label {
     width: 100%; }
-  .file.is-fullwidth .file-name, button.file.rectanglePrimary .file-name, button.file.pillPrimary .file-name, input.file.rectanglePrimary[type=button] .file-name, input.file.pillPrimary[type=button] .file-name, input.file.rectanglePrimary[type=submit] .file-name, input.file.pillPrimary[type=submit] .file-name, a.file.rectanglePrimary .file-name, a.file.pillPrimary .file-name, button.file.rectangleSecondary .file-name, button.file.pillSecondary .file-name, input.file.rectangleSecondary[type=button] .file-name, input.file.pillSecondary[type=button] .file-name, input.file.rectangleSecondary[type=submit] .file-name, input.file.pillSecondary[type=submit] .file-name, a.file.rectangleSecondary .file-name, a.file.pillSecondary .file-name, button.file.rectangleTertiary .file-name, button.file.pillTertiary .file-name, input.file.rectangleTertiary[type=button] .file-name, input.file.pillTertiary[type=button] .file-name, input.file.rectangleTertiary[type=submit] .file-name, input.file.pillTertiary[type=submit] .file-name, a.file.rectangleTertiary .file-name, a.file.pillTertiary .file-name {
+  .file.is-fullwidth .file-name {
     flex-grow: 1;
     max-width: none; }
   .file.is-right {
@@ -3181,10 +3180,7 @@ a.tag:hover, a.tags-static:hover {
     font-size: 0.75rem; }
   .label.is-medium {
     font-size: 1.25rem; }
-  .label.is-large, button.label,
-  input.label[type=button],
-  input.label[type=submit],
-  a.label, .label.switch[type='checkbox'], .label.input[type=text],
+  .label.is-large, .label.switch[type='checkbox'], .label.input[type=text],
   .label.input[type=password],
   .label.input[type=email], .label.select {
     font-size: 1.5rem; }
@@ -3323,10 +3319,7 @@ a.tag:hover, a.tags-static:hover {
     .field-label.is-medium {
       font-size: 1.25rem;
       padding-top: 0.375em; }
-    .field-label.is-large, button.field-label,
-    input.field-label[type=button],
-    input.field-label[type=submit],
-    a.field-label, .field-label.switch[type='checkbox'], .field-label.input[type=text],
+    .field-label.is-large, .field-label.switch[type='checkbox'], .field-label.input[type=text],
     .field-label.input[type=password],
     .field-label.input[type=email], .field-label.select {
       font-size: 1.5rem;
@@ -3368,22 +3361,14 @@ a.tag:hover, a.tags-static:hover {
   .control.has-icons-left .select.is-medium ~ .icon, .control.has-icons-right .input.is-medium ~ .icon,
   .control.has-icons-right .select.is-medium ~ .icon {
     font-size: 1.25rem; }
-  .control.has-icons-left .input.is-large ~ .icon, .control.has-icons-left button.input ~ .icon, .control.has-icons-left input.input[type=button] ~ .icon, .control.has-icons-left input.input[type=submit] ~ .icon, .control.has-icons-left a.input ~ .icon, .control.has-icons-left .input.switch[type='checkbox'] ~ .icon, .control.has-icons-left .input[type=text] ~ .icon, .control.has-icons-left .input[type=password] ~ .icon, .control.has-icons-left .input[type=email] ~ .icon, .control.has-icons-left .input.select ~ .icon,
+  .control.has-icons-left .input.is-large ~ .icon, .control.has-icons-left .input.switch[type='checkbox'] ~ .icon, .control.has-icons-left .input[type=text] ~ .icon, .control.has-icons-left .input[type=password] ~ .icon, .control.has-icons-left .input[type=email] ~ .icon, .control.has-icons-left .input.select ~ .icon,
   .control.has-icons-left .select.is-large ~ .icon,
-  .control.has-icons-left button.select ~ .icon,
-  .control.has-icons-left input.select[type=button] ~ .icon,
-  .control.has-icons-left input.select[type=submit] ~ .icon,
-  .control.has-icons-left a.select ~ .icon,
   .control.has-icons-left .select.switch[type='checkbox'] ~ .icon,
   .control.has-icons-left .select.input[type=text] ~ .icon,
   .control.has-icons-left .select.input[type=password] ~ .icon,
   .control.has-icons-left .select.input[type=email] ~ .icon,
-  .control.has-icons-left .select ~ .icon, .control.has-icons-right .input.is-large ~ .icon, .control.has-icons-right button.input ~ .icon, .control.has-icons-right input.input[type=button] ~ .icon, .control.has-icons-right input.input[type=submit] ~ .icon, .control.has-icons-right a.input ~ .icon, .control.has-icons-right .input.switch[type='checkbox'] ~ .icon, .control.has-icons-right .input[type=text] ~ .icon, .control.has-icons-right .input[type=password] ~ .icon, .control.has-icons-right .input[type=email] ~ .icon, .control.has-icons-right .input.select ~ .icon,
+  .control.has-icons-left .select ~ .icon, .control.has-icons-right .input.is-large ~ .icon, .control.has-icons-right .input.switch[type='checkbox'] ~ .icon, .control.has-icons-right .input[type=text] ~ .icon, .control.has-icons-right .input[type=password] ~ .icon, .control.has-icons-right .input[type=email] ~ .icon, .control.has-icons-right .input.select ~ .icon,
   .control.has-icons-right .select.is-large ~ .icon,
-  .control.has-icons-right button.select ~ .icon,
-  .control.has-icons-right input.select[type=button] ~ .icon,
-  .control.has-icons-right input.select[type=submit] ~ .icon,
-  .control.has-icons-right a.select ~ .icon,
   .control.has-icons-right .select.switch[type='checkbox'] ~ .icon,
   .control.has-icons-right .select.input[type=text] ~ .icon,
   .control.has-icons-right .select.input[type=password] ~ .icon,
@@ -3417,10 +3402,7 @@ a.tag:hover, a.tags-static:hover {
     font-size: 0.75rem; }
   .control.is-loading.is-medium:after {
     font-size: 1.25rem; }
-  .control.is-loading.is-large:after, button.control.is-loading:after,
-  input.control.is-loading[type=button]:after,
-  input.control.is-loading[type=submit]:after,
-  a.control.is-loading:after, .control.is-loading.switch[type='checkbox']:after, .control.is-loading.input[type=text]:after,
+  .control.is-loading.is-large:after, .control.is-loading.switch[type='checkbox']:after, .control.is-loading.input[type=text]:after,
   .control.is-loading.input[type=password]:after,
   .control.is-loading.input[type=email]:after, .control.is-loading.select:after {
     font-size: 1.5rem; }
@@ -3469,10 +3451,7 @@ a.tag:hover, a.tags-static:hover {
     font-size: 0.75rem; }
   .breadcrumb.is-medium {
     font-size: 1.25rem; }
-  .breadcrumb.is-large, button.breadcrumb,
-  input.breadcrumb[type=button],
-  input.breadcrumb[type=submit],
-  a.breadcrumb, .breadcrumb.switch[type='checkbox'], .breadcrumb.input[type=text],
+  .breadcrumb.is-large, .breadcrumb.switch[type='checkbox'], .breadcrumb.input[type=text],
   .breadcrumb.input[type=password],
   .breadcrumb.input[type=email], .breadcrumb.select {
     font-size: 1.5rem; }
@@ -3710,7 +3689,7 @@ button.dropdown-item {
     border-top: 1px solid rgba(219, 219, 219, 0.5);
     margin-top: 1rem;
     padding-top: 1rem; }
-  .media.is-large + .media, button.media + .media, input.media[type=button] + .media, input.media[type=submit] + .media, a.media + .media, .media.switch[type='checkbox'] + .media, .media.input[type=text] + .media, .media.input[type=password] + .media, .media.input[type=email] + .media, .media.select + .media {
+  .media.is-large + .media, .media.switch[type='checkbox'] + .media, .media.input[type=text] + .media, .media.input[type=password] + .media, .media.input[type=email] + .media, .media.select + .media {
     margin-top: 1.5rem;
     padding-top: 1.5rem; }
 
@@ -3742,10 +3721,7 @@ button.dropdown-item {
     font-size: 0.75rem; }
   .menu.is-medium {
     font-size: 1.25rem; }
-  .menu.is-large, button.menu,
-  input.menu[type=button],
-  input.menu[type=submit],
-  a.menu, .menu.switch[type='checkbox'], .menu.input[type=text],
+  .menu.is-large, .menu.switch[type='checkbox'], .menu.input[type=text],
   .menu.input[type=password],
   .menu.input[type=email], .menu.select {
     font-size: 1.5rem; }
@@ -3791,10 +3767,7 @@ button.dropdown-item {
     font-size: 0.75rem; }
   .message.is-medium {
     font-size: 1.25rem; }
-  .message.is-large, button.message,
-  input.message[type=button],
-  input.message[type=submit],
-  a.message, .message.switch[type='checkbox'], .message.input[type=text],
+  .message.is-large, .message.switch[type='checkbox'], .message.input[type=text],
   .message.input[type=password],
   .message.input[type=email], .message.select {
     font-size: 1.5rem; }
@@ -4784,10 +4757,7 @@ a.navbar-item,
     font-size: 0.75rem; }
   .pagination.is-medium {
     font-size: 1.25rem; }
-  .pagination.is-large, button.pagination,
-  input.pagination[type=button],
-  input.pagination[type=submit],
-  a.pagination, .pagination.switch[type='checkbox'], .pagination.input[type=text],
+  .pagination.is-large, .pagination.switch[type='checkbox'], .pagination.input[type=text],
   .pagination.input[type=password],
   .pagination.input[type=email], .pagination.select {
     font-size: 1.5rem; }
@@ -5122,7 +5092,7 @@ label.panel-block {
     background-color: #FFFFFF;
     border-color: #dbdbdb;
     border-bottom-color: transparent !important; }
-  .tabs.is-fullwidth li, button.tabs.rectanglePrimary li, button.tabs.pillPrimary li, input.tabs.rectanglePrimary[type=button] li, input.tabs.pillPrimary[type=button] li, input.tabs.rectanglePrimary[type=submit] li, input.tabs.pillPrimary[type=submit] li, a.tabs.rectanglePrimary li, a.tabs.pillPrimary li, button.tabs.rectangleSecondary li, button.tabs.pillSecondary li, input.tabs.rectangleSecondary[type=button] li, input.tabs.pillSecondary[type=button] li, input.tabs.rectangleSecondary[type=submit] li, input.tabs.pillSecondary[type=submit] li, a.tabs.rectangleSecondary li, a.tabs.pillSecondary li, button.tabs.rectangleTertiary li, button.tabs.pillTertiary li, input.tabs.rectangleTertiary[type=button] li, input.tabs.pillTertiary[type=button] li, input.tabs.rectangleTertiary[type=submit] li, input.tabs.pillTertiary[type=submit] li, a.tabs.rectangleTertiary li, a.tabs.pillTertiary li {
+  .tabs.is-fullwidth li {
     flex-grow: 1;
     flex-shrink: 0; }
   .tabs.is-toggle a {
@@ -5162,10 +5132,7 @@ label.panel-block {
     font-size: 0.75rem; }
   .tabs.is-medium {
     font-size: 1.25rem; }
-  .tabs.is-large, button.tabs,
-  input.tabs[type=button],
-  input.tabs[type=submit],
-  a.tabs, .tabs.switch[type='checkbox'], .tabs.input[type=text],
+  .tabs.is-large, .tabs.switch[type='checkbox'], .tabs.input[type=text],
   .tabs.input[type=password],
   .tabs.input[type=email], .tabs.select {
     font-size: 1.5rem; }
@@ -7433,13 +7400,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-weight: 700 !important; }
 
 .is-family-primary {
-  font-family: "Sofia Pro" !important; }
+  font-family: "GT Walsheim" !important; }
 
 .is-family-secondary {
-  font-family: "Sofia Pro" !important; }
+  font-family: "GT Walsheim" !important; }
 
 .is-family-sans-serif {
-  font-family: "Sofia Pro" !important; }
+  font-family: "GT Walsheim" !important; }
 
 .is-family-monospace {
   font-family: monospace !important; }
@@ -8186,7 +8153,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     .hero.is-medium .hero-body {
       padding: 9rem 1.5rem; } }
   @media screen and (min-width: 769px), print {
-    .hero.is-large .hero-body, button.hero .hero-body, input.hero[type=button] .hero-body, input.hero[type=submit] .hero-body, a.hero .hero-body, .hero.switch[type='checkbox'] .hero-body, .hero.input[type=text] .hero-body, .hero.input[type=password] .hero-body, .hero.input[type=email] .hero-body, .hero.select .hero-body {
+    .hero.is-large .hero-body, .hero.switch[type='checkbox'] .hero-body, .hero.input[type=text] .hero-body, .hero.input[type=password] .hero-body, .hero.input[type=email] .hero-body, .hero.select .hero-body {
       padding: 18rem 1.5rem; } }
   .hero.is-halfheight .hero-body, .hero.is-fullheight .hero-body, .hero.is-fullheight-with-navbar .hero-body {
     align-items: center;
@@ -8243,10 +8210,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   @media screen and (min-width: 1024px) {
     .section.is-medium {
       padding: 9rem 1.5rem; }
-    .section.is-large, button.section,
-    input.section[type=button],
-    input.section[type=submit],
-    a.section, .section.switch[type='checkbox'], .section.input[type=text],
+    .section.is-large, .section.switch[type='checkbox'], .section.input[type=text],
     .section.input[type=password],
     .section.input[type=email], .section.select {
       padding: 18rem 1.5rem; } }
@@ -8471,7 +8435,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     border-radius: 24px; }
   .switch[type="checkbox"].is-medium.is-rounded + label::after, .switch[type="checkbox"].is-medium[type='checkbox'] + label::after, .switch.tags-static[type="checkbox"].is-medium + label::after, .switch[type="checkbox"].is-medium.is-rounded + label:after, .switch[type="checkbox"].is-medium[type='checkbox'] + label:after, .switch.tags-static[type="checkbox"].is-medium + label:after {
     border-radius: 50%; }
-  .switch[type="checkbox"].is-large + label, button.switch[type="checkbox"] + label, input.switch[type="checkbox"][type=button] + label, input.switch[type="checkbox"][type=submit] + label, a.switch[type="checkbox"] + label, .switch[type="checkbox"][type='checkbox'] + label, .switch.input[type="checkbox"][type=text] + label, .switch.input[type="checkbox"][type=password] + label, .switch.input[type="checkbox"][type=email] + label, .switch.select[type="checkbox"] + label {
+  .switch[type="checkbox"].is-large + label, .switch[type="checkbox"][type='checkbox'] + label, .switch.input[type="checkbox"][type=text] + label, .switch.input[type="checkbox"][type=password] + label, .switch.input[type="checkbox"][type=email] + label, .switch.select[type="checkbox"] + label {
     position: relative;
     display: initial;
     font-size: 1.5rem;
@@ -8479,7 +8443,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     padding-left: 5rem;
     padding-top: .2rem;
     cursor: pointer; }
-    .switch[type="checkbox"].is-large + label::before, button.switch[type="checkbox"] + label::before, input.switch[type="checkbox"][type=button] + label::before, input.switch[type="checkbox"][type=submit] + label::before, a.switch[type="checkbox"] + label::before, .switch[type="checkbox"][type='checkbox'] + label::before, .switch.input[type="checkbox"][type=text] + label::before, .switch.input[type="checkbox"][type=password] + label::before, .switch.input[type="checkbox"][type=email] + label::before, .switch.select[type="checkbox"] + label::before, .switch[type="checkbox"].is-large + label:before, button.switch[type="checkbox"] + label:before, input.switch[type="checkbox"][type=button] + label:before, input.switch[type="checkbox"][type=submit] + label:before, a.switch[type="checkbox"] + label:before, .switch[type="checkbox"][type='checkbox'] + label:before, .switch.input[type="checkbox"][type=text] + label:before, .switch.input[type="checkbox"][type=password] + label:before, .switch.input[type="checkbox"][type=email] + label:before, .switch.select[type="checkbox"] + label:before {
+    .switch[type="checkbox"].is-large + label::before, .switch[type="checkbox"][type='checkbox'] + label::before, .switch.input[type="checkbox"][type=text] + label::before, .switch.input[type="checkbox"][type=password] + label::before, .switch.input[type="checkbox"][type=email] + label::before, .switch.select[type="checkbox"] + label::before, .switch[type="checkbox"].is-large + label:before, .switch[type="checkbox"][type='checkbox'] + label:before, .switch.input[type="checkbox"][type=text] + label:before, .switch.input[type="checkbox"][type=password] + label:before, .switch.input[type="checkbox"][type=email] + label:before, .switch.select[type="checkbox"] + label:before {
       position: absolute;
       display: block;
       top: 0;
@@ -8490,7 +8454,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
       border-radius: 4px;
       background: #b5b5b5;
       content: ''; }
-    .switch[type="checkbox"].is-large + label::after, button.switch[type="checkbox"] + label::after, input.switch[type="checkbox"][type=button] + label::after, input.switch[type="checkbox"][type=submit] + label::after, a.switch[type="checkbox"] + label::after, .switch[type="checkbox"][type='checkbox'] + label::after, .switch.input[type="checkbox"][type=text] + label::after, .switch.input[type="checkbox"][type=password] + label::after, .switch.input[type="checkbox"][type=email] + label::after, .switch.select[type="checkbox"] + label::after, .switch[type="checkbox"].is-large + label:after, button.switch[type="checkbox"] + label:after, input.switch[type="checkbox"][type=button] + label:after, input.switch[type="checkbox"][type=submit] + label:after, a.switch[type="checkbox"] + label:after, .switch[type="checkbox"][type='checkbox'] + label:after, .switch.input[type="checkbox"][type=text] + label:after, .switch.input[type="checkbox"][type=password] + label:after, .switch.input[type="checkbox"][type=email] + label:after, .switch.select[type="checkbox"] + label:after {
+    .switch[type="checkbox"].is-large + label::after, .switch[type="checkbox"][type='checkbox'] + label::after, .switch.input[type="checkbox"][type=text] + label::after, .switch.input[type="checkbox"][type=password] + label::after, .switch.input[type="checkbox"][type=email] + label::after, .switch.select[type="checkbox"] + label::after, .switch[type="checkbox"].is-large + label:after, .switch[type="checkbox"][type='checkbox'] + label:after, .switch.input[type="checkbox"][type=text] + label:after, .switch.input[type="checkbox"][type=password] + label:after, .switch.input[type="checkbox"][type=email] + label:after, .switch.select[type="checkbox"] + label:after {
       display: block;
       position: absolute;
       top: 0.25rem;
@@ -8502,40 +8466,40 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
       background: #FFFFFF;
       transition: all 0.25s ease-out;
       content: ''; }
-  .switch[type="checkbox"].is-large.is-rtl + label, button.switch[type="checkbox"].is-rtl + label, input.switch[type="checkbox"].is-rtl[type=button] + label, input.switch[type="checkbox"].is-rtl[type=submit] + label, a.switch[type="checkbox"].is-rtl + label, .switch[type="checkbox"].is-rtl[type='checkbox'] + label, .switch.input[type="checkbox"].is-rtl[type=text] + label, .switch.input[type="checkbox"].is-rtl[type=password] + label, .switch.input[type="checkbox"].is-rtl[type=email] + label, .switch.select[type="checkbox"].is-rtl + label {
+  .switch[type="checkbox"].is-large.is-rtl + label, .switch[type="checkbox"].is-rtl[type='checkbox'] + label, .switch.input[type="checkbox"].is-rtl[type=text] + label, .switch.input[type="checkbox"].is-rtl[type=password] + label, .switch.input[type="checkbox"].is-rtl[type=email] + label, .switch.select[type="checkbox"].is-rtl + label {
     padding-left: 0;
     padding-right: 5rem; }
-    .switch[type="checkbox"].is-large.is-rtl + label::before, button.switch[type="checkbox"].is-rtl + label::before, input.switch[type="checkbox"].is-rtl[type=button] + label::before, input.switch[type="checkbox"].is-rtl[type=submit] + label::before, a.switch[type="checkbox"].is-rtl + label::before, .switch[type="checkbox"].is-rtl[type='checkbox'] + label::before, .switch.input[type="checkbox"].is-rtl[type=text] + label::before, .switch.input[type="checkbox"].is-rtl[type=password] + label::before, .switch.input[type="checkbox"].is-rtl[type=email] + label::before, .switch.select[type="checkbox"].is-rtl + label::before, .switch[type="checkbox"].is-large.is-rtl + label:before, button.switch[type="checkbox"].is-rtl + label:before, input.switch[type="checkbox"].is-rtl[type=button] + label:before, input.switch[type="checkbox"].is-rtl[type=submit] + label:before, a.switch[type="checkbox"].is-rtl + label:before, .switch[type="checkbox"].is-rtl[type='checkbox'] + label:before, .switch.input[type="checkbox"].is-rtl[type=text] + label:before, .switch.input[type="checkbox"].is-rtl[type=password] + label:before, .switch.input[type="checkbox"].is-rtl[type=email] + label:before, .switch.select[type="checkbox"].is-rtl + label:before {
+    .switch[type="checkbox"].is-large.is-rtl + label::before, .switch[type="checkbox"].is-rtl[type='checkbox'] + label::before, .switch.input[type="checkbox"].is-rtl[type=text] + label::before, .switch.input[type="checkbox"].is-rtl[type=password] + label::before, .switch.input[type="checkbox"].is-rtl[type=email] + label::before, .switch.select[type="checkbox"].is-rtl + label::before, .switch[type="checkbox"].is-large.is-rtl + label:before, .switch[type="checkbox"].is-rtl[type='checkbox'] + label:before, .switch.input[type="checkbox"].is-rtl[type=text] + label:before, .switch.input[type="checkbox"].is-rtl[type=password] + label:before, .switch.input[type="checkbox"].is-rtl[type=email] + label:before, .switch.select[type="checkbox"].is-rtl + label:before {
       left: auto;
       right: 0; }
-    .switch[type="checkbox"].is-large.is-rtl + label::after, button.switch[type="checkbox"].is-rtl + label::after, input.switch[type="checkbox"].is-rtl[type=button] + label::after, input.switch[type="checkbox"].is-rtl[type=submit] + label::after, a.switch[type="checkbox"].is-rtl + label::after, .switch[type="checkbox"].is-rtl[type='checkbox'] + label::after, .switch.input[type="checkbox"].is-rtl[type=text] + label::after, .switch.input[type="checkbox"].is-rtl[type=password] + label::after, .switch.input[type="checkbox"].is-rtl[type=email] + label::after, .switch.select[type="checkbox"].is-rtl + label::after, .switch[type="checkbox"].is-large.is-rtl + label:after, button.switch[type="checkbox"].is-rtl + label:after, input.switch[type="checkbox"].is-rtl[type=button] + label:after, input.switch[type="checkbox"].is-rtl[type=submit] + label:after, a.switch[type="checkbox"].is-rtl + label:after, .switch[type="checkbox"].is-rtl[type='checkbox'] + label:after, .switch.input[type="checkbox"].is-rtl[type=text] + label:after, .switch.input[type="checkbox"].is-rtl[type=password] + label:after, .switch.input[type="checkbox"].is-rtl[type=email] + label:after, .switch.select[type="checkbox"].is-rtl + label:after {
+    .switch[type="checkbox"].is-large.is-rtl + label::after, .switch[type="checkbox"].is-rtl[type='checkbox'] + label::after, .switch.input[type="checkbox"].is-rtl[type=text] + label::after, .switch.input[type="checkbox"].is-rtl[type=password] + label::after, .switch.input[type="checkbox"].is-rtl[type=email] + label::after, .switch.select[type="checkbox"].is-rtl + label::after, .switch[type="checkbox"].is-large.is-rtl + label:after, .switch[type="checkbox"].is-rtl[type='checkbox'] + label:after, .switch.input[type="checkbox"].is-rtl[type=text] + label:after, .switch.input[type="checkbox"].is-rtl[type=password] + label:after, .switch.input[type="checkbox"].is-rtl[type=email] + label:after, .switch.select[type="checkbox"].is-rtl + label:after {
       left: auto;
       right: 0.25rem; }
-  .switch[type="checkbox"].is-large:checked + label::before, button.switch[type="checkbox"]:checked + label::before, input.switch[type="checkbox"]:checked[type=button] + label::before, input.switch[type="checkbox"]:checked[type=submit] + label::before, a.switch[type="checkbox"]:checked + label::before, .switch[type="checkbox"]:checked[type='checkbox'] + label::before, .switch.input[type="checkbox"]:checked[type=text] + label::before, .switch.input[type="checkbox"]:checked[type=password] + label::before, .switch.input[type="checkbox"]:checked[type=email] + label::before, .switch.select[type="checkbox"]:checked + label::before, .switch[type="checkbox"].is-large:checked + label:before, button.switch[type="checkbox"]:checked + label:before, input.switch[type="checkbox"]:checked[type=button] + label:before, input.switch[type="checkbox"]:checked[type=submit] + label:before, a.switch[type="checkbox"]:checked + label:before, .switch[type="checkbox"]:checked[type='checkbox'] + label:before, .switch.input[type="checkbox"]:checked[type=text] + label:before, .switch.input[type="checkbox"]:checked[type=password] + label:before, .switch.input[type="checkbox"]:checked[type=email] + label:before, .switch.select[type="checkbox"]:checked + label:before {
+  .switch[type="checkbox"].is-large:checked + label::before, .switch[type="checkbox"]:checked[type='checkbox'] + label::before, .switch.input[type="checkbox"]:checked[type=text] + label::before, .switch.input[type="checkbox"]:checked[type=password] + label::before, .switch.input[type="checkbox"]:checked[type=email] + label::before, .switch.select[type="checkbox"]:checked + label::before, .switch[type="checkbox"].is-large:checked + label:before, .switch[type="checkbox"]:checked[type='checkbox'] + label:before, .switch.input[type="checkbox"]:checked[type=text] + label:before, .switch.input[type="checkbox"]:checked[type=password] + label:before, .switch.input[type="checkbox"]:checked[type=email] + label:before, .switch.select[type="checkbox"]:checked + label:before {
     background: #00d1b2; }
-  .switch[type="checkbox"].is-large:checked + label::after, button.switch[type="checkbox"]:checked + label::after, input.switch[type="checkbox"]:checked[type=button] + label::after, input.switch[type="checkbox"]:checked[type=submit] + label::after, a.switch[type="checkbox"]:checked + label::after, .switch[type="checkbox"]:checked[type='checkbox'] + label::after, .switch.input[type="checkbox"]:checked[type=text] + label::after, .switch.input[type="checkbox"]:checked[type=password] + label::after, .switch.input[type="checkbox"]:checked[type=email] + label::after, .switch.select[type="checkbox"]:checked + label::after {
+  .switch[type="checkbox"].is-large:checked + label::after, .switch[type="checkbox"]:checked[type='checkbox'] + label::after, .switch.input[type="checkbox"]:checked[type=text] + label::after, .switch.input[type="checkbox"]:checked[type=password] + label::after, .switch.input[type="checkbox"]:checked[type=email] + label::after, .switch.select[type="checkbox"]:checked + label::after {
     left: 2.375rem; }
-  .switch[type="checkbox"].is-large:checked.is-rtl + label::after, button.switch[type="checkbox"]:checked.is-rtl + label::after, input.switch[type="checkbox"]:checked.is-rtl[type=button] + label::after, input.switch[type="checkbox"]:checked.is-rtl[type=submit] + label::after, a.switch[type="checkbox"]:checked.is-rtl + label::after, .switch[type="checkbox"]:checked.is-rtl[type='checkbox'] + label::after, .switch.input[type="checkbox"]:checked.is-rtl[type=text] + label::after, .switch.input[type="checkbox"]:checked.is-rtl[type=password] + label::after, .switch.input[type="checkbox"]:checked.is-rtl[type=email] + label::after, .switch.select[type="checkbox"]:checked.is-rtl + label::after, .switch[type="checkbox"].is-large:checked.is-rtl + label:after, button.switch[type="checkbox"]:checked.is-rtl + label:after, input.switch[type="checkbox"]:checked.is-rtl[type=button] + label:after, input.switch[type="checkbox"]:checked.is-rtl[type=submit] + label:after, a.switch[type="checkbox"]:checked.is-rtl + label:after, .switch[type="checkbox"]:checked.is-rtl[type='checkbox'] + label:after, .switch.input[type="checkbox"]:checked.is-rtl[type=text] + label:after, .switch.input[type="checkbox"]:checked.is-rtl[type=password] + label:after, .switch.input[type="checkbox"]:checked.is-rtl[type=email] + label:after, .switch.select[type="checkbox"]:checked.is-rtl + label:after {
+  .switch[type="checkbox"].is-large:checked.is-rtl + label::after, .switch[type="checkbox"]:checked.is-rtl[type='checkbox'] + label::after, .switch.input[type="checkbox"]:checked.is-rtl[type=text] + label::after, .switch.input[type="checkbox"]:checked.is-rtl[type=password] + label::after, .switch.input[type="checkbox"]:checked.is-rtl[type=email] + label::after, .switch.select[type="checkbox"]:checked.is-rtl + label::after, .switch[type="checkbox"].is-large:checked.is-rtl + label:after, .switch[type="checkbox"]:checked.is-rtl[type='checkbox'] + label:after, .switch.input[type="checkbox"]:checked.is-rtl[type=text] + label:after, .switch.input[type="checkbox"]:checked.is-rtl[type=password] + label:after, .switch.input[type="checkbox"]:checked.is-rtl[type=email] + label:after, .switch.select[type="checkbox"]:checked.is-rtl + label:after {
     left: auto;
     right: 2.375rem; }
-  .switch[type="checkbox"].is-large.is-outlined + label::before, button.switch[type="checkbox"].is-outlined + label::before, input.switch[type="checkbox"].is-outlined[type=button] + label::before, input.switch[type="checkbox"].is-outlined[type=submit] + label::before, a.switch[type="checkbox"].is-outlined + label::before, .switch[type="checkbox"].is-outlined[type='checkbox'] + label::before, .switch.input[type="checkbox"].is-outlined[type=text] + label::before, .switch.input[type="checkbox"].is-outlined[type=password] + label::before, .switch.input[type="checkbox"].is-outlined[type=email] + label::before, .switch.select[type="checkbox"].is-outlined + label::before, .switch[type="checkbox"].is-large.is-outlined + label:before, button.switch[type="checkbox"].is-outlined + label:before, input.switch[type="checkbox"].is-outlined[type=button] + label:before, input.switch[type="checkbox"].is-outlined[type=submit] + label:before, a.switch[type="checkbox"].is-outlined + label:before, .switch[type="checkbox"].is-outlined[type='checkbox'] + label:before, .switch.input[type="checkbox"].is-outlined[type=text] + label:before, .switch.input[type="checkbox"].is-outlined[type=password] + label:before, .switch.input[type="checkbox"].is-outlined[type=email] + label:before, .switch.select[type="checkbox"].is-outlined + label:before {
+  .switch[type="checkbox"].is-large.is-outlined + label::before, .switch[type="checkbox"].is-outlined[type='checkbox'] + label::before, .switch.input[type="checkbox"].is-outlined[type=text] + label::before, .switch.input[type="checkbox"].is-outlined[type=password] + label::before, .switch.input[type="checkbox"].is-outlined[type=email] + label::before, .switch.select[type="checkbox"].is-outlined + label::before, .switch[type="checkbox"].is-large.is-outlined + label:before, .switch[type="checkbox"].is-outlined[type='checkbox'] + label:before, .switch.input[type="checkbox"].is-outlined[type=text] + label:before, .switch.input[type="checkbox"].is-outlined[type=password] + label:before, .switch.input[type="checkbox"].is-outlined[type=email] + label:before, .switch.select[type="checkbox"].is-outlined + label:before {
     background-color: transparent;
     border-color: #b5b5b5; }
-  .switch[type="checkbox"].is-large.is-outlined + label::after, button.switch[type="checkbox"].is-outlined + label::after, input.switch[type="checkbox"].is-outlined[type=button] + label::after, input.switch[type="checkbox"].is-outlined[type=submit] + label::after, a.switch[type="checkbox"].is-outlined + label::after, .switch[type="checkbox"].is-outlined[type='checkbox'] + label::after, .switch.input[type="checkbox"].is-outlined[type=text] + label::after, .switch.input[type="checkbox"].is-outlined[type=password] + label::after, .switch.input[type="checkbox"].is-outlined[type=email] + label::after, .switch.select[type="checkbox"].is-outlined + label::after, .switch[type="checkbox"].is-large.is-outlined + label:after, button.switch[type="checkbox"].is-outlined + label:after, input.switch[type="checkbox"].is-outlined[type=button] + label:after, input.switch[type="checkbox"].is-outlined[type=submit] + label:after, a.switch[type="checkbox"].is-outlined + label:after, .switch[type="checkbox"].is-outlined[type='checkbox'] + label:after, .switch.input[type="checkbox"].is-outlined[type=text] + label:after, .switch.input[type="checkbox"].is-outlined[type=password] + label:after, .switch.input[type="checkbox"].is-outlined[type=email] + label:after, .switch.select[type="checkbox"].is-outlined + label:after {
+  .switch[type="checkbox"].is-large.is-outlined + label::after, .switch[type="checkbox"].is-outlined[type='checkbox'] + label::after, .switch.input[type="checkbox"].is-outlined[type=text] + label::after, .switch.input[type="checkbox"].is-outlined[type=password] + label::after, .switch.input[type="checkbox"].is-outlined[type=email] + label::after, .switch.select[type="checkbox"].is-outlined + label::after, .switch[type="checkbox"].is-large.is-outlined + label:after, .switch[type="checkbox"].is-outlined[type='checkbox'] + label:after, .switch.input[type="checkbox"].is-outlined[type=text] + label:after, .switch.input[type="checkbox"].is-outlined[type=password] + label:after, .switch.input[type="checkbox"].is-outlined[type=email] + label:after, .switch.select[type="checkbox"].is-outlined + label:after {
     background: #b5b5b5; }
-  .switch[type="checkbox"].is-large.is-outlined:checked + label::before, button.switch[type="checkbox"].is-outlined:checked + label::before, input.switch[type="checkbox"].is-outlined:checked[type=button] + label::before, input.switch[type="checkbox"].is-outlined:checked[type=submit] + label::before, a.switch[type="checkbox"].is-outlined:checked + label::before, .switch[type="checkbox"].is-outlined:checked[type='checkbox'] + label::before, .switch.input[type="checkbox"].is-outlined:checked[type=text] + label::before, .switch.input[type="checkbox"].is-outlined:checked[type=password] + label::before, .switch.input[type="checkbox"].is-outlined:checked[type=email] + label::before, .switch.select[type="checkbox"].is-outlined:checked + label::before, .switch[type="checkbox"].is-large.is-outlined:checked + label:before, button.switch[type="checkbox"].is-outlined:checked + label:before, input.switch[type="checkbox"].is-outlined:checked[type=button] + label:before, input.switch[type="checkbox"].is-outlined:checked[type=submit] + label:before, a.switch[type="checkbox"].is-outlined:checked + label:before, .switch[type="checkbox"].is-outlined:checked[type='checkbox'] + label:before, .switch.input[type="checkbox"].is-outlined:checked[type=text] + label:before, .switch.input[type="checkbox"].is-outlined:checked[type=password] + label:before, .switch.input[type="checkbox"].is-outlined:checked[type=email] + label:before, .switch.select[type="checkbox"].is-outlined:checked + label:before {
+  .switch[type="checkbox"].is-large.is-outlined:checked + label::before, .switch[type="checkbox"].is-outlined:checked[type='checkbox'] + label::before, .switch.input[type="checkbox"].is-outlined:checked[type=text] + label::before, .switch.input[type="checkbox"].is-outlined:checked[type=password] + label::before, .switch.input[type="checkbox"].is-outlined:checked[type=email] + label::before, .switch.select[type="checkbox"].is-outlined:checked + label::before, .switch[type="checkbox"].is-large.is-outlined:checked + label:before, .switch[type="checkbox"].is-outlined:checked[type='checkbox'] + label:before, .switch.input[type="checkbox"].is-outlined:checked[type=text] + label:before, .switch.input[type="checkbox"].is-outlined:checked[type=password] + label:before, .switch.input[type="checkbox"].is-outlined:checked[type=email] + label:before, .switch.select[type="checkbox"].is-outlined:checked + label:before {
     background-color: transparent;
     border-color: #00d1b2; }
-  .switch[type="checkbox"].is-large.is-outlined:checked + label::after, button.switch[type="checkbox"].is-outlined:checked + label::after, input.switch[type="checkbox"].is-outlined:checked[type=button] + label::after, input.switch[type="checkbox"].is-outlined:checked[type=submit] + label::after, a.switch[type="checkbox"].is-outlined:checked + label::after, .switch[type="checkbox"].is-outlined:checked[type='checkbox'] + label::after, .switch.input[type="checkbox"].is-outlined:checked[type=text] + label::after, .switch.input[type="checkbox"].is-outlined:checked[type=password] + label::after, .switch.input[type="checkbox"].is-outlined:checked[type=email] + label::after, .switch.select[type="checkbox"].is-outlined:checked + label::after, .switch[type="checkbox"].is-large.is-outlined:checked + label:after, button.switch[type="checkbox"].is-outlined:checked + label:after, input.switch[type="checkbox"].is-outlined:checked[type=button] + label:after, input.switch[type="checkbox"].is-outlined:checked[type=submit] + label:after, a.switch[type="checkbox"].is-outlined:checked + label:after, .switch[type="checkbox"].is-outlined:checked[type='checkbox'] + label:after, .switch.input[type="checkbox"].is-outlined:checked[type=text] + label:after, .switch.input[type="checkbox"].is-outlined:checked[type=password] + label:after, .switch.input[type="checkbox"].is-outlined:checked[type=email] + label:after, .switch.select[type="checkbox"].is-outlined:checked + label:after {
+  .switch[type="checkbox"].is-large.is-outlined:checked + label::after, .switch[type="checkbox"].is-outlined:checked[type='checkbox'] + label::after, .switch.input[type="checkbox"].is-outlined:checked[type=text] + label::after, .switch.input[type="checkbox"].is-outlined:checked[type=password] + label::after, .switch.input[type="checkbox"].is-outlined:checked[type=email] + label::after, .switch.select[type="checkbox"].is-outlined:checked + label::after, .switch[type="checkbox"].is-large.is-outlined:checked + label:after, .switch[type="checkbox"].is-outlined:checked[type='checkbox'] + label:after, .switch.input[type="checkbox"].is-outlined:checked[type=text] + label:after, .switch.input[type="checkbox"].is-outlined:checked[type=password] + label:after, .switch.input[type="checkbox"].is-outlined:checked[type=email] + label:after, .switch.select[type="checkbox"].is-outlined:checked + label:after {
     background: #00d1b2; }
-  .switch[type="checkbox"].is-large.is-thin + label::before, button.switch[type="checkbox"].is-thin + label::before, input.switch[type="checkbox"].is-thin[type=button] + label::before, input.switch[type="checkbox"].is-thin[type=submit] + label::before, a.switch[type="checkbox"].is-thin + label::before, .switch[type="checkbox"].is-thin[type='checkbox'] + label::before, .switch.input[type="checkbox"].is-thin[type=text] + label::before, .switch.input[type="checkbox"].is-thin[type=password] + label::before, .switch.input[type="checkbox"].is-thin[type=email] + label::before, .switch.select[type="checkbox"].is-thin + label::before, .switch[type="checkbox"].is-large.is-thin + label:before, button.switch[type="checkbox"].is-thin + label:before, input.switch[type="checkbox"].is-thin[type=button] + label:before, input.switch[type="checkbox"].is-thin[type=submit] + label:before, a.switch[type="checkbox"].is-thin + label:before, .switch[type="checkbox"].is-thin[type='checkbox'] + label:before, .switch.input[type="checkbox"].is-thin[type=text] + label:before, .switch.input[type="checkbox"].is-thin[type=password] + label:before, .switch.input[type="checkbox"].is-thin[type=email] + label:before, .switch.select[type="checkbox"].is-thin + label:before {
+  .switch[type="checkbox"].is-large.is-thin + label::before, .switch[type="checkbox"].is-thin[type='checkbox'] + label::before, .switch.input[type="checkbox"].is-thin[type=text] + label::before, .switch.input[type="checkbox"].is-thin[type=password] + label::before, .switch.input[type="checkbox"].is-thin[type=email] + label::before, .switch.select[type="checkbox"].is-thin + label::before, .switch[type="checkbox"].is-large.is-thin + label:before, .switch[type="checkbox"].is-thin[type='checkbox'] + label:before, .switch.input[type="checkbox"].is-thin[type=text] + label:before, .switch.input[type="checkbox"].is-thin[type=password] + label:before, .switch.input[type="checkbox"].is-thin[type=email] + label:before, .switch.select[type="checkbox"].is-thin + label:before {
     top: 0.81818rem;
     height: 0.5625rem; }
-  .switch[type="checkbox"].is-large.is-thin + label::after, button.switch[type="checkbox"].is-thin + label::after, input.switch[type="checkbox"].is-thin[type=button] + label::after, input.switch[type="checkbox"].is-thin[type=submit] + label::after, a.switch[type="checkbox"].is-thin + label::after, .switch[type="checkbox"].is-thin[type='checkbox'] + label::after, .switch.input[type="checkbox"].is-thin[type=text] + label::after, .switch.input[type="checkbox"].is-thin[type=password] + label::after, .switch.input[type="checkbox"].is-thin[type=email] + label::after, .switch.select[type="checkbox"].is-thin + label::after, .switch[type="checkbox"].is-large.is-thin + label:after, button.switch[type="checkbox"].is-thin + label:after, input.switch[type="checkbox"].is-thin[type=button] + label:after, input.switch[type="checkbox"].is-thin[type=submit] + label:after, a.switch[type="checkbox"].is-thin + label:after, .switch[type="checkbox"].is-thin[type='checkbox'] + label:after, .switch.input[type="checkbox"].is-thin[type=text] + label:after, .switch.input[type="checkbox"].is-thin[type=password] + label:after, .switch.input[type="checkbox"].is-thin[type=email] + label:after, .switch.select[type="checkbox"].is-thin + label:after {
+  .switch[type="checkbox"].is-large.is-thin + label::after, .switch[type="checkbox"].is-thin[type='checkbox'] + label::after, .switch.input[type="checkbox"].is-thin[type=text] + label::after, .switch.input[type="checkbox"].is-thin[type=password] + label::after, .switch.input[type="checkbox"].is-thin[type=email] + label::after, .switch.select[type="checkbox"].is-thin + label::after, .switch[type="checkbox"].is-large.is-thin + label:after, .switch[type="checkbox"].is-thin[type='checkbox'] + label:after, .switch.input[type="checkbox"].is-thin[type=text] + label:after, .switch.input[type="checkbox"].is-thin[type=password] + label:after, .switch.input[type="checkbox"].is-thin[type=email] + label:after, .switch.select[type="checkbox"].is-thin + label:after {
     box-shadow: 0px 0px 3px #7a7a7a; }
-  .switch[type="checkbox"].is-large.is-rounded + label::before, button.switch[type="checkbox"].is-rounded + label::before, button.switch[type="checkbox"][type='checkbox'] + label::before, button.switch.tags-static[type="checkbox"] + label::before, input.switch[type="checkbox"].is-rounded[type=button] + label::before, input.switch[type="checkbox"][type=button][type='checkbox'] + label::before, input.switch.tags-static[type="checkbox"][type=button] + label::before, input.switch[type="checkbox"].is-rounded[type=submit] + label::before, input.switch[type="checkbox"][type=submit][type='checkbox'] + label::before, input.switch.tags-static[type="checkbox"][type=submit] + label::before, a.switch[type="checkbox"].is-rounded + label::before, a.switch[type="checkbox"][type='checkbox'] + label::before, a.switch.tags-static[type="checkbox"] + label::before, .switch[type="checkbox"][type='checkbox'] + label::before, .switch.input[type="checkbox"].is-rounded[type=text] + label::before, .switch.input[type="checkbox"][type=text][type='checkbox'] + label::before, .switch.input.tags-static[type="checkbox"][type=text] + label::before, .switch.input[type="checkbox"].is-rounded[type=password] + label::before, .switch.input[type="checkbox"][type=password][type='checkbox'] + label::before, .switch.input.tags-static[type="checkbox"][type=password] + label::before, .switch.input[type="checkbox"].is-rounded[type=email] + label::before, .switch.input[type="checkbox"][type=email][type='checkbox'] + label::before, .switch.input.tags-static[type="checkbox"][type=email] + label::before, .switch.select[type="checkbox"].is-rounded + label::before, .switch.select[type="checkbox"][type='checkbox'] + label::before, .switch.select.tags-static[type="checkbox"] + label::before, .switch.tags-static[type="checkbox"].is-large + label::before, .switch.tags-static[type="checkbox"][type='checkbox'] + label::before, .switch[type="checkbox"].is-large.is-rounded + label:before, button.switch[type="checkbox"].is-rounded + label:before, button.switch[type="checkbox"][type='checkbox'] + label:before, button.switch.tags-static[type="checkbox"] + label:before, input.switch[type="checkbox"].is-rounded[type=button] + label:before, input.switch[type="checkbox"][type=button][type='checkbox'] + label:before, input.switch.tags-static[type="checkbox"][type=button] + label:before, input.switch[type="checkbox"].is-rounded[type=submit] + label:before, input.switch[type="checkbox"][type=submit][type='checkbox'] + label:before, input.switch.tags-static[type="checkbox"][type=submit] + label:before, a.switch[type="checkbox"].is-rounded + label:before, a.switch[type="checkbox"][type='checkbox'] + label:before, a.switch.tags-static[type="checkbox"] + label:before, .switch[type="checkbox"][type='checkbox'] + label:before, .switch.input[type="checkbox"].is-rounded[type=text] + label:before, .switch.input[type="checkbox"][type=text][type='checkbox'] + label:before, .switch.input.tags-static[type="checkbox"][type=text] + label:before, .switch.input[type="checkbox"].is-rounded[type=password] + label:before, .switch.input[type="checkbox"][type=password][type='checkbox'] + label:before, .switch.input.tags-static[type="checkbox"][type=password] + label:before, .switch.input[type="checkbox"].is-rounded[type=email] + label:before, .switch.input[type="checkbox"][type=email][type='checkbox'] + label:before, .switch.input.tags-static[type="checkbox"][type=email] + label:before, .switch.select[type="checkbox"].is-rounded + label:before, .switch.select[type="checkbox"][type='checkbox'] + label:before, .switch.select.tags-static[type="checkbox"] + label:before, .switch.tags-static[type="checkbox"].is-large + label:before, .switch.tags-static[type="checkbox"][type='checkbox'] + label:before {
+  .switch[type="checkbox"].is-large.is-rounded + label::before, .switch[type="checkbox"][type='checkbox'] + label::before, .switch.input[type="checkbox"].is-rounded[type=text] + label::before, .switch.input[type="checkbox"][type=text][type='checkbox'] + label::before, .switch.input.tags-static[type="checkbox"][type=text] + label::before, .switch.input[type="checkbox"].is-rounded[type=password] + label::before, .switch.input[type="checkbox"][type=password][type='checkbox'] + label::before, .switch.input.tags-static[type="checkbox"][type=password] + label::before, .switch.input[type="checkbox"].is-rounded[type=email] + label::before, .switch.input[type="checkbox"][type=email][type='checkbox'] + label::before, .switch.input.tags-static[type="checkbox"][type=email] + label::before, .switch.select[type="checkbox"].is-rounded + label::before, .switch.select[type="checkbox"][type='checkbox'] + label::before, .switch.select.tags-static[type="checkbox"] + label::before, .switch.tags-static[type="checkbox"].is-large + label::before, .switch.tags-static[type="checkbox"][type='checkbox'] + label::before, .switch[type="checkbox"].is-large.is-rounded + label:before, .switch[type="checkbox"][type='checkbox'] + label:before, .switch.input[type="checkbox"].is-rounded[type=text] + label:before, .switch.input[type="checkbox"][type=text][type='checkbox'] + label:before, .switch.input.tags-static[type="checkbox"][type=text] + label:before, .switch.input[type="checkbox"].is-rounded[type=password] + label:before, .switch.input[type="checkbox"][type=password][type='checkbox'] + label:before, .switch.input.tags-static[type="checkbox"][type=password] + label:before, .switch.input[type="checkbox"].is-rounded[type=email] + label:before, .switch.input[type="checkbox"][type=email][type='checkbox'] + label:before, .switch.input.tags-static[type="checkbox"][type=email] + label:before, .switch.select[type="checkbox"].is-rounded + label:before, .switch.select[type="checkbox"][type='checkbox'] + label:before, .switch.select.tags-static[type="checkbox"] + label:before, .switch.tags-static[type="checkbox"].is-large + label:before, .switch.tags-static[type="checkbox"][type='checkbox'] + label:before {
     border-radius: 24px; }
-  .switch[type="checkbox"].is-large.is-rounded + label::after, button.switch[type="checkbox"].is-rounded + label::after, button.switch[type="checkbox"][type='checkbox'] + label::after, button.switch.tags-static[type="checkbox"] + label::after, input.switch[type="checkbox"].is-rounded[type=button] + label::after, input.switch[type="checkbox"][type=button][type='checkbox'] + label::after, input.switch.tags-static[type="checkbox"][type=button] + label::after, input.switch[type="checkbox"].is-rounded[type=submit] + label::after, input.switch[type="checkbox"][type=submit][type='checkbox'] + label::after, input.switch.tags-static[type="checkbox"][type=submit] + label::after, a.switch[type="checkbox"].is-rounded + label::after, a.switch[type="checkbox"][type='checkbox'] + label::after, a.switch.tags-static[type="checkbox"] + label::after, .switch[type="checkbox"][type='checkbox'] + label::after, .switch.input[type="checkbox"].is-rounded[type=text] + label::after, .switch.input[type="checkbox"][type=text][type='checkbox'] + label::after, .switch.input.tags-static[type="checkbox"][type=text] + label::after, .switch.input[type="checkbox"].is-rounded[type=password] + label::after, .switch.input[type="checkbox"][type=password][type='checkbox'] + label::after, .switch.input.tags-static[type="checkbox"][type=password] + label::after, .switch.input[type="checkbox"].is-rounded[type=email] + label::after, .switch.input[type="checkbox"][type=email][type='checkbox'] + label::after, .switch.input.tags-static[type="checkbox"][type=email] + label::after, .switch.select[type="checkbox"].is-rounded + label::after, .switch.select[type="checkbox"][type='checkbox'] + label::after, .switch.select.tags-static[type="checkbox"] + label::after, .switch.tags-static[type="checkbox"].is-large + label::after, .switch.tags-static[type="checkbox"][type='checkbox'] + label::after, .switch[type="checkbox"].is-large.is-rounded + label:after, button.switch[type="checkbox"].is-rounded + label:after, button.switch[type="checkbox"][type='checkbox'] + label:after, button.switch.tags-static[type="checkbox"] + label:after, input.switch[type="checkbox"].is-rounded[type=button] + label:after, input.switch[type="checkbox"][type=button][type='checkbox'] + label:after, input.switch.tags-static[type="checkbox"][type=button] + label:after, input.switch[type="checkbox"].is-rounded[type=submit] + label:after, input.switch[type="checkbox"][type=submit][type='checkbox'] + label:after, input.switch.tags-static[type="checkbox"][type=submit] + label:after, a.switch[type="checkbox"].is-rounded + label:after, a.switch[type="checkbox"][type='checkbox'] + label:after, a.switch.tags-static[type="checkbox"] + label:after, .switch[type="checkbox"][type='checkbox'] + label:after, .switch.input[type="checkbox"].is-rounded[type=text] + label:after, .switch.input[type="checkbox"][type=text][type='checkbox'] + label:after, .switch.input.tags-static[type="checkbox"][type=text] + label:after, .switch.input[type="checkbox"].is-rounded[type=password] + label:after, .switch.input[type="checkbox"][type=password][type='checkbox'] + label:after, .switch.input.tags-static[type="checkbox"][type=password] + label:after, .switch.input[type="checkbox"].is-rounded[type=email] + label:after, .switch.input[type="checkbox"][type=email][type='checkbox'] + label:after, .switch.input.tags-static[type="checkbox"][type=email] + label:after, .switch.select[type="checkbox"].is-rounded + label:after, .switch.select[type="checkbox"][type='checkbox'] + label:after, .switch.select.tags-static[type="checkbox"] + label:after, .switch.tags-static[type="checkbox"].is-large + label:after, .switch.tags-static[type="checkbox"][type='checkbox'] + label:after {
+  .switch[type="checkbox"].is-large.is-rounded + label::after, .switch[type="checkbox"][type='checkbox'] + label::after, .switch.input[type="checkbox"].is-rounded[type=text] + label::after, .switch.input[type="checkbox"][type=text][type='checkbox'] + label::after, .switch.input.tags-static[type="checkbox"][type=text] + label::after, .switch.input[type="checkbox"].is-rounded[type=password] + label::after, .switch.input[type="checkbox"][type=password][type='checkbox'] + label::after, .switch.input.tags-static[type="checkbox"][type=password] + label::after, .switch.input[type="checkbox"].is-rounded[type=email] + label::after, .switch.input[type="checkbox"][type=email][type='checkbox'] + label::after, .switch.input.tags-static[type="checkbox"][type=email] + label::after, .switch.select[type="checkbox"].is-rounded + label::after, .switch.select[type="checkbox"][type='checkbox'] + label::after, .switch.select.tags-static[type="checkbox"] + label::after, .switch.tags-static[type="checkbox"].is-large + label::after, .switch.tags-static[type="checkbox"][type='checkbox'] + label::after, .switch[type="checkbox"].is-large.is-rounded + label:after, .switch[type="checkbox"][type='checkbox'] + label:after, .switch.input[type="checkbox"].is-rounded[type=text] + label:after, .switch.input[type="checkbox"][type=text][type='checkbox'] + label:after, .switch.input.tags-static[type="checkbox"][type=text] + label:after, .switch.input[type="checkbox"].is-rounded[type=password] + label:after, .switch.input[type="checkbox"][type=password][type='checkbox'] + label:after, .switch.input.tags-static[type="checkbox"][type=password] + label:after, .switch.input[type="checkbox"].is-rounded[type=email] + label:after, .switch.input[type="checkbox"][type=email][type='checkbox'] + label:after, .switch.input.tags-static[type="checkbox"][type=email] + label:after, .switch.select[type="checkbox"].is-rounded + label:after, .switch.select[type="checkbox"][type='checkbox'] + label:after, .switch.select.tags-static[type="checkbox"] + label:after, .switch.tags-static[type="checkbox"].is-large + label:after, .switch.tags-static[type="checkbox"][type='checkbox'] + label:after {
     border-radius: 50%; }
   .switch[type="checkbox"].is-white:checked + label::before, .switch[type="checkbox"].is-white:checked + label:before {
     background: #FFFFFF; }
@@ -8921,32 +8885,32 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     left: auto;
     right: 0.75rem; }
 
-.is-checkradio[type="checkbox"].is-large + label, button.is-checkradio[type="checkbox"] + label, input.is-checkradio[type="checkbox"][type=button] + label, input.is-checkradio[type="checkbox"][type=submit] + label, a.is-checkradio[type="checkbox"] + label, .is-checkradio.switch[type="checkbox"][type='checkbox'] + label, .is-checkradio.input[type="checkbox"][type=text] + label, .is-checkradio.input[type="checkbox"][type=password] + label, .is-checkradio.input[type="checkbox"][type=email] + label, .is-checkradio.select[type="checkbox"] + label {
+.is-checkradio[type="checkbox"].is-large + label, .is-checkradio.switch[type="checkbox"][type='checkbox'] + label, .is-checkradio.input[type="checkbox"][type=text] + label, .is-checkradio.input[type="checkbox"][type=password] + label, .is-checkradio.input[type="checkbox"][type=email] + label, .is-checkradio.select[type="checkbox"] + label {
   font-size: 1.5rem;
   padding-left: 3rem; }
-  .is-checkradio[type="checkbox"].is-large + label::before, button.is-checkradio[type="checkbox"] + label::before, input.is-checkradio[type="checkbox"][type=button] + label::before, input.is-checkradio[type="checkbox"][type=submit] + label::before, a.is-checkradio[type="checkbox"] + label::before, .is-checkradio.switch[type="checkbox"][type='checkbox'] + label::before, .is-checkradio.input[type="checkbox"][type=text] + label::before, .is-checkradio.input[type="checkbox"][type=password] + label::before, .is-checkradio.input[type="checkbox"][type=email] + label::before, .is-checkradio.select[type="checkbox"] + label::before, .is-checkradio[type="checkbox"].is-large + label:before, button.is-checkradio[type="checkbox"] + label:before, input.is-checkradio[type="checkbox"][type=button] + label:before, input.is-checkradio[type="checkbox"][type=submit] + label:before, a.is-checkradio[type="checkbox"] + label:before, .is-checkradio.switch[type="checkbox"][type='checkbox'] + label:before, .is-checkradio.input[type="checkbox"][type=text] + label:before, .is-checkradio.input[type="checkbox"][type=password] + label:before, .is-checkradio.input[type="checkbox"][type=email] + label:before, .is-checkradio.select[type="checkbox"] + label:before {
+  .is-checkradio[type="checkbox"].is-large + label::before, .is-checkradio.switch[type="checkbox"][type='checkbox'] + label::before, .is-checkradio.input[type="checkbox"][type=text] + label::before, .is-checkradio.input[type="checkbox"][type=password] + label::before, .is-checkradio.input[type="checkbox"][type=email] + label::before, .is-checkradio.select[type="checkbox"] + label::before, .is-checkradio[type="checkbox"].is-large + label:before, .is-checkradio.switch[type="checkbox"][type='checkbox'] + label:before, .is-checkradio.input[type="checkbox"][type=text] + label:before, .is-checkradio.input[type="checkbox"][type=password] + label:before, .is-checkradio.input[type="checkbox"][type=email] + label:before, .is-checkradio.select[type="checkbox"] + label:before {
     width: 2.25rem;
     height: 2.25rem; }
-  .is-checkradio[type="checkbox"].is-large + label::after, button.is-checkradio[type="checkbox"] + label::after, input.is-checkradio[type="checkbox"][type=button] + label::after, input.is-checkradio[type="checkbox"][type=submit] + label::after, a.is-checkradio[type="checkbox"] + label::after, .is-checkradio.switch[type="checkbox"][type='checkbox'] + label::after, .is-checkradio.input[type="checkbox"][type=text] + label::after, .is-checkradio.input[type="checkbox"][type=password] + label::after, .is-checkradio.input[type="checkbox"][type=email] + label::after, .is-checkradio.select[type="checkbox"] + label::after, .is-checkradio[type="checkbox"].is-large + label:after, button.is-checkradio[type="checkbox"] + label:after, input.is-checkradio[type="checkbox"][type=button] + label:after, input.is-checkradio[type="checkbox"][type=submit] + label:after, a.is-checkradio[type="checkbox"] + label:after, .is-checkradio.switch[type="checkbox"][type='checkbox'] + label:after, .is-checkradio.input[type="checkbox"][type=text] + label:after, .is-checkradio.input[type="checkbox"][type=password] + label:after, .is-checkradio.input[type="checkbox"][type=email] + label:after, .is-checkradio.select[type="checkbox"] + label:after {
+  .is-checkradio[type="checkbox"].is-large + label::after, .is-checkradio.switch[type="checkbox"][type='checkbox'] + label::after, .is-checkradio.input[type="checkbox"][type=text] + label::after, .is-checkradio.input[type="checkbox"][type=password] + label::after, .is-checkradio.input[type="checkbox"][type=email] + label::after, .is-checkradio.select[type="checkbox"] + label::after, .is-checkradio[type="checkbox"].is-large + label:after, .is-checkradio.switch[type="checkbox"][type='checkbox'] + label:after, .is-checkradio.input[type="checkbox"][type=text] + label:after, .is-checkradio.input[type="checkbox"][type=password] + label:after, .is-checkradio.input[type="checkbox"][type=email] + label:after, .is-checkradio.select[type="checkbox"] + label:after {
     width: 0.5625rem;
     height: 0.9rem;
     top: 0.6075rem;
     left: 0.9rem; }
 
-.is-checkradio[type="checkbox"].is-large.is-block + label::before, button.is-checkradio[type="checkbox"].is-block + label::before, input.is-checkradio[type="checkbox"].is-block[type=button] + label::before, input.is-checkradio[type="checkbox"].is-block[type=submit] + label::before, a.is-checkradio[type="checkbox"].is-block + label::before, .is-checkradio.switch[type="checkbox"].is-block[type='checkbox'] + label::before, .is-checkradio.input[type="checkbox"].is-block[type=text] + label::before, .is-checkradio.input[type="checkbox"].is-block[type=password] + label::before, .is-checkradio.input[type="checkbox"].is-block[type=email] + label::before, .is-checkradio.select[type="checkbox"].is-block + label::before, .is-checkradio[type="checkbox"].is-large.is-block + label:before, button.is-checkradio[type="checkbox"].is-block + label:before, input.is-checkradio[type="checkbox"].is-block[type=button] + label:before, input.is-checkradio[type="checkbox"].is-block[type=submit] + label:before, a.is-checkradio[type="checkbox"].is-block + label:before, .is-checkradio.switch[type="checkbox"].is-block[type='checkbox'] + label:before, .is-checkradio.input[type="checkbox"].is-block[type=text] + label:before, .is-checkradio.input[type="checkbox"].is-block[type=password] + label:before, .is-checkradio.input[type="checkbox"].is-block[type=email] + label:before, .is-checkradio.select[type="checkbox"].is-block + label:before {
+.is-checkradio[type="checkbox"].is-large.is-block + label::before, .is-checkradio.switch[type="checkbox"].is-block[type='checkbox'] + label::before, .is-checkradio.input[type="checkbox"].is-block[type=text] + label::before, .is-checkradio.input[type="checkbox"].is-block[type=password] + label::before, .is-checkradio.input[type="checkbox"].is-block[type=email] + label::before, .is-checkradio.select[type="checkbox"].is-block + label::before, .is-checkradio[type="checkbox"].is-large.is-block + label:before, .is-checkradio.switch[type="checkbox"].is-block[type='checkbox'] + label:before, .is-checkradio.input[type="checkbox"].is-block[type=text] + label:before, .is-checkradio.input[type="checkbox"].is-block[type=password] + label:before, .is-checkradio.input[type="checkbox"].is-block[type=email] + label:before, .is-checkradio.select[type="checkbox"].is-block + label:before {
   width: 1.875rem;
   height: 1.875rem;
   left: .175rem;
   top: .175rem; }
 
-.is-checkradio[type="checkbox"].is-large.is-block + label::after, button.is-checkradio[type="checkbox"].is-block + label::after, input.is-checkradio[type="checkbox"].is-block[type=button] + label::after, input.is-checkradio[type="checkbox"].is-block[type=submit] + label::after, a.is-checkradio[type="checkbox"].is-block + label::after, .is-checkradio.switch[type="checkbox"].is-block[type='checkbox'] + label::after, .is-checkradio.input[type="checkbox"].is-block[type=text] + label::after, .is-checkradio.input[type="checkbox"].is-block[type=password] + label::after, .is-checkradio.input[type="checkbox"].is-block[type=email] + label::after, .is-checkradio.select[type="checkbox"].is-block + label::after, .is-checkradio[type="checkbox"].is-large.is-block + label:after, button.is-checkradio[type="checkbox"].is-block + label:after, input.is-checkradio[type="checkbox"].is-block[type=button] + label:after, input.is-checkradio[type="checkbox"].is-block[type=submit] + label:after, a.is-checkradio[type="checkbox"].is-block + label:after, .is-checkradio.switch[type="checkbox"].is-block[type='checkbox'] + label:after, .is-checkradio.input[type="checkbox"].is-block[type=text] + label:after, .is-checkradio.input[type="checkbox"].is-block[type=password] + label:after, .is-checkradio.input[type="checkbox"].is-block[type=email] + label:after, .is-checkradio.select[type="checkbox"].is-block + label:after {
+.is-checkradio[type="checkbox"].is-large.is-block + label::after, .is-checkradio.switch[type="checkbox"].is-block[type='checkbox'] + label::after, .is-checkradio.input[type="checkbox"].is-block[type=text] + label::after, .is-checkradio.input[type="checkbox"].is-block[type=password] + label::after, .is-checkradio.input[type="checkbox"].is-block[type=email] + label::after, .is-checkradio.select[type="checkbox"].is-block + label::after, .is-checkradio[type="checkbox"].is-large.is-block + label:after, .is-checkradio.switch[type="checkbox"].is-block[type='checkbox'] + label:after, .is-checkradio.input[type="checkbox"].is-block[type=text] + label:after, .is-checkradio.input[type="checkbox"].is-block[type=password] + label:after, .is-checkradio.input[type="checkbox"].is-block[type=email] + label:after, .is-checkradio.select[type="checkbox"].is-block + label:after {
   top: 0.3875rem;
   left: 0.875rem; }
 
-.is-checkradio[type="checkbox"].is-large.is-rtl + label, button.is-checkradio[type="checkbox"].is-rtl + label, input.is-checkradio[type="checkbox"].is-rtl[type=button] + label, input.is-checkradio[type="checkbox"].is-rtl[type=submit] + label, a.is-checkradio[type="checkbox"].is-rtl + label, .is-checkradio.switch[type="checkbox"].is-rtl[type='checkbox'] + label, .is-checkradio.input[type="checkbox"].is-rtl[type=text] + label, .is-checkradio.input[type="checkbox"].is-rtl[type=password] + label, .is-checkradio.input[type="checkbox"].is-rtl[type=email] + label, .is-checkradio.select[type="checkbox"].is-rtl + label {
+.is-checkradio[type="checkbox"].is-large.is-rtl + label, .is-checkradio.switch[type="checkbox"].is-rtl[type='checkbox'] + label, .is-checkradio.input[type="checkbox"].is-rtl[type=text] + label, .is-checkradio.input[type="checkbox"].is-rtl[type=password] + label, .is-checkradio.input[type="checkbox"].is-rtl[type=email] + label, .is-checkradio.select[type="checkbox"].is-rtl + label {
   padding-left: 0;
   padding-right: 3rem; }
-  .is-checkradio[type="checkbox"].is-large.is-rtl + label::after, button.is-checkradio[type="checkbox"].is-rtl + label::after, input.is-checkradio[type="checkbox"].is-rtl[type=button] + label::after, input.is-checkradio[type="checkbox"].is-rtl[type=submit] + label::after, a.is-checkradio[type="checkbox"].is-rtl + label::after, .is-checkradio.switch[type="checkbox"].is-rtl[type='checkbox'] + label::after, .is-checkradio.input[type="checkbox"].is-rtl[type=text] + label::after, .is-checkradio.input[type="checkbox"].is-rtl[type=password] + label::after, .is-checkradio.input[type="checkbox"].is-rtl[type=email] + label::after, .is-checkradio.select[type="checkbox"].is-rtl + label::after, .is-checkradio[type="checkbox"].is-large.is-rtl + label:after, button.is-checkradio[type="checkbox"].is-rtl + label:after, input.is-checkradio[type="checkbox"].is-rtl[type=button] + label:after, input.is-checkradio[type="checkbox"].is-rtl[type=submit] + label:after, a.is-checkradio[type="checkbox"].is-rtl + label:after, .is-checkradio.switch[type="checkbox"].is-rtl[type='checkbox'] + label:after, .is-checkradio.input[type="checkbox"].is-rtl[type=text] + label:after, .is-checkradio.input[type="checkbox"].is-rtl[type=password] + label:after, .is-checkradio.input[type="checkbox"].is-rtl[type=email] + label:after, .is-checkradio.select[type="checkbox"].is-rtl + label:after {
+  .is-checkradio[type="checkbox"].is-large.is-rtl + label::after, .is-checkradio.switch[type="checkbox"].is-rtl[type='checkbox'] + label::after, .is-checkradio.input[type="checkbox"].is-rtl[type=text] + label::after, .is-checkradio.input[type="checkbox"].is-rtl[type=password] + label::after, .is-checkradio.input[type="checkbox"].is-rtl[type=email] + label::after, .is-checkradio.select[type="checkbox"].is-rtl + label::after, .is-checkradio[type="checkbox"].is-large.is-rtl + label:after, .is-checkradio.switch[type="checkbox"].is-rtl[type='checkbox'] + label:after, .is-checkradio.input[type="checkbox"].is-rtl[type=text] + label:after, .is-checkradio.input[type="checkbox"].is-rtl[type=password] + label:after, .is-checkradio.input[type="checkbox"].is-rtl[type=email] + label:after, .is-checkradio.select[type="checkbox"].is-rtl + label:after {
     left: auto;
     right: 0.9rem; }
 
@@ -9371,15 +9335,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .is-checkradio[type="radio"].is-medium.is-rtl + label {
   padding-right: 2.5rem; }
 
-.is-checkradio[type="radio"].is-large + label, button.is-checkradio[type="radio"] + label, input.is-checkradio[type="radio"][type=button] + label, input.is-checkradio[type="radio"][type=submit] + label, a.is-checkradio[type="radio"] + label, .is-checkradio.switch[type="radio"][type='checkbox'] + label, .is-checkradio.input[type="radio"][type=text] + label, .is-checkradio.input[type="radio"][type=password] + label, .is-checkradio.input[type="radio"][type=email] + label, .is-checkradio.select[type="radio"] + label {
+.is-checkradio[type="radio"].is-large + label, .is-checkradio.switch[type="radio"][type='checkbox'] + label, .is-checkradio.input[type="radio"][type=text] + label, .is-checkradio.input[type="radio"][type=password] + label, .is-checkradio.input[type="radio"][type=email] + label, .is-checkradio.select[type="radio"] + label {
   font-size: 1.5rem;
   line-height: 2.25rem;
   padding-left: 3rem; }
-  .is-checkradio[type="radio"].is-large + label::before, button.is-checkradio[type="radio"] + label::before, input.is-checkradio[type="radio"][type=button] + label::before, input.is-checkradio[type="radio"][type=submit] + label::before, a.is-checkradio[type="radio"] + label::before, .is-checkradio.switch[type="radio"][type='checkbox'] + label::before, .is-checkradio.input[type="radio"][type=text] + label::before, .is-checkradio.input[type="radio"][type=password] + label::before, .is-checkradio.input[type="radio"][type=email] + label::before, .is-checkradio.select[type="radio"] + label::before, .is-checkradio[type="radio"].is-large + label:before, button.is-checkradio[type="radio"] + label:before, input.is-checkradio[type="radio"][type=button] + label:before, input.is-checkradio[type="radio"][type=submit] + label:before, a.is-checkradio[type="radio"] + label:before, .is-checkradio.switch[type="radio"][type='checkbox'] + label:before, .is-checkradio.input[type="radio"][type=text] + label:before, .is-checkradio.input[type="radio"][type=password] + label:before, .is-checkradio.input[type="radio"][type=email] + label:before, .is-checkradio.select[type="radio"] + label:before, .is-checkradio[type="radio"].is-large + label::after, button.is-checkradio[type="radio"] + label::after, input.is-checkradio[type="radio"][type=button] + label::after, input.is-checkradio[type="radio"][type=submit] + label::after, a.is-checkradio[type="radio"] + label::after, .is-checkradio.switch[type="radio"][type='checkbox'] + label::after, .is-checkradio.input[type="radio"][type=text] + label::after, .is-checkradio.input[type="radio"][type=password] + label::after, .is-checkradio.input[type="radio"][type=email] + label::after, .is-checkradio.select[type="radio"] + label::after, .is-checkradio[type="radio"].is-large + label:after, button.is-checkradio[type="radio"] + label:after, input.is-checkradio[type="radio"][type=button] + label:after, input.is-checkradio[type="radio"][type=submit] + label:after, a.is-checkradio[type="radio"] + label:after, .is-checkradio.switch[type="radio"][type='checkbox'] + label:after, .is-checkradio.input[type="radio"][type=text] + label:after, .is-checkradio.input[type="radio"][type=password] + label:after, .is-checkradio.input[type="radio"][type=email] + label:after, .is-checkradio.select[type="radio"] + label:after {
+  .is-checkradio[type="radio"].is-large + label::before, .is-checkradio.switch[type="radio"][type='checkbox'] + label::before, .is-checkradio.input[type="radio"][type=text] + label::before, .is-checkradio.input[type="radio"][type=password] + label::before, .is-checkradio.input[type="radio"][type=email] + label::before, .is-checkradio.select[type="radio"] + label::before, .is-checkradio[type="radio"].is-large + label:before, .is-checkradio.switch[type="radio"][type='checkbox'] + label:before, .is-checkradio.input[type="radio"][type=text] + label:before, .is-checkradio.input[type="radio"][type=password] + label:before, .is-checkradio.input[type="radio"][type=email] + label:before, .is-checkradio.select[type="radio"] + label:before, .is-checkradio[type="radio"].is-large + label::after, .is-checkradio.switch[type="radio"][type='checkbox'] + label::after, .is-checkradio.input[type="radio"][type=text] + label::after, .is-checkradio.input[type="radio"][type=password] + label::after, .is-checkradio.input[type="radio"][type=email] + label::after, .is-checkradio.select[type="radio"] + label::after, .is-checkradio[type="radio"].is-large + label:after, .is-checkradio.switch[type="radio"][type='checkbox'] + label:after, .is-checkradio.input[type="radio"][type=text] + label:after, .is-checkradio.input[type="radio"][type=password] + label:after, .is-checkradio.input[type="radio"][type=email] + label:after, .is-checkradio.select[type="radio"] + label:after {
     width: 2.25rem;
     height: 2.25rem; }
 
-.is-checkradio[type="radio"].is-large.is-rtl + label, button.is-checkradio[type="radio"].is-rtl + label, input.is-checkradio[type="radio"].is-rtl[type=button] + label, input.is-checkradio[type="radio"].is-rtl[type=submit] + label, a.is-checkradio[type="radio"].is-rtl + label, .is-checkradio.switch[type="radio"].is-rtl[type='checkbox'] + label, .is-checkradio.input[type="radio"].is-rtl[type=text] + label, .is-checkradio.input[type="radio"].is-rtl[type=password] + label, .is-checkradio.input[type="radio"].is-rtl[type=email] + label, .is-checkradio.select[type="radio"].is-rtl + label {
+.is-checkradio[type="radio"].is-large.is-rtl + label, .is-checkradio.switch[type="radio"].is-rtl[type='checkbox'] + label, .is-checkradio.input[type="radio"].is-rtl[type=text] + label, .is-checkradio.input[type="radio"].is-rtl[type=password] + label, .is-checkradio.input[type="radio"].is-rtl[type=email] + label, .is-checkradio.select[type="radio"].is-rtl + label {
   padding-right: 3rem; }
 
 .is-checkradio[type="radio"].is-white.has-background-color + label::before, .is-checkradio[type="radio"].is-white.has-background-color + label:before {
@@ -9595,26 +9559,26 @@ input.pillPrimary[type=button],
 input.rectanglePrimary[type=submit],
 input.pillPrimary[type=submit],
 a.rectanglePrimary,
-a.pillPrimary, .switch[type='checkbox'] + label::before, .switch[type='checkbox'] + label:before,
+a.pillPrimary,
 .switch[type='checkbox']:checked[type='checkbox'] + label:before, .contentInversePrimary, .contentInverseSecondary, .contentInverseTertiary {
-  background-color: #000000; }
+  background-color: #17191C; }
 
 .primaryB, .backgroundPrimary {
   background-color: #FFFFFF;
-  border: 1px solid #CFCFCF;
+  border: 1px solid #ABB1BA;
   box-sizing: border-box; }
 
 .accent, .backgroundAccent {
-  background-color: #14A3EB; }
+  background-color: #1975FF; }
 
 .positive, .backgroundPositive {
-  background-color: #33CC8C; }
+  background-color: #1DC872; }
 
 .warning, .backgroundWarning {
-  background-color: #E9A316; }
+  background-color: #FFA719; }
 
 .negative, .backgroundNegative {
-  background-color: #EB4114; }
+  background-color: #E84030; }
 
 /*
 ---
@@ -9634,7 +9598,7 @@ The background colors types available.
 ```
 */
 .backgroundSecondary {
-  background-color: #F6F6F6; }
+  background-color: #F9FAFB; }
 
 .backgroundTertiary, button.rectangleSecondary, button.pillSecondary,
 input.rectangleSecondary[type=button],
@@ -9654,7 +9618,7 @@ input.pillTertiary[type=button]:active,
 input.rectangleTertiary[type=submit]:active,
 input.pillTertiary[type=submit]:active,
 a.rectangleTertiary:active,
-a.pillTertiary:active, .input[type=text],
+a.pillTertiary:active, .switch[type='checkbox'] + label::before, .switch[type='checkbox'] + label:before, .input[type=text],
 .input[type=password],
 .input[type=email], .input[type=text]:disabled,
 .input[type=password]:disabled,
@@ -9665,13 +9629,13 @@ a.pillTertiary:active, .input[type=text],
 .input[type=email]:disabled:enabled,
 .input[type=email]:disabled:focus,
 .input[type=email]:disabled:active, .select select, .select select:disabled, .select select:disabled:enabled, .select select:disabled:focus, .select select:disabled:active {
-  background-color: #EAEAEA; }
+  background-color: #E2E5E9; }
 
 .backgroundInverseSecondary {
-  background-color: #222222; }
+  background-color: #2E3238; }
 
 .backgroundInverseTertiary {
-  background-color: #3B3B3B; }
+  background-color: #454B54; }
 
 /*
 ---
@@ -9708,29 +9672,29 @@ input.rectangleSecondary[type=submit]:disabled,
 input.pillSecondary[type=submit]:disabled,
 a.rectangleSecondary:disabled,
 a.pillSecondary:disabled {
-  background-color: #EAEAEA; }
+  background-color: #E2E5E9; }
 
 .backgroundLightAccent, .tags-static.backgroundLightAccent:not(body) {
-  background-color: #ECF8FD; }
+  background-color: #CCEEFF; }
 
 .backgroundLightPositive, .input.positive[type=text], .input.backgroundPositive[type=text],
 .input.positive[type=password], .input.backgroundPositive[type=password],
 .input.positive[type=email], .input.backgroundPositive[type=email], .select.positive select, .select.backgroundPositive select, .tags-static.backgroundLightPositive:not(body) {
-  background-color: #EFFBF6; }
+  background-color: #CCFFDD; }
 
 .backgroundLightNegative, .input.negative[type=text], .input.backgroundNegative[type=text],
 .input.negative[type=password], .input.backgroundNegative[type=password],
 .input.negative[type=email], .input.backgroundNegative[type=email], .select.negative select, .select.backgroundNegative select, .tags-static.backgroundLightNegative:not(body) {
-  background-color: #FDF0EC; }
+  background-color: #FFD8CC; }
 
 .backgroundLightWarning {
-  background-color: #FDF8EC; }
+  background-color: #FFF8CC; }
 
 .backgroundOverlayLight {
-  background-color: rgba(0, 0, 0, 0.08); }
+  background-color: rgba(23, 25, 28, 0.5); }
 
-.backgroundOverlayLightDark {
-  background-color: rgba(0, 0, 0, 0.3); }
+.backgroundOverlayDark {
+  background-color: rgba(23, 25, 28, 0.3); }
 
 /*
 ---
@@ -9801,7 +9765,7 @@ a.pillTertiary:enabled, .input[type=text]:focus, .input[type=text]:active,
 .contentSecondary, .input[type=text]::placeholder,
 .input[type=password]::placeholder,
 .input[type=email]::placeholder, .select select:disabled, .select select:disabled:enabled, .select select:disabled:focus, .select select:disabled:active {
-  color: #595959; }
+  color: #6A717C; }
 
 .contentTertiary, .input[type=text],
 .input[type=password],
@@ -9812,16 +9776,16 @@ a.pillTertiary:enabled, .input[type=text]:focus, .input[type=text]:active,
 .input[type=email]:disabled:enabled,
 .input[type=email]:disabled:focus,
 .input[type=email]:disabled:active, .field .help {
-  color: #949494; }
+  color: #ABB1BA; }
 
 .contentInversePrimary {
   color: #FFFFFF; }
 
 .contentInverseSecondary {
-  color: #AFAFAF; }
+  color: #ABB1BA; }
 
 .contentInverseTertiary {
-  color: #6F6F6F; }
+  color: #6A717C; }
 
 /*
 ---
@@ -9858,19 +9822,25 @@ input.rectangleTertiary[type=submit]:disabled,
 input.pillTertiary[type=submit]:disabled,
 a.rectangleTertiary:disabled,
 a.pillTertiary:disabled {
-  color: #AFAFAF; }
+  color: #ABB1BA; }
 
 .contentAccent, .tags-static.backgroundLightAccent:not(body) {
-  color: #14A3EB; }
+  color: #1975FF; }
+
+.contentOnColorPrimary {
+  color: #FFFFFF; }
+
+.contentOnColorSecondary {
+  color: rgba(255, 255, 255, 0.5); }
 
 .contentNegative, .field .help.is-danger, .tags-static.backgroundLightNegative:not(body) {
-  color: #EB4114; }
+  color: #E84030; }
 
 .contentPositive, .field .help.is-success, .tags-static.backgroundLightPositive:not(body) {
-  color: #33CC8C; }
+  color: #1DC872; }
 
 .contentWarning {
-  color: #E9A316; }
+  color: #FFA719; }
 
 /*
 ---
@@ -9888,16 +9858,16 @@ The border colors that can be used with any element.
 ```
 */
 .borderDefault {
-  border: 1px solid #CFCFCF; }
+  border: 1px solid #E2E5E9; }
 
 .borderSelected {
-  border: 1px solid #000000; }
+  border: 2px solid #17191C; }
 
 .borderInverseDefault {
-  border: 1px solid #3B3B3B; }
+  border: 1px solid #454B54; }
 
 .borderInverseSelected {
-  border: 1px solid #FFFFFF; }
+  border: 2px solid #FFFFFF; }
 
 /*
 ---
@@ -9917,33 +9887,97 @@ The border colors that can be used with any element.
 ```
 */
 .borderStateDisabled {
-  border: 1px solid #EAEAEA; }
+  border: 1px solid #E2E5E9; }
 
 .borderAccent {
-  border: 1px solid #14A3EB; }
-
-.borderAccentLight {
-  border: 1px solid #95D6F6; }
+  border: 1px solid #1975FF; }
 
 .borderNegative {
-  border: 1px solid #F6A995; }
+  border: 1px solid #E84030; }
 
 .borderPositive {
-  border: 1px solid #A3E8CB; }
+  border: 1px solid #1DC872; }
 
 .borderWarning {
-  border: 1px solid #F5D696; }
+  border: 1px solid #FFA719; }
 
-.secondaryFont, .displayL, .displayM, .displayS, .displayXS, .headingXLarge, h1, .header div.header-content.headingXLarge, h1 div.header-content.headingXLarge, h2 div.header-content.headingXLarge, h3 div.header-content.headingXLarge, h4 div.header-content.headingXLarge, h5 div.header-content.headingXLarge, h6 div.header-content.headingXLarge, .headingLarge, h2, .header div.header-content.headingLarge, h1 div.header-content.headingLarge, h2 div.header-content.headingLarge, h3 div.header-content.headingLarge, h4 div.header-content.headingLarge, h5 div.header-content.headingLarge, h6 div.header-content.headingLarge, .headingM, h3, .header div.header-content.headingM, h1 div.header-content.headingM, h2 div.header-content.headingM, h3 div.header-content.headingM, h4 div.header-content.headingM, h5 div.header-content.headingM, h6 div.header-content.headingM, .headingSmall, h4, .header div.header-content.headingSmall, h1 div.header-content.headingSmall, h2 div.header-content.headingSmall, h3 div.header-content.headingSmall, h4 div.header-content.headingSmall, h5 div.header-content.headingSmall, h6 div.header-content.headingSmall, .headingXSmall, h5, .header div.header-content.headingXSmall, h1 div.header-content.headingXSmall, h2 div.header-content.headingXSmall, h3 div.header-content.headingXSmall, h4 div.header-content.headingXSmall, h5 div.header-content.headingXSmall, h6 div.header-content.headingXSmall, .headingXXSmall, h6, .header div.header-content.headingXXSmall, h1 div.header-content.headingXXSmall, h2 div.header-content.headingXXSmall, h3 div.header-content.headingXXSmall, h4 div.header-content.headingXXSmall, h5 div.header-content.headingXXSmall, h6 div.header-content.headingXXSmall {
-  font-family: 'BuenosAires'; }
+.secondaryFont, .title-x8, .title-x7, .title-x6, .title-x5, .title-x4, .title-x3, .title-x2, .text-x6, .text-x5, .text-x4, .text-x3, .text-x2, .text-x1, .displayS, .displayXS, .headingXLarge, h1, .header div.header-content.headingXLarge, h1 div.header-content.headingXLarge, h2 div.header-content.headingXLarge, h3 div.header-content.headingXLarge, h4 div.header-content.headingXLarge, h5 div.header-content.headingXLarge, h6 div.header-content.headingXLarge, .headingLarge, h2, .header div.header-content.headingLarge, h1 div.header-content.headingLarge, h2 div.header-content.headingLarge, h3 div.header-content.headingLarge, h4 div.header-content.headingLarge, h5 div.header-content.headingLarge, h6 div.header-content.headingLarge, .headingM, h3, .header div.header-content.headingM, h1 div.header-content.headingM, h2 div.header-content.headingM, h3 div.header-content.headingM, h4 div.header-content.headingM, h5 div.header-content.headingM, h6 div.header-content.headingM, .headingSmall, h4, .header div.header-content.headingSmall, h1 div.header-content.headingSmall, h2 div.header-content.headingSmall, h3 div.header-content.headingSmall, h4 div.header-content.headingSmall, h5 div.header-content.headingSmall, h6 div.header-content.headingSmall, .headingXSmall, h5, .header div.header-content.headingXSmall, h1 div.header-content.headingXSmall, h2 div.header-content.headingXSmall, h3 div.header-content.headingXSmall, h4 div.header-content.headingXSmall, h5 div.header-content.headingXSmall, h6 div.header-content.headingXSmall, .headingXXSmall, h6, .header div.header-content.headingXXSmall, h1 div.header-content.headingXXSmall, h2 div.header-content.headingXXSmall, h3 div.header-content.headingXXSmall, h4 div.header-content.headingXXSmall, h5 div.header-content.headingXXSmall, h6 div.header-content.headingXXSmall {
+  font-family: 'GT Walsheim'; }
 
 /*
 ---
-name: Display
+name: Title
 category: Typography
 ---
 
-Display types can be used on any element that contains text.
+Title types can be used on any element that contains text.
+
+```types.html
+<div class="title-x8">Title x8</div>
+<div class="title-x7">Title x7</div>
+<div class="title-x6">Title x6</div>
+<div class="title-x5">Title x5</div>
+<div class="title-x4">Title x4</div>
+<div class="title-x3">Title x3</div>
+<div class="title-x2">Title x2</div>
+```
+*/
+.title-x8 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 1;
+  color: #000000; }
+
+.title-x7 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 1;
+  color: #000000; }
+
+.title-x6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1;
+  color: #000000; }
+
+.title-x5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  color: #000000; }
+
+.title-x4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  color: #000000; }
+
+.title-x3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  color: #000000; }
+
+.title-x2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  color: #000000; }
+
+/*
+---
+name: Text
+category: Typography
+---
+
+Title types can be used on any element that contains text.
 
 ```types.html
 <p class="displayL">Display Large</p>
@@ -9952,22 +9986,64 @@ Display types can be used on any element that contains text.
 <p class="displayXS">Display Extra Small</p>
 ```
 */
-.displayL {
+.text-x6 {
   font-style: normal;
-  font-weight: 600;
-  font-size: 96px;
-  line-height: 112px;
-  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.5;
   color: #000000; }
 
-.displayM {
+.text-x5 {
   font-style: normal;
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 76px;
-  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
   color: #000000; }
 
+.text-x4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000; }
+
+.text-x3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000; }
+
+.text-x2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000; }
+
+.text-x1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000; }
+
+/*
+---
+name: Display (Deprecated)
+category: Typography
+---
+
+Display types can be used on any element that contains text.
+Not used on Website.
+
+```types.html
+<p class="displayL">Display Large</p>
+<p class="displayM">Display Medium</p>
+<p class="displayS">Display Small</p>
+<p class="displayXS">Display Extra Small</p>
+```
+*/
 .displayS {
   font-style: normal;
   font-weight: 600;
@@ -9986,7 +10062,7 @@ Display types can be used on any element that contains text.
 
 /*
 ---
-name: Heading
+name: Heading (Deprecated)
 category: Typography
 ---
 
@@ -10045,7 +10121,7 @@ Heading types can be used with `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` and `<h6>`
 
 /*
 ---
-name: Headers
+name: Headers (Deprecated)
 category: Typography
 ---
 
@@ -10062,7 +10138,7 @@ Headers are `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` and `<h6>` elements.
 */
 /*
 ---
-name: Paragraph
+name: Paragraph (Deprecated)
 category: Typography
 ---
 
@@ -10136,7 +10212,7 @@ a.pillTertiary {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 22px; }
+  line-height: 1; }
 
 .labelMedium, button.rectanglePrimary.mediumLabel, button.mediumLabel.pillPrimary,
 input.rectanglePrimary.mediumLabel[type=button],
@@ -10160,7 +10236,7 @@ a.mediumLabel.pillTertiary {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 20px; }
+  line-height: 1; }
 
 .labelSmall, button.rectanglePrimary.smallLabel, button.smallLabel.pillPrimary,
 input.rectanglePrimary.smallLabel[type=button],
@@ -10184,23 +10260,16 @@ a.smallLabel.pillTertiary, .field .help {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 18px; }
+  line-height: 1; }
 
+/**
+  Not used in website
+ */
 .labelXSmall {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px; }
-
-body {
-  color: #000000;
-  font-family: 'Sofia Pro', sans-serif; }
-  body.fontLoaded {
-    font-family: 'Sofia Pro', sans-serif; }
-
-p,
-label {
-  font-family: 'Sofia Pro', sans-serif; }
 
 .bm-icon, .bm-icon-placeholder, .bm-icon-arrow-left, .bm-icon-arrow-up, .bm-icon-arrow-down, .bm-icon-arrow-right, .bm-icon-chevron-left, .bm-icon-chevron-up, .bm-icon-chevron-down, .select:not(.is-multiple):not(.is-loading)::after, .bm-icon-chevron-right, .bm-icon-cross-circle-outlined, .bm-icon-cross-circle-solid, .bm-icon-cross, .bm-icon-check, .bm-icon-alert, .bm-icon-chat, .bm-icon-bell, .bm-icon-search, .bm-icon-options, .bm-icon-copy-v1, .bm-icon-copy-v2, .bm-icon-mastercard, .bm-icon-credit-card-v1, .bm-icon-credit-card-v2, .bm-icon-bank-id-sv, .bm-profile-circular, .bm-profile, .bm-check-enabled, .is-checkradio[type='checkbox'] + label::after, .is-checkradio[type='checkbox'] + label:after, .bm-check-enabled-off, .is-checkradio[type='checkbox'] + label::before, .is-checkradio[type='checkbox'] + label:before, .bm-bullet-enabled, .is-checkradio[type='radio'] + label::after, .is-checkradio[type='radio'] + label:after, .bm-bullet-enabled-off, .is-checkradio[type='radio'] + label::before, .is-checkradio[type='radio'] + label:before {
   width: 100%;
@@ -10547,6 +10616,7 @@ Types of buttons:
 - Rectangle Primary: Standard button
 - Rectangle Secondary: Add an secondary indication over the primary button
 - Rectangle Tertiary: Add an tertiary indication over the other button types
+- Circle Primary: Standard button
 
 ```types.html
 <button class="button rectanglePrimary">Rectangle Primary</button>
@@ -10572,6 +10642,13 @@ Types of buttons:
 <button class="button rectanglePrimary smallLabel">Rectangle Primary - small button</button>
 <button class="button rectangleSecondary">Rectangle Secondary</button>
 <button class="button rectangleTertiary">Rectangle Tertiary</button>
+<button class="button pillPrimary circ">01</button>
+<button class="button pillSecondary circ">02</button>
+<button class="button pillSecondary circ">
+  <span class="icon">
+    <i class="bm-icon-arrow-right"></i>
+  </span>
+</button>
 ```
 */
 /*
@@ -10599,7 +10676,7 @@ button,
 input[type=button],
 input[type=submit],
 a {
-  height: 56px;
+  height: 64px;
   /**
    * Rectangle
    */ }
@@ -10608,12 +10685,6 @@ a {
   input[type=submit].content-space-between,
   a.content-space-between {
     justify-content: space-between; }
-  button span.icon,
-  input[type=button] span.icon,
-  input[type=submit] span.icon,
-  a span.icon {
-    width: 24px !important;
-    height: 24px !important; }
   button.rectanglePrimary, button.pillPrimary,
   input[type=button].rectanglePrimary,
   input.pillPrimary[type=button],
@@ -10623,9 +10694,9 @@ a {
   a.pillPrimary {
     color: #FFFFFF;
     border: 0;
-    padding-left: 24px;
-    padding-right: 24px;
-    height: 56px; }
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 64px; }
     button.rectanglePrimary.mediumLabel, button.mediumLabel.pillPrimary,
     input[type=button].rectanglePrimary.mediumLabel,
     input.pillPrimary[type=button].mediumLabel,
@@ -10633,8 +10704,8 @@ a {
     input.pillPrimary[type=submit].mediumLabel,
     a.rectanglePrimary.mediumLabel,
     a.mediumLabel.pillPrimary {
-      padding-left: 16px;
-      padding-right: 16px;
+      padding-left: 24px;
+      padding-right: 24px;
       height: 48px; }
     button.rectanglePrimary.smallLabel, button.smallLabel.pillPrimary,
     input[type=button].rectanglePrimary.smallLabel,
@@ -10643,9 +10714,9 @@ a {
     input.pillPrimary[type=submit].smallLabel,
     a.rectanglePrimary.smallLabel,
     a.smallLabel.pillPrimary {
-      padding-left: 12px;
-      padding-right: 12px;
-      height: 36px; }
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 40px; }
     button.rectanglePrimary:disabled, button.pillPrimary:disabled,
     input[type=button].rectanglePrimary:disabled,
     input.pillPrimary[type=button]:disabled,
@@ -10661,7 +10732,7 @@ a {
     input.pillPrimary[type=submit]:hover,
     a.rectanglePrimary:hover,
     a.pillPrimary:hover {
-      opacity: 0.8;
+      background: rgba(23, 25, 28, 0.8);
       color: #FFFFFF; }
     button.rectanglePrimary:active, button.pillPrimary:active,
     input[type=button].rectanglePrimary:active,
@@ -10670,7 +10741,7 @@ a {
     input.pillPrimary[type=submit]:active,
     a.rectanglePrimary:active,
     a.pillPrimary:active {
-      opacity: 0.7;
+      background: rgba(23, 25, 28, 0.7);
       color: #FFFFFF; }
     button.rectanglePrimary:enabled, button.pillPrimary:enabled,
     input[type=button].rectanglePrimary:enabled,
@@ -10688,9 +10759,9 @@ a {
   a.rectangleSecondary,
   a.pillSecondary {
     border: 0;
-    padding-left: 24px;
-    padding-right: 24px;
-    height: 56px; }
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 64px; }
     button.rectangleSecondary.mediumLabel, button.mediumLabel.pillSecondary,
     input[type=button].rectangleSecondary.mediumLabel,
     input.pillSecondary[type=button].mediumLabel,
@@ -10698,9 +10769,9 @@ a {
     input.pillSecondary[type=submit].mediumLabel,
     a.rectangleSecondary.mediumLabel,
     a.mediumLabel.pillSecondary {
-      padding-left: 16px;
-      padding-right: 16px;
-      height: 48px; }
+      padding-left: 24px;
+      padding-right: 24px;
+      height: 56px; }
     button.rectangleSecondary.smallLabel, button.smallLabel.pillSecondary,
     input[type=button].rectangleSecondary.smallLabel,
     input.pillSecondary[type=button].smallLabel,
@@ -10708,9 +10779,9 @@ a {
     input.pillSecondary[type=submit].smallLabel,
     a.rectangleSecondary.smallLabel,
     a.smallLabel.pillSecondary {
-      padding-left: 12px;
-      padding-right: 12px;
-      height: 36px; }
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 40px; }
     button.rectangleSecondary:disabled, button.pillSecondary:disabled,
     input[type=button].rectangleSecondary:disabled,
     input.pillSecondary[type=button]:disabled,
@@ -10726,7 +10797,7 @@ a {
     input.pillSecondary[type=submit]:hover,
     a.rectangleSecondary:hover,
     a.pillSecondary:hover {
-      opacity: 0.88; }
+      background: linear-gradient(0deg, rgba(23, 25, 28, 0.08), rgba(23, 25, 28, 0.08)), #E2E5E9; }
     button.rectangleSecondary:active, button.pillSecondary:active,
     input[type=button].rectangleSecondary:active,
     input.pillSecondary[type=button]:active,
@@ -10734,7 +10805,7 @@ a {
     input.pillSecondary[type=submit]:active,
     a.rectangleSecondary:active,
     a.pillSecondary:active {
-      opacity: 0.8; }
+      background: linear-gradient(0deg, rgba(23, 25, 28, 0.16), rgba(23, 25, 28, 0.16)), #E2E5E9; }
   button.rectangleTertiary, button.pillTertiary,
   input[type=button].rectangleTertiary,
   input.pillTertiary[type=button],
@@ -10743,9 +10814,9 @@ a {
   a.rectangleTertiary,
   a.pillTertiary {
     border: 0;
-    padding-left: 24px;
-    padding-right: 24px;
-    height: 56px; }
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 64px; }
     button.rectangleTertiary.mediumLabel, button.mediumLabel.pillTertiary,
     input[type=button].rectangleTertiary.mediumLabel,
     input.pillTertiary[type=button].mediumLabel,
@@ -10753,9 +10824,9 @@ a {
     input.pillTertiary[type=submit].mediumLabel,
     a.rectangleTertiary.mediumLabel,
     a.mediumLabel.pillTertiary {
-      padding-left: 16px;
-      padding-right: 16px;
-      height: 48px; }
+      padding-left: 24px;
+      padding-right: 24px;
+      height: 56px; }
     button.rectangleTertiary.smallLabel, button.smallLabel.pillTertiary,
     input[type=button].rectangleTertiary.smallLabel,
     input.pillTertiary[type=button].smallLabel,
@@ -10763,9 +10834,9 @@ a {
     input.pillTertiary[type=submit].smallLabel,
     a.rectangleTertiary.smallLabel,
     a.smallLabel.pillTertiary {
-      padding-left: 12px;
-      padding-right: 12px;
-      height: 36px; }
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 40px; }
     button.rectangleTertiary:disabled, button.pillTertiary:disabled,
     input[type=button].rectangleTertiary:disabled,
     input.pillTertiary[type=button]:disabled,
@@ -10795,11 +10866,54 @@ a {
   input[type=submit].pillPrimary,
   a.pillPrimary {
     border-radius: 100px; }
+    button.pillPrimary.circ,
+    input[type=button].pillPrimary.circ,
+    input[type=submit].pillPrimary.circ,
+    a.pillPrimary.circ {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      width: 64px;
+      height: 64px; }
+      button.pillPrimary.circ.medium,
+      input[type=button].pillPrimary.circ.medium,
+      input[type=submit].pillPrimary.circ.medium,
+      a.pillPrimary.circ.medium {
+        width: 56px;
+        height: 56px; }
+      button.pillPrimary.circ.small,
+      input[type=button].pillPrimary.circ.small,
+      input[type=submit].pillPrimary.circ.small,
+      a.pillPrimary.circ.small {
+        width: 48px;
+        height: 48px; }
   button.pillSecondary,
   input[type=button].pillSecondary,
   input[type=submit].pillSecondary,
   a.pillSecondary {
     border-radius: 100px; }
+    button.pillSecondary.circ,
+    input[type=button].pillSecondary.circ,
+    input[type=submit].pillSecondary.circ,
+    a.pillSecondary.circ {
+      display: flex;
+      border-radius: 100px;
+      width: 64px;
+      height: 64px; }
+      button.pillSecondary.circ.medium,
+      input[type=button].pillSecondary.circ.medium,
+      input[type=submit].pillSecondary.circ.medium,
+      a.pillSecondary.circ.medium {
+        width: 56px;
+        height: 56px; }
+      button.pillSecondary.circ.small,
+      input[type=button].pillSecondary.circ.small,
+      input[type=submit].pillSecondary.circ.small,
+      a.pillSecondary.circ.small {
+        width: 48px;
+        height: 48px; }
   button.pillTertiary,
   input[type=button].pillTertiary,
   input[type=submit].pillTertiary,
@@ -10821,10 +10935,23 @@ Switch can be used with `<input>` elements.
 </div>
 ```
 */
+.switch[type="checkbox"] + label::before, .switch[type="checkbox"] + label:before {
+  width: 52px;
+  height: 32px; }
+
+.switch[type="checkbox"] + label::after, .switch[type="checkbox"] + label:after {
+  top: 2px;
+  left: 2px;
+  width: 28px;
+  height: 28px; }
+
 .switch[type='checkbox']:checked + label:before,
 .switch[type='checkbox']:checked[type='checkbox'] + label:before {
   background-color: #000000;
   border: 0; }
+
+.switch[type='checkbox']:checked + label:after {
+  left: 1.375rem; }
 
 /*
 ---
@@ -10971,7 +11098,7 @@ Types of inputs:
   .input.backgroundPositive[type=password],
   .input[type=email].positive,
   .input.backgroundPositive[type=email] {
-    border-bottom: 2px solid #33CC8C; }
+    border-bottom: 2px solid #1DC872; }
     .input[type=text].positive:focus, .input.backgroundPositive[type=text]:focus, .input[type=text].positive:active, .input.backgroundPositive[type=text]:active,
     .input[type=password].positive:focus,
     .input.backgroundPositive[type=password]:focus,
@@ -10989,7 +11116,7 @@ Types of inputs:
   .input.backgroundNegative[type=password],
   .input[type=email].negative,
   .input.backgroundNegative[type=email] {
-    border-bottom: 2px solid #EB4114; }
+    border-bottom: 2px solid #E84030; }
     .input[type=text].negative:focus, .input.backgroundNegative[type=text]:focus, .input[type=text].negative:active, .input.backgroundNegative[type=text]:active,
     .input[type=password].negative:focus,
     .input.backgroundNegative[type=password]:focus,
@@ -11098,13 +11225,13 @@ Select can be used with `<select>` elements.
     .select select:disabled:enabled, .select select:disabled:focus, .select select:disabled:active {
       border: 0; }
   .select.positive select, .select.backgroundPositive select {
-    border-bottom: 2px solid #33CC8C; }
+    border-bottom: 2px solid #1DC872; }
     .select.positive select:focus, .select.backgroundPositive select:focus, .select.positive select:active, .select.backgroundPositive select:active {
       border-top: 0;
       border-left: 0;
       border-right: 0; }
   .select.negative select, .select.backgroundNegative select {
-    border-bottom: 2px solid #EB4114; }
+    border-bottom: 2px solid #E84030; }
     .select.negative select:focus, .select.backgroundNegative select:focus, .select.negative select:active, .select.backgroundNegative select:active {
       border-top: 0;
       border-left: 0;

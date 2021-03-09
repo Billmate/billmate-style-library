@@ -5,8 +5,14 @@ theme:
   logo: resources/images/logo.svg
 
   sidebar:
-    background: "#fbfbfb"
+    background: "#fff"
     textColor: "#000000"
+
+  css:
+    - css/theme-style.css
+  color:
+    background: "#fff"
+    border: "1px solid #000;"
 
 examples:
   css:

@@ -25,7 +25,16 @@ Switch can be used with `<input>` elements.
   & + label {
     &::before,
     &:before {
-      @extend .backgroundInversePrimary;
+      @extend .backgroundTertiary;
+      width: 52px;
+      height: 32px;
+    }
+    &::after,
+    &:after {
+      top: 2px;
+      left: 2px;
+      width: 28px;
+      height: 28px;
     }
   }
 
@@ -36,6 +45,9 @@ Switch can be used with `<input>` elements.
 
     background-color: $black;
     border: 0;
+  }
+  &:checked + label:after {
+    left: 1.375rem;
   }
 }
 
