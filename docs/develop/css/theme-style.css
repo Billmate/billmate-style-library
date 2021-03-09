@@ -1,0 +1,26 @@
+.theme-color {
+  padding: 10px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+
+.backgroundPrimary,
+.backgroundSecondary,
+.backgroundTertiary,
+.backgroundInversePrimary,
+.backgroundInverseSecondary,
+.backgroundInverseTertiary {
+  padding: 5px;
+  display: inline-block;
+  width: 100px;
+  border-radius: 10px;
+  margin-right: 15px;
+  height: 100px;
+}
+
+button {
+  display: inline-block;
+}

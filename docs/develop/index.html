@@ -1,0 +1,2432 @@
+<!doctype html>
+<html lang="en-us" id="insta">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link href="_stylemark/css/all.css" rel="stylesheet">
+		<link rel="icon" href="" type="image/x-icon">
+
+		<!-- @todo Replace with custom icomoon/fontello bundle -->
+		<script src="https://use.fontawesome.com/6dd56ad32d.js"></script>
+
+		<title></title>
+
+			<link rel="stylesheet" href="css/theme-style.css">
+	</head>
+	<body class="overflow-x-off i-page theme-page">
+		<div class="i-page__content theme-content">
+
+			<div class="i-nav-select theme-mobile-nav">
+				<form class="form">
+					<select class="form-control form-control-lg theme-mobile-nav-select">
+						<option disabled selected>Go to…</option>
+							<optgroup label="Introduction">
+									<option value="installation">Installation</option>
+									<option value="overview">Overview</option>
+							</optgroup>
+							<optgroup label="Variables">
+									<option value="color-palette">Color palette</option>
+									<option value="font">Font</option>
+							</optgroup>
+							<optgroup label="Colors">
+									<option value="background">Background</option>
+									<option value="background-extensions">Background Extensions</option>
+									<option value="basics">Basics</option>
+									<option value="border">Border</option>
+									<option value="border-extensions">Border extensions</option>
+									<option value="content">Content</option>
+									<option value="text-extensions">Text extensions</option>
+							</optgroup>
+							<optgroup label="Typography">
+									<option value="display-deprecated">Display (Deprecated)</option>
+									<option value="headers-deprecated">Headers (Deprecated)</option>
+									<option value="heading-deprecated">Heading (Deprecated)</option>
+									<option value="label">Label</option>
+									<option value="paragraph-deprecated">Paragraph (Deprecated)</option>
+									<option value="text">Text</option>
+									<option value="title">Title</option>
+							</optgroup>
+							<optgroup label="Components">
+									<option value="button">Button</option>
+									<option value="check">Check</option>
+									<option value="input">Input</option>
+									<option value="input-hint-helpers">Input - hint helpers</option>
+									<option value="pill">Pill</option>
+									<option value="radio">Radio</option>
+									<option value="select">Select</option>
+									<option value="switch">Switch</option>
+									<option value="tags">Tags</option>
+							</optgroup>
+							<optgroup label="Icons">
+									<option value="basic">Basic</option>
+									<option value="direction">Direction</option>
+									<option value="input-states">Input states</option>
+									<option value="misc">Misc</option>
+									<option value="payment">Payment</option>
+									<option value="progress">Progress</option>
+									<option value="user">User</option>
+							</optgroup>
+					</select>
+				</form>
+			</div>
+
+				<div id="category-introduction" class="theme-content-category">
+						<div id="installation" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Installation</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">styles.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>To use this library inside other projects you can use both the SASS or CSS files. Add the package into a npm based project.
+Add the following to package.json:</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&quot;billmate-style-library&quot;: &quot;git+https://&lt;GITHUB_TOKEN&gt;@github.com/Billmate/billmate-style-library.git#&lt;VERSION&gt;&quot;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&quot;billmate-style-library&quot;: &quot;git+https://&lt;GITHUB_TOKEN&gt;@github.com/Billmate/billmate-style-library.git#&lt;VERSION&gt;&quot;</code></pre>
+	</div>
+</div><h3>CSS</h3><p>To use the CSS file.</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="@import &#39;~billmate-style-library/css/styles.css&#39;;">Copy</button>
+		<pre class="mb-0"><code class="lang-">@import &#39;~billmate-style-library/css/styles.css&#39;;</code></pre>
+	</div>
+</div><p>To use the minified CSS file.</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="@import &#39;~billmate-style-library/css/styles.min.css&#39;;">Copy</button>
+		<pre class="mb-0"><code class="lang-">@import &#39;~billmate-style-library/css/styles.min.css&#39;;</code></pre>
+	</div>
+</div><h3>SASS</h3><p>To use the SASS file and the framework.</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="@import &#39;~billmate-style-library/sass/styles.scss&#39;;">Copy</button>
+		<pre class="mb-0"><code class="lang-">@import &#39;~billmate-style-library/sass/styles.scss&#39;;</code></pre>
+	</div>
+</div><p>Then there is a need to override the SASS variable with the correct path.</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="$billmate-resource-path: &#39;~billmate-style-library&#39;;">Copy</button>
+		<pre class="mb-0"><code class="lang-">$billmate-resource-path: &#39;~billmate-style-library&#39;;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="overview" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Overview</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">styles.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>A frontend styling library for using Billmate styles. It is built upon the CSS framework
+called Bulma (<a href="https://bulma.io/">https://bulma.io/</a>) and contains the icon library Font Awesome (<a href="https://fontawesome.com/)">https://fontawesome.com/)</a>.</p>
+<p>So basically any component or styling from Bulma documentation (<a href="https://bulma.io/documentation/">https://bulma.io/documentation/</a>) can be used
+but with a Billmate look and feel.</p>
+</div>
+</div>
+
+				</div>
+				<div id="category-variables" class="theme-content-category">
+						<div id="color-palette" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Color palette</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_variables.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>The available color palettes.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="color-palette-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="color-palette-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+</div>
+</div>
+
+						<div id="font" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Font</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_fonts.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>The available fonts are:</p>
+<ul>
+<li>GT Walsheim</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="font-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="font-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;h1 class=&quot;title-x8&quot;&gt;GT Walsheim&lt;/h1&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;h1 class=&quot;title-x8&quot;&gt;GT Walsheim&lt;/h1&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+				</div>
+				<div id="category-colors" class="theme-content-category">
+						<div id="background" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Background</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_colors.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>The background colors types available.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="background-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="background-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;backgroundPrimary&quot;&gt;Background Primary&lt;/div&gt;
+&lt;div class=&quot;backgroundSecondary&quot;&gt;Background Secondary&lt;/div&gt;
+&lt;div class=&quot;backgroundTertiary&quot;&gt;Background Tertiary&lt;/div&gt;
+&lt;div class=&quot;backgroundInversePrimary&quot;&gt;Background Inverse Primary&lt;/div&gt;
+&lt;div class=&quot;backgroundInverseSecondary&quot;&gt;Background Inverse Secondary&lt;/div&gt;
+&lt;div class=&quot;backgroundInverseTertiary&quot;&gt;Background Inverse Tertiary&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;backgroundPrimary&quot;&gt;Background Primary&lt;/div&gt;
+&lt;div class=&quot;backgroundSecondary&quot;&gt;Background Secondary&lt;/div&gt;
+&lt;div class=&quot;backgroundTertiary&quot;&gt;Background Tertiary&lt;/div&gt;
+&lt;div class=&quot;backgroundInversePrimary&quot;&gt;Background Inverse Primary&lt;/div&gt;
+&lt;div class=&quot;backgroundInverseSecondary&quot;&gt;Background Inverse Secondary&lt;/div&gt;
+&lt;div class=&quot;backgroundInverseTertiary&quot;&gt;Background Inverse Tertiary&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="background-extensions" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Background Extensions</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_colors.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>The background colors extensions available.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="background-extensions-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="background-extensions-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;backgroundStateDisabled&quot;&gt;Background State Disabled&lt;/div&gt;
+&lt;div class=&quot;backgroundAccent&quot;&gt;Background Accent&lt;/div&gt;
+&lt;div class=&quot;backgroundPositive&quot;&gt;Background Positive&lt;/div&gt;
+&lt;div class=&quot;backgroundNegative&quot;&gt;Background Negative&lt;/div&gt;
+&lt;div class=&quot;backgroundWarning&quot;&gt;Background Warning&lt;/div&gt;
+&lt;div class=&quot;backgroundLightAccent&quot;&gt;Background Light Accent&lt;/div&gt;
+&lt;div class=&quot;backgroundLightPositive&quot;&gt;Background Light Positive&lt;/div&gt;
+&lt;div class=&quot;backgroundLightNegative&quot;&gt;Background Light Negative&lt;/div&gt;
+&lt;div class=&quot;backgroundLightWarning&quot;&gt;Background Light Warning&lt;/div&gt;
+&lt;div class=&quot;backgroundOverlayLight&quot;&gt;Background Overlay Light&lt;/div&gt;
+&lt;div class=&quot;backgroundOverlayLightDark&quot;&gt;Background Overlay Light Dark&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;backgroundStateDisabled&quot;&gt;Background State Disabled&lt;/div&gt;
+&lt;div class=&quot;backgroundAccent&quot;&gt;Background Accent&lt;/div&gt;
+&lt;div class=&quot;backgroundPositive&quot;&gt;Background Positive&lt;/div&gt;
+&lt;div class=&quot;backgroundNegative&quot;&gt;Background Negative&lt;/div&gt;
+&lt;div class=&quot;backgroundWarning&quot;&gt;Background Warning&lt;/div&gt;
+&lt;div class=&quot;backgroundLightAccent&quot;&gt;Background Light Accent&lt;/div&gt;
+&lt;div class=&quot;backgroundLightPositive&quot;&gt;Background Light Positive&lt;/div&gt;
+&lt;div class=&quot;backgroundLightNegative&quot;&gt;Background Light Negative&lt;/div&gt;
+&lt;div class=&quot;backgroundLightWarning&quot;&gt;Background Light Warning&lt;/div&gt;
+&lt;div class=&quot;backgroundOverlayLight&quot;&gt;Background Overlay Light&lt;/div&gt;
+&lt;div class=&quot;backgroundOverlayLightDark&quot;&gt;Background Overlay Light Dark&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="basics" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Basics</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_colors.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>The basic colors types available.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="basics-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="basics-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;primaryA&quot;&gt;Primary A&lt;/div&gt;
+&lt;div class=&quot;primaryB&quot;&gt;Primary B&lt;/div&gt;
+&lt;div class=&quot;accent&quot;&gt;Accent&lt;/div&gt;
+&lt;div class=&quot;positive&quot;&gt;Positive&lt;/div&gt;
+&lt;div class=&quot;warning&quot;&gt;Warning&lt;/div&gt;
+&lt;div class=&quot;negative&quot;&gt;Negative&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;primaryA&quot;&gt;Primary A&lt;/div&gt;
+&lt;div class=&quot;primaryB&quot;&gt;Primary B&lt;/div&gt;
+&lt;div class=&quot;accent&quot;&gt;Accent&lt;/div&gt;
+&lt;div class=&quot;positive&quot;&gt;Positive&lt;/div&gt;
+&lt;div class=&quot;warning&quot;&gt;Warning&lt;/div&gt;
+&lt;div class=&quot;negative&quot;&gt;Negative&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="border" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Border</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_colors.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>The border colors that can be used with any element.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="border-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="border-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;borderDefault&quot;&gt;Border Default&lt;/div&gt;
+&lt;div class=&quot;borderSelected&quot;&gt;Border Selected&lt;/div&gt;
+&lt;div class=&quot;borderInverseDefault&quot;&gt;Border Inverse Default&lt;/div&gt;
+&lt;div class=&quot;borderInverseSelected&quot;&gt;Border Inverse Selected&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;borderDefault&quot;&gt;Border Default&lt;/div&gt;
+&lt;div class=&quot;borderSelected&quot;&gt;Border Selected&lt;/div&gt;
+&lt;div class=&quot;borderInverseDefault&quot;&gt;Border Inverse Default&lt;/div&gt;
+&lt;div class=&quot;borderInverseSelected&quot;&gt;Border Inverse Selected&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="border-extensions" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Border extensions</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_colors.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>The border colors that can be used with any element.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="border-extensions-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="border-extensions-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;borderStateDisabled&quot;&gt;Border State Disabled&lt;/div&gt;
+&lt;div class=&quot;borderAccent&quot;&gt;Border Accent&lt;/div&gt;
+&lt;div class=&quot;borderAccentLight&quot;&gt;Border Accent Light&lt;/div&gt;
+&lt;div class=&quot;borderNegative&quot;&gt;Border Negative&lt;/div&gt;
+&lt;div class=&quot;borderPositive&quot;&gt;Border Positive&lt;/div&gt;
+&lt;div class=&quot;borderWarning&quot;&gt;Border Warning&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;borderStateDisabled&quot;&gt;Border State Disabled&lt;/div&gt;
+&lt;div class=&quot;borderAccent&quot;&gt;Border Accent&lt;/div&gt;
+&lt;div class=&quot;borderAccentLight&quot;&gt;Border Accent Light&lt;/div&gt;
+&lt;div class=&quot;borderNegative&quot;&gt;Border Negative&lt;/div&gt;
+&lt;div class=&quot;borderPositive&quot;&gt;Border Positive&lt;/div&gt;
+&lt;div class=&quot;borderWarning&quot;&gt;Border Warning&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="content" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Content</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_colors.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>The text colors that can be used with <code>&lt;p&gt;</code> elements or any element with text.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="content-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="content-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;contentPrimary&quot;&gt;Content Primary&lt;/div&gt;
+&lt;div class=&quot;contentSecondary&quot;&gt;Content Secondary&lt;/div&gt;
+&lt;div class=&quot;contentTertiary&quot;&gt;Content Tertiary&lt;/div&gt;
+&lt;div class=&quot;contentInversePrimary&quot;&gt;Content Inverse Primary&lt;/div&gt;
+&lt;div class=&quot;contentInverseSecondary&quot;&gt;Content Inverse Secondary&lt;/div&gt;
+&lt;div class=&quot;contentInverseTertiary&quot;&gt;Content Inverse Tertiary&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;contentPrimary&quot;&gt;Content Primary&lt;/div&gt;
+&lt;div class=&quot;contentSecondary&quot;&gt;Content Secondary&lt;/div&gt;
+&lt;div class=&quot;contentTertiary&quot;&gt;Content Tertiary&lt;/div&gt;
+&lt;div class=&quot;contentInversePrimary&quot;&gt;Content Inverse Primary&lt;/div&gt;
+&lt;div class=&quot;contentInverseSecondary&quot;&gt;Content Inverse Secondary&lt;/div&gt;
+&lt;div class=&quot;contentInverseTertiary&quot;&gt;Content Inverse Tertiary&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="text-extensions" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Text extensions</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_colors.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>The text colors that can be used with <code>&lt;p&gt;</code> elements or any element with text.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="text-extensions-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="text-extensions-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;contentStateDisabled&quot;&gt;Content State Disabled&lt;/div&gt;
+&lt;div class=&quot;contentAccent&quot;&gt;Content Accent&lt;/div&gt;
+&lt;div class=&quot;contentNegative&quot;&gt;Content Negative&lt;/div&gt;
+&lt;div class=&quot;contentPositive&quot;&gt;Content Positive&lt;/div&gt;
+&lt;div class=&quot;contentWarning&quot;&gt;Content Warning&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;contentStateDisabled&quot;&gt;Content State Disabled&lt;/div&gt;
+&lt;div class=&quot;contentAccent&quot;&gt;Content Accent&lt;/div&gt;
+&lt;div class=&quot;contentNegative&quot;&gt;Content Negative&lt;/div&gt;
+&lt;div class=&quot;contentPositive&quot;&gt;Content Positive&lt;/div&gt;
+&lt;div class=&quot;contentWarning&quot;&gt;Content Warning&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+				</div>
+				<div id="category-typography" class="theme-content-category">
+						<div id="display-deprecated" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Display (Deprecated)</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_typography.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Display types can be used on any element that contains text.
+Not used on Website.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="display-deprecated-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="display-deprecated-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;p class=&quot;displayL&quot;&gt;Display Large&lt;/p&gt;
+&lt;p class=&quot;displayM&quot;&gt;Display Medium&lt;/p&gt;
+&lt;p class=&quot;displayS&quot;&gt;Display Small&lt;/p&gt;
+&lt;p class=&quot;displayXS&quot;&gt;Display Extra Small&lt;/p&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;p class=&quot;displayL&quot;&gt;Display Large&lt;/p&gt;
+&lt;p class=&quot;displayM&quot;&gt;Display Medium&lt;/p&gt;
+&lt;p class=&quot;displayS&quot;&gt;Display Small&lt;/p&gt;
+&lt;p class=&quot;displayXS&quot;&gt;Display Extra Small&lt;/p&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="headers-deprecated" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Headers (Deprecated)</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_typography.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Headers are <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> and <code>&lt;h6&gt;</code> elements.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="headers-deprecated-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="headers-deprecated-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;h1&gt;Header 1&lt;/h1&gt;
+&lt;h2&gt;Header 2&lt;/h2&gt;
+&lt;h3&gt;Header 3&lt;/h3&gt;
+&lt;h4&gt;Header 4&lt;/h4&gt;
+&lt;h5&gt;Header 5&lt;/h5&gt;
+&lt;h6&gt;Header 6&lt;/h6&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;h1&gt;Header 1&lt;/h1&gt;
+&lt;h2&gt;Header 2&lt;/h2&gt;
+&lt;h3&gt;Header 3&lt;/h3&gt;
+&lt;h4&gt;Header 4&lt;/h4&gt;
+&lt;h5&gt;Header 5&lt;/h5&gt;
+&lt;h6&gt;Header 6&lt;/h6&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="heading-deprecated" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Heading (Deprecated)</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_typography.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Heading types can be used with <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> and <code>&lt;h6&gt;</code> elements.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="heading-deprecated-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="heading-deprecated-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;h1 class=&quot;headingXLarge&quot;&gt;Heading Extra Large&lt;/h1&gt;
+&lt;h1 class=&quot;headingLarge&quot;&gt;Heading Large&lt;/h1&gt;
+&lt;h1 class=&quot;headingM&quot;&gt;Heading Medium&lt;/h1&gt;
+&lt;h1 class=&quot;headingSmall&quot;&gt;Heading Small&lt;/h1&gt;
+&lt;h1 class=&quot;headingXSmall&quot;&gt;Heading Extra Small&lt;/h1&gt;
+&lt;h1 class=&quot;headingXXSmall&quot;&gt;Heading Extra Extra Small&lt;/h1&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;h1 class=&quot;headingXLarge&quot;&gt;Heading Extra Large&lt;/h1&gt;
+&lt;h1 class=&quot;headingLarge&quot;&gt;Heading Large&lt;/h1&gt;
+&lt;h1 class=&quot;headingM&quot;&gt;Heading Medium&lt;/h1&gt;
+&lt;h1 class=&quot;headingSmall&quot;&gt;Heading Small&lt;/h1&gt;
+&lt;h1 class=&quot;headingXSmall&quot;&gt;Heading Extra Small&lt;/h1&gt;
+&lt;h1 class=&quot;headingXXSmall&quot;&gt;Heading Extra Extra Small&lt;/h1&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="label" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Label</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_typography.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Heading types can be used any type of text elements.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="label-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="label-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;labelLarge&quot;&gt;Label Large&lt;/div&gt;
+&lt;div class=&quot;labelMedium&quot;&gt;Label Medium&lt;/div&gt;
+&lt;div class=&quot;labelSmall&quot;&gt;Label Small&lt;/div&gt;
+&lt;div class=&quot;labelXSmall&quot;&gt;Label Extra Small&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;labelLarge&quot;&gt;Label Large&lt;/div&gt;
+&lt;div class=&quot;labelMedium&quot;&gt;Label Medium&lt;/div&gt;
+&lt;div class=&quot;labelSmall&quot;&gt;Label Small&lt;/div&gt;
+&lt;div class=&quot;labelXSmall&quot;&gt;Label Extra Small&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="paragraph-deprecated" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Paragraph (Deprecated)</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_typography.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Heading types can be used with <code>&lt;p&gt;</code> elements.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="paragraph-deprecated-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="paragraph-deprecated-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;p class=&quot;paragraphLarge&quot;&gt;Paragraph Large&lt;/p&gt;
+&lt;p class=&quot;paragraphMedium&quot;&gt;Paragraph Medium&lt;/p&gt;
+&lt;p class=&quot;paragraphSmall&quot;&gt;Paragraph Small&lt;/h1&gt;
+&lt;p class=&quot;paragraphXSmall&quot;&gt;Paragraph Extra Small&lt;/p&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;p class=&quot;paragraphLarge&quot;&gt;Paragraph Large&lt;/p&gt;
+&lt;p class=&quot;paragraphMedium&quot;&gt;Paragraph Medium&lt;/p&gt;
+&lt;p class=&quot;paragraphSmall&quot;&gt;Paragraph Small&lt;/h1&gt;
+&lt;p class=&quot;paragraphXSmall&quot;&gt;Paragraph Extra Small&lt;/p&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="text" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Text</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_typography.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Title types can be used on any element that contains text.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="text-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="text-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;p class=&quot;displayL&quot;&gt;Display Large&lt;/p&gt;
+&lt;p class=&quot;displayM&quot;&gt;Display Medium&lt;/p&gt;
+&lt;p class=&quot;displayS&quot;&gt;Display Small&lt;/p&gt;
+&lt;p class=&quot;displayXS&quot;&gt;Display Extra Small&lt;/p&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;p class=&quot;displayL&quot;&gt;Display Large&lt;/p&gt;
+&lt;p class=&quot;displayM&quot;&gt;Display Medium&lt;/p&gt;
+&lt;p class=&quot;displayS&quot;&gt;Display Small&lt;/p&gt;
+&lt;p class=&quot;displayXS&quot;&gt;Display Extra Small&lt;/p&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="title" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Title</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_typography.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Title types can be used on any element that contains text.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="title-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="title-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;title-x8&quot;&gt;Title x8&lt;/div&gt;
+&lt;div class=&quot;title-x7&quot;&gt;Title x7&lt;/div&gt;
+&lt;div class=&quot;title-x6&quot;&gt;Title x6&lt;/div&gt;
+&lt;div class=&quot;title-x5&quot;&gt;Title x5&lt;/div&gt;
+&lt;div class=&quot;title-x4&quot;&gt;Title x4&lt;/div&gt;
+&lt;div class=&quot;title-x3&quot;&gt;Title x3&lt;/div&gt;
+&lt;div class=&quot;title-x2&quot;&gt;Title x2&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;title-x8&quot;&gt;Title x8&lt;/div&gt;
+&lt;div class=&quot;title-x7&quot;&gt;Title x7&lt;/div&gt;
+&lt;div class=&quot;title-x6&quot;&gt;Title x6&lt;/div&gt;
+&lt;div class=&quot;title-x5&quot;&gt;Title x5&lt;/div&gt;
+&lt;div class=&quot;title-x4&quot;&gt;Title x4&lt;/div&gt;
+&lt;div class=&quot;title-x3&quot;&gt;Title x3&lt;/div&gt;
+&lt;div class=&quot;title-x2&quot;&gt;Title x2&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+				</div>
+				<div id="category-components" class="theme-content-category">
+						<div id="button" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Button</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">elements/_buttons.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Buttons can be used with <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;input&gt;</code> elements.</p>
+<p>Types of buttons:</p>
+<ul>
+<li>Rectangle Primary: Standard button</li>
+<li>Rectangle Secondary: Add an secondary indication over the primary button</li>
+<li>Rectangle Tertiary: Add an tertiary indication over the other button types</li>
+<li>Circle Primary: Standard button</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;button rectanglePrimary&quot;&gt;Rectangle Primary&lt;/button&gt;
+&lt;button class=&quot;button rectanglePrimary&quot;&gt;
+  &lt;span class=&quot;icon&quot;&gt;
+    &lt;i class=&quot;bm-icon-placeholder&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+  &lt;span&gt;Rectangle Primary&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;button rectanglePrimary&quot;&gt;
+  &lt;span class=&quot;is-left&quot;&gt;Rectangle Primary&lt;/span&gt;
+  &lt;span class=&quot;icon&quot;&gt;
+    &lt;i class=&quot;bm-icon-arrow-right&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;button rectanglePrimary content-space-between&quot;&gt;
+  &lt;span&gt;Rectangle Primary&lt;/span&gt;
+  &lt;span class=&quot;icon&quot;&gt;
+    &lt;i class=&quot;bm-icon-arrow-right&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;button rectanglePrimary mediumLabel&quot;&gt;Rectangle Primary - medium button&lt;/button&gt;
+&lt;button class=&quot;button rectanglePrimary smallLabel&quot;&gt;Rectangle Primary - small button&lt;/button&gt;
+&lt;button class=&quot;button rectangleSecondary&quot;&gt;Rectangle Secondary&lt;/button&gt;
+&lt;button class=&quot;button rectangleTertiary&quot;&gt;Rectangle Tertiary&lt;/button&gt;
+&lt;button class=&quot;button pillPrimary circ&quot;&gt;01&lt;/button&gt;
+&lt;button class=&quot;button pillSecondary circ&quot;&gt;02&lt;/button&gt;
+&lt;button class=&quot;button pillSecondary circ&quot;&gt;
+  &lt;span class=&quot;icon&quot;&gt;
+    &lt;i class=&quot;bm-icon-arrow-right&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;button rectanglePrimary&quot;&gt;Rectangle Primary&lt;/button&gt;
+&lt;button class=&quot;button rectanglePrimary&quot;&gt;
+  &lt;span class=&quot;icon&quot;&gt;
+    &lt;i class=&quot;bm-icon-placeholder&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+  &lt;span&gt;Rectangle Primary&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;button rectanglePrimary&quot;&gt;
+  &lt;span class=&quot;is-left&quot;&gt;Rectangle Primary&lt;/span&gt;
+  &lt;span class=&quot;icon&quot;&gt;
+    &lt;i class=&quot;bm-icon-arrow-right&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;button rectanglePrimary content-space-between&quot;&gt;
+  &lt;span&gt;Rectangle Primary&lt;/span&gt;
+  &lt;span class=&quot;icon&quot;&gt;
+    &lt;i class=&quot;bm-icon-arrow-right&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;button rectanglePrimary mediumLabel&quot;&gt;Rectangle Primary - medium button&lt;/button&gt;
+&lt;button class=&quot;button rectanglePrimary smallLabel&quot;&gt;Rectangle Primary - small button&lt;/button&gt;
+&lt;button class=&quot;button rectangleSecondary&quot;&gt;Rectangle Secondary&lt;/button&gt;
+&lt;button class=&quot;button rectangleTertiary&quot;&gt;Rectangle Tertiary&lt;/button&gt;
+&lt;button class=&quot;button pillPrimary circ&quot;&gt;01&lt;/button&gt;
+&lt;button class=&quot;button pillSecondary circ&quot;&gt;02&lt;/button&gt;
+&lt;button class=&quot;button pillSecondary circ&quot;&gt;
+  &lt;span class=&quot;icon&quot;&gt;
+    &lt;i class=&quot;bm-icon-arrow-right&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="check" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Check</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">elements/_controls.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Check can be used with <code>&lt;input&gt;</code> elements.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="check-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="check-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;checkExample&quot; type=&quot;checkbox&quot; name=&quot;checkExample&quot; class=&quot;is-checkradio&quot;&gt;
+  &lt;label for=&quot;checkExample&quot;&gt;Check example&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;checkExampleEnabledDisabled&quot; type=&quot;checkbox&quot; name=&quot;checkExampleEnabledDisabled&quot; class=&quot;is-checkradio&quot; checked disabled&gt;
+  &lt;label for=&quot;checkExampleEnabledDisabled&quot;&gt;Check example enabled disabled&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;checkExampleDisabled&quot; type=&quot;checkbox&quot; name=&quot;checkExampleDisabled&quot; class=&quot;is-checkradio&quot; disabled&gt;
+  &lt;label for=&quot;checkExampleDisabled&quot;&gt;Check example disabled&lt;/label&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;checkExample&quot; type=&quot;checkbox&quot; name=&quot;checkExample&quot; class=&quot;is-checkradio&quot;&gt;
+  &lt;label for=&quot;checkExample&quot;&gt;Check example&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;checkExampleEnabledDisabled&quot; type=&quot;checkbox&quot; name=&quot;checkExampleEnabledDisabled&quot; class=&quot;is-checkradio&quot; checked disabled&gt;
+  &lt;label for=&quot;checkExampleEnabledDisabled&quot;&gt;Check example enabled disabled&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;checkExampleDisabled&quot; type=&quot;checkbox&quot; name=&quot;checkExampleDisabled&quot; class=&quot;is-checkradio&quot; disabled&gt;
+  &lt;label for=&quot;checkExampleDisabled&quot;&gt;Check example disabled&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="input" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Input</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">elements/_inputs.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Input can be used with <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> other form based elements.</p>
+<p>Types of inputs:</p>
+<ul>
+<li>Standard input: Standard input without any accent</li>
+<li>Positive input: Input with positive accent</li>
+<li>Negative input: Input with negative accent</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="input-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="input-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;input type=&quot;text&quot; class=&quot;input&quot; placeholder=&quot;Placeholder text&quot; /&gt;
+&lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Standard input&quot; /&gt;
+&lt;div class=&quot;control has-icons-right&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input positive&quot; value=&quot;Positive input&quot; /&gt;
+  &lt;span class=&quot;icon is-small is-right&quot;&gt;
+    &lt;i class=&quot;bm-icon-check contentPositive&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;control has-icons-right&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input negative&quot; value=&quot;Negative input&quot; /&gt;
+  &lt;span class=&quot;icon is-small is-right&quot;&gt;
+    &lt;i class=&quot;bm-icon-alert contentNegative&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;input type=&quot;text&quot; class=&quot;input&quot; disabled value=&quot;Disabled input&quot; /&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;input type=&quot;text&quot; class=&quot;input&quot; placeholder=&quot;Placeholder text&quot; /&gt;
+&lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Standard input&quot; /&gt;
+&lt;div class=&quot;control has-icons-right&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input positive&quot; value=&quot;Positive input&quot; /&gt;
+  &lt;span class=&quot;icon is-small is-right&quot;&gt;
+    &lt;i class=&quot;bm-icon-check contentPositive&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;control has-icons-right&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input negative&quot; value=&quot;Negative input&quot; /&gt;
+  &lt;span class=&quot;icon is-small is-right&quot;&gt;
+    &lt;i class=&quot;bm-icon-alert contentNegative&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;input type=&quot;text&quot; class=&quot;input&quot; disabled value=&quot;Disabled input&quot; /&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="input-hint-helpers" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Input - hint helpers</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">elements/_inputs.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Hin helpers can be used with <code>&lt;p&gt;</code> in structure with field class.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="input-hint-helpers-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="input-hint-helpers-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;field&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Standard input&quot; /&gt;
+  &lt;p class=&quot;help is-success&quot;&gt;Helper success&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Standard input&quot; /&gt;
+  &lt;p class=&quot;help is-danger&quot;&gt;Helper danger&lt;/p&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;field&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Standard input&quot; /&gt;
+  &lt;p class=&quot;help is-success&quot;&gt;Helper success&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Standard input&quot; /&gt;
+  &lt;p class=&quot;help is-danger&quot;&gt;Helper danger&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="pill" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Pill</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">elements/_buttons.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Pills can be used with <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;input&gt;</code> elements.</p>
+<p>Types of pills:</p>
+<ul>
+<li>Pill Primary: Standard pill</li>
+<li>Pill Secondary: Add an secondary indication over the primary pill</li>
+<li>Pill Tertiary: Add an tertiary indication over the other pill types</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="pill-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="pill-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;button pillPrimary&quot;&gt;Pill Primary&lt;/button&gt;
+&lt;button class=&quot;button pillPrimary mediumLabel&quot;&gt;Pill Primary - medium button&lt;/button&gt;
+&lt;button class=&quot;button pillPrimary smallLabel&quot;&gt;Pill Primary - small button&lt;/button&gt;
+&lt;button class=&quot;button pillSecondary&quot;&gt;Pill Secondary&lt;/button&gt;
+&lt;button class=&quot;button pillTertiary&quot;&gt;Pill Tertiary&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;button pillPrimary&quot;&gt;Pill Primary&lt;/button&gt;
+&lt;button class=&quot;button pillPrimary mediumLabel&quot;&gt;Pill Primary - medium button&lt;/button&gt;
+&lt;button class=&quot;button pillPrimary smallLabel&quot;&gt;Pill Primary - small button&lt;/button&gt;
+&lt;button class=&quot;button pillSecondary&quot;&gt;Pill Secondary&lt;/button&gt;
+&lt;button class=&quot;button pillTertiary&quot;&gt;Pill Tertiary&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="radio" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Radio</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">elements/_controls.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Radio can be used with <code>&lt;input&gt;</code> elements.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="radio-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="radio-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;radioExample1&quot; type=&quot;radio&quot; name=&quot;radioExample&quot; class=&quot;is-checkradio&quot; checked&gt;
+  &lt;label for=&quot;radioExample1&quot;&gt;Radio example 1 checked&lt;/label&gt;
+  &lt;input id=&quot;radioExample2&quot; type=&quot;radio&quot; name=&quot;radioExample&quot; class=&quot;is-checkradio&quot;&gt;
+  &lt;label for=&quot;radioExample2&quot;&gt;Radio example 2&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;radioExampleEnabledDisabled&quot; type=&quot;radio&quot; name=&quot;radioExampleEnabledDisabled&quot; class=&quot;is-checkradio&quot; checked disabled&gt;
+  &lt;label for=&quot;radioExampleEnabledDisabled&quot;&gt;Radio example enabled disabled&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;radioExampleDisabled&quot; type=&quot;radio&quot; name=&quot;radioExampleDisabled&quot; class=&quot;is-checkradio&quot; disabled&gt;
+  &lt;label for=&quot;radioExampleDisabled&quot;&gt;Radio example disabled&lt;/label&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;radioExample1&quot; type=&quot;radio&quot; name=&quot;radioExample&quot; class=&quot;is-checkradio&quot; checked&gt;
+  &lt;label for=&quot;radioExample1&quot;&gt;Radio example 1 checked&lt;/label&gt;
+  &lt;input id=&quot;radioExample2&quot; type=&quot;radio&quot; name=&quot;radioExample&quot; class=&quot;is-checkradio&quot;&gt;
+  &lt;label for=&quot;radioExample2&quot;&gt;Radio example 2&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;radioExampleEnabledDisabled&quot; type=&quot;radio&quot; name=&quot;radioExampleEnabledDisabled&quot; class=&quot;is-checkradio&quot; checked disabled&gt;
+  &lt;label for=&quot;radioExampleEnabledDisabled&quot;&gt;Radio example enabled disabled&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;radioExampleDisabled&quot; type=&quot;radio&quot; name=&quot;radioExampleDisabled&quot; class=&quot;is-checkradio&quot; disabled&gt;
+  &lt;label for=&quot;radioExampleDisabled&quot;&gt;Radio example disabled&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="select" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Select</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">elements/_selects.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Select can be used with <code>&lt;select&gt;</code> elements.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="select-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="select-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;control&quot;&gt;
+  &lt;div class=&quot;select&quot;&gt;
+    &lt;select&gt;
+      &lt;option&gt;Select dropdown&lt;/option&gt;
+      &lt;option&gt;With options&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;control has-icons-right&quot;&gt;
+  &lt;div class=&quot;select positive&quot;&gt;
+    &lt;select&gt;
+      &lt;option selected&gt;Country&lt;/option&gt;
+      &lt;option&gt;Select dropdown&lt;/option&gt;
+      &lt;option&gt;With options&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;span class=&quot;icon is-right&quot;&gt;
+      &lt;i class=&quot;bm-icon-check contentPositive&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;control has-icons-right&quot;&gt;
+  &lt;div class=&quot;select negative&quot;&gt;
+    &lt;select&gt;
+      &lt;option&gt;Select dropdown Negative&lt;/option&gt;
+      &lt;option&gt;With options and longer options&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;span class=&quot;icon is-right&quot;&gt;
+      &lt;i class=&quot;bm-icon-alert contentNegative&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;control&quot;&gt;
+  &lt;div class=&quot;select&quot;&gt;
+    &lt;select disabled&gt;
+      &lt;option&gt;Select dropdown disabled&lt;/option&gt;
+      &lt;option&gt;With options&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;control&quot;&gt;
+  &lt;div class=&quot;select&quot;&gt;
+    &lt;select&gt;
+      &lt;option&gt;Select dropdown&lt;/option&gt;
+      &lt;option&gt;With options&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;control has-icons-right&quot;&gt;
+  &lt;div class=&quot;select positive&quot;&gt;
+    &lt;select&gt;
+      &lt;option selected&gt;Country&lt;/option&gt;
+      &lt;option&gt;Select dropdown&lt;/option&gt;
+      &lt;option&gt;With options&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;span class=&quot;icon is-right&quot;&gt;
+      &lt;i class=&quot;bm-icon-check contentPositive&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;control has-icons-right&quot;&gt;
+  &lt;div class=&quot;select negative&quot;&gt;
+    &lt;select&gt;
+      &lt;option&gt;Select dropdown Negative&lt;/option&gt;
+      &lt;option&gt;With options and longer options&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;span class=&quot;icon is-right&quot;&gt;
+      &lt;i class=&quot;bm-icon-alert contentNegative&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;control&quot;&gt;
+  &lt;div class=&quot;select&quot;&gt;
+    &lt;select disabled&gt;
+      &lt;option&gt;Select dropdown disabled&lt;/option&gt;
+      &lt;option&gt;With options&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="switch" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Switch</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">elements/_controls.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Switch can be used with <code>&lt;input&gt;</code> elements.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="switch-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="switch-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;switchExample&quot; type=&quot;checkbox&quot; name=&quot;switchExample&quot; class=&quot;switch&quot; checked=&quot;checked&quot;&gt;
+  &lt;label for=&quot;switchExample&quot;&gt;Switch example&lt;/label&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;field&quot;&gt;
+  &lt;input id=&quot;switchExample&quot; type=&quot;checkbox&quot; name=&quot;switchExample&quot; class=&quot;switch&quot; checked=&quot;checked&quot;&gt;
+  &lt;label for=&quot;switchExample&quot;&gt;Switch example&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="tags" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Tags</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">elements/_tags.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Tags can be used with <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code> elements.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="tags-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="tags-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;tags-static backgroundSecondary&quot;&gt;&lt;span class=&quot;contentPrimary&quot;&gt;Waiting for delivery&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;tags-static backgroundLightPositive&quot;&gt;Paid&lt;/div&gt;
+&lt;div class=&quot;tags-static backgroundLightAccent&quot;&gt;7 days left&lt;/div&gt;
+&lt;div class=&quot;tags-static backgroundLightNegative&quot;&gt;4 days late&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;tags-static backgroundSecondary&quot;&gt;&lt;span class=&quot;contentPrimary&quot;&gt;Waiting for delivery&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;tags-static backgroundLightPositive&quot;&gt;Paid&lt;/div&gt;
+&lt;div class=&quot;tags-static backgroundLightAccent&quot;&gt;7 days left&lt;/div&gt;
+&lt;div class=&quot;tags-static backgroundLightNegative&quot;&gt;4 days late&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+				</div>
+				<div id="category-icons" class="theme-content-category">
+						<div id="basic" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Basic</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_icons.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Basic icons can be used with <code>&lt;i&gt;</code> and <code>&lt;span&gt;</code> elements and within <code>&lt;input&gt;</code> and <code>&lt;button&gt;</code>.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="basic-icons.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="basic-icons.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-cross-circle-outlined&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-cross-circle-solid&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-cross&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-check&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-alert&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-chat&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-bell&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-search&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-options&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-copy-v1&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-copy-v2&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-cross-circle-outlined&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-cross-circle-solid&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-cross&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-check&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-alert&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-chat&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-bell&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-search&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-options&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-copy-v1&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-copy-v2&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="direction" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Direction</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_icons.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Direction icons can be used with <code>&lt;i&gt;</code> and <code>&lt;span&gt;</code> elements and within <code>&lt;input&gt;</code> and <code>&lt;button&gt;</code>.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="direction-icons.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="direction-icons.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-arrow-left&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-arrow-up&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-arrow-down&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-arrow-right&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-chevron-left&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-chevron-up&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-chevron-down&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-chevron-right&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-arrow-left&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-arrow-up&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-arrow-down&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-arrow-right&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-chevron-left&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-chevron-up&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-chevron-down&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-chevron-right&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="input-states" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Input states</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_icons.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>User icons can be used with <code>&lt;i&gt;</code> and <code>&lt;span&gt;</code> elements and within <code>&lt;input&gt;</code> and <code>&lt;button&gt;</code>.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="input-states-icons.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="input-states-icons.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-check-enabled&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-check-enabled-off&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-bullet-enabled&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-bullet-enabled-off&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-check-enabled&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-check-enabled-off&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-bullet-enabled&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-bullet-enabled-off&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="misc" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Misc</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_icons.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Misc icons can be used with <code>&lt;i&gt;</code> and <code>&lt;span&gt;</code> elements and within <code>&lt;input&gt;</code> and <code>&lt;button&gt;</code>.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="misc-icons.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="misc-icons.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-placeholder&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-placeholder&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="payment" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Payment</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_icons.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>Payment icons can be used with <code>&lt;i&gt;</code> and <code>&lt;span&gt;</code> elements and within <code>&lt;input&gt;</code> and <code>&lt;button&gt;</code>.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="payment-icons.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="payment-icons.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-mastercard&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-credit-card-v1&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-credit-card-v2&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-bank-id-sv&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-mastercard&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-credit-card-v1&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-credit-card-v2&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-icon-bank-id-sv&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="progress" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Progress</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_icons.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>User icons can be used with <code>&lt;i&gt;</code> and <code>&lt;span&gt;</code> elements and within <code>&lt;input&gt;</code> and <code>&lt;button&gt;</code>.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="progress-icons.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="progress-icons.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;svg class=&quot;bm-spinner&quot; width=&quot;96&quot; height=&quot;96&quot; viewBox=&quot;0 0 96 96&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+    &lt;circle cx=&quot;48&quot; cy=&quot;48&quot; r=&quot;44&quot; stroke=&quot;#E3E5E8&quot; stroke-width=&quot;8&quot;/&gt;
+    &lt;path d=&quot;M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92&quot; stroke=&quot;black&quot; stroke-width=&quot;8&quot;/&gt;
+&lt;/svg&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;svg class=&quot;bm-spinner&quot; width=&quot;96&quot; height=&quot;96&quot; viewBox=&quot;0 0 96 96&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+    &lt;circle cx=&quot;48&quot; cy=&quot;48&quot; r=&quot;44&quot; stroke=&quot;#E3E5E8&quot; stroke-width=&quot;8&quot;/&gt;
+    &lt;path d=&quot;M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92&quot; stroke=&quot;black&quot; stroke-width=&quot;8&quot;/&gt;
+&lt;/svg&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="user" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">User</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">_icons.scss</span>
+	</span>
+	<div class="theme-content-element-description"><p>User icons can be used with <code>&lt;i&gt;</code> and <code>&lt;span&gt;</code> elements and within <code>&lt;input&gt;</code> and <code>&lt;button&gt;</code>.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="user-icons.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="user-icons.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-profile-circular&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-profile&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-profile-circular&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+  &lt;i class=&quot;bm-profile&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+				</div>
+		</div>
+		<div
+			class="i-page__sidebar theme-sidebar"
+			style="background: #fff;color: #000000;"
+		>
+			<h1 class="i-sidebar-title h4 mt-4 theme-sidebar-header">
+					<img class="i-sidebar-logo mr-2 theme-sidebar-header-logo" src="resources/images/logo.svg" height="40" alt="">
+				<span class="theme-sidebar-header-title"></span>
+			</h1>
+			
+			<div class="relative mt-3 mb-2 px-0 theme-sidebar-search">
+				<div class="i-search-input">
+					<input id="search-filter" name="filter" type="search" placeholder="Search" class="form-control i-sidebar-item-filter">
+					<label for="search-filter" class="search-input-icon icon-search"></label>
+					<button type="button" class="i-search-input-reset" aria-label="Clear">
+						<i class="icon-cross"></i>
+					</button>
+				</div>
+			</div>
+			
+			<div class="theme-sidebar-categories">
+					<div class="i-sidebar-list-group theme-sidebar-category">
+			
+						<h5
+							class="pt-4 mb-1 theme-sidebar-category-title"
+							data-filter-value=" Installation  Overview "
+						>
+							<a href="#category-introduction" class="i-sidebar-list-item">
+								<b>Introduction</b>
+							</a>
+						</h5>
+			
+						<div>
+								<a
+									href="#installation"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Installation"
+								>
+									<span>Installation</span>
+								</a>
+								<a
+									href="#overview"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Overview"
+								>
+									<span>Overview</span>
+								</a>
+						</div>
+			
+					</div>
+					<div class="i-sidebar-list-group theme-sidebar-category">
+			
+						<h5
+							class="pt-4 mb-1 theme-sidebar-category-title"
+							data-filter-value=" Color palette  Font "
+						>
+							<a href="#category-variables" class="i-sidebar-list-item">
+								<b>Variables</b>
+							</a>
+						</h5>
+			
+						<div>
+								<a
+									href="#color-palette"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Color palette"
+								>
+									<span>Color palette</span>
+								</a>
+								<a
+									href="#font"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Font"
+								>
+									<span>Font</span>
+								</a>
+						</div>
+			
+					</div>
+					<div class="i-sidebar-list-group theme-sidebar-category">
+			
+						<h5
+							class="pt-4 mb-1 theme-sidebar-category-title"
+							data-filter-value=" Background  Background Extensions  Basics  Border  Border extensions  Content  Text extensions "
+						>
+							<a href="#category-colors" class="i-sidebar-list-item">
+								<b>Colors</b>
+							</a>
+						</h5>
+			
+						<div>
+								<a
+									href="#background"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Background"
+								>
+									<span>Background</span>
+								</a>
+								<a
+									href="#background-extensions"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Background Extensions"
+								>
+									<span>Background Extensions</span>
+								</a>
+								<a
+									href="#basics"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Basics"
+								>
+									<span>Basics</span>
+								</a>
+								<a
+									href="#border"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Border"
+								>
+									<span>Border</span>
+								</a>
+								<a
+									href="#border-extensions"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Border extensions"
+								>
+									<span>Border extensions</span>
+								</a>
+								<a
+									href="#content"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Content"
+								>
+									<span>Content</span>
+								</a>
+								<a
+									href="#text-extensions"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Text extensions"
+								>
+									<span>Text extensions</span>
+								</a>
+						</div>
+			
+					</div>
+					<div class="i-sidebar-list-group theme-sidebar-category">
+			
+						<h5
+							class="pt-4 mb-1 theme-sidebar-category-title"
+							data-filter-value=" Display (Deprecated)  Headers (Deprecated)  Heading (Deprecated)  Label  Paragraph (Deprecated)  Text  Title "
+						>
+							<a href="#category-typography" class="i-sidebar-list-item">
+								<b>Typography</b>
+							</a>
+						</h5>
+			
+						<div>
+								<a
+									href="#display-deprecated"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Display (Deprecated)"
+								>
+									<span>Display (Deprecated)</span>
+								</a>
+								<a
+									href="#headers-deprecated"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Headers (Deprecated)"
+								>
+									<span>Headers (Deprecated)</span>
+								</a>
+								<a
+									href="#heading-deprecated"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Heading (Deprecated)"
+								>
+									<span>Heading (Deprecated)</span>
+								</a>
+								<a
+									href="#label"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Label"
+								>
+									<span>Label</span>
+								</a>
+								<a
+									href="#paragraph-deprecated"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Paragraph (Deprecated)"
+								>
+									<span>Paragraph (Deprecated)</span>
+								</a>
+								<a
+									href="#text"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Text"
+								>
+									<span>Text</span>
+								</a>
+								<a
+									href="#title"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Title"
+								>
+									<span>Title</span>
+								</a>
+						</div>
+			
+					</div>
+					<div class="i-sidebar-list-group theme-sidebar-category">
+			
+						<h5
+							class="pt-4 mb-1 theme-sidebar-category-title"
+							data-filter-value=" Button  Check  Input  Input - hint helpers  Pill  Radio  Select  Switch  Tags "
+						>
+							<a href="#category-components" class="i-sidebar-list-item">
+								<b>Components</b>
+							</a>
+						</h5>
+			
+						<div>
+								<a
+									href="#button"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Button"
+								>
+									<span>Button</span>
+								</a>
+								<a
+									href="#check"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Check"
+								>
+									<span>Check</span>
+								</a>
+								<a
+									href="#input"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Input"
+								>
+									<span>Input</span>
+								</a>
+								<a
+									href="#input-hint-helpers"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Input - hint helpers"
+								>
+									<span>Input - hint helpers</span>
+								</a>
+								<a
+									href="#pill"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Pill"
+								>
+									<span>Pill</span>
+								</a>
+								<a
+									href="#radio"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Radio"
+								>
+									<span>Radio</span>
+								</a>
+								<a
+									href="#select"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Select"
+								>
+									<span>Select</span>
+								</a>
+								<a
+									href="#switch"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Switch"
+								>
+									<span>Switch</span>
+								</a>
+								<a
+									href="#tags"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Tags"
+								>
+									<span>Tags</span>
+								</a>
+						</div>
+			
+					</div>
+					<div class="i-sidebar-list-group theme-sidebar-category">
+			
+						<h5
+							class="pt-4 mb-1 theme-sidebar-category-title"
+							data-filter-value=" Basic  Direction  Input states  Misc  Payment  Progress  User "
+						>
+							<a href="#category-icons" class="i-sidebar-list-item">
+								<b>Icons</b>
+							</a>
+						</h5>
+			
+						<div>
+								<a
+									href="#basic"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Basic"
+								>
+									<span>Basic</span>
+								</a>
+								<a
+									href="#direction"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Direction"
+								>
+									<span>Direction</span>
+								</a>
+								<a
+									href="#input-states"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Input states"
+								>
+									<span>Input states</span>
+								</a>
+								<a
+									href="#misc"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Misc"
+								>
+									<span>Misc</span>
+								</a>
+								<a
+									href="#payment"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Payment"
+								>
+									<span>Payment</span>
+								</a>
+								<a
+									href="#progress"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Progress"
+								>
+									<span>Progress</span>
+								</a>
+								<a
+									href="#user"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="User"
+								>
+									<span>User</span>
+								</a>
+						</div>
+			
+					</div>
+			</div>
+			
+			<div class="i-sidebar-filter-no-results i-muted i-pad-horiz-2 theme-sidebar-search-no-results">
+				No matches.
+			</div>
+			
+			<div class="row no-gutters mt-auto py-4 theme-sidebar-footer">
+				<span class="col">
+					Generated by <a href="https://github.com/nextbigsoundinc/stylemark">Stylemark</a>
+				</span>
+			</div>
+		</div>
+
+		<script src="_stylemark/js/vendor/jquery-3.2.1.slim.min.js"></script>
+		<script src="_stylemark/js/vendor/popper.min.js"></script>
+		<script src="_stylemark/js/vendor/tether.min.js"></script>
+		<script src="_stylemark/js/vendor/bootstrap.min.js"></script>
+		<script src="_stylemark/js/vendor/iframeResizer.min.js"></script>
+		<script src="_stylemark/js/vendor/lazyframe.min.js"></script>
+		<script src="_stylemark/js/vendor/highlight.min.js"></script>
+		<script src="_stylemark/js/vendor/clipboard.min.js"></script>
+		<script src="_stylemark/js/vendor/in-view.min.js"></script>
+		<script src="_stylemark/js/app.js"></script>
+
+	</body>
+</html>

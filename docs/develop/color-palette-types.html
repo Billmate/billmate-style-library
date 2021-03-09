@@ -1,0 +1,626 @@
+<!doctype html>
+<html>
+
+	<head>
+		<style>
+					.theme-color {
+  padding: 10px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 15px;
+}
+		</style>
+
+		<style>
+			html, body {
+				min-height: 0 !important;
+				height: auto !important;
+			}
+		</style>
+
+		<script>
+			function findAndHandleStylemarkBlocks(languages, handler) {
+				var blocks = getStylemarkBlocks(languages);
+				handleStylemarkBlocks(blocks, handler);
+			}
+
+			function getStylemarkBlocks(languages) {
+				languages = typeof languages === 'string' ? [languages] : languages;
+
+				var selectors = [];
+
+				for (var i = 0; i < languages.length; i++) {
+					selectors.push('script[data-language="' + languages[i] + '"]');
+				}
+
+				var selector = selectors.join(',');
+				var scripts = document.querySelectorAll(selector);
+				var blocks = [];
+
+				for (var i = 0, length = scripts.length; i < length; i++) {
+					if (scripts[i].innerText) {
+						blocks.push(scripts[i].innerText);
+					}
+				}
+
+				return blocks;
+			}
+
+			function handleStylemarkBlocks(blocks, handler) {
+				for (var i = 0, length = blocks.length; i < length; i++) {
+					handler(blocks[i], i);
+				}
+			}
+		</script>
+
+			<link rel="stylesheet" href="css/styles.css">
+
+		
+	</head>
+
+	<body>					
+<div class="theme-color">
+  <div style="background: #CCEEFF; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $blue100<br />
+  #CCEEFF
+</div>
+
+<div class="theme-color">
+  <div style="background: #83CFFC; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $blue300<br />
+  #83CFFC
+</div>
+
+<div class="theme-color">
+  <div style="background: #1975FF; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $blue500<br />
+  #1975FF
+</div>
+
+<div class="theme-color">
+  <div style="background: #1F49AD; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $blue700<br />
+  #1F49AD
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #FFF8CC; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $yellow100<br />
+  #FFF8CC
+</div>
+
+<div class="theme-color">
+  <div style="background: #FFD042; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $yellow300<br />
+  #FFD042
+</div>
+
+<div class="theme-color">
+  <div style="background: #FFA719; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $yellow500<br />
+  #FFA719
+</div>
+
+<div class="theme-color">
+  <div style="background: #E66D0A; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $yellow700<br />
+  #E66D0A
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #CCFFDD; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $green100<br />
+  #CCFFDD
+</div>
+
+<div class="theme-color">
+  <div style="background: #7DE8A9; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $green300<br />
+  #7DE8A9
+</div>
+
+<div class="theme-color">
+  <div style="background: #1DC872; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $green500<br />
+  #1DC872
+</div>
+
+<div class="theme-color">
+  <div style="background: #267349; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $green700<br />
+  #267349
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #ECD6F5; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $purple100<br />
+  #ECD6F5
+</div>
+
+<div class="theme-color">
+  <div style="background: #D199E5; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $purple300<br />
+  #D199E5
+</div>
+
+<div class="theme-color">
+  <div style="background: #9547D1; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $purple500<br />
+  #9547D1
+</div>
+
+<div class="theme-color">
+  <div style="background: #593A78; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $purple700<br />
+  #593A78
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #FFD8CC; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $red100<br />
+  #FFD8CC
+</div>
+
+<div class="theme-color">
+  <div style="background: #F8917C; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $red300<br />
+  #F8917C
+</div>
+
+<div class="theme-color">
+  <div style="background: #E84030; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $red500<br />
+  #E84030
+</div>
+
+<div class="theme-color">
+  <div style="background: #932F1F; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $red700<br />
+  #932F1F
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #ffffff; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $white<br />
+  #ffffff
+</div>
+
+<div class="theme-color">
+  <div style="background: #F9FAFB; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey50<br />
+  #F9FAFB
+</div>
+
+<div class="theme-color">
+  <div style="background: #E2E5E9; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey100<br />
+  #E2E5E9
+</div>
+
+<div class="theme-color">
+  <div style="background: #ABB1BA; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey300<br />
+  #ABB1BA
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #6A717C; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey400<br />
+  #ffffff
+</div>
+
+<div class="theme-color">
+  <div style="background: #454B54; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey700<br />
+  #454B54
+</div>
+
+<div class="theme-color">
+  <div style="background: #2E3238; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey800<br />
+  #2E3238
+</div>
+
+<div class="theme-color">
+  <div style="background: #17191C; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey900<br />
+  #17191C
+</div>
+
+			<script type="text/x-stylemark" data-language="html">
+<div class="theme-color">
+  <div style="background: #CCEEFF; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $blue100<br />
+  #CCEEFF
+</div>
+
+<div class="theme-color">
+  <div style="background: #83CFFC; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $blue300<br />
+  #83CFFC
+</div>
+
+<div class="theme-color">
+  <div style="background: #1975FF; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $blue500<br />
+  #1975FF
+</div>
+
+<div class="theme-color">
+  <div style="background: #1F49AD; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $blue700<br />
+  #1F49AD
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #FFF8CC; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $yellow100<br />
+  #FFF8CC
+</div>
+
+<div class="theme-color">
+  <div style="background: #FFD042; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $yellow300<br />
+  #FFD042
+</div>
+
+<div class="theme-color">
+  <div style="background: #FFA719; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $yellow500<br />
+  #FFA719
+</div>
+
+<div class="theme-color">
+  <div style="background: #E66D0A; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $yellow700<br />
+  #E66D0A
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #CCFFDD; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $green100<br />
+  #CCFFDD
+</div>
+
+<div class="theme-color">
+  <div style="background: #7DE8A9; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $green300<br />
+  #7DE8A9
+</div>
+
+<div class="theme-color">
+  <div style="background: #1DC872; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $green500<br />
+  #1DC872
+</div>
+
+<div class="theme-color">
+  <div style="background: #267349; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $green700<br />
+  #267349
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #ECD6F5; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $purple100<br />
+  #ECD6F5
+</div>
+
+<div class="theme-color">
+  <div style="background: #D199E5; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $purple300<br />
+  #D199E5
+</div>
+
+<div class="theme-color">
+  <div style="background: #9547D1; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $purple500<br />
+  #9547D1
+</div>
+
+<div class="theme-color">
+  <div style="background: #593A78; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $purple700<br />
+  #593A78
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #FFD8CC; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $red100<br />
+  #FFD8CC
+</div>
+
+<div class="theme-color">
+  <div style="background: #F8917C; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $red300<br />
+  #F8917C
+</div>
+
+<div class="theme-color">
+  <div style="background: #E84030; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $red500<br />
+  #E84030
+</div>
+
+<div class="theme-color">
+  <div style="background: #932F1F; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $red700<br />
+  #932F1F
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #ffffff; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $white<br />
+  #ffffff
+</div>
+
+<div class="theme-color">
+  <div style="background: #F9FAFB; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey50<br />
+  #F9FAFB
+</div>
+
+<div class="theme-color">
+  <div style="background: #E2E5E9; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey100<br />
+  #E2E5E9
+</div>
+
+<div class="theme-color">
+  <div style="background: #ABB1BA; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey300<br />
+  #ABB1BA
+</div>
+
+<div style="width: 100%; margin-top: 15px;"></div>
+
+<div class="theme-color">
+  <div style="background: #6A717C; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey400<br />
+  #ffffff
+</div>
+
+<div class="theme-color">
+  <div style="background: #454B54; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey700<br />
+  #454B54
+</div>
+
+<div class="theme-color">
+  <div style="background: #2E3238; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey800<br />
+  #2E3238
+</div>
+
+<div class="theme-color">
+  <div style="background: #17191C; width: 100px; height: 100px; border-radius: 10px;">
+  </div>
+  $grey900<br />
+  #17191C
+</div>
+</script>
+			<script type="text/x-stylemark" data-language="css">.theme-color {
+  padding: 10px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 15px;
+}</script>
+
+		<!--
+			Vanilla JS
+		-->
+
+		<script>
+			findAndHandleStylemarkBlocks('js', function(block) {
+				eval(block);
+			});
+		</script>
+
+		<!--
+			AngularJS
+		-->
+
+		<script>
+			(function(angular) {
+
+				if (!angular) {
+					return;
+				}
+
+				findAndHandleStylemarkBlocks('angularjs', function(block, index) {
+					var moduleElem = document.querySelector('[ng-app]');
+					var module;
+
+					if (moduleElem) {
+						// Uses an existing module
+						module = angular.module(moduleElem.getAttribute('ng-app'));
+					}
+					else {
+						// Creates a new module
+						module = angular.module('stylemark-color-palette-types', []);
+					}
+
+					module.controller('stylemark-color-palette-types-' + index, function($scope) {
+						$scope.$eval(block);
+					});
+				});
+			})(window.angular);
+		</script>
+
+		<!--
+			React / JSX
+		-->
+
+		<script>
+			(function(ReactDOM) {
+
+				if (!ReactDOM) {
+					return;
+				}
+
+				findAndHandleStylemarkBlocks('jsx', function(block, index) {
+					var rootNode = document.querySelectorAll('.stylemark-react-root')[index];
+					var Component = eval(block);
+					ReactDOM.render(Component, rootNode);
+				});
+			})(window.ReactDOM);
+		</script>
+
+		<!--
+			Ember
+		-->
+
+		<script>
+			(function(Ember) {
+
+				if (!Ember) {
+					return;
+				}
+
+				findAndHandleStylemarkBlocks(['handlebars', 'hbs'], function(block, index) {
+					var render = function() {
+						var app = window.noop
+						var container = app.__container__;
+						var renderer = container.lookup('renderer:-dom');
+						var template = Ember.HTMLBars.compile(block);
+
+						var jsBlocks = getStylemarkBlocks('js');
+						var jsBlock = jsBlocks && jsBlocks[0] ? jsBlocks[0] : '{}';
+						var context;
+						eval('context = ' + jsBlock);
+
+						// Credit:
+						// http://stackoverflow.com/questions/27950413/render-ember-js-hbs-template-to-a-string#answer-35625858
+						var compile = function(container, template, context) {
+							return new Ember.RSVP.Promise(function(resolve) {
+								Ember.Component.extend(Ember.merge({
+									style: 'display:none;',
+									layout: template,
+									container: container,
+									renderer: renderer,
+
+									init: function() {
+										this._super.apply(this, arguments);
+										Ember.setOwner(this, container);
+									},
+
+									didRender: function() {
+										var elem = this.$();
+										resolve(elem);
+										this.destroy();
+									}
+								}, context))
+									.create()
+									.append();
+
+							});
+						};
+
+						compile(container, template, context).then(function(elem) {
+							var node = document.querySelectorAll('.stylemark-ember-root')[index];
+							jQuery(node).append(elem);
+						});
+					};
+
+					var isReady = function() {
+						return window.noop
+							&& window.noop.__container__;
+					};
+
+					var checkReady = function() {
+						if (isReady()) {
+							render();
+						}
+						else {
+							setTimeout(checkReady, 20);
+						}
+					};
+
+					checkReady();
+				});
+
+			})(window.Ember);
+		</script>
+
+		<script src="_stylemark/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	</body>
+</html>
