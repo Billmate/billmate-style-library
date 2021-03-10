@@ -10,6 +10,7 @@ theme:
 
   css:
     - css/theme-style.css
+
   color:
     background: "#fff"
     border: "1px solid #000;"

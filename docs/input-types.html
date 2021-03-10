@@ -3,6 +3,9 @@
 
 	<head>
 		<style>
+					.control {
+margin-bottom: 20px;
+}
 		</style>
 
 		<style>
@@ -52,36 +55,131 @@
 		
 	</head>
 
-	<body>					<input type="text" class="input" placeholder="Placeholder text" />
-<input type="text" class="input" value="Standard input" />
+	<body>					<div class="control has-icons-left">
+<label class="label">With label</label>
+  <input type="text" class="input" placeholder="Placeholder text" />
+    <span class="icon is-small is-left">
+    <i class="bm-icon-placeholder contentPrimary"></i>
+  </span>
+  <span class="hint">Hint goes here</span>
+</div>
+<div class="control has-icons-left has-icons-right">
+  <input type="text" class="input" placeholder="Placeholder text" />
+    <span class="icon is-small is-left">
+    <i class="bm-icon-placeholder contentPrimary"></i>
+  </span>
+  <span class="icon is-small is-right">
+    <i class="bm-icon-check contentPositive"></i>
+  </span>
+  <span class="hint">Hint goes here</span>
+</div>
+
+
 <div class="control has-icons-right">
-  <input type="text" class="input positive" value="Positive input" />
+  <input type="text" class="input" value="Positive input" />
   <span class="icon is-small is-right">
     <i class="bm-icon-check contentPositive"></i>
   </span>
 </div>
+
 <div class="control has-icons-right">
-  <input type="text" class="input negative" value="Negative input" />
+  <input type="text" class="input borderNegative" value="Negative input" />
   <span class="icon is-small is-right">
     <i class="bm-icon-alert contentNegative"></i>
   </span>
 </div>
-<input type="text" class="input" disabled value="Disabled input" />
-			<script type="text/x-stylemark" data-language="html"><input type="text" class="input" placeholder="Placeholder text" />
-<input type="text" class="input" value="Standard input" />
+
+
 <div class="control has-icons-right">
-  <input type="text" class="input positive" value="Positive input" />
+<label class="label">With label</label>
+  <input type="text" class="input borderNegative" disabled value="Negative input" />
+  <span class="icon is-small is-right">
+    <i class="bm-icon-alert contentStateDisabled"></i>
+  </span>
+</div>
+
+<div class="control has-icons-right">
+<label class="label">Rounded</label>
+  <input type="text" class="input rounded" value="Negative input" />
+  <span class="icon is-small is-right">
+    <i class="bm-icon-alert contentStateDisabled"></i>
+  </span>
+</div>
+
+<div class="control has-icons-left has-icons-right rounded">
+<label class="label">Rounded</label>
+  <input type="text" class="input rounded" value="Negative input" />
+    <span class="icon is-small is-left">
+    <i class="bm-icon-placeholder contentPrimary"></i>
+  </span>
+  <span class="icon is-small is-right">
+    <i class="bm-icon-alert contentStateDisabled"></i>
+  </span>
+</div>
+			<script type="text/x-stylemark" data-language="html"><div class="control has-icons-left">
+<label class="label">With label</label>
+  <input type="text" class="input" placeholder="Placeholder text" />
+    <span class="icon is-small is-left">
+    <i class="bm-icon-placeholder contentPrimary"></i>
+  </span>
+  <span class="hint">Hint goes here</span>
+</div>
+<div class="control has-icons-left has-icons-right">
+  <input type="text" class="input" placeholder="Placeholder text" />
+    <span class="icon is-small is-left">
+    <i class="bm-icon-placeholder contentPrimary"></i>
+  </span>
+  <span class="icon is-small is-right">
+    <i class="bm-icon-check contentPositive"></i>
+  </span>
+  <span class="hint">Hint goes here</span>
+</div>
+
+
+<div class="control has-icons-right">
+  <input type="text" class="input" value="Positive input" />
   <span class="icon is-small is-right">
     <i class="bm-icon-check contentPositive"></i>
   </span>
 </div>
+
 <div class="control has-icons-right">
-  <input type="text" class="input negative" value="Negative input" />
+  <input type="text" class="input borderNegative" value="Negative input" />
   <span class="icon is-small is-right">
     <i class="bm-icon-alert contentNegative"></i>
   </span>
 </div>
-<input type="text" class="input" disabled value="Disabled input" /></script>
+
+
+<div class="control has-icons-right">
+<label class="label">With label</label>
+  <input type="text" class="input borderNegative" disabled value="Negative input" />
+  <span class="icon is-small is-right">
+    <i class="bm-icon-alert contentStateDisabled"></i>
+  </span>
+</div>
+
+<div class="control has-icons-right">
+<label class="label">Rounded</label>
+  <input type="text" class="input rounded" value="Negative input" />
+  <span class="icon is-small is-right">
+    <i class="bm-icon-alert contentStateDisabled"></i>
+  </span>
+</div>
+
+<div class="control has-icons-left has-icons-right rounded">
+<label class="label">Rounded</label>
+  <input type="text" class="input rounded" value="Negative input" />
+    <span class="icon is-small is-left">
+    <i class="bm-icon-placeholder contentPrimary"></i>
+  </span>
+  <span class="icon is-small is-right">
+    <i class="bm-icon-alert contentStateDisabled"></i>
+  </span>
+</div></script>
+			<script type="text/x-stylemark" data-language="css">.control {
+margin-bottom: 20px;
+}</script>
 
 		<!--
 			Vanilla JS

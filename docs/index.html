@@ -53,6 +53,7 @@
 									<option value="check">Check</option>
 									<option value="input">Input</option>
 									<option value="input-hint-helpers">Input - hint helpers</option>
+									<option value="pagination-dots">Pagination Dots</option>
 									<option value="pill">Pill</option>
 									<option value="radio">Radio</option>
 									<option value="select">Select</option>
@@ -230,7 +231,7 @@ but with a Billmate look and feel.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="background-types.html"
+                            href="background-typesfake.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -245,7 +246,7 @@ but with a Billmate look and feel.</p>
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="background-types.html"
+                            data-src="background-typesfake.html"
                             data-initinview="true"
                             data-title="Loading..." 
                         ></div>
@@ -256,18 +257,120 @@ but with a Billmate look and feel.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;backgroundPrimary&quot;&gt;Background Primary&lt;/div&gt;
-&lt;div class=&quot;backgroundSecondary&quot;&gt;Background Secondary&lt;/div&gt;
-&lt;div class=&quot;backgroundTertiary&quot;&gt;Background Tertiary&lt;/div&gt;
-&lt;div class=&quot;backgroundInversePrimary&quot;&gt;Background Inverse Primary&lt;/div&gt;
-&lt;div class=&quot;backgroundInverseSecondary&quot;&gt;Background Inverse Secondary&lt;/div&gt;
-&lt;div class=&quot;backgroundInverseTertiary&quot;&gt;Background Inverse Tertiary&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;backgroundPrimary&quot;&gt;Background Primary&lt;/div&gt;
-&lt;div class=&quot;backgroundSecondary&quot;&gt;Background Secondary&lt;/div&gt;
-&lt;div class=&quot;backgroundTertiary&quot;&gt;Background Tertiary&lt;/div&gt;
-&lt;div class=&quot;backgroundInversePrimary&quot;&gt;Background Inverse Primary&lt;/div&gt;
-&lt;div class=&quot;backgroundInverseSecondary&quot;&gt;Background Inverse Secondary&lt;/div&gt;
-&lt;div class=&quot;backgroundInverseTertiary&quot;&gt;Background Inverse Tertiary&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;all&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundPrimary color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundPrimary
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundSecondary color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundSecondary
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundTertiary color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundTertiary
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundInversePrimary color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundInversePrimary
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundInverseSecondary color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundInverseSecondary
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+   &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundInverseTertiary color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundInverseTertiary
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;all&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundPrimary color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundPrimary
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundSecondary color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundSecondary
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundTertiary color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundTertiary
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundInversePrimary color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundInversePrimary
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundInverseSecondary color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundInverseSecondary
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+   &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundInverseTertiary color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundInverseTertiary
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -308,28 +411,216 @@ but with a Billmate look and feel.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;backgroundStateDisabled&quot;&gt;Background State Disabled&lt;/div&gt;
-&lt;div class=&quot;backgroundAccent&quot;&gt;Background Accent&lt;/div&gt;
-&lt;div class=&quot;backgroundPositive&quot;&gt;Background Positive&lt;/div&gt;
-&lt;div class=&quot;backgroundNegative&quot;&gt;Background Negative&lt;/div&gt;
-&lt;div class=&quot;backgroundWarning&quot;&gt;Background Warning&lt;/div&gt;
-&lt;div class=&quot;backgroundLightAccent&quot;&gt;Background Light Accent&lt;/div&gt;
-&lt;div class=&quot;backgroundLightPositive&quot;&gt;Background Light Positive&lt;/div&gt;
-&lt;div class=&quot;backgroundLightNegative&quot;&gt;Background Light Negative&lt;/div&gt;
-&lt;div class=&quot;backgroundLightWarning&quot;&gt;Background Light Warning&lt;/div&gt;
-&lt;div class=&quot;backgroundOverlayLight&quot;&gt;Background Overlay Light&lt;/div&gt;
-&lt;div class=&quot;backgroundOverlayLightDark&quot;&gt;Background Overlay Light Dark&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;backgroundStateDisabled&quot;&gt;Background State Disabled&lt;/div&gt;
-&lt;div class=&quot;backgroundAccent&quot;&gt;Background Accent&lt;/div&gt;
-&lt;div class=&quot;backgroundPositive&quot;&gt;Background Positive&lt;/div&gt;
-&lt;div class=&quot;backgroundNegative&quot;&gt;Background Negative&lt;/div&gt;
-&lt;div class=&quot;backgroundWarning&quot;&gt;Background Warning&lt;/div&gt;
-&lt;div class=&quot;backgroundLightAccent&quot;&gt;Background Light Accent&lt;/div&gt;
-&lt;div class=&quot;backgroundLightPositive&quot;&gt;Background Light Positive&lt;/div&gt;
-&lt;div class=&quot;backgroundLightNegative&quot;&gt;Background Light Negative&lt;/div&gt;
-&lt;div class=&quot;backgroundLightWarning&quot;&gt;Background Light Warning&lt;/div&gt;
-&lt;div class=&quot;backgroundOverlayLight&quot;&gt;Background Overlay Light&lt;/div&gt;
-&lt;div class=&quot;backgroundOverlayLightDark&quot;&gt;Background Overlay Light Dark&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;all&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundStateDisabled color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundStateDisabled
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundAccent color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundAccent
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundPositive color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundPositive
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundNegative color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundNegative
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundWarning color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundWarning
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+   &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundLightAccent color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundLightAccent
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+    &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundLightPositive color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundLightPositive
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+    &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundLightNegative color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundLightNegative
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundLightWarning color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundLightNegative
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundOverlayLight color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundLightNegative
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+&lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundOverlayDark color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundOverlayDark
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;all&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundStateDisabled color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundStateDisabled
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundAccent color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundAccent
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundPositive color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundPositive
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundNegative color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundNegative
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundWarning color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundWarning
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+   &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundLightAccent color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundLightAccent
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+    &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundLightPositive color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundLightPositive
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+    &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundLightNegative color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundLightNegative
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundLightWarning color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundLightNegative
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundOverlayLight color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundLightNegative
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+&lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;backgroundOverlayDark color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    backgroundOverlayDark
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -344,7 +635,7 @@ but with a Billmate look and feel.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="basics-types.html"
+                            href="basics-typesfake.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -359,7 +650,7 @@ but with a Billmate look and feel.</p>
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="basics-types.html"
+                            data-src="basics-typesfake.html"
                             data-initinview="true"
                             data-title="Loading..." 
                         ></div>
@@ -370,18 +661,120 @@ but with a Billmate look and feel.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;primaryA&quot;&gt;Primary A&lt;/div&gt;
-&lt;div class=&quot;primaryB&quot;&gt;Primary B&lt;/div&gt;
-&lt;div class=&quot;accent&quot;&gt;Accent&lt;/div&gt;
-&lt;div class=&quot;positive&quot;&gt;Positive&lt;/div&gt;
-&lt;div class=&quot;warning&quot;&gt;Warning&lt;/div&gt;
-&lt;div class=&quot;negative&quot;&gt;Negative&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;primaryA&quot;&gt;Primary A&lt;/div&gt;
-&lt;div class=&quot;primaryB&quot;&gt;Primary B&lt;/div&gt;
-&lt;div class=&quot;accent&quot;&gt;Accent&lt;/div&gt;
-&lt;div class=&quot;positive&quot;&gt;Positive&lt;/div&gt;
-&lt;div class=&quot;warning&quot;&gt;Warning&lt;/div&gt;
-&lt;div class=&quot;negative&quot;&gt;Negative&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;all&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;primaryA color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    Primary A
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;primaryA color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    Primary B
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;accent color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    Accent
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;positive color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    Positive
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;warning color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    Warning
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+   &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;negative color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    Negative
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;all&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;primaryA color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    Primary A
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;primaryA color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    Primary B
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;accent color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    Accent
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;positive color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    Positive
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;warning color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    Warning
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+   &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;negative color&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    Negative
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -875,14 +1268,16 @@ Not used on Website.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;p class=&quot;displayL&quot;&gt;Display Large&lt;/p&gt;
-&lt;p class=&quot;displayM&quot;&gt;Display Medium&lt;/p&gt;
-&lt;p class=&quot;displayS&quot;&gt;Display Small&lt;/p&gt;
-&lt;p class=&quot;displayXS&quot;&gt;Display Extra Small&lt;/p&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;p class=&quot;displayL&quot;&gt;Display Large&lt;/p&gt;
-&lt;p class=&quot;displayM&quot;&gt;Display Medium&lt;/p&gt;
-&lt;p class=&quot;displayS&quot;&gt;Display Small&lt;/p&gt;
-&lt;p class=&quot;displayXS&quot;&gt;Display Extra Small&lt;/p&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;p class=&quot;text-x6&quot;&gt;Text x6&lt;/p&gt;
+&lt;p class=&quot;text-x5&quot;&gt;Text x5&lt;/p&gt;
+&lt;p class=&quot;text-x4&quot;&gt;Text x4&lt;/p&gt;
+&lt;p class=&quot;text-x3&quot;&gt;Text x3&lt;/p&gt;
+&lt;p class=&quot;text-x2&quot;&gt;Text x2&lt;/p&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;p class=&quot;text-x6&quot;&gt;Text x6&lt;/p&gt;
+&lt;p class=&quot;text-x5&quot;&gt;Text x5&lt;/p&gt;
+&lt;p class=&quot;text-x4&quot;&gt;Text x4&lt;/p&gt;
+&lt;p class=&quot;text-x3&quot;&gt;Text x3&lt;/p&gt;
+&lt;p class=&quot;text-x2&quot;&gt;Text x2&lt;/p&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -1156,36 +1551,128 @@ Not used on Website.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;input type=&quot;text&quot; class=&quot;input&quot; placeholder=&quot;Placeholder text&quot; /&gt;
-&lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Standard input&quot; /&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;control has-icons-left&quot;&gt;
+&lt;label class=&quot;label&quot;&gt;With label&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input&quot; placeholder=&quot;Placeholder text&quot; /&gt;
+    &lt;span class=&quot;icon is-small is-left&quot;&gt;
+    &lt;i class=&quot;bm-icon-placeholder contentPrimary&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;hint&quot;&gt;Hint goes here&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;control has-icons-left has-icons-right&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input&quot; placeholder=&quot;Placeholder text&quot; /&gt;
+    &lt;span class=&quot;icon is-small is-left&quot;&gt;
+    &lt;i class=&quot;bm-icon-placeholder contentPrimary&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;icon is-small is-right&quot;&gt;
+    &lt;i class=&quot;bm-icon-check contentPositive&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;hint&quot;&gt;Hint goes here&lt;/span&gt;
+&lt;/div&gt;
+
+
 &lt;div class=&quot;control has-icons-right&quot;&gt;
-  &lt;input type=&quot;text&quot; class=&quot;input positive&quot; value=&quot;Positive input&quot; /&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Positive input&quot; /&gt;
   &lt;span class=&quot;icon is-small is-right&quot;&gt;
     &lt;i class=&quot;bm-icon-check contentPositive&quot;&gt;&lt;/i&gt;
   &lt;/span&gt;
 &lt;/div&gt;
+
 &lt;div class=&quot;control has-icons-right&quot;&gt;
-  &lt;input type=&quot;text&quot; class=&quot;input negative&quot; value=&quot;Negative input&quot; /&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input borderNegative&quot; value=&quot;Negative input&quot; /&gt;
   &lt;span class=&quot;icon is-small is-right&quot;&gt;
     &lt;i class=&quot;bm-icon-alert contentNegative&quot;&gt;&lt;/i&gt;
   &lt;/span&gt;
 &lt;/div&gt;
-&lt;input type=&quot;text&quot; class=&quot;input&quot; disabled value=&quot;Disabled input&quot; /&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;input type=&quot;text&quot; class=&quot;input&quot; placeholder=&quot;Placeholder text&quot; /&gt;
-&lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Standard input&quot; /&gt;
+
+
 &lt;div class=&quot;control has-icons-right&quot;&gt;
-  &lt;input type=&quot;text&quot; class=&quot;input positive&quot; value=&quot;Positive input&quot; /&gt;
+&lt;label class=&quot;label&quot;&gt;With label&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input borderNegative&quot; disabled value=&quot;Negative input&quot; /&gt;
+  &lt;span class=&quot;icon is-small is-right&quot;&gt;
+    &lt;i class=&quot;bm-icon-alert contentStateDisabled&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;control has-icons-right&quot;&gt;
+&lt;label class=&quot;label&quot;&gt;Rounded&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input rounded&quot; value=&quot;Negative input&quot; /&gt;
+  &lt;span class=&quot;icon is-small is-right&quot;&gt;
+    &lt;i class=&quot;bm-icon-alert contentStateDisabled&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;control has-icons-left has-icons-right rounded&quot;&gt;
+&lt;label class=&quot;label&quot;&gt;Rounded&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input rounded&quot; value=&quot;Negative input&quot; /&gt;
+    &lt;span class=&quot;icon is-small is-left&quot;&gt;
+    &lt;i class=&quot;bm-icon-placeholder contentPrimary&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;icon is-small is-right&quot;&gt;
+    &lt;i class=&quot;bm-icon-alert contentStateDisabled&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;control has-icons-left&quot;&gt;
+&lt;label class=&quot;label&quot;&gt;With label&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input&quot; placeholder=&quot;Placeholder text&quot; /&gt;
+    &lt;span class=&quot;icon is-small is-left&quot;&gt;
+    &lt;i class=&quot;bm-icon-placeholder contentPrimary&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;hint&quot;&gt;Hint goes here&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;control has-icons-left has-icons-right&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input&quot; placeholder=&quot;Placeholder text&quot; /&gt;
+    &lt;span class=&quot;icon is-small is-left&quot;&gt;
+    &lt;i class=&quot;bm-icon-placeholder contentPrimary&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;icon is-small is-right&quot;&gt;
+    &lt;i class=&quot;bm-icon-check contentPositive&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;hint&quot;&gt;Hint goes here&lt;/span&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&quot;control has-icons-right&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Positive input&quot; /&gt;
   &lt;span class=&quot;icon is-small is-right&quot;&gt;
     &lt;i class=&quot;bm-icon-check contentPositive&quot;&gt;&lt;/i&gt;
   &lt;/span&gt;
 &lt;/div&gt;
+
 &lt;div class=&quot;control has-icons-right&quot;&gt;
-  &lt;input type=&quot;text&quot; class=&quot;input negative&quot; value=&quot;Negative input&quot; /&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input borderNegative&quot; value=&quot;Negative input&quot; /&gt;
   &lt;span class=&quot;icon is-small is-right&quot;&gt;
     &lt;i class=&quot;bm-icon-alert contentNegative&quot;&gt;&lt;/i&gt;
   &lt;/span&gt;
 &lt;/div&gt;
-&lt;input type=&quot;text&quot; class=&quot;input&quot; disabled value=&quot;Disabled input&quot; /&gt;</code></pre>
+
+
+&lt;div class=&quot;control has-icons-right&quot;&gt;
+&lt;label class=&quot;label&quot;&gt;With label&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input borderNegative&quot; disabled value=&quot;Negative input&quot; /&gt;
+  &lt;span class=&quot;icon is-small is-right&quot;&gt;
+    &lt;i class=&quot;bm-icon-alert contentStateDisabled&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;control has-icons-right&quot;&gt;
+&lt;label class=&quot;label&quot;&gt;Rounded&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input rounded&quot; value=&quot;Negative input&quot; /&gt;
+  &lt;span class=&quot;icon is-small is-right&quot;&gt;
+    &lt;i class=&quot;bm-icon-alert contentStateDisabled&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;control has-icons-left has-icons-right rounded&quot;&gt;
+&lt;label class=&quot;label&quot;&gt;Rounded&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input rounded&quot; value=&quot;Negative input&quot; /&gt;
+    &lt;span class=&quot;icon is-small is-left&quot;&gt;
+    &lt;i class=&quot;bm-icon-placeholder contentPrimary&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;icon is-small is-right&quot;&gt;
+    &lt;i class=&quot;bm-icon-alert contentStateDisabled&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -1226,21 +1713,110 @@ Not used on Website.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;field&quot;&gt;
-  &lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Standard input&quot; /&gt;
-  &lt;p class=&quot;help is-success&quot;&gt;Helper success&lt;/p&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;control&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Positive input&quot; /&gt;
+  &lt;span class=&quot;hint is-success&quot;&gt;Hint goes here&lt;/span&gt;
 &lt;/div&gt;
-&lt;div class=&quot;field&quot;&gt;
+
+&lt;div class=&quot;control&quot;&gt;
   &lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Standard input&quot; /&gt;
-  &lt;p class=&quot;help is-danger&quot;&gt;Helper danger&lt;/p&gt;
+  &lt;span class=&quot;hint is-danger&quot;&gt;Hint goes here&lt;/span&gt;
+&lt;/div&gt;
+">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;control&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Positive input&quot; /&gt;
+  &lt;span class=&quot;hint is-success&quot;&gt;Hint goes here&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;control&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Standard input&quot; /&gt;
+  &lt;span class=&quot;hint is-danger&quot;&gt;Hint goes here&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="pagination-dots" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Pagination Dots</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">components/_pagination.scss</span>
+	</span>
+	<div class="theme-content-element-description"><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="pagination-dots-pagination.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="pagination-dots-pagination.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;backgroundPositive&quot; style=&quot;padding: 20px;&quot;&gt;
+&lt;nav class=&quot;pagination-dots&quot; role=&quot;navigation&quot; aria-label=&quot;pagination&quot;&gt;
+  &lt;ul class=&quot;pagination-list backgroundPrimaryB&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 1&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 45&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link is-current&quot; aria-label=&quot;Page 46&quot; aria-current=&quot;page&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 47&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 86&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;backgroundPositive&quot; style=&quot;padding: 20px;&quot;&gt;
+&lt;nav class=&quot;pagination-dots&quot; role=&quot;navigation&quot; aria-label=&quot;pagination&quot;&gt;
+  &lt;ul class=&quot;pagination-list backgroundInversePrimary&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 1&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 45&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Page 46&quot; aria-current=&quot;page&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link is-current&quot; aria-label=&quot;Goto page 47&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 86&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;field&quot;&gt;
-  &lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Standard input&quot; /&gt;
-  &lt;p class=&quot;help is-success&quot;&gt;Helper success&lt;/p&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;backgroundPositive&quot; style=&quot;padding: 20px;&quot;&gt;
+&lt;nav class=&quot;pagination-dots&quot; role=&quot;navigation&quot; aria-label=&quot;pagination&quot;&gt;
+  &lt;ul class=&quot;pagination-list backgroundPrimaryB&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 1&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 45&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link is-current&quot; aria-label=&quot;Page 46&quot; aria-current=&quot;page&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 47&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 86&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
 &lt;/div&gt;
-&lt;div class=&quot;field&quot;&gt;
-  &lt;input type=&quot;text&quot; class=&quot;input&quot; value=&quot;Standard input&quot; /&gt;
-  &lt;p class=&quot;help is-danger&quot;&gt;Helper danger&lt;/p&gt;
+
+&lt;div class=&quot;backgroundPositive&quot; style=&quot;padding: 20px;&quot;&gt;
+&lt;nav class=&quot;pagination-dots&quot; role=&quot;navigation&quot; aria-label=&quot;pagination&quot;&gt;
+  &lt;ul class=&quot;pagination-list backgroundInversePrimary&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 1&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 45&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Page 46&quot; aria-current=&quot;page&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link is-current&quot; aria-label=&quot;Goto page 47&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 86&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
@@ -1573,13 +2149,13 @@ Not used on Website.</p>
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;tags-static backgroundSecondary&quot;&gt;&lt;span class=&quot;contentPrimary&quot;&gt;Waiting for delivery&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;tags-static backgroundLightPositive&quot;&gt;Paid&lt;/div&gt;
-&lt;div class=&quot;tags-static backgroundLightAccent&quot;&gt;7 days left&lt;/div&gt;
-&lt;div class=&quot;tags-static backgroundLightNegative&quot;&gt;4 days late&lt;/div&gt;">Copy</button>
+&lt;div class=&quot;tags-static backgroundPositive&quot;&gt;Paid&lt;/div&gt;
+&lt;div class=&quot;tags-static backgroundAccent&quot;&gt;7 days left&lt;/div&gt;
+&lt;div class=&quot;tags-static backgroundWarning&quot;&gt;4 days late&lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;tags-static backgroundSecondary&quot;&gt;&lt;span class=&quot;contentPrimary&quot;&gt;Waiting for delivery&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;tags-static backgroundLightPositive&quot;&gt;Paid&lt;/div&gt;
-&lt;div class=&quot;tags-static backgroundLightAccent&quot;&gt;7 days left&lt;/div&gt;
-&lt;div class=&quot;tags-static backgroundLightNegative&quot;&gt;4 days late&lt;/div&gt;</code></pre>
+&lt;div class=&quot;tags-static backgroundPositive&quot;&gt;Paid&lt;/div&gt;
+&lt;div class=&quot;tags-static backgroundAccent&quot;&gt;7 days left&lt;/div&gt;
+&lt;div class=&quot;tags-static backgroundWarning&quot;&gt;4 days late&lt;/div&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -1990,14 +2566,106 @@ Not used on Website.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;svg class=&quot;bm-spinner&quot; width=&quot;96&quot; height=&quot;96&quot; viewBox=&quot;0 0 96 96&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-    &lt;circle cx=&quot;48&quot; cy=&quot;48&quot; r=&quot;44&quot; stroke=&quot;#E3E5E8&quot; stroke-width=&quot;8&quot;/&gt;
-    &lt;path d=&quot;M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92&quot; stroke=&quot;black&quot; stroke-width=&quot;8&quot;/&gt;
-&lt;/svg&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;svg class=&quot;bm-spinner&quot; width=&quot;96&quot; height=&quot;96&quot; viewBox=&quot;0 0 96 96&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-    &lt;circle cx=&quot;48&quot; cy=&quot;48&quot; r=&quot;44&quot; stroke=&quot;#E3E5E8&quot; stroke-width=&quot;8&quot;/&gt;
-    &lt;path d=&quot;M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92&quot; stroke=&quot;black&quot; stroke-width=&quot;8&quot;/&gt;
-&lt;/svg&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;bm-spinner-wrapper largeSpinner&quot;&gt;
+  &lt;svg class=&quot;bm-spinner&quot; width=&quot;88&quot; height=&quot;88&quot; viewBox=&quot;0 0 96 96&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;circle cx=&quot;48&quot; cy=&quot;48&quot; r=&quot;44&quot; stroke=&quot;#E3E5E8&quot; stroke-width=&quot;8&quot;/&gt;
+      &lt;path d=&quot;M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92&quot; stroke=&quot;black&quot; stroke-width=&quot;8&quot;/&gt;
+  &lt;/svg&gt;
+  &lt;div class=&quot;bm-spinner-label&quot;&gt;
+  Laddar..
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bm-spinner-wrapper mediumSpinner&quot;&gt;
+  &lt;svg class=&quot;bm-spinner&quot; width=&quot;88&quot; height=&quot;88&quot; viewBox=&quot;0 0 96 96&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;circle cx=&quot;48&quot; cy=&quot;48&quot; r=&quot;44&quot; stroke=&quot;#E3E5E8&quot; stroke-width=&quot;8&quot;/&gt;
+      &lt;path d=&quot;M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92&quot; stroke=&quot;black&quot; stroke-width=&quot;8&quot;/&gt;
+  &lt;/svg&gt;
+  &lt;div class=&quot;bm-spinner-label&quot;&gt;
+  Laddar..
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bm-spinner-wrapper smallSpinner&quot;&gt;
+  &lt;svg class=&quot;bm-spinner&quot; width=&quot;88&quot; height=&quot;88&quot; viewBox=&quot;0 0 96 96&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;circle cx=&quot;48&quot; cy=&quot;48&quot; r=&quot;44&quot; stroke=&quot;#E3E5E8&quot; stroke-width=&quot;8&quot;/&gt;
+      &lt;path d=&quot;M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92&quot; stroke=&quot;black&quot; stroke-width=&quot;8&quot;/&gt;
+  &lt;/svg&gt;
+  &lt;div class=&quot;bm-spinner-label&quot;&gt;
+  Laddar..
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bm-spinner-wrapper largeSpinner&quot;&gt;
+  &lt;svg class=&quot;bm-spinner&quot; width=&quot;88&quot; height=&quot;88&quot; viewBox=&quot;0 0 96 96&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;circle cx=&quot;48&quot; cy=&quot;48&quot; r=&quot;44&quot; stroke=&quot;#E3E5E8&quot; stroke-width=&quot;8&quot;/&gt;
+      &lt;path d=&quot;M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92&quot; stroke=&quot;black&quot; stroke-width=&quot;8&quot;/&gt;
+  &lt;/svg&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bm-spinner-wrapper mediumSpinner&quot;&gt;
+  &lt;svg class=&quot;bm-spinner&quot; width=&quot;88&quot; height=&quot;88&quot; viewBox=&quot;0 0 96 96&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;circle cx=&quot;48&quot; cy=&quot;48&quot; r=&quot;44&quot; stroke=&quot;#E3E5E8&quot; stroke-width=&quot;8&quot;/&gt;
+      &lt;path d=&quot;M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92&quot; stroke=&quot;black&quot; stroke-width=&quot;8&quot;/&gt;
+  &lt;/svg&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bm-spinner-wrapper smallSpinner&quot;&gt;
+  &lt;svg class=&quot;bm-spinner&quot; width=&quot;88&quot; height=&quot;88&quot; viewBox=&quot;0 0 96 96&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;circle cx=&quot;48&quot; cy=&quot;48&quot; r=&quot;44&quot; stroke=&quot;#E3E5E8&quot; stroke-width=&quot;8&quot;/&gt;
+      &lt;path d=&quot;M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92&quot; stroke=&quot;black&quot; stroke-width=&quot;8&quot;/&gt;
+  &lt;/svg&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;bm-spinner-wrapper largeSpinner&quot;&gt;
+  &lt;svg class=&quot;bm-spinner&quot; width=&quot;88&quot; height=&quot;88&quot; viewBox=&quot;0 0 96 96&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;circle cx=&quot;48&quot; cy=&quot;48&quot; r=&quot;44&quot; stroke=&quot;#E3E5E8&quot; stroke-width=&quot;8&quot;/&gt;
+      &lt;path d=&quot;M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92&quot; stroke=&quot;black&quot; stroke-width=&quot;8&quot;/&gt;
+  &lt;/svg&gt;
+  &lt;div class=&quot;bm-spinner-label&quot;&gt;
+  Laddar..
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bm-spinner-wrapper mediumSpinner&quot;&gt;
+  &lt;svg class=&quot;bm-spinner&quot; width=&quot;88&quot; height=&quot;88&quot; viewBox=&quot;0 0 96 96&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;circle cx=&quot;48&quot; cy=&quot;48&quot; r=&quot;44&quot; stroke=&quot;#E3E5E8&quot; stroke-width=&quot;8&quot;/&gt;
+      &lt;path d=&quot;M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92&quot; stroke=&quot;black&quot; stroke-width=&quot;8&quot;/&gt;
+  &lt;/svg&gt;
+  &lt;div class=&quot;bm-spinner-label&quot;&gt;
+  Laddar..
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bm-spinner-wrapper smallSpinner&quot;&gt;
+  &lt;svg class=&quot;bm-spinner&quot; width=&quot;88&quot; height=&quot;88&quot; viewBox=&quot;0 0 96 96&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;circle cx=&quot;48&quot; cy=&quot;48&quot; r=&quot;44&quot; stroke=&quot;#E3E5E8&quot; stroke-width=&quot;8&quot;/&gt;
+      &lt;path d=&quot;M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92&quot; stroke=&quot;black&quot; stroke-width=&quot;8&quot;/&gt;
+  &lt;/svg&gt;
+  &lt;div class=&quot;bm-spinner-label&quot;&gt;
+  Laddar..
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bm-spinner-wrapper largeSpinner&quot;&gt;
+  &lt;svg class=&quot;bm-spinner&quot; width=&quot;88&quot; height=&quot;88&quot; viewBox=&quot;0 0 96 96&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;circle cx=&quot;48&quot; cy=&quot;48&quot; r=&quot;44&quot; stroke=&quot;#E3E5E8&quot; stroke-width=&quot;8&quot;/&gt;
+      &lt;path d=&quot;M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92&quot; stroke=&quot;black&quot; stroke-width=&quot;8&quot;/&gt;
+  &lt;/svg&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bm-spinner-wrapper mediumSpinner&quot;&gt;
+  &lt;svg class=&quot;bm-spinner&quot; width=&quot;88&quot; height=&quot;88&quot; viewBox=&quot;0 0 96 96&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;circle cx=&quot;48&quot; cy=&quot;48&quot; r=&quot;44&quot; stroke=&quot;#E3E5E8&quot; stroke-width=&quot;8&quot;/&gt;
+      &lt;path d=&quot;M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92&quot; stroke=&quot;black&quot; stroke-width=&quot;8&quot;/&gt;
+  &lt;/svg&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bm-spinner-wrapper smallSpinner&quot;&gt;
+  &lt;svg class=&quot;bm-spinner&quot; width=&quot;88&quot; height=&quot;88&quot; viewBox=&quot;0 0 96 96&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;circle cx=&quot;48&quot; cy=&quot;48&quot; r=&quot;44&quot; stroke=&quot;#E3E5E8&quot; stroke-width=&quot;8&quot;/&gt;
+      &lt;path d=&quot;M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92&quot; stroke=&quot;black&quot; stroke-width=&quot;8&quot;/&gt;
+  &lt;/svg&gt;
+&lt;/div&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -2266,7 +2934,7 @@ Not used on Website.</p>
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Button  Check  Input  Input - hint helpers  Pill  Radio  Select  Switch  Tags "
+							data-filter-value=" Button  Check  Input  Input - hint helpers  Pagination Dots  Pill  Radio  Select  Switch  Tags "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -2301,6 +2969,13 @@ Not used on Website.</p>
 									data-filter-value="Input - hint helpers"
 								>
 									<span>Input - hint helpers</span>
+								</a>
+								<a
+									href="#pagination-dots"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Pagination Dots"
+								>
+									<span>Pagination Dots</span>
 								</a>
 								<a
 									href="#pill"

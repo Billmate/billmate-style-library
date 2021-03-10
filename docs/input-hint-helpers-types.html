@@ -3,6 +3,9 @@
 
 	<head>
 		<style>
+					.control {
+margin-bottom: 20px;
+}
 		</style>
 
 		<style>
@@ -52,22 +55,29 @@
 		
 	</head>
 
-	<body>					<div class="field">
-  <input type="text" class="input" value="Standard input" />
-  <p class="help is-success">Helper success</p>
+	<body>					<div class="control">
+  <input type="text" class="input" value="Positive input" />
+  <span class="hint is-success">Hint goes here</span>
 </div>
-<div class="field">
+
+<div class="control">
   <input type="text" class="input" value="Standard input" />
-  <p class="help is-danger">Helper danger</p>
+  <span class="hint is-danger">Hint goes here</span>
 </div>
-			<script type="text/x-stylemark" data-language="html"><div class="field">
-  <input type="text" class="input" value="Standard input" />
-  <p class="help is-success">Helper success</p>
+
+			<script type="text/x-stylemark" data-language="html"><div class="control">
+  <input type="text" class="input" value="Positive input" />
+  <span class="hint is-success">Hint goes here</span>
 </div>
-<div class="field">
+
+<div class="control">
   <input type="text" class="input" value="Standard input" />
-  <p class="help is-danger">Helper danger</p>
-</div></script>
+  <span class="hint is-danger">Hint goes here</span>
+</div>
+</script>
+			<script type="text/x-stylemark" data-language="css">.control {
+margin-bottom: 20px;
+}</script>
 
 		<!--
 			Vanilla JS

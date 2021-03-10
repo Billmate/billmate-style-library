@@ -1,0 +1,71 @@
+/*
+---
+name: Pagination Dots
+category: Components
+---
+
+```pagination.html
+<div class="backgroundPositive" style="padding: 20px;">
+<nav class="pagination-dots" role="navigation" aria-label="pagination">
+  <ul class="pagination-list backgroundPrimaryB">
+    <li><a class="pagination-link" aria-label="Goto page 1"></a></li>
+    <li><a class="pagination-link" aria-label="Goto page 45"></a></li>
+    <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page"></a></li>
+    <li><a class="pagination-link" aria-label="Goto page 47"></a></li>
+    <li><a class="pagination-link" aria-label="Goto page 86"></a></li>
+  </ul>
+</nav>
+</div>
+
+<div class="backgroundPositive" style="padding: 20px;">
+<nav class="pagination-dots" role="navigation" aria-label="pagination">
+  <ul class="pagination-list backgroundInversePrimary">
+    <li><a class="pagination-link" aria-label="Goto page 1"></a></li>
+    <li><a class="pagination-link" aria-label="Goto page 45"></a></li>
+    <li><a class="pagination-link" aria-label="Page 46" aria-current="page"></a></li>
+    <li><a class="pagination-link is-current" aria-label="Goto page 47"></a></li>
+    <li><a class="pagination-link" aria-label="Goto page 86"></a></li>
+  </ul>
+</nav>
+</div>
+```
+*/
+.pagination-dots {
+  @extend .pagination;
+  @extend .is-rounded;
+  @extend .is-small;
+
+  .pagination-list {
+
+    &.backgroundPrimaryB {
+      background: rgba($white, 0.5);
+    }
+
+    padding: 12px 24px;
+    justify-content: center;
+    flex-grow: 0;
+    border-radius: 10em;
+
+    li {
+      align-items: center;
+      display: flex;
+
+      .pagination-link {
+        min-width: 8px;
+        width: 8px;
+        height: 8px;
+        border: 0;
+        padding: 0;
+        background: rgba($white, 0.5);
+
+        &.is-current {
+          min-width: 12px;
+          width: 12px;
+          height: 12px;
+          border: 0;
+          background: $white;
+        }
+      }
+    }
+  }
+}

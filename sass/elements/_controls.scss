@@ -103,8 +103,8 @@ Check can be used with `<input>` elements.
     &:before {
       @extend .bm-check-enabled-off;
 
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
       border-radius: 0;
       border: 0;
     }
@@ -114,8 +114,8 @@ Check can be used with `<input>` elements.
     &:after {
       @extend .bm-check-enabled;
 
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
       transform: unset;
       top: 0;
       left: 0;
@@ -175,8 +175,8 @@ Radio can be used with `<input>` elements.
     &:before {
       @extend .bm-bullet-enabled-off;
 
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
     }
 
     // Disabled state
@@ -184,8 +184,8 @@ Radio can be used with `<input>` elements.
     &:after {
       @extend .bm-bullet-enabled;
 
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
       transform: unset;
       top: 0;
       left: 0;

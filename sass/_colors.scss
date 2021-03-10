@@ -6,13 +6,91 @@ category: Colors
 
 The basic colors types available.
 
-```types.html
-<div class="primaryA">Primary A</div>
-<div class="primaryB">Primary B</div>
-<div class="accent">Accent</div>
-<div class="positive">Positive</div>
-<div class="warning">Warning</div>
-<div class="negative">Negative</div>
+```typesfake.html
+<div class="all">
+  <div class="wrap">
+    <div class="primaryA color">
+    </div>
+
+    <div class="content">
+    Primary A
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="primaryA color">
+    </div>
+
+    <div class="content">
+    Primary B
+    </div>
+  </div>
+
+  <div style="clear: both;"></div>
+
+  <div class="wrap">
+    <div class="accent color">
+    </div>
+
+    <div class="content">
+    Accent
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="positive color">
+    </div>
+
+    <div class="content">
+    Positive
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="warning color">
+    </div>
+
+    <div class="content">
+    Warning
+    </div>
+  </div>
+
+   <div class="wrap">
+    <div class="negative color">
+    </div>
+
+    <div class="content">
+    Negative
+    </div>
+  </div>
+</div>
+```
+```typesfake.css hidden
+body > div .color {
+width: 96px;
+height: 96px;
+margin-right: 24px;
+}
+
+body .all {
+display: flex;
+flex-wrap: wrap;
+}
+body .all > .wrap .color {
+border-radius: 10px;
+}
+
+body .all > .wrap {
+display: flex;
+flex-basis: calc(50% - 15px);
+border: 1px solid #eee;
+border-radius: 10px;
+margin-right: 15px;
+padding: 20px;
+    align-items: center;
+    text-align: center!important;
+    margin-bottom: 20px!important;
+    }
 ```
 */
 .primaryA {
@@ -49,24 +127,90 @@ category: Colors
 
 The background colors types available.
 
-```types.html
-<div class="backgroundPrimary">Background Primary</div>
-<div class="backgroundSecondary">Background Secondary</div>
-<div class="backgroundTertiary">Background Tertiary</div>
-<div class="backgroundInversePrimary">Background Inverse Primary</div>
-<div class="backgroundInverseSecondary">Background Inverse Secondary</div>
-<div class="backgroundInverseTertiary">Background Inverse Tertiary</div>
+
+```typesfake.html
+<div class="all">
+  <div class="wrap">
+    <div class="backgroundPrimary color">
+    </div>
+
+    <div class="content">
+    backgroundPrimary
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="backgroundSecondary color">
+    </div>
+
+    <div class="content">
+    backgroundSecondary
+    </div>
+  </div>
+
+  <div style="clear: both;"></div>
+
+  <div class="wrap">
+    <div class="backgroundTertiary color">
+    </div>
+
+    <div class="content">
+    backgroundTertiary
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="backgroundInversePrimary color">
+    </div>
+
+    <div class="content">
+    backgroundInversePrimary
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="backgroundInverseSecondary color">
+    </div>
+
+    <div class="content">
+    backgroundInverseSecondary
+    </div>
+  </div>
+
+   <div class="wrap">
+    <div class="backgroundInverseTertiary color">
+    </div>
+
+    <div class="content">
+    backgroundInverseTertiary
+    </div>
+  </div>
+</div>
 ```
-```types.css hidden
-body {
-    display: flex;
-    flex-wrap: wrap;
+```typesfake.css hidden
+body > div .color {
+width: 96px;
+height: 96px;
+margin-right: 24px;
 }
-body > div {
+
+body .all {
+display: flex;
+flex-wrap: wrap;
+}
+
+body .all > .wrap .color {
+border-radius: 10px;
+}
+
+body .all > .wrap {
+display: flex;
 flex-basis: calc(50% - 15px);
-display: flex!important;
+border: 1px solid #eee;
+border-radius: 10px;
+margin-right: 15px;
+padding: 20px;
     align-items: center;
-    justify-content: center;
     text-align: center!important;
     margin-bottom: 20px!important;
     }
@@ -105,17 +249,139 @@ category: Colors
 The background colors extensions available.
 
 ```types.html
-<div class="backgroundStateDisabled">Background State Disabled</div>
-<div class="backgroundAccent">Background Accent</div>
-<div class="backgroundPositive">Background Positive</div>
-<div class="backgroundNegative">Background Negative</div>
-<div class="backgroundWarning">Background Warning</div>
-<div class="backgroundLightAccent">Background Light Accent</div>
-<div class="backgroundLightPositive">Background Light Positive</div>
-<div class="backgroundLightNegative">Background Light Negative</div>
-<div class="backgroundLightWarning">Background Light Warning</div>
-<div class="backgroundOverlayLight">Background Overlay Light</div>
-<div class="backgroundOverlayLightDark">Background Overlay Light Dark</div>
+<div class="all">
+  <div class="wrap">
+    <div class="backgroundStateDisabled color">
+    </div>
+
+    <div class="content">
+    backgroundStateDisabled
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="backgroundAccent color">
+    </div>
+
+    <div class="content">
+    backgroundAccent
+    </div>
+  </div>
+
+  <div style="clear: both;"></div>
+
+  <div class="wrap">
+    <div class="backgroundPositive color">
+    </div>
+
+    <div class="content">
+    backgroundPositive
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="backgroundNegative color">
+    </div>
+
+    <div class="content">
+    backgroundNegative
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="backgroundWarning color">
+    </div>
+
+    <div class="content">
+    backgroundWarning
+    </div>
+  </div>
+
+   <div class="wrap">
+    <div class="backgroundLightAccent color">
+    </div>
+
+    <div class="content">
+    backgroundLightAccent
+    </div>
+  </div>
+
+    <div class="wrap">
+    <div class="backgroundLightPositive color">
+    </div>
+
+    <div class="content">
+    backgroundLightPositive
+    </div>
+  </div>
+
+
+    <div class="wrap">
+    <div class="backgroundLightNegative color">
+    </div>
+
+    <div class="content">
+    backgroundLightNegative
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="backgroundLightWarning color">
+    </div>
+
+    <div class="content">
+    backgroundLightNegative
+    </div>
+  </div>
+
+<div class="wrap">
+    <div class="backgroundOverlayLight color">
+    </div>
+
+    <div class="content">
+    backgroundLightNegative
+    </div>
+  </div>
+
+
+<div class="wrap">
+    <div class="backgroundOverlayDark color">
+    </div>
+
+    <div class="content">
+    backgroundOverlayDark
+    </div>
+  </div>
+
+</div>
+```
+```types.css hidden
+body > div .color {
+width: 96px;
+height: 96px;
+margin-right: 24px;
+}
+
+body .all {
+display: flex;
+flex-wrap: wrap;
+}
+
+body .all > .wrap .color {
+border-radius: 10px;
+}
+
+body .all > .wrap {
+display: flex;
+flex-basis: calc(50% - 15px);
+border: 1px solid #eee;
+border-radius: 10px;
+margin-right: 15px;
+padding: 20px;
+    align-items: center;
+    text-align: center!important;
+    margin-bottom: 20px!important;
+    }
 ```
 */
 .backgroundStateDisabled {

@@ -8,9 +8,9 @@ Tags can be used with `<div>` or `<span>` elements.
 
 ```types.html
 <div class="tags-static backgroundSecondary"><span class="contentPrimary">Waiting for delivery</span></div>
-<div class="tags-static backgroundLightPositive">Paid</div>
-<div class="tags-static backgroundLightAccent">7 days left</div>
-<div class="tags-static backgroundLightNegative">4 days late</div>
+<div class="tags-static backgroundPositive">Paid</div>
+<div class="tags-static backgroundAccent">7 days left</div>
+<div class="tags-static backgroundWarning">4 days late</div>
 ```
 */
 .tags-static {
@@ -24,24 +24,31 @@ Tags can be used with `<div>` or `<span>` elements.
     padding: 8px 16px;
   }
 
-  &.backgroundLightPositive {
+  &.backgroundPositive {
     &:not(body) {
-      @extend .backgroundLightPositive;
-      @extend .contentPositive;
+      @extend .backgroundPositive;
+      @extend .contentInversePrimary;
     }
   }
 
-  &.backgroundLightAccent {
+  &.backgroundAccent {
     &:not(body) {
-      @extend .backgroundLightAccent;
-      @extend .contentAccent;
+      @extend .backgroundAccent;
+      @extend .contentInversePrimary;
     }
   }
 
-  &.backgroundLightNegative {
+  &.backgroundWarning {
     &:not(body) {
-      @extend .backgroundLightNegative;
-      @extend .contentNegative;
+      @extend .backgroundWarning;
+      @extend .contentInversePrimary;
+    }
+  }
+
+  &.backgroundNegative {
+    &:not(body) {
+      @extend .backgroundNegative;
+      @extend .contentInversePrimary;
     }
   }
 }

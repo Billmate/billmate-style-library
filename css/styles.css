@@ -51,7 +51,7 @@ category: Variables
 
 The available color palettes.
 
-```types.html
+```types.html hidden
 
 <div class="theme-color">
   <div style="background: #CCEEFF; width: 100px; height: 100px; border-radius: 10px;">
@@ -262,6 +262,15 @@ The available color palettes.
 </div>
 
 ```
+```types.css hidden
+.theme-color {
+  padding: 10px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 15px;
+}
+```
 */
 /*
 ---
@@ -276,7 +285,6 @@ The available fonts are:
 <h1 class="title-x8">GT Walsheim</h1>
 ```
 */
-@import url("../resources/fontawesome/css/fontawesome-all.css");
 @font-face {
   font-family: 'BuenosAires';
   src: url("../resources/fonts/BuenosAires/BuenosAires.eot");
@@ -402,7 +410,14 @@ The available fonts are:
 @font-face {
   font-family: 'GT Walsheim';
   src: local("GT Walsheim"), url("../resources/fonts/GTWalsheim/GT-Walsheim-Regular.woff2") format("woff2"), url("../resources/fonts/GTWalsheim/GT-Walsheim-Regular.woff") format("woff"), url("../resources/fonts/GTWalsheim/GT-Walsheim-Regular.ttf") format("truetype");
-  font-weight: bold;
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'GT Walsheim';
+  src: local("GT Walsheim"), url("../resources/fonts/GTWalsheim/GT-Walsheim-Medium.woff2") format("woff2"), url("../resources/fonts/GTWalsheim/GT-Walsheim-Medium.woff") format("woff"), url("../resources/fonts/GTWalsheim/GT-Walsheim-Medium.ttf") format("truetype");
+  font-weight: 700;
   font-style: italic;
   font-display: swap; }
 
@@ -417,7 +432,7 @@ The available fonts are:
   -webkit-appearance: none;
   align-items: center;
   border: 1px solid transparent;
-  border-radius: 0;
+  border-radius: 0px;
   box-shadow: none;
   display: inline-flex;
   font-size: 1rem;
@@ -493,7 +508,7 @@ The available fonts are:
   width: 0.625em; }
 
 .box:not(:last-child), .content:not(:last-child), .notification:not(:last-child), .progress:not(:last-child), .table:not(:last-child), .table-container:not(:last-child), .title:not(:last-child),
-.subtitle:not(:last-child), .block:not(:last-child), .highlight:not(:last-child), .breadcrumb:not(:last-child), .level:not(:last-child), .message:not(:last-child), .pagination:not(:last-child), .tabs:not(:last-child) {
+.subtitle:not(:last-child), .block:not(:last-child), .highlight:not(:last-child), .breadcrumb:not(:last-child), .level:not(:last-child), .message:not(:last-child), .pagination:not(:last-child), .pagination-dots:not(:last-child), .tabs:not(:last-child) {
   margin-bottom: 1.5rem; }
 
 .delete, .modal-close {
@@ -541,7 +556,7 @@ The available fonts are:
     background-color: rgba(0, 0, 0, 0.3); }
   .delete:active, .modal-close:active {
     background-color: rgba(0, 0, 0, 0.4); }
-  .is-small.delete, .is-small.modal-close {
+  .is-small.delete, .delete.pagination-dots, .is-small.modal-close, .modal-close.pagination-dots {
     height: 16px;
     max-height: 16px;
     max-width: 16px;
@@ -819,7 +834,7 @@ a.box:active {
   white-space: nowrap; }
   .button strong {
     color: inherit; }
-  .button .icon, .button .icon.is-small, .button .icon.is-medium, .button .icon.is-large, .button .icon.switch[type='checkbox'], .button .icon.input[type=text],
+  .button .icon, .button .icon.is-small, .button .icon.pagination-dots, .button .icon.is-medium, .button .icon.is-large, .button .icon.switch[type='checkbox'], .button .icon.input[type=text],
   .button .icon.input[type=password],
   .button .icon.input[type=email], .button .icon.select {
     height: 1.5em;
@@ -1614,9 +1629,9 @@ a.box:active {
         background-color: #fcd4dc;
         border-color: transparent;
         color: #cc0f35; }
-  .button.is-small {
+  .button.is-small, .button.pagination-dots {
     font-size: 0.75rem; }
-    .button.is-small:not(.is-rounded):not(.switch[type='checkbox']):not(.tags-static) {
+    .button.is-small:not(.is-rounded):not(.pagination-dots):not(.switch[type='checkbox']):not(.tags-static), .button.pagination-dots:not(.is-rounded):not(.pagination-dots):not(.switch[type='checkbox']):not(.tags-static) {
       border-radius: 2px; }
   .button.is-normal {
     font-size: 1rem; }
@@ -1649,7 +1664,7 @@ a.box:active {
     color: #7a7a7a;
     box-shadow: none;
     pointer-events: none; }
-  .button.is-rounded, .button.switch[type='checkbox'], .button.tags-static {
+  .button.is-rounded, .button.pagination-dots, .button.switch[type='checkbox'], .button.tags-static {
     border-radius: 290486px;
     padding-left: calc(1em + 0.25em);
     padding-right: calc(1em + 0.25em); }
@@ -1669,11 +1684,11 @@ a.box:active {
     margin-bottom: 1rem; }
   .buttons.are-small .button:not(.is-normal):not(.is-medium):not(.is-large):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select) {
     font-size: 0.75rem; }
-    .buttons.are-small .button:not(.is-normal):not(.is-medium):not(.is-large):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select):not(.is-rounded):not(.switch[type='checkbox']):not(.tags-static) {
+    .buttons.are-small .button:not(.is-normal):not(.is-medium):not(.is-large):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select):not(.is-rounded):not(.pagination-dots):not(.switch[type='checkbox']):not(.tags-static) {
       border-radius: 2px; }
-  .buttons.are-medium .button:not(.is-small):not(.is-normal):not(.is-large):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select) {
+  .buttons.are-medium .button:not(.is-small):not(.pagination-dots):not(.is-normal):not(.is-large):not(.switch[type='checkbox']):not(.input[type=text]):not(.input[type=password]):not(.input[type=email]):not(.select) {
     font-size: 1.25rem; }
-  .buttons.are-large .button:not(.is-small):not(.is-normal):not(.is-medium) {
+  .buttons.are-large .button:not(.is-small):not(.pagination-dots):not(.is-normal):not(.is-medium) {
     font-size: 1.5rem; }
   .buttons.has-addons .button:not(:first-child) {
     border-bottom-left-radius: 0;
@@ -1866,7 +1881,7 @@ a.box:active {
 .content .tabs li + li {
   margin-top: 0; }
 
-.content.is-small {
+.content.is-small, .content.pagination-dots {
   font-size: 0.75rem; }
 
 .content.is-medium {
@@ -1883,7 +1898,7 @@ a.box:active {
   justify-content: center;
   height: 1.5rem;
   width: 1.5rem; }
-  .icon.is-small {
+  .icon.is-small, .icon.pagination-dots {
     height: 1rem;
     width: 1rem; }
   .icon.is-medium {
@@ -1920,7 +1935,7 @@ div.icon-text {
     display: block;
     height: auto;
     width: 100%; }
-    .image img.is-rounded, .image img.switch[type='checkbox'], .image img.tags-static {
+    .image img.is-rounded, .image img.pagination-dots, .image img.switch[type='checkbox'], .image img.tags-static {
       border-radius: 290486px; }
   .image.is-fullwidth {
     width: 100%; }
@@ -2182,7 +2197,7 @@ div.icon-text {
       background-color: transparent; }
     .progress:indeterminate::-ms-fill {
       animation-name: none; }
-  .progress.is-small {
+  .progress.is-small, .progress.pagination-dots {
     height: 0.75rem; }
   .progress.is-medium {
     height: 1.25rem; }
@@ -2472,7 +2487,7 @@ div.icon-text {
       background-color: #e8e8e8; }
     .tag:not(body).is-delete:active, .tags-static:not(body).is-delete:active {
       background-color: #dbdbdb; }
-  .tag:not(body).is-rounded, .tag.switch:not(body)[type='checkbox'], .switch.tags-static:not(body)[type='checkbox'], .tags-static:not(body) {
+  .tag:not(body).is-rounded, .tag.pagination-dots:not(body), .tag.switch:not(body)[type='checkbox'], .switch.tags-static:not(body)[type='checkbox'], .tags-static:not(body) {
     border-radius: 290486px; }
 
 a.tag:hover, a.tags-static:hover {
@@ -2582,8 +2597,8 @@ a.tag:hover, a.tags-static:hover {
 /* Bulma Form */
 .input, .textarea, .select select {
   background-color: #FFFFFF;
-  border-color: #dbdbdb;
-  border-radius: 4px;
+  border-color: #E2E5E9;
+  border-radius: 8px;
   color: #363636; }
   .input::-moz-placeholder, .textarea::-moz-placeholder, .select select::-moz-placeholder {
     color: rgba(54, 54, 54, 0.3); }
@@ -2678,7 +2693,7 @@ a.tag:hover, a.tags-static:hover {
     border-color: #f14668; }
     .is-danger.input:focus, .is-danger.textarea:focus, .is-danger.is-focused.input, .is-danger.is-focused.textarea, .is-danger.input:active, .is-danger.textarea:active, .is-danger.is-active.input, .is-danger.is-active.textarea {
       box-shadow: 0 0 0 0.125em rgba(241, 70, 104, 0.25); }
-  .is-small.input, .is-small.textarea {
+  .is-small.input, .input.pagination-dots, .is-small.textarea, .textarea.pagination-dots {
     border-radius: 2px;
     font-size: 0.75rem; }
   .is-medium.input, .is-medium.textarea {
@@ -2694,7 +2709,7 @@ a.tag:hover, a.tags-static:hover {
     display: inline;
     width: auto; }
 
-.input.is-rounded, .input.switch[type='checkbox'], .input.tags-static {
+.input.is-rounded, .input.pagination-dots, .input.switch[type='checkbox'], .input.tags-static {
   border-radius: 290486px;
   padding-left: calc(calc(0.75em - 1px) + 0.375em);
   padding-right: calc(calc(0.75em - 1px) + 0.375em); }
@@ -2751,7 +2766,7 @@ a.tag:hover, a.tags-static:hover {
     border-color: #3273dc;
     right: 1.125em;
     z-index: 4; }
-  .select.is-rounded select, .select.switch[type='checkbox'] select, .select.tags-static select {
+  .select.is-rounded select, .select.pagination-dots select, .select.switch[type='checkbox'] select, .select.tags-static select {
     border-radius: 290486px;
     padding-left: 1em; }
   .select select {
@@ -2854,7 +2869,7 @@ a.tag:hover, a.tags-static:hover {
       border-color: #ef2e55; }
     .select.is-danger select:focus, .select.is-danger select.is-focused, .select.is-danger select:active, .select.is-danger select.is-active {
       box-shadow: 0 0 0 0.125em rgba(241, 70, 104, 0.25); }
-  .select.is-small {
+  .select.is-small, .select.pagination-dots {
     border-radius: 2px;
     font-size: 0.75rem; }
   .select.is-medium {
@@ -2875,7 +2890,7 @@ a.tag:hover, a.tags-static:hover {
     right: 0.625em;
     top: 0.625em;
     transform: none; }
-  .select.is-loading.is-small:after {
+  .select.is-loading.is-small:after, .select.is-loading.pagination-dots:after {
     font-size: 0.75rem; }
   .select.is-loading.is-medium:after {
     font-size: 1.25rem; }
@@ -3047,7 +3062,7 @@ a.tag:hover, a.tags-static:hover {
     background-color: #ef2e55;
     border-color: transparent;
     color: #fff; }
-  .file.is-small {
+  .file.is-small, .file.pagination-dots {
     font-size: 0.75rem; }
   .file.is-medium {
     font-size: 1.25rem; }
@@ -3082,7 +3097,7 @@ a.tag:hover, a.tags-static:hover {
     width: 1.5em; }
     .file.is-boxed .file-icon .fa {
       font-size: 21px; }
-  .file.is-boxed.is-small .file-icon .fa {
+  .file.is-boxed.is-small .file-icon .fa, .file.is-boxed.pagination-dots .file-icon .fa {
     font-size: 14px; }
   .file.is-boxed.is-medium .file-icon .fa {
     font-size: 28px; }
@@ -3176,7 +3191,7 @@ a.tag:hover, a.tags-static:hover {
   font-weight: 700; }
   .label:not(:last-child) {
     margin-bottom: 0.5em; }
-  .label.is-small {
+  .label.is-small, .label.pagination-dots {
     font-size: 0.75rem; }
   .label.is-medium {
     font-size: 1.25rem; }
@@ -3185,29 +3200,29 @@ a.tag:hover, a.tags-static:hover {
   .label.input[type=email], .label.select {
     font-size: 1.5rem; }
 
-.help {
+.help, .control .hint {
   display: block;
-  font-size: 0.75rem;
+  font-size: 14px;
   margin-top: 0.25rem; }
-  .help.is-white {
+  .help.is-white, .control .is-white.hint {
     color: #FFFFFF; }
-  .help.is-black {
+  .help.is-black, .control .is-black.hint {
     color: #000000; }
-  .help.is-light {
+  .help.is-light, .control .is-light.hint {
     color: whitesmoke; }
-  .help.is-dark {
+  .help.is-dark, .control .is-dark.hint {
     color: #363636; }
-  .help.is-primary {
+  .help.is-primary, .control .is-primary.hint {
     color: #00d1b2; }
-  .help.is-link {
+  .help.is-link, .control .is-link.hint {
     color: #3273dc; }
-  .help.is-info {
+  .help.is-info, .control .is-info.hint {
     color: #3298dc; }
-  .help.is-success {
+  .help.is-success, .control .is-success.hint {
     color: #48c774; }
-  .help.is-warning {
+  .help.is-warning, .control .is-warning.hint {
     color: #ffdd57; }
-  .help.is-danger {
+  .help.is-danger, .control .is-danger.hint {
     color: #f14668; }
 
 .field:not(:last-child) {
@@ -3311,7 +3326,7 @@ a.tag:hover, a.tags-static:hover {
     flex-shrink: 0;
     margin-right: 1.5rem;
     text-align: right; }
-    .field-label.is-small {
+    .field-label.is-small, .field-label.pagination-dots {
       font-size: 0.75rem;
       padding-top: 0.375em; }
     .field-label.is-normal {
@@ -3353,9 +3368,11 @@ a.tag:hover, a.tags-static:hover {
   .control.has-icons-left .select:focus ~ .icon, .control.has-icons-right .input:focus ~ .icon,
   .control.has-icons-right .select:focus ~ .icon {
     color: #4a4a4a; }
-  .control.has-icons-left .input.is-small ~ .icon,
-  .control.has-icons-left .select.is-small ~ .icon, .control.has-icons-right .input.is-small ~ .icon,
-  .control.has-icons-right .select.is-small ~ .icon {
+  .control.has-icons-left .input.is-small ~ .icon, .control.has-icons-left .input.pagination-dots ~ .icon,
+  .control.has-icons-left .select.is-small ~ .icon,
+  .control.has-icons-left .select.pagination-dots ~ .icon, .control.has-icons-right .input.is-small ~ .icon, .control.has-icons-right .input.pagination-dots ~ .icon,
+  .control.has-icons-right .select.is-small ~ .icon,
+  .control.has-icons-right .select.pagination-dots ~ .icon {
     font-size: 0.75rem; }
   .control.has-icons-left .input.is-medium ~ .icon,
   .control.has-icons-left .select.is-medium ~ .icon, .control.has-icons-right .input.is-medium ~ .icon,
@@ -3398,7 +3415,7 @@ a.tag:hover, a.tags-static:hover {
     right: 0.625em;
     top: 0.625em;
     z-index: 4; }
-  .control.is-loading.is-small:after {
+  .control.is-loading.is-small:after, .control.is-loading.pagination-dots:after {
     font-size: 0.75rem; }
   .control.is-loading.is-medium:after {
     font-size: 1.25rem; }
@@ -3447,7 +3464,7 @@ a.tag:hover, a.tags-static:hover {
   .breadcrumb.is-right ol,
   .breadcrumb.is-right ul {
     justify-content: flex-end; }
-  .breadcrumb.is-small {
+  .breadcrumb.is-small, .breadcrumb.pagination-dots {
     font-size: 0.75rem; }
   .breadcrumb.is-medium {
     font-size: 1.25rem; }
@@ -3717,7 +3734,7 @@ button.dropdown-item {
 
 .menu {
   font-size: 1rem; }
-  .menu.is-small {
+  .menu.is-small, .menu.pagination-dots {
     font-size: 0.75rem; }
   .menu.is-medium {
     font-size: 1.25rem; }
@@ -3763,7 +3780,7 @@ button.dropdown-item {
   .message a:not(.button):not(.tag):not(.tags-static):not(.dropdown-item) {
     color: currentColor;
     text-decoration: underline; }
-  .message.is-small {
+  .message.is-small, .message.pagination-dots {
     font-size: 0.75rem; }
   .message.is-medium {
     font-size: 1.25rem; }
@@ -4750,28 +4767,33 @@ a.navbar-item,
 .hero.is-fullheight-with-navbar {
   min-height: calc(100vh - 3.25rem); }
 
-.pagination {
+.pagination, .pagination-dots {
   font-size: 1rem;
   margin: -0.25rem; }
-  .pagination.is-small {
+  .pagination.is-small, .pagination-dots {
     font-size: 0.75rem; }
-  .pagination.is-medium {
+  .pagination.is-medium, .is-medium.pagination-dots {
     font-size: 1.25rem; }
-  .pagination.is-large, .pagination.switch[type='checkbox'], .pagination.input[type=text],
+  .pagination.is-large, .is-large.pagination-dots, .pagination-dots.switch[type='checkbox'], .pagination-dots.input[type=text],
+  .pagination-dots.input[type=password],
+  .pagination-dots.input[type=email], .pagination-dots.select, .pagination.switch[type='checkbox'], .pagination.input[type=text],
   .pagination.input[type=password],
   .pagination.input[type=email], .pagination.select {
     font-size: 1.5rem; }
-  .pagination.is-rounded .pagination-previous, .pagination.switch[type='checkbox'] .pagination-previous, .pagination.tags-static .pagination-previous,
+  .pagination.is-rounded .pagination-previous, .pagination-dots .pagination-previous, .pagination.switch[type='checkbox'] .pagination-previous, .switch.pagination-dots[type='checkbox'] .pagination-previous, .pagination.tags-static .pagination-previous, .tags-static.pagination-dots .pagination-previous,
   .pagination.is-rounded .pagination-next,
+  .pagination-dots .pagination-next,
   .pagination.switch[type='checkbox'] .pagination-next,
-  .pagination.tags-static .pagination-next {
+  .switch.pagination-dots[type='checkbox'] .pagination-next,
+  .pagination.tags-static .pagination-next,
+  .tags-static.pagination-dots .pagination-next {
     padding-left: 1em;
     padding-right: 1em;
     border-radius: 290486px; }
-  .pagination.is-rounded .pagination-link, .pagination.switch[type='checkbox'] .pagination-link, .pagination.tags-static .pagination-link {
+  .pagination.is-rounded .pagination-link, .pagination-dots .pagination-link, .pagination.switch[type='checkbox'] .pagination-link, .switch.pagination-dots[type='checkbox'] .pagination-link, .pagination.tags-static .pagination-link, .tags-static.pagination-dots .pagination-link {
     border-radius: 290486px; }
 
-.pagination,
+.pagination, .pagination-dots,
 .pagination-list {
   align-items: center;
   display: flex;
@@ -4838,7 +4860,7 @@ a.navbar-item,
     list-style: none; }
 
 @media screen and (max-width: 768px) {
-  .pagination {
+  .pagination, .pagination-dots {
     flex-wrap: wrap; }
   .pagination-previous,
   .pagination-next {
@@ -4858,20 +4880,20 @@ a.navbar-item,
     order: 2; }
   .pagination-next {
     order: 3; }
-  .pagination {
+  .pagination, .pagination-dots {
     justify-content: space-between; }
-    .pagination.is-centered .pagination-previous {
+    .pagination.is-centered .pagination-previous, .is-centered.pagination-dots .pagination-previous {
       order: 1; }
-    .pagination.is-centered .pagination-list {
+    .pagination.is-centered .pagination-list, .is-centered.pagination-dots .pagination-list {
       justify-content: center;
       order: 2; }
-    .pagination.is-centered .pagination-next {
+    .pagination.is-centered .pagination-next, .is-centered.pagination-dots .pagination-next {
       order: 3; }
-    .pagination.is-right .pagination-previous {
+    .pagination.is-right .pagination-previous, .is-right.pagination-dots .pagination-previous {
       order: 1; }
-    .pagination.is-right .pagination-next {
+    .pagination.is-right .pagination-next, .is-right.pagination-dots .pagination-next {
       order: 2; }
-    .pagination.is-right .pagination-list {
+    .pagination.is-right .pagination-list, .is-right.pagination-dots .pagination-list {
       justify-content: flex-end;
       order: 3; } }
 
@@ -5128,7 +5150,7 @@ label.panel-block {
     border-bottom-right-radius: 290486px;
     border-top-right-radius: 290486px;
     padding-right: 1.25em; }
-  .tabs.is-small {
+  .tabs.is-small, .tabs.pagination-dots {
     font-size: 0.75rem; }
   .tabs.is-medium {
     font-size: 1.25rem; }
@@ -8147,7 +8169,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
       @media screen and (max-width: 768px) {
         .hero.is-danger.is-bold .navbar-menu {
           background-image: linear-gradient(141deg, #fa0a62 0%, #f14668 71%, #f7595f 100%); } }
-  .hero.is-small .hero-body {
+  .hero.is-small .hero-body, .hero.pagination-dots .hero-body {
     padding: 1.5rem; }
   @media screen and (min-width: 769px), print {
     .hero.is-medium .hero-body {
@@ -8299,11 +8321,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     height: 0.375rem; }
   .switch[type="checkbox"].is-thin + label::after, .switch[type="checkbox"].is-thin + label:after {
     box-shadow: 0px 0px 3px #7a7a7a; }
-  .switch[type="checkbox"].is-rounded + label::before, .switch[type="checkbox"][type='checkbox'] + label::before, .switch.tags-static[type="checkbox"] + label::before, .switch[type="checkbox"].is-rounded + label:before, .switch[type="checkbox"][type='checkbox'] + label:before, .switch.tags-static[type="checkbox"] + label:before {
+  .switch[type="checkbox"].is-rounded + label::before, .switch.pagination-dots[type='checkbox'] + label::before, .switch[type="checkbox"][type='checkbox'] + label::before, .switch.tags-static[type="checkbox"] + label::before, .switch[type="checkbox"].is-rounded + label:before, .switch.pagination-dots[type='checkbox'] + label:before, .switch[type="checkbox"][type='checkbox'] + label:before, .switch.tags-static[type="checkbox"] + label:before {
     border-radius: 24px; }
-  .switch[type="checkbox"].is-rounded + label::after, .switch[type="checkbox"][type='checkbox'] + label::after, .switch.tags-static[type="checkbox"] + label::after, .switch[type="checkbox"].is-rounded + label:after, .switch[type="checkbox"][type='checkbox'] + label:after, .switch.tags-static[type="checkbox"] + label:after {
+  .switch[type="checkbox"].is-rounded + label::after, .switch.pagination-dots[type='checkbox'] + label::after, .switch[type="checkbox"][type='checkbox'] + label::after, .switch.tags-static[type="checkbox"] + label::after, .switch[type="checkbox"].is-rounded + label:after, .switch.pagination-dots[type='checkbox'] + label:after, .switch[type="checkbox"][type='checkbox'] + label:after, .switch.tags-static[type="checkbox"] + label:after {
     border-radius: 50%; }
-  .switch[type="checkbox"].is-small + label {
+  .switch[type="checkbox"].is-small + label, .switch.pagination-dots[type='checkbox'] + label {
     position: relative;
     display: initial;
     font-size: 0.75rem;
@@ -8311,7 +8333,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     padding-left: 2.75rem;
     padding-top: .2rem;
     cursor: pointer; }
-    .switch[type="checkbox"].is-small + label::before, .switch[type="checkbox"].is-small + label:before {
+    .switch[type="checkbox"].is-small + label::before, .switch.pagination-dots[type='checkbox'] + label::before, .switch[type="checkbox"].is-small + label:before, .switch.pagination-dots[type='checkbox'] + label:before {
       position: absolute;
       display: block;
       top: 0;
@@ -8322,7 +8344,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
       border-radius: 4px;
       background: #b5b5b5;
       content: ''; }
-    .switch[type="checkbox"].is-small + label::after, .switch[type="checkbox"].is-small + label:after {
+    .switch[type="checkbox"].is-small + label::after, .switch.pagination-dots[type='checkbox'] + label::after, .switch[type="checkbox"].is-small + label:after, .switch.pagination-dots[type='checkbox'] + label:after {
       display: block;
       position: absolute;
       top: 0.25rem;
@@ -8334,40 +8356,40 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
       background: #FFFFFF;
       transition: all 0.25s ease-out;
       content: ''; }
-  .switch[type="checkbox"].is-small.is-rtl + label {
+  .switch[type="checkbox"].is-small.is-rtl + label, .switch.pagination-dots[type="checkbox"].is-rtl + label {
     padding-left: 0;
     padding-right: 2.75rem; }
-    .switch[type="checkbox"].is-small.is-rtl + label::before, .switch[type="checkbox"].is-small.is-rtl + label:before {
+    .switch[type="checkbox"].is-small.is-rtl + label::before, .switch.pagination-dots[type="checkbox"].is-rtl + label::before, .switch[type="checkbox"].is-small.is-rtl + label:before, .switch.pagination-dots[type="checkbox"].is-rtl + label:before {
       left: auto;
       right: 0; }
-    .switch[type="checkbox"].is-small.is-rtl + label::after, .switch[type="checkbox"].is-small.is-rtl + label:after {
+    .switch[type="checkbox"].is-small.is-rtl + label::after, .switch.pagination-dots[type="checkbox"].is-rtl + label::after, .switch[type="checkbox"].is-small.is-rtl + label:after, .switch.pagination-dots[type="checkbox"].is-rtl + label:after {
       left: auto;
       right: 0.25rem; }
-  .switch[type="checkbox"].is-small:checked + label::before, .switch[type="checkbox"].is-small:checked + label:before {
+  .switch[type="checkbox"].is-small:checked + label::before, .switch.pagination-dots[type="checkbox"]:checked + label::before, .switch[type="checkbox"].is-small:checked + label:before, .switch.pagination-dots[type="checkbox"]:checked + label:before {
     background: #00d1b2; }
-  .switch[type="checkbox"].is-small:checked + label::after {
+  .switch[type="checkbox"].is-small:checked + label::after, .switch.pagination-dots[type="checkbox"]:checked + label::after {
     left: 1.25rem; }
-  .switch[type="checkbox"].is-small:checked.is-rtl + label::after, .switch[type="checkbox"].is-small:checked.is-rtl + label:after {
+  .switch[type="checkbox"].is-small:checked.is-rtl + label::after, .switch.pagination-dots[type="checkbox"]:checked.is-rtl + label::after, .switch[type="checkbox"].is-small:checked.is-rtl + label:after, .switch.pagination-dots[type="checkbox"]:checked.is-rtl + label:after {
     left: auto;
     right: 1.25rem; }
-  .switch[type="checkbox"].is-small.is-outlined + label::before, .switch[type="checkbox"].is-small.is-outlined + label:before {
+  .switch[type="checkbox"].is-small.is-outlined + label::before, .switch.pagination-dots[type="checkbox"].is-outlined + label::before, .switch[type="checkbox"].is-small.is-outlined + label:before, .switch.pagination-dots[type="checkbox"].is-outlined + label:before {
     background-color: transparent;
     border-color: #b5b5b5; }
-  .switch[type="checkbox"].is-small.is-outlined + label::after, .switch[type="checkbox"].is-small.is-outlined + label:after {
+  .switch[type="checkbox"].is-small.is-outlined + label::after, .switch.pagination-dots[type="checkbox"].is-outlined + label::after, .switch[type="checkbox"].is-small.is-outlined + label:after, .switch.pagination-dots[type="checkbox"].is-outlined + label:after {
     background: #b5b5b5; }
-  .switch[type="checkbox"].is-small.is-outlined:checked + label::before, .switch[type="checkbox"].is-small.is-outlined:checked + label:before {
+  .switch[type="checkbox"].is-small.is-outlined:checked + label::before, .switch.pagination-dots[type="checkbox"].is-outlined:checked + label::before, .switch[type="checkbox"].is-small.is-outlined:checked + label:before, .switch.pagination-dots[type="checkbox"].is-outlined:checked + label:before {
     background-color: transparent;
     border-color: #00d1b2; }
-  .switch[type="checkbox"].is-small.is-outlined:checked + label::after, .switch[type="checkbox"].is-small.is-outlined:checked + label:after {
+  .switch[type="checkbox"].is-small.is-outlined:checked + label::after, .switch.pagination-dots[type="checkbox"].is-outlined:checked + label::after, .switch[type="checkbox"].is-small.is-outlined:checked + label:after, .switch.pagination-dots[type="checkbox"].is-outlined:checked + label:after {
     background: #00d1b2; }
-  .switch[type="checkbox"].is-small.is-thin + label::before, .switch[type="checkbox"].is-small.is-thin + label:before {
+  .switch[type="checkbox"].is-small.is-thin + label::before, .switch.pagination-dots[type="checkbox"].is-thin + label::before, .switch[type="checkbox"].is-small.is-thin + label:before, .switch.pagination-dots[type="checkbox"].is-thin + label:before {
     top: 0.40909rem;
     height: 0.28125rem; }
-  .switch[type="checkbox"].is-small.is-thin + label::after, .switch[type="checkbox"].is-small.is-thin + label:after {
+  .switch[type="checkbox"].is-small.is-thin + label::after, .switch.pagination-dots[type="checkbox"].is-thin + label::after, .switch[type="checkbox"].is-small.is-thin + label:after, .switch.pagination-dots[type="checkbox"].is-thin + label:after {
     box-shadow: 0px 0px 3px #7a7a7a; }
-  .switch[type="checkbox"].is-small.is-rounded + label::before, .switch[type="checkbox"].is-small[type='checkbox'] + label::before, .switch.tags-static[type="checkbox"].is-small + label::before, .switch[type="checkbox"].is-small.is-rounded + label:before, .switch[type="checkbox"].is-small[type='checkbox'] + label:before, .switch.tags-static[type="checkbox"].is-small + label:before {
+  .switch[type="checkbox"].is-small.is-rounded + label::before, .switch.pagination-dots[type='checkbox'] + label::before, .switch[type="checkbox"].is-small[type='checkbox'] + label::before, .switch.pagination-dots[type="checkbox"][type='checkbox'] + label::before, .switch.tags-static[type="checkbox"].is-small + label::before, .switch.tags-static.pagination-dots[type="checkbox"] + label::before, .switch[type="checkbox"].is-small.is-rounded + label:before, .switch.pagination-dots[type='checkbox'] + label:before, .switch[type="checkbox"].is-small[type='checkbox'] + label:before, .switch.pagination-dots[type="checkbox"][type='checkbox'] + label:before, .switch.tags-static[type="checkbox"].is-small + label:before, .switch.tags-static.pagination-dots[type="checkbox"] + label:before {
     border-radius: 24px; }
-  .switch[type="checkbox"].is-small.is-rounded + label::after, .switch[type="checkbox"].is-small[type='checkbox'] + label::after, .switch.tags-static[type="checkbox"].is-small + label::after, .switch[type="checkbox"].is-small.is-rounded + label:after, .switch[type="checkbox"].is-small[type='checkbox'] + label:after, .switch.tags-static[type="checkbox"].is-small + label:after {
+  .switch[type="checkbox"].is-small.is-rounded + label::after, .switch.pagination-dots[type='checkbox'] + label::after, .switch[type="checkbox"].is-small[type='checkbox'] + label::after, .switch.pagination-dots[type="checkbox"][type='checkbox'] + label::after, .switch.tags-static[type="checkbox"].is-small + label::after, .switch.tags-static.pagination-dots[type="checkbox"] + label::after, .switch[type="checkbox"].is-small.is-rounded + label:after, .switch.pagination-dots[type='checkbox'] + label:after, .switch[type="checkbox"].is-small[type='checkbox'] + label:after, .switch.pagination-dots[type="checkbox"][type='checkbox'] + label:after, .switch.tags-static[type="checkbox"].is-small + label:after, .switch.tags-static.pagination-dots[type="checkbox"] + label:after {
     border-radius: 50%; }
   .switch[type="checkbox"].is-medium + label {
     position: relative;
@@ -8431,9 +8453,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     height: 0.46875rem; }
   .switch[type="checkbox"].is-medium.is-thin + label::after, .switch[type="checkbox"].is-medium.is-thin + label:after {
     box-shadow: 0px 0px 3px #7a7a7a; }
-  .switch[type="checkbox"].is-medium.is-rounded + label::before, .switch[type="checkbox"].is-medium[type='checkbox'] + label::before, .switch.tags-static[type="checkbox"].is-medium + label::before, .switch[type="checkbox"].is-medium.is-rounded + label:before, .switch[type="checkbox"].is-medium[type='checkbox'] + label:before, .switch.tags-static[type="checkbox"].is-medium + label:before {
+  .switch[type="checkbox"].is-medium.is-rounded + label::before, .switch.pagination-dots[type="checkbox"].is-medium + label::before, .switch[type="checkbox"].is-medium[type='checkbox'] + label::before, .switch.tags-static[type="checkbox"].is-medium + label::before, .switch[type="checkbox"].is-medium.is-rounded + label:before, .switch.pagination-dots[type="checkbox"].is-medium + label:before, .switch[type="checkbox"].is-medium[type='checkbox'] + label:before, .switch.tags-static[type="checkbox"].is-medium + label:before {
     border-radius: 24px; }
-  .switch[type="checkbox"].is-medium.is-rounded + label::after, .switch[type="checkbox"].is-medium[type='checkbox'] + label::after, .switch.tags-static[type="checkbox"].is-medium + label::after, .switch[type="checkbox"].is-medium.is-rounded + label:after, .switch[type="checkbox"].is-medium[type='checkbox'] + label:after, .switch.tags-static[type="checkbox"].is-medium + label:after {
+  .switch[type="checkbox"].is-medium.is-rounded + label::after, .switch.pagination-dots[type="checkbox"].is-medium + label::after, .switch[type="checkbox"].is-medium[type='checkbox'] + label::after, .switch.tags-static[type="checkbox"].is-medium + label::after, .switch[type="checkbox"].is-medium.is-rounded + label:after, .switch.pagination-dots[type="checkbox"].is-medium + label:after, .switch[type="checkbox"].is-medium[type='checkbox'] + label:after, .switch.tags-static[type="checkbox"].is-medium + label:after {
     border-radius: 50%; }
   .switch[type="checkbox"].is-large + label, .switch[type="checkbox"][type='checkbox'] + label, .switch.input[type="checkbox"][type=text] + label, .switch.input[type="checkbox"][type=password] + label, .switch.input[type="checkbox"][type=email] + label, .switch.select[type="checkbox"] + label {
     position: relative;
@@ -8497,9 +8519,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     height: 0.5625rem; }
   .switch[type="checkbox"].is-large.is-thin + label::after, .switch[type="checkbox"].is-thin[type='checkbox'] + label::after, .switch.input[type="checkbox"].is-thin[type=text] + label::after, .switch.input[type="checkbox"].is-thin[type=password] + label::after, .switch.input[type="checkbox"].is-thin[type=email] + label::after, .switch.select[type="checkbox"].is-thin + label::after, .switch[type="checkbox"].is-large.is-thin + label:after, .switch[type="checkbox"].is-thin[type='checkbox'] + label:after, .switch.input[type="checkbox"].is-thin[type=text] + label:after, .switch.input[type="checkbox"].is-thin[type=password] + label:after, .switch.input[type="checkbox"].is-thin[type=email] + label:after, .switch.select[type="checkbox"].is-thin + label:after {
     box-shadow: 0px 0px 3px #7a7a7a; }
-  .switch[type="checkbox"].is-large.is-rounded + label::before, .switch[type="checkbox"][type='checkbox'] + label::before, .switch.input[type="checkbox"].is-rounded[type=text] + label::before, .switch.input[type="checkbox"][type=text][type='checkbox'] + label::before, .switch.input.tags-static[type="checkbox"][type=text] + label::before, .switch.input[type="checkbox"].is-rounded[type=password] + label::before, .switch.input[type="checkbox"][type=password][type='checkbox'] + label::before, .switch.input.tags-static[type="checkbox"][type=password] + label::before, .switch.input[type="checkbox"].is-rounded[type=email] + label::before, .switch.input[type="checkbox"][type=email][type='checkbox'] + label::before, .switch.input.tags-static[type="checkbox"][type=email] + label::before, .switch.select[type="checkbox"].is-rounded + label::before, .switch.select[type="checkbox"][type='checkbox'] + label::before, .switch.select.tags-static[type="checkbox"] + label::before, .switch.tags-static[type="checkbox"].is-large + label::before, .switch.tags-static[type="checkbox"][type='checkbox'] + label::before, .switch[type="checkbox"].is-large.is-rounded + label:before, .switch[type="checkbox"][type='checkbox'] + label:before, .switch.input[type="checkbox"].is-rounded[type=text] + label:before, .switch.input[type="checkbox"][type=text][type='checkbox'] + label:before, .switch.input.tags-static[type="checkbox"][type=text] + label:before, .switch.input[type="checkbox"].is-rounded[type=password] + label:before, .switch.input[type="checkbox"][type=password][type='checkbox'] + label:before, .switch.input.tags-static[type="checkbox"][type=password] + label:before, .switch.input[type="checkbox"].is-rounded[type=email] + label:before, .switch.input[type="checkbox"][type=email][type='checkbox'] + label:before, .switch.input.tags-static[type="checkbox"][type=email] + label:before, .switch.select[type="checkbox"].is-rounded + label:before, .switch.select[type="checkbox"][type='checkbox'] + label:before, .switch.select.tags-static[type="checkbox"] + label:before, .switch.tags-static[type="checkbox"].is-large + label:before, .switch.tags-static[type="checkbox"][type='checkbox'] + label:before {
+  .switch[type="checkbox"].is-large.is-rounded + label::before, .switch.pagination-dots[type="checkbox"].is-large + label::before, .switch.pagination-dots[type="checkbox"][type='checkbox'] + label::before, .switch.pagination-dots.input[type="checkbox"][type=text] + label::before, .switch.pagination-dots.input[type="checkbox"][type=password] + label::before, .switch.pagination-dots.input[type="checkbox"][type=email] + label::before, .switch.pagination-dots.select[type="checkbox"] + label::before, .switch[type="checkbox"][type='checkbox'] + label::before, .switch.input[type="checkbox"].is-rounded[type=text] + label::before, .switch.input[type="checkbox"][type=text][type='checkbox'] + label::before, .switch.input.tags-static[type="checkbox"][type=text] + label::before, .switch.input[type="checkbox"].is-rounded[type=password] + label::before, .switch.input[type="checkbox"][type=password][type='checkbox'] + label::before, .switch.input.tags-static[type="checkbox"][type=password] + label::before, .switch.input[type="checkbox"].is-rounded[type=email] + label::before, .switch.input[type="checkbox"][type=email][type='checkbox'] + label::before, .switch.input.tags-static[type="checkbox"][type=email] + label::before, .switch.select[type="checkbox"].is-rounded + label::before, .switch.select[type="checkbox"][type='checkbox'] + label::before, .switch.select.tags-static[type="checkbox"] + label::before, .switch.tags-static[type="checkbox"].is-large + label::before, .switch.tags-static[type="checkbox"][type='checkbox'] + label::before, .switch[type="checkbox"].is-large.is-rounded + label:before, .switch.pagination-dots[type="checkbox"].is-large + label:before, .switch.pagination-dots[type="checkbox"][type='checkbox'] + label:before, .switch.pagination-dots.input[type="checkbox"][type=text] + label:before, .switch.pagination-dots.input[type="checkbox"][type=password] + label:before, .switch.pagination-dots.input[type="checkbox"][type=email] + label:before, .switch.pagination-dots.select[type="checkbox"] + label:before, .switch[type="checkbox"][type='checkbox'] + label:before, .switch.input[type="checkbox"].is-rounded[type=text] + label:before, .switch.input[type="checkbox"][type=text][type='checkbox'] + label:before, .switch.input.tags-static[type="checkbox"][type=text] + label:before, .switch.input[type="checkbox"].is-rounded[type=password] + label:before, .switch.input[type="checkbox"][type=password][type='checkbox'] + label:before, .switch.input.tags-static[type="checkbox"][type=password] + label:before, .switch.input[type="checkbox"].is-rounded[type=email] + label:before, .switch.input[type="checkbox"][type=email][type='checkbox'] + label:before, .switch.input.tags-static[type="checkbox"][type=email] + label:before, .switch.select[type="checkbox"].is-rounded + label:before, .switch.select[type="checkbox"][type='checkbox'] + label:before, .switch.select.tags-static[type="checkbox"] + label:before, .switch.tags-static[type="checkbox"].is-large + label:before, .switch.tags-static[type="checkbox"][type='checkbox'] + label:before {
     border-radius: 24px; }
-  .switch[type="checkbox"].is-large.is-rounded + label::after, .switch[type="checkbox"][type='checkbox'] + label::after, .switch.input[type="checkbox"].is-rounded[type=text] + label::after, .switch.input[type="checkbox"][type=text][type='checkbox'] + label::after, .switch.input.tags-static[type="checkbox"][type=text] + label::after, .switch.input[type="checkbox"].is-rounded[type=password] + label::after, .switch.input[type="checkbox"][type=password][type='checkbox'] + label::after, .switch.input.tags-static[type="checkbox"][type=password] + label::after, .switch.input[type="checkbox"].is-rounded[type=email] + label::after, .switch.input[type="checkbox"][type=email][type='checkbox'] + label::after, .switch.input.tags-static[type="checkbox"][type=email] + label::after, .switch.select[type="checkbox"].is-rounded + label::after, .switch.select[type="checkbox"][type='checkbox'] + label::after, .switch.select.tags-static[type="checkbox"] + label::after, .switch.tags-static[type="checkbox"].is-large + label::after, .switch.tags-static[type="checkbox"][type='checkbox'] + label::after, .switch[type="checkbox"].is-large.is-rounded + label:after, .switch[type="checkbox"][type='checkbox'] + label:after, .switch.input[type="checkbox"].is-rounded[type=text] + label:after, .switch.input[type="checkbox"][type=text][type='checkbox'] + label:after, .switch.input.tags-static[type="checkbox"][type=text] + label:after, .switch.input[type="checkbox"].is-rounded[type=password] + label:after, .switch.input[type="checkbox"][type=password][type='checkbox'] + label:after, .switch.input.tags-static[type="checkbox"][type=password] + label:after, .switch.input[type="checkbox"].is-rounded[type=email] + label:after, .switch.input[type="checkbox"][type=email][type='checkbox'] + label:after, .switch.input.tags-static[type="checkbox"][type=email] + label:after, .switch.select[type="checkbox"].is-rounded + label:after, .switch.select[type="checkbox"][type='checkbox'] + label:after, .switch.select.tags-static[type="checkbox"] + label:after, .switch.tags-static[type="checkbox"].is-large + label:after, .switch.tags-static[type="checkbox"][type='checkbox'] + label:after {
+  .switch[type="checkbox"].is-large.is-rounded + label::after, .switch.pagination-dots[type="checkbox"].is-large + label::after, .switch.pagination-dots[type="checkbox"][type='checkbox'] + label::after, .switch.pagination-dots.input[type="checkbox"][type=text] + label::after, .switch.pagination-dots.input[type="checkbox"][type=password] + label::after, .switch.pagination-dots.input[type="checkbox"][type=email] + label::after, .switch.pagination-dots.select[type="checkbox"] + label::after, .switch[type="checkbox"][type='checkbox'] + label::after, .switch.input[type="checkbox"].is-rounded[type=text] + label::after, .switch.input[type="checkbox"][type=text][type='checkbox'] + label::after, .switch.input.tags-static[type="checkbox"][type=text] + label::after, .switch.input[type="checkbox"].is-rounded[type=password] + label::after, .switch.input[type="checkbox"][type=password][type='checkbox'] + label::after, .switch.input.tags-static[type="checkbox"][type=password] + label::after, .switch.input[type="checkbox"].is-rounded[type=email] + label::after, .switch.input[type="checkbox"][type=email][type='checkbox'] + label::after, .switch.input.tags-static[type="checkbox"][type=email] + label::after, .switch.select[type="checkbox"].is-rounded + label::after, .switch.select[type="checkbox"][type='checkbox'] + label::after, .switch.select.tags-static[type="checkbox"] + label::after, .switch.tags-static[type="checkbox"].is-large + label::after, .switch.tags-static[type="checkbox"][type='checkbox'] + label::after, .switch[type="checkbox"].is-large.is-rounded + label:after, .switch.pagination-dots[type="checkbox"].is-large + label:after, .switch.pagination-dots[type="checkbox"][type='checkbox'] + label:after, .switch.pagination-dots.input[type="checkbox"][type=text] + label:after, .switch.pagination-dots.input[type="checkbox"][type=password] + label:after, .switch.pagination-dots.input[type="checkbox"][type=email] + label:after, .switch.pagination-dots.select[type="checkbox"] + label:after, .switch[type="checkbox"][type='checkbox'] + label:after, .switch.input[type="checkbox"].is-rounded[type=text] + label:after, .switch.input[type="checkbox"][type=text][type='checkbox'] + label:after, .switch.input.tags-static[type="checkbox"][type=text] + label:after, .switch.input[type="checkbox"].is-rounded[type=password] + label:after, .switch.input[type="checkbox"][type=password][type='checkbox'] + label:after, .switch.input.tags-static[type="checkbox"][type=password] + label:after, .switch.input[type="checkbox"].is-rounded[type=email] + label:after, .switch.input[type="checkbox"][type=email][type='checkbox'] + label:after, .switch.input.tags-static[type="checkbox"][type=email] + label:after, .switch.select[type="checkbox"].is-rounded + label:after, .switch.select[type="checkbox"][type='checkbox'] + label:after, .switch.select.tags-static[type="checkbox"] + label:after, .switch.tags-static[type="checkbox"].is-large + label:after, .switch.tags-static[type="checkbox"][type='checkbox'] + label:after {
     border-radius: 50%; }
   .switch[type="checkbox"].is-white:checked + label::before, .switch[type="checkbox"].is-white:checked + label:before {
     background: #FFFFFF; }
@@ -8827,32 +8849,32 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     left: auto;
     right: 0.6rem; }
 
-.is-checkradio[type="checkbox"].is-small + label {
+.is-checkradio[type="checkbox"].is-small + label, .is-checkradio.pagination-dots[type="checkbox"] + label {
   font-size: 0.75rem;
   padding-left: 1.5rem; }
-  .is-checkradio[type="checkbox"].is-small + label::before, .is-checkradio[type="checkbox"].is-small + label:before {
+  .is-checkradio[type="checkbox"].is-small + label::before, .is-checkradio.pagination-dots[type="checkbox"] + label::before, .is-checkradio[type="checkbox"].is-small + label:before, .is-checkradio.pagination-dots[type="checkbox"] + label:before {
     width: 1.125rem;
     height: 1.125rem; }
-  .is-checkradio[type="checkbox"].is-small + label::after, .is-checkradio[type="checkbox"].is-small + label:after {
+  .is-checkradio[type="checkbox"].is-small + label::after, .is-checkradio.pagination-dots[type="checkbox"] + label::after, .is-checkradio[type="checkbox"].is-small + label:after, .is-checkradio.pagination-dots[type="checkbox"] + label:after {
     width: 0.28125rem;
     height: 0.45rem;
     top: 0.30375rem;
     left: 0.45rem; }
 
-.is-checkradio[type="checkbox"].is-small.is-block + label::before, .is-checkradio[type="checkbox"].is-small.is-block + label:before {
+.is-checkradio[type="checkbox"].is-small.is-block + label::before, .is-checkradio.pagination-dots[type="checkbox"].is-block + label::before, .is-checkradio[type="checkbox"].is-small.is-block + label:before, .is-checkradio.pagination-dots[type="checkbox"].is-block + label:before {
   width: 0.9375rem;
   height: 0.9375rem;
   left: .175rem;
   top: .175rem; }
 
-.is-checkradio[type="checkbox"].is-small.is-block + label::after, .is-checkradio[type="checkbox"].is-small.is-block + label:after {
+.is-checkradio[type="checkbox"].is-small.is-block + label::after, .is-checkradio.pagination-dots[type="checkbox"].is-block + label::after, .is-checkradio[type="checkbox"].is-small.is-block + label:after, .is-checkradio.pagination-dots[type="checkbox"].is-block + label:after {
   top: 0.29375rem;
   left: 0.5375rem; }
 
-.is-checkradio[type="checkbox"].is-small.is-rtl + label {
+.is-checkradio[type="checkbox"].is-small.is-rtl + label, .is-checkradio.pagination-dots[type="checkbox"].is-rtl + label {
   padding-left: 0;
   padding-right: 1.5rem; }
-  .is-checkradio[type="checkbox"].is-small.is-rtl + label::after, .is-checkradio[type="checkbox"].is-small.is-rtl + label:after {
+  .is-checkradio[type="checkbox"].is-small.is-rtl + label::after, .is-checkradio.pagination-dots[type="checkbox"].is-rtl + label::after, .is-checkradio[type="checkbox"].is-small.is-rtl + label:after, .is-checkradio.pagination-dots[type="checkbox"].is-rtl + label:after {
     left: auto;
     right: 0.45rem; }
 
@@ -9313,15 +9335,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .is-checkradio[type="radio"].is-rtl + label {
   padding-right: 2rem; }
 
-.is-checkradio[type="radio"].is-small + label {
+.is-checkradio[type="radio"].is-small + label, .is-checkradio.pagination-dots[type="radio"] + label {
   font-size: 0.75rem;
   line-height: 1.125rem;
   padding-left: 1.5rem; }
-  .is-checkradio[type="radio"].is-small + label::before, .is-checkradio[type="radio"].is-small + label:before, .is-checkradio[type="radio"].is-small + label::after, .is-checkradio[type="radio"].is-small + label:after {
+  .is-checkradio[type="radio"].is-small + label::before, .is-checkradio.pagination-dots[type="radio"] + label::before, .is-checkradio[type="radio"].is-small + label:before, .is-checkradio.pagination-dots[type="radio"] + label:before, .is-checkradio[type="radio"].is-small + label::after, .is-checkradio.pagination-dots[type="radio"] + label::after, .is-checkradio[type="radio"].is-small + label:after, .is-checkradio.pagination-dots[type="radio"] + label:after {
     width: 1.125rem;
     height: 1.125rem; }
 
-.is-checkradio[type="radio"].is-small.is-rtl + label {
+.is-checkradio[type="radio"].is-small.is-rtl + label, .is-checkradio.pagination-dots[type="radio"].is-rtl + label {
   padding-right: 1.5rem; }
 
 .is-checkradio[type="radio"].is-medium + label {
@@ -9544,13 +9566,91 @@ category: Colors
 
 The basic colors types available.
 
-```types.html
-<div class="primaryA">Primary A</div>
-<div class="primaryB">Primary B</div>
-<div class="accent">Accent</div>
-<div class="positive">Positive</div>
-<div class="warning">Warning</div>
-<div class="negative">Negative</div>
+```typesfake.html
+<div class="all">
+  <div class="wrap">
+    <div class="primaryA color">
+    </div>
+
+    <div class="content">
+    Primary A
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="primaryA color">
+    </div>
+
+    <div class="content">
+    Primary B
+    </div>
+  </div>
+
+  <div style="clear: both;"></div>
+
+  <div class="wrap">
+    <div class="accent color">
+    </div>
+
+    <div class="content">
+    Accent
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="positive color">
+    </div>
+
+    <div class="content">
+    Positive
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="warning color">
+    </div>
+
+    <div class="content">
+    Warning
+    </div>
+  </div>
+
+   <div class="wrap">
+    <div class="negative color">
+    </div>
+
+    <div class="content">
+    Negative
+    </div>
+  </div>
+</div>
+```
+```typesfake.css hidden
+body > div .color {
+width: 96px;
+height: 96px;
+margin-right: 24px;
+}
+
+body .all {
+display: flex;
+flex-wrap: wrap;
+}
+body .all > .wrap .color {
+border-radius: 10px;
+}
+
+body .all > .wrap {
+display: flex;
+flex-basis: calc(50% - 15px);
+border: 1px solid #eee;
+border-radius: 10px;
+margin-right: 15px;
+padding: 20px;
+    align-items: center;
+    text-align: center!important;
+    margin-bottom: 20px!important;
+    }
 ```
 */
 .primaryA, .backgroundInversePrimary, button.rectanglePrimary, button.pillPrimary,
@@ -9560,24 +9660,26 @@ input.rectanglePrimary[type=submit],
 input.pillPrimary[type=submit],
 a.rectanglePrimary,
 a.pillPrimary,
-.switch[type='checkbox']:checked[type='checkbox'] + label:before, .contentInversePrimary, .contentInverseSecondary, .contentInverseTertiary {
+.switch[type='checkbox']:checked[type='checkbox'] + label:before, .contentInversePrimary, .tags-static.backgroundPositive:not(body), .tags-static.backgroundAccent:not(body), .tags-static.backgroundWarning:not(body), .tags-static.backgroundNegative:not(body), .contentInverseSecondary, .contentInverseTertiary {
   background-color: #17191C; }
 
-.primaryB, .backgroundPrimary {
+.primaryB, .backgroundPrimary, .input[type=text]:disabled,
+.input[type=password]:disabled,
+.input[type=email]:disabled {
   background-color: #FFFFFF;
   border: 1px solid #ABB1BA;
   box-sizing: border-box; }
 
-.accent, .backgroundAccent {
+.accent, .backgroundAccent, .tags-static.backgroundAccent:not(body) {
   background-color: #1975FF; }
 
-.positive, .backgroundPositive {
+.positive, .backgroundPositive, .tags-static.backgroundPositive:not(body) {
   background-color: #1DC872; }
 
-.warning, .backgroundWarning {
+.warning, .backgroundWarning, .tags-static.backgroundWarning:not(body) {
   background-color: #FFA719; }
 
-.negative, .backgroundNegative {
+.negative, .backgroundNegative, .tags-static.backgroundNegative:not(body) {
   background-color: #E84030; }
 
 /*
@@ -9588,13 +9690,93 @@ category: Colors
 
 The background colors types available.
 
-```types.html
-<div class="backgroundPrimary">Background Primary</div>
-<div class="backgroundSecondary">Background Secondary</div>
-<div class="backgroundTertiary">Background Tertiary</div>
-<div class="backgroundInversePrimary">Background Inverse Primary</div>
-<div class="backgroundInverseSecondary">Background Inverse Secondary</div>
-<div class="backgroundInverseTertiary">Background Inverse Tertiary</div>
+
+```typesfake.html
+<div class="all">
+  <div class="wrap">
+    <div class="backgroundPrimary color">
+    </div>
+
+    <div class="content">
+    backgroundPrimary
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="backgroundSecondary color">
+    </div>
+
+    <div class="content">
+    backgroundSecondary
+    </div>
+  </div>
+
+  <div style="clear: both;"></div>
+
+  <div class="wrap">
+    <div class="backgroundTertiary color">
+    </div>
+
+    <div class="content">
+    backgroundTertiary
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="backgroundInversePrimary color">
+    </div>
+
+    <div class="content">
+    backgroundInversePrimary
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="backgroundInverseSecondary color">
+    </div>
+
+    <div class="content">
+    backgroundInverseSecondary
+    </div>
+  </div>
+
+   <div class="wrap">
+    <div class="backgroundInverseTertiary color">
+    </div>
+
+    <div class="content">
+    backgroundInverseTertiary
+    </div>
+  </div>
+</div>
+```
+```typesfake.css hidden
+body > div .color {
+width: 96px;
+height: 96px;
+margin-right: 24px;
+}
+
+body .all {
+display: flex;
+flex-wrap: wrap;
+}
+
+body .all > .wrap .color {
+border-radius: 10px;
+}
+
+body .all > .wrap {
+display: flex;
+flex-basis: calc(50% - 15px);
+border: 1px solid #eee;
+border-radius: 10px;
+margin-right: 15px;
+padding: 20px;
+    align-items: center;
+    text-align: center!important;
+    margin-bottom: 20px!important;
+    }
 ```
 */
 .backgroundSecondary {
@@ -9618,17 +9800,9 @@ input.pillTertiary[type=button]:active,
 input.rectangleTertiary[type=submit]:active,
 input.pillTertiary[type=submit]:active,
 a.rectangleTertiary:active,
-a.pillTertiary:active, .switch[type='checkbox'] + label::before, .switch[type='checkbox'] + label:before, .input[type=text],
-.input[type=password],
-.input[type=email], .input[type=text]:disabled,
-.input[type=password]:disabled,
-.input[type=email]:disabled, .input[type=text]:disabled:enabled, .input[type=text]:disabled:focus, .input[type=text]:disabled:active,
-.input[type=password]:disabled:enabled,
-.input[type=password]:disabled:focus,
-.input[type=password]:disabled:active,
-.input[type=email]:disabled:enabled,
-.input[type=email]:disabled:focus,
-.input[type=email]:disabled:active, .select select, .select select:disabled, .select select:disabled:enabled, .select select:disabled:focus, .select select:disabled:active {
+a.pillTertiary:active, .switch[type='checkbox'] + label::before, .switch[type='checkbox'] + label:before, .select select, .select select:disabled, .select select.input[type=text]:disabled,
+.select select.input[type=password]:disabled,
+.select select.input[type=email]:disabled, .select select:disabled:enabled, .select select:disabled:focus, .select select:disabled:active {
   background-color: #E2E5E9; }
 
 .backgroundInverseSecondary {
@@ -9646,45 +9820,179 @@ category: Colors
 The background colors extensions available.
 
 ```types.html
-<div class="backgroundStateDisabled">Background State Disabled</div>
-<div class="backgroundAccent">Background Accent</div>
-<div class="backgroundPositive">Background Positive</div>
-<div class="backgroundNegative">Background Negative</div>
-<div class="backgroundWarning">Background Warning</div>
-<div class="backgroundLightAccent">Background Light Accent</div>
-<div class="backgroundLightPositive">Background Light Positive</div>
-<div class="backgroundLightNegative">Background Light Negative</div>
-<div class="backgroundLightWarning">Background Light Warning</div>
-<div class="backgroundOverlayLight">Background Overlay Light</div>
-<div class="backgroundOverlayLightDark">Background Overlay Light Dark</div>
+<div class="all">
+  <div class="wrap">
+    <div class="backgroundStateDisabled color">
+    </div>
+
+    <div class="content">
+    backgroundStateDisabled
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="backgroundAccent color">
+    </div>
+
+    <div class="content">
+    backgroundAccent
+    </div>
+  </div>
+
+  <div style="clear: both;"></div>
+
+  <div class="wrap">
+    <div class="backgroundPositive color">
+    </div>
+
+    <div class="content">
+    backgroundPositive
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="backgroundNegative color">
+    </div>
+
+    <div class="content">
+    backgroundNegative
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="backgroundWarning color">
+    </div>
+
+    <div class="content">
+    backgroundWarning
+    </div>
+  </div>
+
+   <div class="wrap">
+    <div class="backgroundLightAccent color">
+    </div>
+
+    <div class="content">
+    backgroundLightAccent
+    </div>
+  </div>
+
+    <div class="wrap">
+    <div class="backgroundLightPositive color">
+    </div>
+
+    <div class="content">
+    backgroundLightPositive
+    </div>
+  </div>
+
+
+    <div class="wrap">
+    <div class="backgroundLightNegative color">
+    </div>
+
+    <div class="content">
+    backgroundLightNegative
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="backgroundLightWarning color">
+    </div>
+
+    <div class="content">
+    backgroundLightNegative
+    </div>
+  </div>
+
+<div class="wrap">
+    <div class="backgroundOverlayLight color">
+    </div>
+
+    <div class="content">
+    backgroundLightNegative
+    </div>
+  </div>
+
+
+<div class="wrap">
+    <div class="backgroundOverlayDark color">
+    </div>
+
+    <div class="content">
+    backgroundOverlayDark
+    </div>
+  </div>
+
+</div>
+```
+```types.css hidden
+body > div .color {
+width: 96px;
+height: 96px;
+margin-right: 24px;
+}
+
+body .all {
+display: flex;
+flex-wrap: wrap;
+}
+
+body .all > .wrap .color {
+border-radius: 10px;
+}
+
+body .all > .wrap {
+display: flex;
+flex-basis: calc(50% - 15px);
+border: 1px solid #eee;
+border-radius: 10px;
+margin-right: 15px;
+padding: 20px;
+    align-items: center;
+    text-align: center!important;
+    margin-bottom: 20px!important;
+    }
 ```
 */
-.backgroundStateDisabled, button.rectanglePrimary:disabled, button.pillPrimary:disabled,
+.backgroundStateDisabled, button.rectanglePrimary:disabled, button.pillPrimary:disabled, button.pillPrimary.input[type=text]:disabled,
+button.pillPrimary.input[type=password]:disabled,
+button.pillPrimary.input[type=email]:disabled, button.rectanglePrimary.input[type=text]:disabled,
+button.rectanglePrimary.input[type=password]:disabled,
+button.rectanglePrimary.input[type=email]:disabled,
 input.rectanglePrimary[type=button]:disabled,
 input.pillPrimary[type=button]:disabled,
 input.rectanglePrimary[type=submit]:disabled,
 input.pillPrimary[type=submit]:disabled,
 a.rectanglePrimary:disabled,
-a.pillPrimary:disabled, button.rectangleSecondary:disabled, button.pillSecondary:disabled,
+a.pillPrimary:disabled, a.pillPrimary.input[type=text]:disabled,
+a.pillPrimary.input[type=password]:disabled,
+a.pillPrimary.input[type=email]:disabled, a.rectanglePrimary.input[type=text]:disabled,
+a.rectanglePrimary.input[type=password]:disabled,
+a.rectanglePrimary.input[type=email]:disabled, button.rectangleSecondary:disabled, button.pillSecondary:disabled, button.pillSecondary.input[type=text]:disabled,
+button.pillSecondary.input[type=password]:disabled,
+button.pillSecondary.input[type=email]:disabled, button.rectangleSecondary.input[type=text]:disabled,
+button.rectangleSecondary.input[type=password]:disabled,
+button.rectangleSecondary.input[type=email]:disabled,
 input.rectangleSecondary[type=button]:disabled,
 input.pillSecondary[type=button]:disabled,
 input.rectangleSecondary[type=submit]:disabled,
 input.pillSecondary[type=submit]:disabled,
 a.rectangleSecondary:disabled,
-a.pillSecondary:disabled {
+a.pillSecondary:disabled, a.pillSecondary.input[type=text]:disabled,
+a.pillSecondary.input[type=password]:disabled,
+a.pillSecondary.input[type=email]:disabled, a.rectangleSecondary.input[type=text]:disabled,
+a.rectangleSecondary.input[type=password]:disabled,
+a.rectangleSecondary.input[type=email]:disabled {
   background-color: #E2E5E9; }
 
-.backgroundLightAccent, .tags-static.backgroundLightAccent:not(body) {
+.backgroundLightAccent {
   background-color: #CCEEFF; }
 
-.backgroundLightPositive, .input.positive[type=text], .input.backgroundPositive[type=text],
-.input.positive[type=password], .input.backgroundPositive[type=password],
-.input.positive[type=email], .input.backgroundPositive[type=email], .select.positive select, .select.backgroundPositive select, .tags-static.backgroundLightPositive:not(body) {
+.backgroundLightPositive, .select.positive select, .select.backgroundPositive select {
   background-color: #CCFFDD; }
 
-.backgroundLightNegative, .input.negative[type=text], .input.backgroundNegative[type=text],
-.input.negative[type=password], .input.backgroundNegative[type=password],
-.input.negative[type=email], .input.backgroundNegative[type=email], .select.negative select, .select.backgroundNegative select, .tags-static.backgroundLightNegative:not(body) {
+.backgroundLightNegative, .select.negative select, .select.backgroundNegative select {
   background-color: #FFD8CC; }
 
 .backgroundLightWarning {
@@ -9764,21 +10072,23 @@ a.pillTertiary:enabled, .input[type=text]:focus, .input[type=text]:active,
 
 .contentSecondary, .input[type=text]::placeholder,
 .input[type=password]::placeholder,
-.input[type=email]::placeholder, .select select:disabled, .select select:disabled:enabled, .select select:disabled:focus, .select select:disabled:active {
+.input[type=email]::placeholder, .select select:disabled, .select select.input[type=text]:disabled,
+.select select.input[type=password]:disabled,
+.select select.input[type=email]:disabled, .select select:disabled:enabled, .select select:disabled:focus, .select select:disabled:active {
   color: #6A717C; }
 
 .contentTertiary, .input[type=text],
 .input[type=password],
-.input[type=email], .input[type=text]:disabled:enabled, .input[type=text]:disabled:focus, .input[type=text]:disabled:active,
-.input[type=password]:disabled:enabled,
-.input[type=password]:disabled:focus,
-.input[type=password]:disabled:active,
-.input[type=email]:disabled:enabled,
-.input[type=email]:disabled:focus,
-.input[type=email]:disabled:active, .field .help {
+.input[type=email], .input[type=text]:enabled:disabled, .input[type=text]:focus:disabled, .input[type=text]:active:disabled,
+.input[type=password]:enabled:disabled,
+.input[type=password]:focus:disabled,
+.input[type=password]:active:disabled,
+.input[type=email]:enabled:disabled,
+.input[type=email]:focus:disabled,
+.input[type=email]:active:disabled, .field .help, .field .control .hint, .control .field .hint {
   color: #ABB1BA; }
 
-.contentInversePrimary {
+.contentInversePrimary, .tags-static.backgroundPositive:not(body), .tags-static.backgroundAccent:not(body), .tags-static.backgroundWarning:not(body), .tags-static.backgroundNegative:not(body) {
   color: #FFFFFF; }
 
 .contentInverseSecondary {
@@ -9803,28 +10113,52 @@ The text colors that can be used with `<p>` elements or any element with text.
 <div class="contentWarning">Content Warning</div>
 ```
 */
-.contentStateDisabled, button.rectanglePrimary:disabled, button.pillPrimary:disabled,
+.contentStateDisabled, button.rectanglePrimary:disabled, button.pillPrimary:disabled, button.pillPrimary.input[type=text]:disabled,
+button.pillPrimary.input[type=password]:disabled,
+button.pillPrimary.input[type=email]:disabled, button.rectanglePrimary.input[type=text]:disabled,
+button.rectanglePrimary.input[type=password]:disabled,
+button.rectanglePrimary.input[type=email]:disabled,
 input.rectanglePrimary[type=button]:disabled,
 input.pillPrimary[type=button]:disabled,
 input.rectanglePrimary[type=submit]:disabled,
 input.pillPrimary[type=submit]:disabled,
 a.rectanglePrimary:disabled,
-a.pillPrimary:disabled, button.rectangleSecondary:disabled, button.pillSecondary:disabled,
+a.pillPrimary:disabled, a.pillPrimary.input[type=text]:disabled,
+a.pillPrimary.input[type=password]:disabled,
+a.pillPrimary.input[type=email]:disabled, a.rectanglePrimary.input[type=text]:disabled,
+a.rectanglePrimary.input[type=password]:disabled,
+a.rectanglePrimary.input[type=email]:disabled, button.rectangleSecondary:disabled, button.pillSecondary:disabled, button.pillSecondary.input[type=text]:disabled,
+button.pillSecondary.input[type=password]:disabled,
+button.pillSecondary.input[type=email]:disabled, button.rectangleSecondary.input[type=text]:disabled,
+button.rectangleSecondary.input[type=password]:disabled,
+button.rectangleSecondary.input[type=email]:disabled,
 input.rectangleSecondary[type=button]:disabled,
 input.pillSecondary[type=button]:disabled,
 input.rectangleSecondary[type=submit]:disabled,
 input.pillSecondary[type=submit]:disabled,
 a.rectangleSecondary:disabled,
-a.pillSecondary:disabled, button.rectangleTertiary:disabled, button.pillTertiary:disabled,
+a.pillSecondary:disabled, a.pillSecondary.input[type=text]:disabled,
+a.pillSecondary.input[type=password]:disabled,
+a.pillSecondary.input[type=email]:disabled, a.rectangleSecondary.input[type=text]:disabled,
+a.rectangleSecondary.input[type=password]:disabled,
+a.rectangleSecondary.input[type=email]:disabled, button.rectangleTertiary:disabled, button.pillTertiary:disabled, button.pillTertiary.input[type=text]:disabled,
+button.pillTertiary.input[type=password]:disabled,
+button.pillTertiary.input[type=email]:disabled, button.rectangleTertiary.input[type=text]:disabled,
+button.rectangleTertiary.input[type=password]:disabled,
+button.rectangleTertiary.input[type=email]:disabled,
 input.rectangleTertiary[type=button]:disabled,
 input.pillTertiary[type=button]:disabled,
 input.rectangleTertiary[type=submit]:disabled,
 input.pillTertiary[type=submit]:disabled,
 a.rectangleTertiary:disabled,
-a.pillTertiary:disabled {
+a.pillTertiary:disabled, a.pillTertiary.input[type=text]:disabled,
+a.pillTertiary.input[type=password]:disabled,
+a.pillTertiary.input[type=email]:disabled, a.rectangleTertiary.input[type=text]:disabled,
+a.rectangleTertiary.input[type=password]:disabled,
+a.rectangleTertiary.input[type=email]:disabled {
   color: #ABB1BA; }
 
-.contentAccent, .tags-static.backgroundLightAccent:not(body) {
+.contentAccent {
   color: #1975FF; }
 
 .contentOnColorPrimary {
@@ -9833,10 +10167,10 @@ a.pillTertiary:disabled {
 .contentOnColorSecondary {
   color: rgba(255, 255, 255, 0.5); }
 
-.contentNegative, .field .help.is-danger, .tags-static.backgroundLightNegative:not(body) {
+.contentNegative, .field .help.is-danger, .field .control .is-danger.hint, .control .field .is-danger.hint {
   color: #E84030; }
 
-.contentPositive, .field .help.is-success, .tags-static.backgroundLightPositive:not(body) {
+.contentPositive, .field .help.is-success, .field .control .is-success.hint, .control .field .is-success.hint {
   color: #1DC872; }
 
 .contentWarning {
@@ -9886,13 +10220,23 @@ The border colors that can be used with any element.
 <div class="borderWarning">Border Warning</div>
 ```
 */
-.borderStateDisabled {
+.borderStateDisabled, .input[type=text]:disabled,
+.input[type=password]:disabled,
+.input[type=email]:disabled, .input[type=text]:enabled:disabled, .input[type=text]:focus:disabled, .input[type=text]:active:disabled,
+.input[type=password]:enabled:disabled,
+.input[type=password]:focus:disabled,
+.input[type=password]:active:disabled,
+.input[type=email]:enabled:disabled,
+.input[type=email]:focus:disabled,
+.input[type=email]:active:disabled {
   border: 1px solid #E2E5E9; }
 
 .borderAccent {
   border: 1px solid #1975FF; }
 
-.borderNegative {
+.borderNegative, .input.negative[type=text], .input.backgroundNegative[type=text],
+.input.negative[type=password], .input.backgroundNegative[type=password],
+.input.negative[type=email], .input.backgroundNegative[type=email] {
   border: 1px solid #E84030; }
 
 .borderPositive {
@@ -9901,7 +10245,7 @@ The border colors that can be used with any element.
 .borderWarning {
   border: 1px solid #FFA719; }
 
-.secondaryFont, .title-x8, .title-x7, .title-x6, .title-x5, .title-x4, .title-x3, .title-x2, .text-x6, .text-x5, .text-x4, .text-x3, .text-x2, .text-x1, .displayS, .displayXS, .headingXLarge, h1, .header div.header-content.headingXLarge, h1 div.header-content.headingXLarge, h2 div.header-content.headingXLarge, h3 div.header-content.headingXLarge, h4 div.header-content.headingXLarge, h5 div.header-content.headingXLarge, h6 div.header-content.headingXLarge, .headingLarge, h2, .header div.header-content.headingLarge, h1 div.header-content.headingLarge, h2 div.header-content.headingLarge, h3 div.header-content.headingLarge, h4 div.header-content.headingLarge, h5 div.header-content.headingLarge, h6 div.header-content.headingLarge, .headingM, h3, .header div.header-content.headingM, h1 div.header-content.headingM, h2 div.header-content.headingM, h3 div.header-content.headingM, h4 div.header-content.headingM, h5 div.header-content.headingM, h6 div.header-content.headingM, .headingSmall, h4, .header div.header-content.headingSmall, h1 div.header-content.headingSmall, h2 div.header-content.headingSmall, h3 div.header-content.headingSmall, h4 div.header-content.headingSmall, h5 div.header-content.headingSmall, h6 div.header-content.headingSmall, .headingXSmall, h5, .header div.header-content.headingXSmall, h1 div.header-content.headingXSmall, h2 div.header-content.headingXSmall, h3 div.header-content.headingXSmall, h4 div.header-content.headingXSmall, h5 div.header-content.headingXSmall, h6 div.header-content.headingXSmall, .headingXXSmall, h6, .header div.header-content.headingXXSmall, h1 div.header-content.headingXXSmall, h2 div.header-content.headingXXSmall, h3 div.header-content.headingXXSmall, h4 div.header-content.headingXXSmall, h5 div.header-content.headingXXSmall, h6 div.header-content.headingXXSmall {
+.secondaryFont, .title-x8, .title-x7, .title-x6, .title-x5, .title-x4, .title-x3, .title-x2, .text-x6, .text-x5, .text-x4, .text-x3, .text-x2, .displayS, .displayXS, .headingXLarge, h1, .header div.header-content.headingXLarge, h1 div.header-content.headingXLarge, h2 div.header-content.headingXLarge, h3 div.header-content.headingXLarge, h4 div.header-content.headingXLarge, h5 div.header-content.headingXLarge, h6 div.header-content.headingXLarge, .headingLarge, h2, .header div.header-content.headingLarge, h1 div.header-content.headingLarge, h2 div.header-content.headingLarge, h3 div.header-content.headingLarge, h4 div.header-content.headingLarge, h5 div.header-content.headingLarge, h6 div.header-content.headingLarge, .headingM, h3, .header div.header-content.headingM, h1 div.header-content.headingM, h2 div.header-content.headingM, h3 div.header-content.headingM, h4 div.header-content.headingM, h5 div.header-content.headingM, h6 div.header-content.headingM, .headingSmall, h4, .header div.header-content.headingSmall, h1 div.header-content.headingSmall, h2 div.header-content.headingSmall, h3 div.header-content.headingSmall, h4 div.header-content.headingSmall, h5 div.header-content.headingSmall, h6 div.header-content.headingSmall, .headingXSmall, h5, .header div.header-content.headingXSmall, h1 div.header-content.headingXSmall, h2 div.header-content.headingXSmall, h3 div.header-content.headingXSmall, h4 div.header-content.headingXSmall, h5 div.header-content.headingXSmall, h6 div.header-content.headingXSmall, .headingXXSmall, h6, .header div.header-content.headingXXSmall, h1 div.header-content.headingXXSmall, h2 div.header-content.headingXXSmall, h3 div.header-content.headingXXSmall, h4 div.header-content.headingXXSmall, h5 div.header-content.headingXXSmall, h6 div.header-content.headingXXSmall {
   font-family: 'GT Walsheim'; }
 
 /*
@@ -9980,10 +10324,11 @@ category: Typography
 Title types can be used on any element that contains text.
 
 ```types.html
-<p class="displayL">Display Large</p>
-<p class="displayM">Display Medium</p>
-<p class="displayS">Display Small</p>
-<p class="displayXS">Display Extra Small</p>
+<p class="text-x6">Text x6</p>
+<p class="text-x5">Text x5</p>
+<p class="text-x4">Text x4</p>
+<p class="text-x3">Text x3</p>
+<p class="text-x2">Text x2</p>
 ```
 */
 .text-x6 {
@@ -10015,13 +10360,6 @@ Title types can be used on any element that contains text.
   color: #000000; }
 
 .text-x2 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000000; }
-
-.text-x1 {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -10232,7 +10570,7 @@ input.mediumLabel.pillTertiary[type=button],
 input.rectangleTertiary.mediumLabel[type=submit],
 input.mediumLabel.pillTertiary[type=submit],
 a.rectangleTertiary.mediumLabel,
-a.mediumLabel.pillTertiary {
+a.mediumLabel.pillTertiary, .control label {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -10256,20 +10594,11 @@ input.smallLabel.pillTertiary[type=button],
 input.rectangleTertiary.smallLabel[type=submit],
 input.smallLabel.pillTertiary[type=submit],
 a.rectangleTertiary.smallLabel,
-a.smallLabel.pillTertiary, .field .help {
+a.smallLabel.pillTertiary, .field .help, .field .control .hint, .control .field .hint {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1; }
-
-/**
-  Not used in website
- */
-.labelXSmall {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 18px; }
 
 .bm-icon, .bm-icon-placeholder, .bm-icon-arrow-left, .bm-icon-arrow-up, .bm-icon-arrow-down, .bm-icon-arrow-right, .bm-icon-chevron-left, .bm-icon-chevron-up, .bm-icon-chevron-down, .select:not(.is-multiple):not(.is-loading)::after, .bm-icon-chevron-right, .bm-icon-cross-circle-outlined, .bm-icon-cross-circle-solid, .bm-icon-cross, .bm-icon-check, .bm-icon-alert, .bm-icon-chat, .bm-icon-bell, .bm-icon-search, .bm-icon-options, .bm-icon-copy-v1, .bm-icon-copy-v2, .bm-icon-mastercard, .bm-icon-credit-card-v1, .bm-icon-credit-card-v2, .bm-icon-bank-id-sv, .bm-profile-circular, .bm-profile, .bm-check-enabled, .is-checkradio[type='checkbox'] + label::after, .is-checkradio[type='checkbox'] + label:after, .bm-check-enabled-off, .is-checkradio[type='checkbox'] + label::before, .is-checkradio[type='checkbox'] + label:before, .bm-bullet-enabled, .is-checkradio[type='radio'] + label::after, .is-checkradio[type='radio'] + label:after, .bm-bullet-enabled-off, .is-checkradio[type='radio'] + label::before, .is-checkradio[type='radio'] + label:before {
   width: 100%;
@@ -10565,12 +10894,85 @@ category: Icons
 User icons can be used with `<i>` and `<span>` elements and within `<input>` and `<button>`.
 
 ```icons.html
-<svg class="bm-spinner" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="48" cy="48" r="44" stroke="#E3E5E8" stroke-width="8"/>
-    <path d="M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92" stroke="black" stroke-width="8"/>
-</svg>
+<div class="bm-spinner-wrapper largeSpinner">
+  <svg class="bm-spinner" width="88" height="88" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="48" cy="48" r="44" stroke="#E3E5E8" stroke-width="8"/>
+      <path d="M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92" stroke="black" stroke-width="8"/>
+  </svg>
+  <div class="bm-spinner-label">
+  Laddar..
+  </div>
+</div>
+
+<div class="bm-spinner-wrapper mediumSpinner">
+  <svg class="bm-spinner" width="88" height="88" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="48" cy="48" r="44" stroke="#E3E5E8" stroke-width="8"/>
+      <path d="M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92" stroke="black" stroke-width="8"/>
+  </svg>
+  <div class="bm-spinner-label">
+  Laddar..
+  </div>
+</div>
+
+<div class="bm-spinner-wrapper smallSpinner">
+  <svg class="bm-spinner" width="88" height="88" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="48" cy="48" r="44" stroke="#E3E5E8" stroke-width="8"/>
+      <path d="M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92" stroke="black" stroke-width="8"/>
+  </svg>
+  <div class="bm-spinner-label">
+  Laddar..
+  </div>
+</div>
+
+<div class="bm-spinner-wrapper largeSpinner">
+  <svg class="bm-spinner" width="88" height="88" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="48" cy="48" r="44" stroke="#E3E5E8" stroke-width="8"/>
+      <path d="M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92" stroke="black" stroke-width="8"/>
+  </svg>
+</div>
+
+<div class="bm-spinner-wrapper mediumSpinner">
+  <svg class="bm-spinner" width="88" height="88" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="48" cy="48" r="44" stroke="#E3E5E8" stroke-width="8"/>
+      <path d="M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92" stroke="black" stroke-width="8"/>
+  </svg>
+</div>
+
+<div class="bm-spinner-wrapper smallSpinner">
+  <svg class="bm-spinner" width="88" height="88" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="48" cy="48" r="44" stroke="#E3E5E8" stroke-width="8"/>
+      <path d="M92 48C92 23.6995 72.3005 4 48 4C23.6995 4 4 23.6995 4 48C4 72.3005 23.6995 92 48 92" stroke="black" stroke-width="8"/>
+  </svg>
+</div>
+```
+```icons.css hidden
+body {
+  display: flex;
+  align-items: center;
+}
+body > div {
+  margin-right: 15px;
+}
 ```
 */
+.bm-spinner-wrapper {
+  text-align: center; }
+  .bm-spinner-wrapper.largeSpinner .bm-spinner {
+    width: 88px;
+    height: 88px; }
+  .bm-spinner-wrapper.largeSpinner .bm-spinner-label {
+    font-size: 18px; }
+  .bm-spinner-wrapper.mediumSpinner .bm-spinner {
+    width: 64px;
+    height: 64px; }
+  .bm-spinner-wrapper.mediumSpinner .bm-spinner-label {
+    font-size: 16px; }
+  .bm-spinner-wrapper.smallSpinner .bm-spinner {
+    width: 32px;
+    height: 32px; }
+  .bm-spinner-wrapper.smallSpinner .bm-spinner-label {
+    font-size: 14px; }
+
 .bm-spinner {
   -webkit-animation: rotation 2s infinite linear;
   -moz-animation: rotation 2s infinite linear;
@@ -10603,6 +11005,62 @@ User icons can be used with `<i>` and `<span>` elements and within `<input>` and
     transform: rotate(0deg); }
   to {
     transform: rotate(359deg); } }
+
+/*
+---
+name: Pagination Dots
+category: Components
+---
+
+```pagination.html
+<div class="backgroundPositive" style="padding: 20px;">
+<nav class="pagination-dots" role="navigation" aria-label="pagination">
+  <ul class="pagination-list backgroundPrimaryB">
+    <li><a class="pagination-link" aria-label="Goto page 1"></a></li>
+    <li><a class="pagination-link" aria-label="Goto page 45"></a></li>
+    <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page"></a></li>
+    <li><a class="pagination-link" aria-label="Goto page 47"></a></li>
+    <li><a class="pagination-link" aria-label="Goto page 86"></a></li>
+  </ul>
+</nav>
+</div>
+
+<div class="backgroundPositive" style="padding: 20px;">
+<nav class="pagination-dots" role="navigation" aria-label="pagination">
+  <ul class="pagination-list backgroundInversePrimary">
+    <li><a class="pagination-link" aria-label="Goto page 1"></a></li>
+    <li><a class="pagination-link" aria-label="Goto page 45"></a></li>
+    <li><a class="pagination-link" aria-label="Page 46" aria-current="page"></a></li>
+    <li><a class="pagination-link is-current" aria-label="Goto page 47"></a></li>
+    <li><a class="pagination-link" aria-label="Goto page 86"></a></li>
+  </ul>
+</nav>
+</div>
+```
+*/
+.pagination-dots .pagination-list {
+  padding: 12px 24px;
+  justify-content: center;
+  flex-grow: 0;
+  border-radius: 10em; }
+  .pagination-dots .pagination-list.backgroundPrimaryB {
+    background: rgba(255, 255, 255, 0.5); }
+  .pagination-dots .pagination-list li {
+    align-items: center;
+    display: flex; }
+    .pagination-dots .pagination-list li .pagination-link {
+      min-width: 8px;
+      width: 8px;
+      height: 8px;
+      border: 0;
+      padding: 0;
+      background: rgba(255, 255, 255, 0.5); }
+      .pagination-dots .pagination-list li .pagination-link.is-current {
+        min-width: 12px;
+        width: 12px;
+        height: 12px;
+        border: 0;
+        background: #FFFFFF; }
 
 /*
 ---
@@ -10685,6 +11143,12 @@ a {
   input[type=submit].content-space-between,
   a.content-space-between {
     justify-content: space-between; }
+  button:focus,
+  input[type=button]:focus,
+  input[type=submit]:focus,
+  a:focus {
+    outline: 0;
+    box-shadow: none; }
   button.rectanglePrimary, button.pillPrimary,
   input[type=button].rectanglePrimary,
   input.pillPrimary[type=button],
@@ -10717,13 +11181,23 @@ a {
       padding-left: 16px;
       padding-right: 16px;
       height: 40px; }
-    button.rectanglePrimary:disabled, button.pillPrimary:disabled,
+    button.rectanglePrimary:disabled, button.pillPrimary:disabled, button.pillPrimary.input[type=text]:disabled,
+    button.pillPrimary.input[type=password]:disabled,
+    button.pillPrimary.input[type=email]:disabled, button.rectanglePrimary.input[type=text]:disabled,
+    button.rectanglePrimary.input[type=password]:disabled,
+    button.rectanglePrimary.input[type=email]:disabled,
     input[type=button].rectanglePrimary:disabled,
     input.pillPrimary[type=button]:disabled,
     input[type=submit].rectanglePrimary:disabled,
     input.pillPrimary[type=submit]:disabled,
     a.rectanglePrimary:disabled,
-    a.pillPrimary:disabled {
+    a.pillPrimary:disabled,
+    a.pillPrimary.input[type=text]:disabled,
+    a.pillPrimary.input[type=password]:disabled,
+    a.pillPrimary.input[type=email]:disabled,
+    a.rectanglePrimary.input[type=text]:disabled,
+    a.rectanglePrimary.input[type=password]:disabled,
+    a.rectanglePrimary.input[type=email]:disabled {
       pointer-events: none; }
     button.rectanglePrimary:hover, button.pillPrimary:hover,
     input[type=button].rectanglePrimary:hover,
@@ -10782,13 +11256,23 @@ a {
       padding-left: 16px;
       padding-right: 16px;
       height: 40px; }
-    button.rectangleSecondary:disabled, button.pillSecondary:disabled,
+    button.rectangleSecondary:disabled, button.pillSecondary:disabled, button.pillSecondary.input[type=text]:disabled,
+    button.pillSecondary.input[type=password]:disabled,
+    button.pillSecondary.input[type=email]:disabled, button.rectangleSecondary.input[type=text]:disabled,
+    button.rectangleSecondary.input[type=password]:disabled,
+    button.rectangleSecondary.input[type=email]:disabled,
     input[type=button].rectangleSecondary:disabled,
     input.pillSecondary[type=button]:disabled,
     input[type=submit].rectangleSecondary:disabled,
     input.pillSecondary[type=submit]:disabled,
     a.rectangleSecondary:disabled,
-    a.pillSecondary:disabled {
+    a.pillSecondary:disabled,
+    a.pillSecondary.input[type=text]:disabled,
+    a.pillSecondary.input[type=password]:disabled,
+    a.pillSecondary.input[type=email]:disabled,
+    a.rectangleSecondary.input[type=text]:disabled,
+    a.rectangleSecondary.input[type=password]:disabled,
+    a.rectangleSecondary.input[type=email]:disabled {
       pointer-events: none; }
     button.rectangleSecondary:hover, button.pillSecondary:hover,
     input[type=button].rectangleSecondary:hover,
@@ -10837,13 +11321,23 @@ a {
       padding-left: 16px;
       padding-right: 16px;
       height: 40px; }
-    button.rectangleTertiary:disabled, button.pillTertiary:disabled,
+    button.rectangleTertiary:disabled, button.pillTertiary:disabled, button.pillTertiary.input[type=text]:disabled,
+    button.pillTertiary.input[type=password]:disabled,
+    button.pillTertiary.input[type=email]:disabled, button.rectangleTertiary.input[type=text]:disabled,
+    button.rectangleTertiary.input[type=password]:disabled,
+    button.rectangleTertiary.input[type=email]:disabled,
     input[type=button].rectangleTertiary:disabled,
     input.pillTertiary[type=button]:disabled,
     input[type=submit].rectangleTertiary:disabled,
     input.pillTertiary[type=submit]:disabled,
     a.rectangleTertiary:disabled,
-    a.pillTertiary:disabled {
+    a.pillTertiary:disabled,
+    a.pillTertiary.input[type=text]:disabled,
+    a.pillTertiary.input[type=password]:disabled,
+    a.pillTertiary.input[type=email]:disabled,
+    a.rectangleTertiary.input[type=text]:disabled,
+    a.rectangleTertiary.input[type=password]:disabled,
+    a.rectangleTertiary.input[type=email]:disabled {
       pointer-events: none; }
     button.rectangleTertiary:hover, button.pillTertiary:hover,
     input[type=button].rectangleTertiary:hover,
@@ -10901,7 +11395,10 @@ a {
       display: flex;
       border-radius: 100px;
       width: 64px;
-      height: 64px; }
+      height: 64px;
+      align-items: center;
+      padding: 0;
+      justify-content: center; }
       button.pillSecondary.circ.medium,
       input[type=button].pillSecondary.circ.medium,
       input[type=submit].pillSecondary.circ.medium,
@@ -10935,6 +11432,12 @@ Switch can be used with `<input>` elements.
 </div>
 ```
 */
+.switch[type='checkbox']:focus + label::before, .switch[type='checkbox']:focus + label:before {
+  outline: 0; }
+
+.switch[type='checkbox']:after + label::before, .switch[type='checkbox']:after + label:before {
+  outline: 0; }
+
 .switch[type="checkbox"] + label::before, .switch[type="checkbox"] + label:before {
   width: 52px;
   height: 32px; }
@@ -10981,13 +11484,13 @@ Check can be used with `<input>` elements.
   .is-checkradio[type="checkbox"] + label {
     font-size: 18px; }
     .is-checkradio[type="checkbox"] + label::before, .is-checkradio[type="checkbox"] + label:before {
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
       border-radius: 0;
       border: 0; }
     .is-checkradio[type="checkbox"] + label::after, .is-checkradio[type="checkbox"] + label:after {
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
       transform: unset;
       top: 0;
       left: 0; }
@@ -11024,11 +11527,11 @@ Radio can be used with `<input>` elements.
 .is-checkradio[type="radio"] + label {
   font-size: 18px; }
   .is-checkradio[type="radio"] + label::before, .is-checkradio[type="radio"] + label:before {
-    width: 24px;
-    height: 24px; }
+    width: 20px;
+    height: 20px; }
   .is-checkradio[type="radio"] + label::after, .is-checkradio[type="radio"] + label:after {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     transform: unset;
     top: 0;
     left: 0; }
@@ -11050,29 +11553,102 @@ Types of inputs:
 - Negative input: Input with negative accent
 
 ```types.html
-<input type="text" class="input" placeholder="Placeholder text" />
-<input type="text" class="input" value="Standard input" />
+<div class="control has-icons-left">
+<label class="label">With label</label>
+  <input type="text" class="input" placeholder="Placeholder text" />
+    <span class="icon is-small is-left">
+    <i class="bm-icon-placeholder contentPrimary"></i>
+  </span>
+  <span class="hint">Hint goes here</span>
+</div>
+<div class="control has-icons-left has-icons-right">
+  <input type="text" class="input" placeholder="Placeholder text" />
+    <span class="icon is-small is-left">
+    <i class="bm-icon-placeholder contentPrimary"></i>
+  </span>
+  <span class="icon is-small is-right">
+    <i class="bm-icon-check contentPositive"></i>
+  </span>
+  <span class="hint">Hint goes here</span>
+</div>
+
+
 <div class="control has-icons-right">
-  <input type="text" class="input positive" value="Positive input" />
+  <input type="text" class="input" value="Positive input" />
   <span class="icon is-small is-right">
     <i class="bm-icon-check contentPositive"></i>
   </span>
 </div>
+
 <div class="control has-icons-right">
-  <input type="text" class="input negative" value="Negative input" />
+  <input type="text" class="input borderNegative" value="Negative input" />
   <span class="icon is-small is-right">
     <i class="bm-icon-alert contentNegative"></i>
   </span>
 </div>
-<input type="text" class="input" disabled value="Disabled input" />
+
+
+<div class="control has-icons-right">
+<label class="label">With label</label>
+  <input type="text" class="input borderNegative" disabled value="Negative input" />
+  <span class="icon is-small is-right">
+    <i class="bm-icon-alert contentStateDisabled"></i>
+  </span>
+</div>
+
+<div class="control has-icons-right">
+<label class="label">Rounded</label>
+  <input type="text" class="input rounded" value="Negative input" />
+  <span class="icon is-small is-right">
+    <i class="bm-icon-alert contentStateDisabled"></i>
+  </span>
+</div>
+
+<div class="control has-icons-left has-icons-right rounded">
+<label class="label">Rounded</label>
+  <input type="text" class="input rounded" value="Negative input" />
+    <span class="icon is-small is-left">
+    <i class="bm-icon-placeholder contentPrimary"></i>
+  </span>
+  <span class="icon is-small is-right">
+    <i class="bm-icon-alert contentStateDisabled"></i>
+  </span>
+</div>
+```
+```types.css hidden
+.control {
+margin-bottom: 20px;
+}
 ```
 */
+.control.has-icons-left .input {
+  padding-left: calc(17.75px + 42px); }
+
+.control.has-icons-left .input[type=text] ~ .icon {
+  font-size: 1.57rem; }
+
+.control.has-icons-right .input[type=text] ~ .icon {
+  font-size: 1.57rem; }
+
+.control.has-icons-left .icon, .control.has-icons-right .icon {
+  width: 2.61em; }
+
+.control.has-icons-left .icon {
+  top: auto; }
+
+.control.has-icons-left input:focus {
+  padding-left: calc(17.75px + 42px - 1px); }
+
+.control.has-icons-right .icon {
+  top: auto; }
+
+.control.has-icons-right input:focus {
+  padding-right: calc(17.75px + 40px - 1px); }
+
 .input[type=text],
 .input[type=password],
 .input[type=email] {
-  border: 0;
-  border-radius: 0;
-  height: 56px;
+  height: 64px;
   font-size: 18px;
   box-shadow: none; }
   .input[type=text]:focus, .input[type=text]:active,
@@ -11081,7 +11657,7 @@ Types of inputs:
   .input[type=email]:focus,
   .input[type=email]:active {
     background-color: #FFFFFF;
-    border: 2px solid #000000;
+    border: 2px solid #17191C;
     box-shadow: none; }
   .input[type=text]:enabled,
   .input[type=password]:enabled,
@@ -11090,45 +11666,28 @@ Types of inputs:
   .input[type=text]:disabled,
   .input[type=password]:disabled,
   .input[type=email]:disabled {
-    border: 0;
-    border-radius: 0;
     box-shadow: none; }
-  .input[type=text].positive, .input.backgroundPositive[type=text],
-  .input[type=password].positive,
-  .input.backgroundPositive[type=password],
-  .input[type=email].positive,
-  .input.backgroundPositive[type=email] {
-    border-bottom: 2px solid #1DC872; }
-    .input[type=text].positive:focus, .input.backgroundPositive[type=text]:focus, .input[type=text].positive:active, .input.backgroundPositive[type=text]:active,
-    .input[type=password].positive:focus,
-    .input.backgroundPositive[type=password]:focus,
-    .input[type=password].positive:active,
-    .input.backgroundPositive[type=password]:active,
-    .input[type=email].positive:focus,
-    .input.backgroundPositive[type=email]:focus,
-    .input[type=email].positive:active,
-    .input.backgroundPositive[type=email]:active {
-      border-top: 2px solid transparent;
-      border-left: 2px solid transparent;
-      border-right: 2px solid transparent; }
-  .input[type=text].negative, .input.backgroundNegative[type=text],
-  .input[type=password].negative,
-  .input.backgroundNegative[type=password],
-  .input[type=email].negative,
-  .input.backgroundNegative[type=email] {
-    border-bottom: 2px solid #E84030; }
-    .input[type=text].negative:focus, .input.backgroundNegative[type=text]:focus, .input[type=text].negative:active, .input.backgroundNegative[type=text]:active,
-    .input[type=password].negative:focus,
-    .input.backgroundNegative[type=password]:focus,
-    .input[type=password].negative:active,
-    .input.backgroundNegative[type=password]:active,
-    .input[type=email].negative:focus,
-    .input.backgroundNegative[type=email]:focus,
-    .input[type=email].negative:active,
-    .input.backgroundNegative[type=email]:active {
-      border-top: 2px solid transparent;
-      border-left: 2px solid transparent;
-      border-right: 2px solid transparent; }
+  .input[type=text].rounded,
+  .input[type=password].rounded,
+  .input[type=email].rounded {
+    border-radius: 100px; }
+
+.control .input {
+  padding-left: 17.75px; }
+  .control .input.rounded {
+    padding-left: calc(17.75px + 10px); }
+    .control .input.rounded:focus {
+      padding-left: calc(17.75px - 1px + 10px); }
+  .control .input:focus {
+    padding-left: calc(17.75px - 1px); }
+
+.control.has-icons-left.rounded .icon {
+  width: 3em; }
+
+.control.has-icons-left .input.rounded {
+  padding-left: calc(17.75px + 42px); }
+  .control.has-icons-left .input.rounded:focus {
+    padding-left: calc(17.75px - 1px + 42px); }
 
 /*
 ---
@@ -11139,14 +11698,21 @@ category: Components
 Hin helpers can be used with `<p>` in structure with field class.
 
 ```types.html
-<div class="field">
-  <input type="text" class="input" value="Standard input" />
-  <p class="help is-success">Helper success</p>
+<div class="control">
+  <input type="text" class="input" value="Positive input" />
+  <span class="hint is-success">Hint goes here</span>
 </div>
-<div class="field">
+
+<div class="control">
   <input type="text" class="input" value="Standard input" />
-  <p class="help is-danger">Helper danger</p>
+  <span class="hint is-danger">Hint goes here</span>
 </div>
+
+```
+```types.css hidden
+.control {
+margin-bottom: 20px;
+}
 ```
 */
 /*
@@ -11250,9 +11816,9 @@ Tags can be used with `<div>` or `<span>` elements.
 
 ```types.html
 <div class="tags-static backgroundSecondary"><span class="contentPrimary">Waiting for delivery</span></div>
-<div class="tags-static backgroundLightPositive">Paid</div>
-<div class="tags-static backgroundLightAccent">7 days left</div>
-<div class="tags-static backgroundLightNegative">4 days late</div>
+<div class="tags-static backgroundPositive">Paid</div>
+<div class="tags-static backgroundAccent">7 days left</div>
+<div class="tags-static backgroundWarning">4 days late</div>
 ```
 */
 .tags-static:not(body) {

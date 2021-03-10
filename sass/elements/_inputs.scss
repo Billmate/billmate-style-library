@@ -12,42 +12,144 @@ Types of inputs:
 - Negative input: Input with negative accent
 
 ```types.html
-<input type="text" class="input" placeholder="Placeholder text" />
-<input type="text" class="input" value="Standard input" />
+<div class="control has-icons-left">
+<label class="label">With label</label>
+  <input type="text" class="input" placeholder="Placeholder text" />
+    <span class="icon is-small is-left">
+    <i class="bm-icon-placeholder contentPrimary"></i>
+  </span>
+  <span class="hint">Hint goes here</span>
+</div>
+<div class="control has-icons-left has-icons-right">
+  <input type="text" class="input" placeholder="Placeholder text" />
+    <span class="icon is-small is-left">
+    <i class="bm-icon-placeholder contentPrimary"></i>
+  </span>
+  <span class="icon is-small is-right">
+    <i class="bm-icon-check contentPositive"></i>
+  </span>
+  <span class="hint">Hint goes here</span>
+</div>
+
+
 <div class="control has-icons-right">
-  <input type="text" class="input positive" value="Positive input" />
+  <input type="text" class="input" value="Positive input" />
   <span class="icon is-small is-right">
     <i class="bm-icon-check contentPositive"></i>
   </span>
 </div>
+
 <div class="control has-icons-right">
-  <input type="text" class="input negative" value="Negative input" />
+  <input type="text" class="input borderNegative" value="Negative input" />
   <span class="icon is-small is-right">
     <i class="bm-icon-alert contentNegative"></i>
   </span>
 </div>
-<input type="text" class="input" disabled value="Disabled input" />
+
+
+<div class="control has-icons-right">
+<label class="label">With label</label>
+  <input type="text" class="input borderNegative" disabled value="Negative input" />
+  <span class="icon is-small is-right">
+    <i class="bm-icon-alert contentStateDisabled"></i>
+  </span>
+</div>
+
+<div class="control has-icons-right">
+<label class="label">Rounded</label>
+  <input type="text" class="input rounded" value="Negative input" />
+  <span class="icon is-small is-right">
+    <i class="bm-icon-alert contentStateDisabled"></i>
+  </span>
+</div>
+
+<div class="control has-icons-left has-icons-right rounded">
+<label class="label">Rounded</label>
+  <input type="text" class="input rounded" value="Negative input" />
+    <span class="icon is-small is-left">
+    <i class="bm-icon-placeholder contentPrimary"></i>
+  </span>
+  <span class="icon is-small is-right">
+    <i class="bm-icon-alert contentStateDisabled"></i>
+  </span>
+</div>
+```
+```types.css hidden
+.control {
+margin-bottom: 20px;
+}
 ```
 */
+
+.control {
+  label {
+    @extend .labelMedium;
+  }
+}
+
+.control.has-icons-left .input {
+  padding-left: calc(17.75px + 42px);
+}
+
+.control.has-icons-left .input[type=text] ~ .icon {
+  font-size: 1.57rem;
+}
+
+.control.has-icons-right .input[type=text] ~ .icon {
+  font-size: 1.57rem;
+}
+
+.control.has-icons-left .icon, .control.has-icons-right .icon {
+  width: 2.61em;
+}
+
+.control.has-icons-left {
+  .icon {
+    top: auto;
+  }
+
+  input {
+    &:focus {
+      padding-left: calc(17.75px + 42px - 1px);
+    }
+  }
+}
+
+.control.has-icons-right {
+  .icon {
+    top: auto;
+  }
+  input {
+    &:focus {
+      padding-right: calc(17.75px + 40px - 1px);
+    }
+  }
+}
+
+
+.control {
+  .hint {
+    @extend .help;
+  }
+}
+
 .input[type=text],
 .input[type=password],
 .input[type=email] {
   @extend .is-large;
-  @extend .backgroundTertiary;
   @extend .contentTertiary;
 
-  border: 0;
-  border-radius: 0;
-  height: 56px;
+  height: 64px;
   font-size: 18px;
   box-shadow: none;
+
 
   &:focus,
   &:active {
     @extend .contentPrimary;
 
     background-color: $white;
-    border: 2px solid $black;
+    border: 2px solid $grey900;
     box-shadow: none;
   }
 
@@ -56,16 +158,15 @@ Types of inputs:
   }
 
   &:disabled {
-    @extend .backgroundTertiary;
-
-    border: 0;
-    border-radius: 0;
+    @extend :disabled;
+    @extend .backgroundPrimary;
+    @extend .borderStateDisabled;
     box-shadow: none;
 
     &:enabled,
     &:focus,
     &:active {
-      @extend .backgroundTertiary;
+      @extend .borderStateDisabled;
       @extend .contentTertiary;
     }
   }
@@ -74,31 +175,46 @@ Types of inputs:
     @extend .contentSecondary;
   }
 
-  // Positive
-  &.positive {
-    @extend .backgroundLightPositive;
-
-    border-bottom: 2px solid $green500;
-
-    &:focus,
-    &:active {
-      border-top: 2px solid transparent;
-      border-left: 2px solid transparent;
-      border-right: 2px solid transparent;
-    }
+  &.negative {
+    @extend .borderNegative;
   }
 
-  // Negative
-  &.negative {
-    @extend .backgroundLightNegative;
+  // Pill Primary
+  &.rounded {
+    border-radius: 100px;
+  }
+}
 
-    border-bottom: 2px solid $red500;
+.control {
+  .input {
+    padding-left: 17.75px;
 
-    &:focus,
-    &:active {
-      border-top: 2px solid transparent;
-      border-left: 2px solid transparent;
-      border-right: 2px solid transparent;
+    &.rounded {
+      padding-left: calc(17.75px + 10px);
+
+      &:focus {
+        padding-left: calc(17.75px - 1px + 10px);
+      }
+    }
+
+    &:focus {
+      padding-left: calc(17.75px - 1px);
+    }
+  }
+  &.has-icons-left {
+    &.rounded {
+      .icon {
+        width: 3em;
+      }
+    }
+    .input {
+      &.rounded {
+        padding-left: calc(17.75px + 42px);
+
+        &:focus {
+          padding-left: calc(17.75px - 1px + 42px);
+        }
+      }
     }
   }
 }
@@ -112,14 +228,21 @@ category: Components
 Hin helpers can be used with `<p>` in structure with field class.
 
 ```types.html
-<div class="field">
-  <input type="text" class="input" value="Standard input" />
-  <p class="help is-success">Helper success</p>
+<div class="control">
+  <input type="text" class="input" value="Positive input" />
+  <span class="hint is-success">Hint goes here</span>
 </div>
-<div class="field">
+
+<div class="control">
   <input type="text" class="input" value="Standard input" />
-  <p class="help is-danger">Helper danger</p>
+  <span class="hint is-danger">Hint goes here</span>
 </div>
+
+```
+```types.css hidden
+.control {
+margin-bottom: 20px;
+}
 ```
 */
 .field {

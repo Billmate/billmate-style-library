@@ -52,14 +52,28 @@
 		
 	</head>
 
-	<body>					<div class="tags-static backgroundSecondary"><span class="contentPrimary">Waiting for delivery</span></div>
-<div class="tags-static backgroundPositive">Paid</div>
-<div class="tags-static backgroundAccent">7 days left</div>
-<div class="tags-static backgroundWarning">4 days late</div>
-			<script type="text/x-stylemark" data-language="html"><div class="tags-static backgroundSecondary"><span class="contentPrimary">Waiting for delivery</span></div>
-<div class="tags-static backgroundPositive">Paid</div>
-<div class="tags-static backgroundAccent">7 days left</div>
-<div class="tags-static backgroundWarning">4 days late</div></script>
+	<body>					<nav class="pagination-dots" role="navigation" aria-label="pagination">
+  <ul class="pagination-list">
+    <li><a class="pagination-link" aria-label="Goto page 1"></a></li>
+    <li><span class="pagination-ellipsis">&hellip;</span></li>
+    <li><a class="pagination-link" aria-label="Goto page 45"></a></li>
+    <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page"></a></li>
+    <li><a class="pagination-link" aria-label="Goto page 47"></a></li>
+    <li><span class="pagination-ellipsis">&hellip;</span></li>
+    <li><a class="pagination-link" aria-label="Goto page 86"></a></li>
+  </ul>
+</nav>
+			<script type="text/x-stylemark" data-language="html"><nav class="pagination-dots" role="navigation" aria-label="pagination">
+  <ul class="pagination-list">
+    <li><a class="pagination-link" aria-label="Goto page 1"></a></li>
+    <li><span class="pagination-ellipsis">&hellip;</span></li>
+    <li><a class="pagination-link" aria-label="Goto page 45"></a></li>
+    <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page"></a></li>
+    <li><a class="pagination-link" aria-label="Goto page 47"></a></li>
+    <li><span class="pagination-ellipsis">&hellip;</span></li>
+    <li><a class="pagination-link" aria-label="Goto page 86"></a></li>
+  </ul>
+</nav></script>
 
 		<!--
 			Vanilla JS
@@ -92,10 +106,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-tags-types', []);
+						module = angular.module('stylemark-dot-pagination-pagination', []);
 					}
 
-					module.controller('stylemark-tags-types-' + index, function($scope) {
+					module.controller('stylemark-dot-pagination-pagination-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
