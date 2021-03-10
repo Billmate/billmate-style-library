@@ -1,26 +1,64 @@
-.theme-color {
+.i-sidebar-title {
+  background: #fff;
+  margin: 0!important;
+  display: block;
+  position: fixed;
+  padding: 20px;
+  padding-top: 12px;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 0px 20px #0000001f;
+}
+
+.i-example {
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 5px 8px rgb(0 0 0 / 5%);
+}
+
+.i-example + .i-code-block {
+  margin-top: -53px;
+  background: #000000;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   padding: 10px;
-  border: 2px solid #eee;
-  border-radius: 10px;
-  display: inline-block;
-  margin-right: 15px;
+}
+.hljs-title, .hljs-attr, .hljs-selector-id, .hljs-selector-class, .hljs-selector-attr, .hljs-selector-pseudo {
+  color: #dbc4ff;
+}
+.hljs-keyword, .hljs-selector-tag, .hljs-type {
+  color: #ff90c3;
+}
+.hljs-string, .hljs-variable, .hljs-template-variable, .hljs-strong, .hljs-emphasis, .hljs-quote {
+  color: #ff833e;
+}
+.text-code, code, kbd, pre, samp {
+  font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+.i-code-block__lang {
+  color: white;
+}
+
+.hljs {
+  color: white;
+}
+
+.hljs-tag {
+  color: #fff;
 }
 
 
-.backgroundPrimary,
-.backgroundSecondary,
-.backgroundTertiary,
-.backgroundInversePrimary,
-.backgroundInverseSecondary,
-.backgroundInverseTertiary {
-  padding: 5px;
-  display: inline-block;
-  width: 100px;
-  border-radius: 10px;
-  margin-right: 15px;
-  height: 100px;
+.i-page__content {
+  margin-left: 20%;
+  background: #fff!important;
+  padding-top: 80px;
 }
 
-button {
-  display: inline-block;
+.i-page__sidebar {
+  padding-top: 73px;
 }
