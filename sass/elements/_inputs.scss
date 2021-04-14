@@ -40,7 +40,7 @@ Types of inputs:
 </div>
 
 <div class="control has-icons-right">
-  <input type="text" class="input borderNegative" value="Negative input" />
+  <input type="text" class="input borderNegative contentNegative" value="Negative input" />
   <span class="icon is-small is-right">
     <i class="bm-icon-alert contentNegative"></i>
   </span>
@@ -155,6 +155,10 @@ margin-bottom: 20px;
 
   &:enabled {
     color: $black;
+
+    &.contentNegative {
+      color: $red500;
+    }
   }
 
   &:disabled {
@@ -173,10 +177,6 @@ margin-bottom: 20px;
 
   &::placeholder {
     @extend .contentSecondary;
-  }
-
-  &.negative {
-    @extend .borderNegative;
   }
 
   // Pill Primary

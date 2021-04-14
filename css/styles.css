@@ -432,7 +432,7 @@ The available fonts are:
   -webkit-appearance: none;
   align-items: center;
   border: 1px solid transparent;
-  border-radius: 0px;
+  border-radius: 8px;
   box-shadow: none;
   display: inline-flex;
   font-size: 1rem;
@@ -10234,9 +10234,7 @@ The border colors that can be used with any element.
 .borderAccent {
   border: 1px solid #1975FF; }
 
-.borderNegative, .input.negative[type=text], .input.backgroundNegative[type=text],
-.input.negative[type=password], .input.backgroundNegative[type=password],
-.input.negative[type=email], .input.backgroundNegative[type=email] {
+.borderNegative {
   border: 1px solid #E84030; }
 
 .borderPositive {
@@ -10271,49 +10269,49 @@ Title types can be used on any element that contains text.
   font-weight: 400;
   font-size: 96px;
   line-height: 1;
-  color: #000000; }
+  color: #17191C; }
 
 .title-x7 {
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
   line-height: 1;
-  color: #000000; }
+  color: #17191C; }
 
 .title-x6 {
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
   line-height: 1;
-  color: #000000; }
+  color: #17191C; }
 
 .title-x5 {
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 1;
-  color: #000000; }
+  color: #17191C; }
 
 .title-x4 {
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 1;
-  color: #000000; }
+  color: #17191C; }
 
 .title-x3 {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
-  color: #000000; }
+  color: #17191C; }
 
 .title-x2 {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
-  color: #000000; }
+  color: #17191C; }
 
 /*
 ---
@@ -11135,6 +11133,7 @@ input[type=button],
 input[type=submit],
 a {
   height: 64px;
+  border-radius: 8px;
   /**
    * Rectangle
    */ }
@@ -11493,7 +11492,8 @@ Check can be used with `<input>` elements.
       height: 20px;
       transform: unset;
       top: 0;
-      left: 0; }
+      left: 0;
+      border-color: #17191C; }
   .is-checkradio[type='checkbox']:hover:not([disabled]) + label:before, .is-checkradio[type='checkbox']:hover:not([disabled]) + label::before {
     border: 0; }
   .is-checkradio[type='checkbox']:checked + label:before, .is-checkradio[type='checkbox']:checked + label::before {
@@ -11581,7 +11581,7 @@ Types of inputs:
 </div>
 
 <div class="control has-icons-right">
-  <input type="text" class="input borderNegative" value="Negative input" />
+  <input type="text" class="input borderNegative contentNegative" value="Negative input" />
   <span class="icon is-small is-right">
     <i class="bm-icon-alert contentNegative"></i>
   </span>
@@ -11663,6 +11663,16 @@ margin-bottom: 20px;
   .input[type=password]:enabled,
   .input[type=email]:enabled {
     color: #000000; }
+    .input[type=text]:enabled.contentNegative, .field .input.help.is-danger[type=text]:enabled, .field .control .input.is-danger.hint[type=text]:enabled, .control .field .input.is-danger.hint[type=text]:enabled,
+    .input[type=password]:enabled.contentNegative,
+    .field .input.help.is-danger[type=password]:enabled,
+    .field .control .input.is-danger.hint[type=password]:enabled,
+    .control .field .input.is-danger.hint[type=password]:enabled,
+    .input[type=email]:enabled.contentNegative,
+    .field .input.help.is-danger[type=email]:enabled,
+    .field .control .input.is-danger.hint[type=email]:enabled,
+    .control .field .input.is-danger.hint[type=email]:enabled {
+      color: #E84030; }
   .input[type=text]:disabled,
   .input[type=password]:disabled,
   .input[type=email]:disabled {

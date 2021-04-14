@@ -51,11 +51,13 @@ $billmate-resource-path: '..' !default;
 @import 'fonts';
 
 // Set values to be used for Bulma components
-$control-radius: 0px;
+$control-radius: 8px;
 $input-radius: 8px;
 $family-sans-serif: 'GT Walsheim';
 $help-size: 14px;
 $input-border-color: $grey100;
+$card-shadow: 0px 16px 32px rgba(0, 0, 0, 0.16);
+$card-radius: 48px;
 
 // Import Bulma general styles
 @import '~bulma/bulma.sass';

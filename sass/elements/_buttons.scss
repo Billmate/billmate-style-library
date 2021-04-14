@@ -73,6 +73,7 @@ input[type=button],
 input[type=submit],
 a {
   height: 64px;
+  border-radius: 8px;
 
   &.content-space-between {
     justify-content: space-between;

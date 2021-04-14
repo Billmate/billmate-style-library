@@ -446,11 +446,15 @@ The text colors that can be used with `<p>` elements or any element with text.
 ```
 */
 .contentPrimary {
-  color: $black;
+  color: $grey900;
 }
 
 .contentSecondary {
   color: $grey400;
+}
+
+.contentLightAccent {
+  color: $blue100;
 }
 
 .contentTertiary {
