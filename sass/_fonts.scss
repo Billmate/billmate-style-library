@@ -220,8 +220,7 @@ The available fonts are:
 
 @font-face {
   font-family: 'GT Walsheim';
-  src: local('GT Walsheim'),
-  url($billmate-resource-path + '/resources/fonts/GTWalsheim/GT-Walsheim-Regular.woff2') format('woff2'),
+  src: url($billmate-resource-path + '/resources/fonts/GTWalsheim/GT-Walsheim-Regular.woff2') format('woff2'),
   url($billmate-resource-path + '/resources/fonts/GTWalsheim/GT-Walsheim-Regular.woff') format('woff'),
   url($billmate-resource-path + '/resources/fonts/GTWalsheim/GT-Walsheim-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -232,8 +231,7 @@ The available fonts are:
 
 @font-face {
   font-family: 'GT Walsheim';
-  src: local('GT Walsheim'),
-  url($billmate-resource-path + '/resources/fonts/GTWalsheim/GT-Walsheim-Medium.woff2') format('woff2'),
+  src: url($billmate-resource-path + '/resources/fonts/GTWalsheim/GT-Walsheim-Medium.woff2') format('woff2'),
   url($billmate-resource-path + '/resources/fonts/GTWalsheim/GT-Walsheim-Medium.woff') format('woff'),
   url($billmate-resource-path + '/resources/fonts/GTWalsheim/GT-Walsheim-Medium.ttf') format('truetype');
   font-weight: 600;
