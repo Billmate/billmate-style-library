@@ -212,7 +212,6 @@ The available fonts are:
   url($billmate-resource-path + '/resources/fonts/SofiaPro/SofiaProBold-Italic.woff') format('woff'),
   url($billmate-resource-path + '/resources/fonts/SofiaPro/SofiaProBold-Italic.ttf') format('truetype');
   font-weight: bold;
-  font-style: italic;
 }
 
 /**
@@ -226,8 +225,8 @@ The available fonts are:
   url($billmate-resource-path + '/resources/fonts/GTWalsheim/GT-Walsheim-Regular.woff') format('woff'),
   url($billmate-resource-path + '/resources/fonts/GTWalsheim/GT-Walsheim-Regular.ttf') format('truetype');
   font-weight: 400;
-  font-style: italic;
   font-display: swap;
+  font-style: normal;
 }
 
 
@@ -238,6 +237,6 @@ The available fonts are:
   url($billmate-resource-path + '/resources/fonts/GTWalsheim/GT-Walsheim-Medium.woff') format('woff'),
   url($billmate-resource-path + '/resources/fonts/GTWalsheim/GT-Walsheim-Medium.ttf') format('truetype');
   font-weight: 600;
-  font-style: italic;
   font-display: swap;
+  font-style: normal;
 }
