@@ -220,6 +220,10 @@ padding: 20px;
   @extend .primaryB;
 }
 
+.backgroundPurple {
+  background-color: $purple300; // check if it should be called like this
+}
+
 .backgroundSecondary {
   background-color: $grey50;
 }
@@ -408,6 +412,10 @@ padding: 20px;
   background-color: $blue100;
 }
 
+.backgroundSecondaryLightAccent {
+  background-color: $blue300;
+}
+
 .backgroundLightPositive {
   background-color: $green100;
 }
@@ -462,8 +470,15 @@ The text colors that can be used with `<p>` elements or any element with text.
 }
 
 .contentInversePrimary {
-  @extend .primaryA;
   color: $white;
+
+  &[class^="text-"] {
+    color: $white;
+  }
+
+  &[class^="title-"] {
+    color: $white;
+  }
 }
 
 .contentInverseSecondary {

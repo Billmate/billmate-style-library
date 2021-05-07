@@ -98,6 +98,12 @@ a {
     padding-right: 32px;
     height: 64px;
 
+    @media(max-width: 567px) {
+      height: 56px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
     // Medium button
     &.mediumLabel {
       @extend .labelMedium;
@@ -149,6 +155,12 @@ a {
     padding-right: 32px;
     height: 64px;
 
+    @media(max-width: 567px) {
+      height: 56px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
     // Medium button
     &.mediumLabel {
       @extend .labelMedium;
@@ -197,6 +209,12 @@ a {
     padding-left: 32px;
     padding-right: 32px;
     height: 64px;
+
+    @media(max-width: 567px) {
+      height: 56px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
 
     // Medium button
     &.mediumLabel {
@@ -255,6 +273,8 @@ a {
       border-radius: 100px;
       width: 64px;
       height: 64px;
+
+
 
       &.medium {
         width: 56px;
