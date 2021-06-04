@@ -85,7 +85,7 @@ Direction icons can be used with `<i>` and `<span>` elements and within `<input>
 }
 
 .bm-icon-arrow-right {
-  @extend .bm-icon;;
+  @extend .bm-icon;
   @include svg-include($billmate-resource-path + '/resources/icons/direction/arrow-right.svg');
 }
 
