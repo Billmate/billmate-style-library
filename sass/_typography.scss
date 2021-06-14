@@ -85,7 +85,38 @@ Title types can be used on any element that contains text.
 
 
 //Breakpoints for titles
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
+  .title-xl {
+    &-x8 {
+      font-size: 88px;
+    }
+
+    &-x7 {
+      font-size: 72px;
+    }
+
+    &-x6 {
+      font-size: 56px;
+    }
+
+    &-x5 {
+      font-size: 40px;
+    }
+
+    &-x4 {
+      font-size: 32px;
+    }
+
+    &-x3 {
+      font-size: 24px;
+    }
+
+    &-x3 {
+      font-size: 18px;
+    }
+  }
+}
+@media (min-width: 1440px) and (max-width: 1920px) {
   .title-lg {
     &-x8 {
       font-size: 88px;
@@ -272,7 +303,30 @@ Title types can be used on any element that contains text.
 }
 
 //Breakpoints for titles
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
+  .text-xl {
+    &-x6 {
+      font-size: 28px;
+    }
+
+    &-x5 {
+      font-size: 22px;
+    }
+
+    &-x4 {
+      font-size: 18px;
+    }
+
+    &-x3 {
+      font-size: 16px;
+    }
+
+    &-x3 {
+      font-size: 14px;
+    }
+  }
+}
+@media (min-width: 1440px) and (max-width: 1920px) {
   .text-lg {
     &-x6 {
       font-size: 28px;
