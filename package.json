@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/Billmate/billmate-style-library#readme",
   "dependencies": {
-    "bulma": "^0.9.0",
+    "bulma": "^0.9.3",
     "bulma-checkradio": "^1.1.1",
     "bulma-switch": "^2.0.0",
     "fontawesome5-webfont": "^5.0.4"

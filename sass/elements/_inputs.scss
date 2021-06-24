@@ -105,7 +105,7 @@ margin-bottom: 20px;
 
 .control.has-icons-left {
   .icon {
-    top: auto;
+    //top: auto;
   }
 
   input {
@@ -117,7 +117,7 @@ margin-bottom: 20px;
 
 .control.has-icons-right {
   .icon {
-    top: auto;
+    //top: auto;
   }
   input {
     &:focus {
@@ -135,7 +135,8 @@ margin-bottom: 20px;
 
 .input[type=text],
 .input[type=password],
-.input[type=email] {
+.input[type=email],
+.bm-input {
   @extend .is-large;
   @extend .contentTertiary;
 
