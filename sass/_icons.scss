@@ -79,6 +79,16 @@ Direction icons can be used with `<i>` and `<span>` elements and within `<input>
   @include svg-include($billmate-resource-path + '/resources/icons/direction/arrow-up.svg');
 }
 
+.bm-icon-arrow-up-right {
+  @extend .bm-icon;
+  @include svg-include($billmate-resource-path + '/resources/icons/direction/arrow-up-right.svg');
+}
+
+.bm-icon-download {
+  @extend .bm-icon;
+  @include svg-include($billmate-resource-path + '/resources/icons/basics/download.svg');
+}
+
 .bm-icon-arrow-down {
   @extend .bm-icon;
   @include svg-include($billmate-resource-path + '/resources/icons/direction/arrow-down.svg');
